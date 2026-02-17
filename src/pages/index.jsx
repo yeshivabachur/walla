@@ -20,6 +20,7 @@ import RequestRide from "./RequestRide";
 import SendPackage from "./SendPackage";
 import TrackRequest from "./TrackRequest";
 import TrackRide from "./TrackRide";
+import TranscendenceHub from "./TranscendenceHub";
 
 import { BrowserRouter as Router, Route, Routes, useLocation, Navigate, useParams } from 'react-router-dom';
 
@@ -41,6 +42,7 @@ const PAGES = {
     SendPackage,
     TrackRequest,
     TrackRide,
+    TranscendenceHub,
 }
 
 function _getCurrentPage(url) {
@@ -111,6 +113,7 @@ function PagesContent() {
                 <Route path="/SendPackage" element={<SendPackage />} />
                 <Route path="/TrackRequest" element={<TrackRequest />} />
                 <Route path="/TrackRide" element={<TrackRide />} />
+                <Route path="/TranscendenceHub" element={<TranscendenceHub />} />
                 <Route path="/:legacy" element={<LegacyPageRedirect />} />
             </Routes>
         </Layout>

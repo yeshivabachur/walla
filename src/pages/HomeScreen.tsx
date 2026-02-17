@@ -27,6 +27,7 @@ const HUBS: readonly Hub[] = [
     subtitle: "Request, track, and review rides without noise.",
     links: [
       { label: "Mission Control", description: "Omni-Intelligence Dashboard.", page: "MissionControl" },
+      { label: "Transcendence", description: "Revolutionary Tier-5 Systems.", page: "TranscendenceHub" },
       { label: "Request Ride", description: "Instant request & pricing.", page: "RequestRide" },
       { label: "Track Request", description: "Live driver ETA + status.", page: "TrackRequest" },
       { label: "Track Ride", description: "In-ride tracking view.", page: "TrackRide" },
