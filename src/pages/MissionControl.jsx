@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { 
   Zap, Cpu, Activity, Shield, Navigation, 
-  Settings, Loader2, AlertTriangle, Radio, Globe, Plane, Glasses, Link2, Clock
+  Settings, Loader2, AlertTriangle, Radio, Globe, Plane, Glasses, Link2, Clock, Box
 } from 'lucide-react';
 import QuantumRouteOptimizer from '@/components/ai/QuantumRouteOptimizer';
 import NeuralInterface from '@/components/future/NeuralInterface';
@@ -24,6 +24,17 @@ import AntiGravityDrive from '@/components/future/AntiGravityDrive';
 import NeuralRegistryExplorer from '@/components/analytics/NeuralRegistryExplorer';
 import QuantumTimeOptimizer from '@/components/ai/QuantumTimeOptimizer';
 import GalacticHubMap from '@/components/maps/GalacticHubMap';
+import SonicEngineController from '@/components/audio/SonicEngineController';
+import EcosystemMeshController from '@/components/integration/EcosystemMeshController';
+import MicroEconomyManifold from '@/components/economy/MicroEconomyManifold';
+import OrganizationalCommand from '@/components/org/OrganizationalCommand';
+import InRideProductivitySuite from '@/components/productivity/InRideProductivitySuite';
+import V2XMeshTacticalDisplay from '@/components/tactical/V2XMeshTacticalDisplay';
+import LegalFinanceCommand from '@/components/legal/LegalFinanceCommand';
+import LastMileMobilityMesh from '@/components/mobility/LastMileMobilityMesh';
+import BiometricAccessPreferences from '@/components/personalization/BiometricAccessPreferences';
+import LogisticsLockerManifold from '@/components/delivery/LogisticsLockerManifold';
+import OperationalExcellenceHub from '@/components/operations/OperationalExcellenceHub';
 import { useQuery } from '@tanstack/react-query';
 
 export default function MissionControl() {
@@ -120,9 +131,64 @@ export default function MissionControl() {
             <QuantumTimeOptimizer />
           </motion.div>
 
+          {/* Ecosystem Mesh */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-3 2xl:col-span-3">
+            <EcosystemMeshController />
+          </motion.div>
+
+          {/* Micro Economy Hub */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-1 2xl:col-span-3">
+            <MicroEconomyManifold userEmail={user?.email} />
+          </motion.div>
+
+          {/* Productivity Suite */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <InRideProductivitySuite userEmail={user?.email} />
+          </motion.div>
+
+          {/* Tactical V2X */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <V2XMeshTacticalDisplay />
+          </motion.div>
+
+          {/* Legal & Finance */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <LegalFinanceCommand userEmail={user?.email} />
+          </motion.div>
+
+          {/* Micro-Mobility */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <LastMileMobilityMesh userEmail={user?.email} />
+          </motion.div>
+
+          {/* Biometric & Cabin Access */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <BiometricAccessPreferences userEmail={user?.email} />
+          </motion.div>
+
+          {/* Logistics & Locker Mesh */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <LogisticsLockerManifold userEmail={user?.email} />
+          </motion.div>
+
+          {/* Operational Excellence - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <OperationalExcellenceHub userEmail={user?.email} />
+          </motion.div>
+
           {/* Neural Registry - Full Width */}
           <motion.div variants={itemVariants} className="col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-4 2xl:col-span-6 h-[600px]">
             <NeuralRegistryExplorer />
+          </motion.div>
+
+          {/* Sonic Engine */}
+          <motion.div variants={itemVariants} className="col-span-1">
+            <SonicEngineController />
+          </motion.div>
+
+          {/* Strategic Org Control */}
+          <motion.div variants={itemVariants} className="col-span-1">
+            <OrganizationalCommand userEmail={user?.email} />
           </motion.div>
 
           {/* Neural Interface */}

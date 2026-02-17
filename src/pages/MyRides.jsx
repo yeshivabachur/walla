@@ -63,6 +63,7 @@ import PassengerSafetyCard from '@/components/safety/PassengerSafetyCard';
 import PersonalizedPricingCard from '@/components/pricing/PersonalizedPricingCard';
 import RideBundleShop from '@/components/bundles/RideBundleShop';
 import ComfortPreferences from '@/components/comfort/ComfortPreferences';
+import RideStoryRecap from '@/components/ui/RideStoryRecap';
 
 export default function MyRides() {
   const navigate = useNavigate();
@@ -534,6 +535,10 @@ export default function MyRides() {
                             <CheckCircle className="w-3 h-3 mr-1" />
                             Completed
                           </Badge>
+                        </div>
+
+                        <div className="mb-4">
+                          <RideStoryRecap rideRequest={request} />
                         </div>
 
                         <div className="flex flex-wrap gap-2">
