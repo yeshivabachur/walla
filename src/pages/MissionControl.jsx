@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { 
   Zap, Cpu, Activity, Shield, Navigation, 
   Settings, Loader2, AlertTriangle, Radio, Globe, Plane, Glasses, Link2, Clock, Box,
-  Volume2, Scale, ShieldAlert, Warehouse, PiggyBank, Heart, Users
+  Volume2, Scale, ShieldAlert, Warehouse, PiggyBank, Heart, Users, Rocket, Trophy, Sparkles
 } from 'lucide-react';
 import QuantumRouteOptimizer from '@/components/ai/QuantumRouteOptimizer';
 import NeuralInterface from '@/components/future/NeuralInterface';
@@ -52,6 +52,10 @@ import SpecializedAssistanceManifold from '@/components/accessibility/Specialize
 import LaborEquityManifold from '@/components/labor/LaborEquityManifold';
 import EdgeInfrastructureGrid from '@/components/iot-deep/EdgeInfrastructureGrid';
 import SonicBrandingManifold from '@/components/sonic-deep/SonicBrandingManifold';
+import LifestyleExperienceEngine from '@/components/leisure/LifestyleExperienceEngine';
+import EdutainmentManifold from '@/components/edutainment/EdutainmentManifold';
+import AdvancedLogisticsHub from '@/components/logistics-final/AdvancedLogisticsHub';
+import GrowthAttributionMatrix from '@/components/attribution/GrowthAttributionMatrix';
 
 import { useQuery } from '@tanstack/react-query';
 
@@ -149,17 +153,32 @@ export default function MissionControl() {
             <QuantumTimeOptimizer />
           </motion.div>
 
-          {/* 5G Edge & Infrastructure - NEW */}
+          {/* Experience Engine - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <LifestyleExperienceEngine />
+          </motion.div>
+
+          {/* Edu-tainment Manifold - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <EdutainmentManifold />
+          </motion.div>
+
+          {/* Growth Attribution - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <GrowthAttributionMatrix />
+          </motion.div>
+
+          {/* 5G Edge & Infrastructure */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <EdgeInfrastructureGrid />
           </motion.div>
 
-          {/* Labor Equity & Worker Rights - NEW */}
+          {/* Labor Equity & Worker Rights */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <LaborEquityManifold userEmail={user?.email} />
           </motion.div>
 
-          {/* Sonic Branding & Voice OS - NEW */}
+          {/* Sonic Branding & Voice OS */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <SonicBrandingManifold />
           </motion.div>
@@ -219,6 +238,11 @@ export default function MissionControl() {
             <LogisticsLockerManifold userEmail={user?.email} />
           </motion.div>
 
+          {/* Advanced Logistics - NEW VERSION */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <AdvancedLogisticsHub />
+          </motion.div>
+
           {/* Operational Excellence */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <OperationalExcellenceHub userEmail={user?.email} />
@@ -242,11 +266,6 @@ export default function MissionControl() {
           {/* Crisis & Disaster Recovery */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <CrisisRecoveryCommand />
-          </motion.div>
-
-          {/* Advanced Logistics */}
-          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
-            <AdvancedLogisticsManifold />
           </motion.div>
 
           {/* Social Utility Hub */}
