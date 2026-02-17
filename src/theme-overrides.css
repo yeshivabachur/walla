@@ -1,0 +1,58 @@
+
+/* Theme definitions for new Ride Modes */
+
+html[data-ride-mode="cyberpunk"] {
+  color-scheme: dark;
+  --aurora-bg-0: 10 10 16;
+  --aurora-bg-1: 5 5 10;
+  --aurora-accent-a: 255 0 255; /* Magenta */
+  --aurora-accent-b: 0 255 255; /* Cyan */
+  --aurora-accent-c: 255 255 0; /* Yellow */
+  --glass-bg: 0 0 0;
+  --glass-alpha: 0.6;
+  --glass-border: 255 0 255;
+  --glass-border-alpha: 0.5;
+  color: #fff;
+}
+
+html[data-ride-mode="minimalist"] {
+  color-scheme: light;
+  --aurora-bg-0: 255 255 255;
+  --aurora-bg-1: 245 245 245;
+  --aurora-accent-a: 200 200 200;
+  --aurora-accent-b: 150 150 150;
+  --aurora-accent-c: 100 100 100;
+  --glass-bg: 255 255 255;
+  --glass-alpha: 0.8;
+  --glass-border: 0 0 0;
+  --glass-border-alpha: 0.1;
+  color: #000;
+}
+
+html[data-ride-mode="eco"] {
+  color-scheme: light;
+  --aurora-bg-0: 240 255 240;
+  --aurora-bg-1: 220 255 220;
+  --aurora-accent-a: 34 139 34; /* Forest Green */
+  --aurora-accent-b: 154 205 50; /* Yellow Green */
+  --aurora-accent-c: 85 107 47; /* Olive */
+  --glass-bg: 255 255 255;
+  --glass-alpha: 0.6;
+  --glass-border: 34 139 34;
+  --glass-border-alpha: 0.3;
+  color: #1a4a1a;
+}
+
+html[data-ride-mode="scifi"] {
+  color-scheme: dark;
+  --aurora-bg-0: 0 10 30;
+  --aurora-bg-1: 0 5 15;
+  --aurora-accent-a: 0 191 255; /* Deep Sky Blue */
+  --aurora-accent-b: 65 105 225; /* Royal Blue */
+  --aurora-accent-c: 138 43 226; /* Blue Violet */
+  --glass-bg: 0 20 50;
+  --glass-alpha: 0.5;
+  --glass-border: 0 191 255;
+  --glass-border-alpha: 0.4;
+  color: #e0f0ff;
+}
