@@ -8,6 +8,10 @@ import DriverEarnings from "./DriverEarnings";
 import DriverLoyalty from "./DriverLoyalty";
 import DriverOnboarding from "./DriverOnboarding";
 import DriverTraining from "./DriverTraining";
+import OfferRide from "./OfferRide";
+import DriverPayouts from "./DriverPayouts";
+import DriverSettings from "./DriverSettings";
+import SupportChat from "./SupportChat";
 import Home from "./Home";
 import HomeScreen from "./HomeScreen";
 import MissionControl from "./MissionControl";
@@ -35,6 +39,10 @@ const PAGES = {
     DriverLoyalty,
     DriverOnboarding,
     DriverTraining,
+    OfferRide,
+    DriverPayouts,
+    DriverSettings,
+    SupportChat,
     Home,
     MissionControl,
     MyRides,
@@ -108,13 +116,17 @@ function PagesContent() {
                 <Route path="/DriverLoyalty" element={<DriverLoyalty />} />
                 <Route path="/DriverOnboarding" element={<DriverOnboarding />} />
                 <Route path="/DriverTraining" element={<DriverTraining />} />
+                <Route path="/OfferRide" element={<OfferRide />} />
+                <Route path="/DriverPayouts" element={<DriverPayouts />} />
+                <Route path="/DriverSettings" element={<DriverSettings />} />
+                <Route path="/SupportChat" element={<SupportChat />} />
                 <Route path="/Home" element={<HomeScreen />} />
                 <Route path="/Landing" element={<Home />} />
                 <Route path="/MissionControl" element={<MissionControl />} />
                 <Route path="/MyRides" element={<MyRides />} />
-                                <Route path="/Packages" element={<Packages />} />
-                                <Route path="/Marketplace" element={<GalacticMarketplace />} />
-                                <Route path="/PassengerPreferences" element={<PassengerPreferences />} />
+                <Route path="/Packages" element={<Packages />} />
+                <Route path="/Marketplace" element={<GalacticMarketplace />} />
+                <Route path="/PassengerPreferences" element={<PassengerPreferences />} />
                 <Route path="/PassengerRideHistory" element={<PassengerRideHistory />} />
                 <Route path="/Preferences" element={<Preferences />} />
                 <Route path="/RequestRide" element={<RequestRide />} />

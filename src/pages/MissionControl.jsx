@@ -22,7 +22,7 @@ import MetaversePortal from '@/components/social/MetaversePortal';
 import HolographicWindshield from '@/components/ui/HolographicWindshield';
 import QuantumEntanglementTracker from '@/components/ai/QuantumEntanglementTracker';
 import AntiGravityDrive from '@/components/future/AntiGravityDrive';
-import NeuralRegistryExplorer from '@/components/analytics/NeuralRegistryExplorer';
+import UniversalFeatureManifold from '@/components/analytics/UniversalFeatureManifold';
 import QuantumTimeOptimizer from '@/components/ai/QuantumTimeOptimizer';
 import GalacticHubMap from '@/components/maps/GalacticHubMap';
 import SonicEngineController from '@/components/audio/SonicEngineController';
@@ -52,6 +52,8 @@ import SpecializedAssistanceManifold from '@/components/accessibility/Specialize
 import LaborEquityManifold from '@/components/labor/LaborEquityManifold';
 import EdgeInfrastructureGrid from '@/components/iot-deep/EdgeInfrastructureGrid';
 import SonicBrandingManifold from '@/components/sonic-deep/SonicBrandingManifold';
+import SafetyMechanicalArsenal from '@/components/safety/SafetyMechanicalArsenal';
+import DriverSovereigntyEnclave from '@/components/labor/DriverSovereigntyEnclave';
 import LifestyleExperienceEngine from '@/components/leisure/LifestyleExperienceEngine';
 import EdutainmentManifold from '@/components/edutainment/EdutainmentManifold';
 import AdvancedLogisticsHub from '@/components/logistics-final/AdvancedLogisticsHub';
@@ -183,6 +185,16 @@ export default function MissionControl() {
             <SonicBrandingManifold />
           </motion.div>
 
+          {/* Safety & Mechanical Arsenal - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <SafetyMechanicalArsenal />
+          </motion.div>
+
+          {/* Driver Sovereignty Enclave - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <DriverSovereigntyEnclave />
+          </motion.div>
+
           {/* Ecosystem Mesh */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-3 2xl:col-span-3">
             <EcosystemMeshController />
@@ -294,8 +306,8 @@ export default function MissionControl() {
           </motion.div>
 
           {/* Neural Registry - Full Width */}
-          <motion.div variants={itemVariants} className="col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-4 2xl:col-span-6 h-[600px]">
-            <NeuralRegistryExplorer />
+          <motion.div variants={itemVariants} className="col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-4 2xl:col-span-6 h-[800px]">
+            <UniversalFeatureManifold />
           </motion.div>
 
           {/* Sonic Engine */}

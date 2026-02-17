@@ -36,6 +36,7 @@ const HUBS: readonly Hub[] = [
       { label: "Track Ride", description: "In-ride tracking view.", page: "TrackRide" },
       { label: "My Rides", description: "History, receipts, support flows.", page: "MyRides" },
       { label: "Ride History", description: "Passenger timeline view.", page: "PassengerRideHistory" },
+      { label: "AI Support", description: "24/7 Sentience Chat.", page: "SupportChat" },
     ],
   },
   {
@@ -43,11 +44,14 @@ const HUBS: readonly Hub[] = [
     title: "Professional Hub",
     subtitle: "Driver ops, earnings, analytics, loyalty.",
     links: [
-      { label: "Driver Dashboard", description: "Go online, manage trips.", page: "DriverDashboard" },
+      { label: "Driver Portal", description: "Main driver dashboard.", page: "DriverDashboard" },
+      { label: "Offer a Ride", description: "Post your route availability.", page: "OfferRide" },
       { label: "Earnings", description: "Revenue, payouts, insights.", page: "DriverEarnings" },
+      { label: "Payout Command", description: "Manage neural transfers.", page: "DriverPayouts" },
       { label: "Analytics", description: "Performance and trends.", page: "DriverAnalytics" },
       { label: "Training", description: "Skill modules and safety.", page: "DriverTraining" },
       { label: "Loyalty", description: "Rewards and tiers.", page: "DriverLoyalty" },
+      { label: "Preferences", description: "Neural driver settings.", page: "DriverSettings" },
     ],
   },
   {
@@ -115,14 +119,14 @@ const HubCard = memo(function HubCard({ hub }: { hub: Hub }) {
         <p className="text-sm opacity-80">{hub.subtitle}</p>
       </header>
 
-      <div className="grid gap-3 sm:grid-cols-2">
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {hub.links.map((l) => (
           <Link
             key={l.page}
             to={createPageUrl(l.page)}
-            className="glass rounded-xl p-4 transition hover:translate-y-[-1px]"
+            className="glass rounded-xl p-4 transition hover:translate-y-[-1px] group"
           >
-            <div className="text-sm font-semibold">{l.label}</div>
+            <div className="text-sm font-semibold group-hover:text-indigo-400 transition-colors">{l.label}</div>
             <div className="text-xs opacity-80">{l.description}</div>
           </Link>
         ))}
@@ -154,11 +158,10 @@ export default function HomeScreen() {
     <div className="mx-auto w-full max-w-6xl px-4 py-8">
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <div className="text-xs uppercase tracking-wider opacity-70">Walla</div>
-          <h1 className="text-2xl font-semibold">Context-Aware Home</h1>
+          <div className="text-xs uppercase tracking-wider opacity-70">Walla OS</div>
+          <h1 className="text-3xl font-black italic tracking-tighter">Hyper-Mobility Hub</h1>
           <p className="text-sm opacity-80">
-            Theme: <span className="font-semibold">{currentTheme.label}</span> · Accent:{" "}
-            <span className="font-semibold">{currentTheme.accent}</span>
+            Current Manifold: <span className="font-semibold text-indigo-400">{currentTheme.label}</span>
           </p>
         </div>
 
@@ -182,8 +185,8 @@ export default function HomeScreen() {
             type="button"
             onClick={() => setActiveHub(h.id)}
             className={[
-              "glass px-4 py-2 text-sm font-semibold",
-              h.id === activeHub ? "ring-1 ring-white/40" : "opacity-80 hover:opacity-100",
+              "glass px-6 py-3 text-sm font-black uppercase tracking-widest",
+              h.id === activeHub ? "ring-2 ring-indigo-500 bg-indigo-500/10" : "opacity-80 hover:opacity-100",
             ].join(" ")}
           >
             {h.title}
@@ -193,8 +196,9 @@ export default function HomeScreen() {
 
       <HubCard hub={hub} />
 
-      <div className="mt-6 text-xs opacity-70">
-        Tip: legacy links like <code>/driver-analytics</code> will redirect to <code>/DriverAnalytics</code>.
+      <div className="mt-8 pt-8 border-t border-white/5 flex justify-between items-center text-[10px] font-mono opacity-40 uppercase tracking-[0.2em]">
+        <span>Manifest Parity: 100.00%</span>
+        <span>Version: 1.4.Singularity</span>
       </div>
     </div>
   );
