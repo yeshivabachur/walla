@@ -6,6 +6,8 @@ import {
   Scale, ShieldCheck, DollarSign, ExternalLink,
   PieChart, Activity
 } from 'lucide-react';
+import SupplyChainProvenance from '@/components/sovereignty/SupplyChainProvenance';
+import GrowthHackingDashboard from '@/components/marketing-final/GrowthHackingDashboard';
 import { motion } from 'framer-motion';
 
 const REPORTS = [
@@ -89,6 +91,9 @@ export default function SovereigntyTransparencyHub() {
               </div>
             </Card>
 
+            {/* Growth & Viral Metrics - NEW */}
+            <GrowthHackingDashboard />
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                <Card className="bg-white/5 border-white/10 p-6 rounded-3xl space-y-4">
                  <div className="flex items-center gap-3">
@@ -111,6 +116,9 @@ export default function SovereigntyTransparencyHub() {
 
           {/* Right Column - Financial & Summary */}
           <div className="space-y-8">
+            {/* Supply Chain Provenance - NEW */}
+            <SupplyChainProvenance />
+
             <Card className="bg-indigo-600 border-none p-8 rounded-3xl text-white shadow-[0_0_50px_rgba(79,70,229,0.3)]">
               <h3 className="text-xl font-black uppercase italic mb-6">Financial Transparency</h3>
               <div className="space-y-6">

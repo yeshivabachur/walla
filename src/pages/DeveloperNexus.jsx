@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { motion } from 'framer-motion';
+import DeveloperSandboxManifold from '@/components/dev/DeveloperSandboxManifold';
 
 const API_ENDPOINTS = [
   { method: 'POST', path: '/v1/ride/displace', desc: 'Initiate quantum displacement' },
@@ -86,8 +87,11 @@ export default function DeveloperNexusHub() {
             </div>
           </div>
 
-          {/* API Sandbox Section */}
+          {/* Right Column - API Sandbox Section */}
           <div className="space-y-8">
+            {/* Sandbox Manifold - NEW */}
+            <DeveloperSandboxManifold />
+
             <Card className="bg-cyan-600 border-none p-8 rounded-3xl text-white shadow-[0_0_50px_rgba(6,182,212,0.3)]">
               <h3 className="text-xl font-black uppercase italic mb-6">Live Manifold Explorer</h3>
               <div className="space-y-4">

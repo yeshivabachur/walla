@@ -18,6 +18,7 @@ import RetrocausalBookingPanel from '@/components/spacetime/RetrocausalBooking';
 import SentientInterface from '@/components/sentient/SentientInterface';
 import CloakingDevicePanel from '@/components/future/CloakingDevicePanel';
 import QuantumUIContainer from '@/components/future/QuantumUIContainer';
+import MolecularEnvironmentController from '@/components/biological/MolecularEnvironmentController';
 import SentientOSOverlay from '@/components/sentient-os/SentientOSOverlay';
 import NonLinearTimeNavigation from '@/components/simulation/NonLinearTimeNavigation';
 import FTLDeliveryManifold from '@/components/logistics/FTLDeliveryManifold';
@@ -169,6 +170,11 @@ export default function TranscendenceHub() {
           {/* Quantum Tier */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.75 }} className="col-span-1 lg:col-span-2 xl:col-span-3">
             <QuantumUIContainer />
+          </motion.div>
+
+          {/* Molecular Environment - NEW */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.78 }} className="col-span-1 md:col-span-2">
+            <MolecularEnvironmentController />
           </motion.div>
 
           {/* Tele-Op & 5G */}
