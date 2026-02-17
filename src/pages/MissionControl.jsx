@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { 
   Zap, Cpu, Activity, Shield, Navigation, 
   Settings, Loader2, AlertTriangle, Radio, Globe, Plane, Glasses, Link2, Clock, Box,
-  Volume2, Scale, ShieldAlert, Warehouse, PiggyBank, Heart, Users, Rocket, Trophy, Sparkles
+  Volume2, Scale, ShieldAlert, Warehouse, PiggyBank, Heart, Users, Rocket, Trophy, Sparkles, Command
 } from 'lucide-react';
 import QuantumRouteOptimizer from '@/components/ai/QuantumRouteOptimizer';
 import NeuralInterface from '@/components/future/NeuralInterface';
@@ -61,6 +61,9 @@ import EdgeInfrastructureGrid from '@/components/iot-deep/EdgeInfrastructureGrid
 import SonicBrandingManifold from '@/components/sonic-deep/SonicBrandingManifold';
 import SafetyMechanicalArsenal from '@/components/safety/SafetyMechanicalArsenal';
 import DriverSovereigntyEnclave from '@/components/labor/DriverSovereigntyEnclave';
+import VehicleSystemsArsenal from '@/components/vehicle-systems/VehicleSystemsArsenal';
+import SafetyHardwareInventory from '@/components/safety-hardware/SafetyHardwareInventory';
+import NeuralAccessibilityHub from '@/components/accessibility/NeuralAccessibilityHub';
 import LifestyleExperienceEngine from '@/components/leisure/LifestyleExperienceEngine';
 import EdutainmentManifold from '@/components/edutainment/EdutainmentManifold';
 import AdvancedLogisticsHub from '@/components/logistics-final/AdvancedLogisticsHub';
@@ -152,6 +155,21 @@ export default function MissionControl() {
           animate="show"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-6"
         >
+          {/* Active Mechanical Arsenal (ADAS) - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 md:col-span-2 lg:col-span-3">
+            <VehicleSystemsArsenal />
+          </motion.div>
+
+          {/* Safety Hardware Inventory - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 md:col-span-2 lg:col-span-3">
+            <SafetyHardwareInventory />
+          </motion.div>
+
+          {/* Neural Accessibility Hub - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-4 2xl:col-span-6">
+            <NeuralAccessibilityHub />
+          </motion.div>
+
           {/* Galactic Hub Map */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-3 2xl:col-span-4">
             <GalacticHubMap />
@@ -162,17 +180,17 @@ export default function MissionControl() {
             <QuantumTimeOptimizer />
           </motion.div>
 
-          {/* Experience Engine - NEW */}
+          {/* Experience Engine */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <LifestyleExperienceEngine />
           </motion.div>
 
-          {/* Edu-tainment Manifold - NEW */}
+          {/* Edu-tainment Manifold */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <EdutainmentManifold />
           </motion.div>
 
-          {/* Growth Attribution - NEW */}
+          {/* Growth Attribution */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <GrowthAttributionMatrix />
           </motion.div>
@@ -192,44 +210,42 @@ export default function MissionControl() {
             <SonicBrandingManifold />
           </motion.div>
 
-          {/* Safety & Mechanical Arsenal - NEW */}
+          {/* Safety & Mechanical Arsenal */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <SafetyMechanicalArsenal />
           </motion.div>
 
-          {/* Driver Sovereignty Enclave - NEW */}
+          {/* Driver Sovereignty Enclave */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <DriverSovereigntyEnclave />
           </motion.div>
 
-          {/* Mechanical Arsenal - NEW */}
-          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
-            <VehicleArsenalController />
-          </motion.div>
-
-          {/* Social Network - NEW */}
+          {/* Social Network */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <RideSocialNetwork />
           </motion.div>
 
-          {/* Atomic Sanitization - NEW */}
+          {/* Atomic Sanitization */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <AtomicCabinSanitization />
           </motion.div>
 
-          {/* Financial Ledger - NEW */}
+          {/* Financial Ledger */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <FinancialSovereigntyLedger />
           </motion.div>
 
           {/* Biometric & Privacy */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <BiometricPrivacyManifold />
+          </motion.div>
 
-          {/* Tactical Hardware - NEW */}
+          {/* Tactical Hardware */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <TacticalHardwareManifold />
           </motion.div>
 
-          {/* Deep Logistics - NEW */}
+          {/* Deep Logistics */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <DeepLogisticsManifold />
           </motion.div>
@@ -289,7 +305,7 @@ export default function MissionControl() {
             <LogisticsLockerManifold userEmail={user?.email} />
           </motion.div>
 
-          {/* Advanced Logistics - NEW VERSION */}
+          {/* Advanced Logistics */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <AdvancedLogisticsHub />
           </motion.div>
