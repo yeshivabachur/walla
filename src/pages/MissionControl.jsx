@@ -50,6 +50,9 @@ import AdvancedLogisticsManifold from '@/components/logistics/AdvancedLogisticsM
 import FinancialAdvisorAI from '@/components/finops/FinancialAdvisorAI';
 import SpecializedAssistanceManifold from '@/components/accessibility/SpecializedAssistanceManifold';
 import LaborEquityManifold from '@/components/labor/LaborEquityManifold';
+import TacticalHardwareManifold from '@/components/tactical/TacticalHardwareManifold';
+import BiometricPrivacyManifold from '@/components/privacy/BiometricPrivacyManifold';
+import DeepLogisticsManifold from '@/components/logistics-deep/DeepLogisticsManifold';
 import EdgeInfrastructureGrid from '@/components/iot-deep/EdgeInfrastructureGrid';
 import SonicBrandingManifold from '@/components/sonic-deep/SonicBrandingManifold';
 import SafetyMechanicalArsenal from '@/components/safety/SafetyMechanicalArsenal';
@@ -193,6 +196,21 @@ export default function MissionControl() {
           {/* Driver Sovereignty Enclave - NEW */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <DriverSovereigntyEnclave />
+          </motion.div>
+
+          {/* Biometric & Privacy - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <BiometricPrivacyManifold />
+          </motion.div>
+
+          {/* Tactical Hardware - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <TacticalHardwareManifold />
+          </motion.div>
+
+          {/* Deep Logistics - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <DeepLogisticsManifold />
           </motion.div>
 
           {/* Ecosystem Mesh */}
