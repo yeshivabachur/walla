@@ -16,6 +16,12 @@ import RetrocausalBookingPanel from '@/components/spacetime/RetrocausalBooking';
 import SentientInterface from '@/components/sentient/SentientInterface';
 import CloakingDevicePanel from '@/components/future/CloakingDevicePanel';
 import QuantumUIContainer from '@/components/future/QuantumUIContainer';
+import TeleOperationCommand from '@/components/teleop/TeleOperationCommand';
+import CollectibleTradingHub from '@/components/collectibles/CollectibleTradingHub';
+import PrivacyGovernanceManifold from '@/components/privacy/PrivacyGovernanceManifold';
+import GrowthAnalyticsEngine from '@/components/marketing/GrowthAnalyticsEngine';
+import HumanFlourishingManifold from '@/components/health/HumanFlourishingManifold';
+import InnovationLabsManifold from '@/components/org/InnovationLabsManifold';
 
 export default function TranscendenceHub() {
   const { mode } = useRideMode();
@@ -113,6 +119,36 @@ export default function TranscendenceHub() {
           {/* Quantum Tier */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }} className="col-span-1 lg:col-span-2 xl:col-span-3">
             <QuantumUIContainer />
+          </motion.div>
+
+          {/* Tele-Op & 5G - NEW */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }} className="col-span-1 md:col-span-2">
+            <TeleOperationCommand />
+          </motion.div>
+
+          {/* Human Flourishing - NEW */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }} className="col-span-1 md:col-span-2">
+            <HumanFlourishingManifold />
+          </motion.div>
+
+          {/* Collectible Trading - NEW */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9 }}>
+            <CollectibleTradingHub />
+          </motion.div>
+
+          {/* Privacy & Sovereignty - NEW */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.0 }}>
+            <PrivacyGovernanceManifold />
+          </motion.div>
+
+          {/* Growth Analytics - NEW */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.1 }} className="col-span-1 md:col-span-2">
+            <GrowthAnalyticsEngine />
+          </motion.div>
+
+          {/* Innovation Labs - NEW */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2 }} className="col-span-1 md:col-span-2">
+            <InnovationLabsManifold />
           </motion.div>
 
           {/* System Status Summary */}

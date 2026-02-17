@@ -63,6 +63,21 @@ export default function SonicEngineController() {
           </div>
         </div>
 
+        {/* Sensory Layer Additions */}
+        <div className="space-y-3 pt-2">
+          <h4 className="text-xs font-bold uppercase text-cyan-300">Sensory Layer: 3D Positioning</h4>
+          <div className="grid grid-cols-2 gap-3">
+            <div className="bg-white/5 p-3 rounded-xl border border-white/10 flex items-center justify-between">
+              <span className="text-[9px] font-bold uppercase">Audio Landmarks</span>
+              <Badge className="bg-cyan-600 text-[8px]">ACTIVE</Badge>
+            </div>
+            <div className="bg-white/5 p-3 rounded-xl border border-white/10 flex items-center justify-between">
+              <span className="text-[9px] font-bold uppercase">Directional AI</span>
+              <Badge className="bg-indigo-600 text-[8px]">ON</Badge>
+            </div>
+          </div>
+        </div>
+
         <div className="space-y-4 pt-4 border-t border-white/5">
           {Object.entries(profile).map(([key, val]) => (
             <div key={key} className="space-y-2">

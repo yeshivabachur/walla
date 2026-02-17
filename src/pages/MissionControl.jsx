@@ -33,8 +33,15 @@ import V2XMeshTacticalDisplay from '@/components/tactical/V2XMeshTacticalDisplay
 import LegalFinanceCommand from '@/components/legal/LegalFinanceCommand';
 import LastMileMobilityMesh from '@/components/mobility/LastMileMobilityMesh';
 import BiometricAccessPreferences from '@/components/personalization/BiometricAccessPreferences';
+import NeuralAuthenticationManifold from '@/components/personalization/NeuralAuthenticationManifold';
 import LogisticsLockerManifold from '@/components/delivery/LogisticsLockerManifold';
 import OperationalExcellenceHub from '@/components/operations/OperationalExcellenceHub';
+import PartnerConciergeManifold from '@/components/integration/PartnerConciergeManifold';
+import SocialUtilityHub from '@/components/utility/SocialUtilityHub';
+import AdvancedFinOpsManifold from '@/components/finops/AdvancedFinOpsManifold';
+import CulturalInclusionManifold from '@/components/culture/CulturalInclusionManifold';
+import IndustrialIoTGrid from '@/components/iot/IndustrialIoTGrid';
+import MarketingAutomationEngine from '@/components/marketing/MarketingAutomationEngine';
 import { useQuery } from '@tanstack/react-query';
 
 export default function MissionControl() {
@@ -166,14 +173,49 @@ export default function MissionControl() {
             <BiometricAccessPreferences userEmail={user?.email} />
           </motion.div>
 
+          {/* Neural Authentication - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <NeuralAuthenticationManifold />
+          </motion.div>
+
           {/* Logistics & Locker Mesh */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <LogisticsLockerManifold userEmail={user?.email} />
           </motion.div>
 
-          {/* Operational Excellence - NEW */}
+          {/* Operational Excellence */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <OperationalExcellenceHub userEmail={user?.email} />
+          </motion.div>
+
+          {/* Partner Concierge */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <PartnerConciergeManifold />
+          </motion.div>
+
+          {/* Social Utility Hub - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <SocialUtilityHub />
+          </motion.div>
+
+          {/* Advanced FinOps - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <AdvancedFinOpsManifold userEmail={user?.email} />
+          </motion.div>
+
+          {/* Cultural Inclusion - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <CulturalInclusionManifold userEmail={user?.email} />
+          </motion.div>
+
+          {/* Industrial IoT Grid - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <IndustrialIoTGrid />
+          </motion.div>
+
+          {/* Marketing & Viral Growth - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <MarketingAutomationEngine />
           </motion.div>
 
           {/* Neural Registry - Full Width */}
