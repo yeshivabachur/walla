@@ -21,6 +21,9 @@ import SendPackage from "./SendPackage";
 import TrackRequest from "./TrackRequest";
 import TrackRide from "./TrackRide";
 import TranscendenceHub from "./TranscendenceHub";
+import SovereigntyTransparency from "./SovereigntyTransparency";
+import DeveloperNexus from "./DeveloperNexus";
+import InstitutionalCommand from "./InstitutionalCommand";
 
 import { BrowserRouter as Router, Route, Routes, useLocation, Navigate, useParams } from 'react-router-dom';
 
@@ -43,6 +46,9 @@ const PAGES = {
     TrackRequest,
     TrackRide,
     TranscendenceHub,
+    SovereigntyTransparency,
+    DeveloperNexus,
+    InstitutionalCommand,
 }
 
 function _getCurrentPage(url) {
@@ -114,6 +120,9 @@ function PagesContent() {
                 <Route path="/TrackRequest" element={<TrackRequest />} />
                 <Route path="/TrackRide" element={<TrackRide />} />
                 <Route path="/TranscendenceHub" element={<TranscendenceHub />} />
+                <Route path="/SovereigntyTransparency" element={<SovereigntyTransparency />} />
+                <Route path="/DeveloperNexus" element={<DeveloperNexus />} />
+                <Route path="/InstitutionalCommand" element={<InstitutionalCommand />} />
                 <Route path="/:legacy" element={<LegacyPageRedirect />} />
             </Routes>
         </Layout>

@@ -26,6 +26,9 @@ const HUBS: readonly Hub[] = [
     title: "Commuter Hub",
     subtitle: "Request, track, and review rides without noise.",
     links: [
+      { label: "Institutional", description: "Governance & Strategy Deck.", page: "InstitutionalCommand" },
+      { label: "Sovereignty", description: "Transparency & Accountability.", page: "SovereigntyTransparency" },
+      { label: "Developer", description: "API, Roadmap, & SDKs.", page: "DeveloperNexus" },
       { label: "Mission Control", description: "Omni-Intelligence Dashboard.", page: "MissionControl" },
       { label: "Transcendence", description: "Revolutionary Tier-5 Systems.", page: "TranscendenceHub" },
       { label: "Request Ride", description: "Instant request & pricing.", page: "RequestRide" },

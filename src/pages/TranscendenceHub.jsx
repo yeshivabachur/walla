@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRideMode } from '@/state/RideModeProvider';
 import { base44 } from '@/api/base44Client';
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { 
   Sparkles, Brain, History, Ghost, EyeOff, 
-  Activity, Zap, ArrowLeft, Terminal, Radio
+  Activity, Zap, ArrowLeft, Terminal, Radio, Dna
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -16,6 +18,8 @@ import RetrocausalBookingPanel from '@/components/spacetime/RetrocausalBooking';
 import SentientInterface from '@/components/sentient/SentientInterface';
 import CloakingDevicePanel from '@/components/future/CloakingDevicePanel';
 import QuantumUIContainer from '@/components/future/QuantumUIContainer';
+import BiologicalSovereigntyHub from '@/components/biological/BiologicalSovereigntyHub';
+import TeleportationBookingManifold from '@/components/future/TeleportationBookingManifold';
 import TeleOperationCommand from '@/components/teleop/TeleOperationCommand';
 import CollectibleTradingHub from '@/components/collectibles/CollectibleTradingHub';
 import PrivacyGovernanceManifold from '@/components/privacy/PrivacyGovernanceManifold';
@@ -106,6 +110,16 @@ export default function TranscendenceHub() {
             <RetrocausalBookingPanel userEmail={user?.email} />
           </motion.div>
 
+          {/* Biological & DNA - NEW */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35 }} className="col-span-1 md:col-span-2">
+            <BiologicalSovereigntyHub />
+          </motion.div>
+
+          {/* Teleportation Booking - NEW */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.38 }} className="col-span-1 md:col-span-2">
+            <TeleportationBookingManifold />
+          </motion.div>
+
           {/* Physics Section */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>
             <CloakingDevicePanel userEmail={user?.email} />
@@ -121,32 +135,32 @@ export default function TranscendenceHub() {
             <QuantumUIContainer />
           </motion.div>
 
-          {/* Tele-Op & 5G - NEW */}
+          {/* Tele-Op & 5G */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }} className="col-span-1 md:col-span-2">
             <TeleOperationCommand />
           </motion.div>
 
-          {/* Human Flourishing - NEW */}
+          {/* Human Flourishing */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }} className="col-span-1 md:col-span-2">
             <HumanFlourishingManifold />
           </motion.div>
 
-          {/* Collectible Trading - NEW */}
+          {/* Collectible Trading */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9 }}>
             <CollectibleTradingHub />
           </motion.div>
 
-          {/* Privacy & Sovereignty - NEW */}
+          {/* Privacy & Sovereignty */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.0 }}>
             <PrivacyGovernanceManifold />
           </motion.div>
 
-          {/* Growth Analytics - NEW */}
+          {/* Growth Analytics */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.1 }} className="col-span-1 md:col-span-2">
             <GrowthAnalyticsEngine />
           </motion.div>
 
-          {/* Innovation Labs - NEW */}
+          {/* Innovation Labs */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2 }} className="col-span-1 md:col-span-2">
             <InnovationLabsManifold />
           </motion.div>
