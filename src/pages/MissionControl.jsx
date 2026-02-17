@@ -53,6 +53,10 @@ import LaborEquityManifold from '@/components/labor/LaborEquityManifold';
 import TacticalHardwareManifold from '@/components/tactical/TacticalHardwareManifold';
 import BiometricPrivacyManifold from '@/components/privacy/BiometricPrivacyManifold';
 import DeepLogisticsManifold from '@/components/logistics-deep/DeepLogisticsManifold';
+import VehicleArsenalController from '@/components/arsenal/VehicleArsenalController';
+import RideSocialNetwork from '@/components/social-deep/RideSocialNetwork';
+import AtomicCabinSanitization from '@/components/bio-sanitation/AtomicCabinSanitization';
+import FinancialSovereigntyLedger from '@/components/finance-deep/FinancialSovereigntyLedger';
 import EdgeInfrastructureGrid from '@/components/iot-deep/EdgeInfrastructureGrid';
 import SonicBrandingManifold from '@/components/sonic-deep/SonicBrandingManifold';
 import SafetyMechanicalArsenal from '@/components/safety/SafetyMechanicalArsenal';
@@ -198,10 +202,27 @@ export default function MissionControl() {
             <DriverSovereigntyEnclave />
           </motion.div>
 
-          {/* Biometric & Privacy - NEW */}
+          {/* Mechanical Arsenal - NEW */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
-            <BiometricPrivacyManifold />
+            <VehicleArsenalController />
           </motion.div>
+
+          {/* Social Network - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <RideSocialNetwork />
+          </motion.div>
+
+          {/* Atomic Sanitization - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <AtomicCabinSanitization />
+          </motion.div>
+
+          {/* Financial Ledger - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <FinancialSovereigntyLedger />
+          </motion.div>
+
+          {/* Biometric & Privacy */}
 
           {/* Tactical Hardware - NEW */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
