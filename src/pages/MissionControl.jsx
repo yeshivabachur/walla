@@ -7,7 +7,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { 
   Zap, Cpu, Activity, Shield, Navigation, 
-  Settings, Loader2, AlertTriangle, Radio, Globe, Plane, Glasses, Link2, Clock, Box
+  Settings, Loader2, AlertTriangle, Radio, Globe, Plane, Glasses, Link2, Clock, Box,
+  Volume2, Scale, ShieldAlert, Warehouse
 } from 'lucide-react';
 import QuantumRouteOptimizer from '@/components/ai/QuantumRouteOptimizer';
 import NeuralInterface from '@/components/future/NeuralInterface';
@@ -42,6 +43,10 @@ import AdvancedFinOpsManifold from '@/components/finops/AdvancedFinOpsManifold';
 import CulturalInclusionManifold from '@/components/culture/CulturalInclusionManifold';
 import IndustrialIoTGrid from '@/components/iot/IndustrialIoTGrid';
 import MarketingAutomationEngine from '@/components/marketing/MarketingAutomationEngine';
+import SensoryDesignManifold from '@/components/sensory/SensoryDesignManifold';
+import EthicalAIGovernance from '@/components/ethics/EthicalAIGovernance';
+import CrisisRecoveryCommand from '@/components/crisis/CrisisRecoveryCommand';
+import AdvancedLogisticsManifold from '@/components/logistics/AdvancedLogisticsManifold';
 import { useQuery } from '@tanstack/react-query';
 
 export default function MissionControl() {
@@ -173,7 +178,7 @@ export default function MissionControl() {
             <BiometricAccessPreferences userEmail={user?.email} />
           </motion.div>
 
-          {/* Neural Authentication - NEW */}
+          {/* Neural Authentication */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <NeuralAuthenticationManifold />
           </motion.div>
@@ -193,27 +198,47 @@ export default function MissionControl() {
             <PartnerConciergeManifold />
           </motion.div>
 
-          {/* Social Utility Hub - NEW */}
+          {/* Sensory Design - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <SensoryDesignManifold />
+          </motion.div>
+
+          {/* Ethical AI Governance - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <EthicalAIGovernance />
+          </motion.div>
+
+          {/* Crisis & Disaster Recovery - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <CrisisRecoveryCommand />
+          </motion.div>
+
+          {/* Advanced Logistics - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <AdvancedLogisticsManifold />
+          </motion.div>
+
+          {/* Social Utility Hub */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <SocialUtilityHub />
           </motion.div>
 
-          {/* Advanced FinOps - NEW */}
+          {/* Advanced FinOps */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <AdvancedFinOpsManifold userEmail={user?.email} />
           </motion.div>
 
-          {/* Cultural Inclusion - NEW */}
+          {/* Cultural Inclusion */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <CulturalInclusionManifold userEmail={user?.email} />
           </motion.div>
 
-          {/* Industrial IoT Grid - NEW */}
+          {/* Industrial IoT Grid */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <IndustrialIoTGrid />
           </motion.div>
 
-          {/* Marketing & Viral Growth - NEW */}
+          {/* Marketing & Viral Growth */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <MarketingAutomationEngine />
           </motion.div>
