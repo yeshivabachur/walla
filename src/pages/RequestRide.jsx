@@ -27,6 +27,7 @@ import MorphButton from '@/components/ui/MorphButton';
 import SearchBar from '@/components/ui/SearchBar';
 import OptimizedRoute from '@/components/routes/OptimizedRoute';
 import SurgePricingMap from '@/components/maps/SurgePricingMap';
+import HolographicRidePreview from '@/components/ui/HolographicRidePreview';
 import RideRecommendations from '@/components/personalization/RideRecommendations';
 import ProactiveRideAssistant from '@/components/ai/ProactiveRideAssistant';
 import SmartWaitNotifier from '@/components/ai/SmartWaitNotifier';
@@ -249,6 +250,12 @@ export default function RequestRide() {
         </div>
 
         <div className="max-w-2xl mx-auto">
+
+        {/* Holographic Preview - NEW */}
+        <HolographicRidePreview 
+          pickup={formData.pickup_location} 
+          dropoff={formData.dropoff_location} 
+        />
 
         {/* Favorite Locations */}
         {user && (

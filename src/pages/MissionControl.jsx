@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { 
   Zap, Cpu, Activity, Shield, Navigation, 
   Settings, Loader2, AlertTriangle, Radio, Globe, Plane, Glasses, Link2, Clock, Box,
-  Volume2, Scale, ShieldAlert, Warehouse
+  Volume2, Scale, ShieldAlert, Warehouse, PiggyBank, Heart
 } from 'lucide-react';
 import QuantumRouteOptimizer from '@/components/ai/QuantumRouteOptimizer';
 import NeuralInterface from '@/components/future/NeuralInterface';
@@ -47,6 +47,8 @@ import SensoryDesignManifold from '@/components/sensory/SensoryDesignManifold';
 import EthicalAIGovernance from '@/components/ethics/EthicalAIGovernance';
 import CrisisRecoveryCommand from '@/components/crisis/CrisisRecoveryCommand';
 import AdvancedLogisticsManifold from '@/components/logistics/AdvancedLogisticsManifold';
+import FinancialAdvisorAI from '@/components/finops/FinancialAdvisorAI';
+import SpecializedAssistanceManifold from '@/components/accessibility/SpecializedAssistanceManifold';
 import { useQuery } from '@tanstack/react-query';
 
 export default function MissionControl() {
@@ -183,6 +185,16 @@ export default function MissionControl() {
             <NeuralAuthenticationManifold />
           </motion.div>
 
+          {/* Wealth & Retirement AI - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <FinancialAdvisorAI userEmail={user?.email} />
+          </motion.div>
+
+          {/* Specialized Assistance - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <SpecializedAssistanceManifold />
+          </motion.div>
+
           {/* Logistics & Locker Mesh */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <LogisticsLockerManifold userEmail={user?.email} />
@@ -198,22 +210,22 @@ export default function MissionControl() {
             <PartnerConciergeManifold />
           </motion.div>
 
-          {/* Sensory Design - NEW */}
+          {/* Sensory Design */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <SensoryDesignManifold />
           </motion.div>
 
-          {/* Ethical AI Governance - NEW */}
+          {/* Ethical AI Governance */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <EthicalAIGovernance />
           </motion.div>
 
-          {/* Crisis & Disaster Recovery - NEW */}
+          {/* Crisis & Disaster Recovery */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <CrisisRecoveryCommand />
           </motion.div>
 
-          {/* Advanced Logistics - NEW */}
+          {/* Advanced Logistics */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <AdvancedLogisticsManifold />
           </motion.div>

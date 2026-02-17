@@ -15,6 +15,7 @@ import { motion } from 'framer-motion';
 import LiveMap from '@/components/tracking/LiveMap';
 import ETADisplay from '@/components/tracking/ETADisplay';
 import ShareTripButton from '@/components/tracking/ShareTripButton';
+import BranchingRideNarrative from '@/components/ui/BranchingRideNarrative';
 
 export default function TrackRide() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -148,6 +149,9 @@ export default function TrackRide() {
                   destination={ride.destination_coords}
                   status={ride.status}
                 />
+                <div className="mt-6">
+                  <BranchingRideNarrative />
+                </div>
               </motion.div>
             )}
           </div>
