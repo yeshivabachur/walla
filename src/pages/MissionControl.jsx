@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { 
   Zap, Cpu, Activity, Shield, Navigation, 
   Settings, Loader2, AlertTriangle, Radio, Globe, Plane, Glasses, Link2, Clock, Box,
-  Volume2, Scale, ShieldAlert, Warehouse, PiggyBank, Heart
+  Volume2, Scale, ShieldAlert, Warehouse, PiggyBank, Heart, Users
 } from 'lucide-react';
 import QuantumRouteOptimizer from '@/components/ai/QuantumRouteOptimizer';
 import NeuralInterface from '@/components/future/NeuralInterface';
@@ -49,6 +49,10 @@ import CrisisRecoveryCommand from '@/components/crisis/CrisisRecoveryCommand';
 import AdvancedLogisticsManifold from '@/components/logistics/AdvancedLogisticsManifold';
 import FinancialAdvisorAI from '@/components/finops/FinancialAdvisorAI';
 import SpecializedAssistanceManifold from '@/components/accessibility/SpecializedAssistanceManifold';
+import LaborEquityManifold from '@/components/labor/LaborEquityManifold';
+import EdgeInfrastructureGrid from '@/components/iot-deep/EdgeInfrastructureGrid';
+import SonicBrandingManifold from '@/components/sonic-deep/SonicBrandingManifold';
+
 import { useQuery } from '@tanstack/react-query';
 
 export default function MissionControl() {
@@ -145,6 +149,21 @@ export default function MissionControl() {
             <QuantumTimeOptimizer />
           </motion.div>
 
+          {/* 5G Edge & Infrastructure - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <EdgeInfrastructureGrid />
+          </motion.div>
+
+          {/* Labor Equity & Worker Rights - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <LaborEquityManifold userEmail={user?.email} />
+          </motion.div>
+
+          {/* Sonic Branding & Voice OS - NEW */}
+          <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
+            <SonicBrandingManifold />
+          </motion.div>
+
           {/* Ecosystem Mesh */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-3 2xl:col-span-3">
             <EcosystemMeshController />
@@ -185,12 +204,12 @@ export default function MissionControl() {
             <NeuralAuthenticationManifold />
           </motion.div>
 
-          {/* Wealth & Retirement AI - NEW */}
+          {/* Wealth & Retirement AI */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <FinancialAdvisorAI userEmail={user?.email} />
           </motion.div>
 
-          {/* Specialized Assistance - NEW */}
+          {/* Specialized Assistance */}
           <motion.div variants={itemVariants} className="col-span-1 lg:col-span-2">
             <SpecializedAssistanceManifold />
           </motion.div>
