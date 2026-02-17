@@ -55,6 +55,7 @@ const HUBS: readonly Hub[] = [
     title: "Logistics Hub",
     subtitle: "Packages & deliveries.",
     links: [
+      { label: "Marketplace", description: "Walla Gear & Artifacts.", page: "Marketplace" },
       { label: "Send Package", description: "Courier request flow.", page: "SendPackage" },
       { label: "Packages", description: "Plans, bundle options.", page: "Packages" },
     ],

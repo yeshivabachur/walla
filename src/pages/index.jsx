@@ -13,6 +13,7 @@ import HomeScreen from "./HomeScreen";
 import MissionControl from "./MissionControl";
 import MyRides from "./MyRides";
 import Packages from "./Packages";
+import GalacticMarketplace from "./GalacticMarketplace";
 import PassengerPreferences from "./PassengerPreferences";
 import PassengerRideHistory from "./PassengerRideHistory";
 import Preferences from "./Preferences";
@@ -111,8 +112,9 @@ function PagesContent() {
                 <Route path="/Landing" element={<Home />} />
                 <Route path="/MissionControl" element={<MissionControl />} />
                 <Route path="/MyRides" element={<MyRides />} />
-                <Route path="/Packages" element={<Packages />} />
-                <Route path="/PassengerPreferences" element={<PassengerPreferences />} />
+                                <Route path="/Packages" element={<Packages />} />
+                                <Route path="/Marketplace" element={<GalacticMarketplace />} />
+                                <Route path="/PassengerPreferences" element={<PassengerPreferences />} />
                 <Route path="/PassengerRideHistory" element={<PassengerRideHistory />} />
                 <Route path="/Preferences" element={<Preferences />} />
                 <Route path="/RequestRide" element={<RequestRide />} />

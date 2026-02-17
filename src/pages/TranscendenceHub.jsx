@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { 
   Sparkles, Brain, History, Ghost, EyeOff, 
-  Activity, Zap, ArrowLeft, Terminal, Radio, Dna, Globe, Waves
+  Activity, Zap, ArrowLeft, Terminal, Radio, Dna, Globe, Waves, Layers, RotateCcw
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -18,6 +18,9 @@ import RetrocausalBookingPanel from '@/components/spacetime/RetrocausalBooking';
 import SentientInterface from '@/components/sentient/SentientInterface';
 import CloakingDevicePanel from '@/components/future/CloakingDevicePanel';
 import QuantumUIContainer from '@/components/future/QuantumUIContainer';
+import SentientOSOverlay from '@/components/sentient-os/SentientOSOverlay';
+import NonLinearTimeNavigation from '@/components/simulation/NonLinearTimeNavigation';
+import FTLDeliveryManifold from '@/components/logistics/FTLDeliveryManifold';
 import BiologicalSovereigntyHub from '@/components/biological/BiologicalSovereigntyHub';
 import TeleportationBookingManifold from '@/components/future/TeleportationBookingManifold';
 import TeleOperationCommand from '@/components/teleop/TeleOperationCommand';
@@ -61,6 +64,7 @@ export default function TranscendenceHub() {
 
   return (
     <div className={`min-h-screen ${bgColor} text-white relative overflow-hidden`}>
+      {/* Background FX */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(79,70,229,0.15),transparent)] pointer-events-none" />
       <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent,rgba(0,0,0,0.8))] pointer-events-none" />
 
@@ -98,92 +102,107 @@ export default function TranscendenceHub() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-8">
           
+          {/* Sentient OS Overlay - NEW */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="col-span-1 md:col-span-2 lg:col-span-3">
+            <SentientOSOverlay />
+          </motion.div>
+
+          {/* Non-Linear Time - NEW */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }} className="col-span-1 md:col-span-2">
+            <NonLinearTimeNavigation />
+          </motion.div>
+
+          {/* FTL Logistics - NEW */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="col-span-1 md:col-span-2">
+            <FTLDeliveryManifold />
+          </motion.div>
+
           {/* Psionic Section */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} className="col-span-1 md:col-span-2">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }} className="col-span-1 md:col-span-2">
             <TelepathicCommunicator userEmail={user?.email} />
           </motion.div>
 
           {/* Multiversal Section */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }} className="col-span-1 md:col-span-2">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="col-span-1 md:col-span-2">
             <MultiversalExpeditionPlanner />
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35 }}>
             <AstralProjectionViewer userEmail={user?.email} />
           </motion.div>
 
           {/* Spacetime Section */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }} className="col-span-1 md:col-span-2">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className="col-span-1 md:col-span-2">
             <RetrocausalBookingPanel userEmail={user?.email} />
           </motion.div>
 
           {/* Precognitive Section */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="col-span-1 md:col-span-2">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45 }} className="col-span-1 md:col-span-2">
             <PrecognitiveRoutingESP />
           </motion.div>
 
           {/* 5D Sensory Section */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35 }} className="col-span-1 md:col-span-2">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }} className="col-span-1 md:col-span-2">
             <Sensory5DImmersionManifold />
           </motion.div>
 
           {/* Biological & DNA */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className="col-span-1 md:col-span-2">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.55 }} className="col-span-1 md:col-span-2">
             <BiologicalSovereigntyHub />
           </motion.div>
 
           {/* Teleportation Booking */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45 }} className="col-span-1 md:col-span-2">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }} className="col-span-1 md:col-span-2">
             <TeleportationBookingManifold />
           </motion.div>
 
           {/* Physics Section */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.65 }}>
             <CloakingDevicePanel userEmail={user?.email} />
           </motion.div>
 
           {/* Biological / Sentient Section */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.55 }} className="col-span-1 md:col-span-2 lg:col-span-3">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }} className="col-span-1 md:col-span-2 lg:col-span-3">
             <SentientInterface userEmail={user?.email} />
           </motion.div>
 
           {/* Quantum Tier */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }} className="col-span-1 lg:col-span-2 xl:col-span-3">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.75 }} className="col-span-1 lg:col-span-2 xl:col-span-3">
             <QuantumUIContainer />
           </motion.div>
 
           {/* Tele-Op & 5G */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.65 }} className="col-span-1 md:col-span-2">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }} className="col-span-1 md:col-span-2">
             <TeleOperationCommand />
           </motion.div>
 
           {/* Human Flourishing */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }} className="col-span-1 md:col-span-2">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.85 }} className="col-span-1 md:col-span-2">
             <HumanFlourishingManifold />
           </motion.div>
 
           {/* Collectible Trading */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.75 }}>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9 }}>
             <CollectibleTradingHub />
           </motion.div>
 
           {/* Privacy & Sovereignty */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }}>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.95 }}>
             <PrivacyGovernanceManifold />
           </motion.div>
 
           {/* Growth Analytics */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.85 }} className="col-span-1 md:col-span-2">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.0 }} className="col-span-1 md:col-span-2">
             <GrowthAnalyticsEngine />
           </motion.div>
 
           {/* Innovation Labs */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9 }} className="col-span-1 md:col-span-2">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.05 }} className="col-span-1 md:col-span-2">
             <InnovationLabsManifold />
           </motion.div>
 
           {/* System Status Summary */}
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.95 }} className="col-span-1">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.1 }} className="col-span-1">
             <div className="bg-white/5 border border-white/10 rounded-3xl p-6 h-full flex flex-col justify-between">
               <h4 className="text-xs font-black uppercase tracking-[0.2em] text-white/40 mb-6">Manifold Metrics</h4>
               <div className="space-y-6">
