@@ -1,46 +1,32 @@
-import React, { useRef, useState } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Torus, MeshDistortMaterial, Text, Float } from '@react-three/drei';
+import React, { useState } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Box, Globe, ExternalLink, Sparkles } from 'lucide-react';
+import { Globe, ExternalLink, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-
-function PortalCore() {
-  const mesh = useRef();
-  useFrame((state) => {
-    mesh.current.rotation.x = state.clock.getElapsedTime() * 0.5;
-    mesh.current.rotation.y = state.clock.getElapsedTime() * 0.2;
-  });
-
-  return (
-    <Torus ref={mesh} args={[2, 0.5, 16, 100]}>
-      <MeshDistortMaterial
-        color="#8b5cf6"
-        speed={2}
-        distort={0.4}
-        radius={1}
-        emissive="#4c1d95"
-        emissiveIntensity={2}
-      />
-    </Torus>
-  );
-}
 
 export default function MetaversePortal() {
   const [isEntering, setIsEntering] = useState(false);
 
   return (
     <Card className="border border-purple-500/30 bg-black text-white overflow-hidden h-[450px] relative shadow-2xl">
+      {/* Animated background */}
       <div className="absolute inset-0 z-0">
-        <Canvas camera={{ position: [0, 0, 10] }}>
-          <ambientLight intensity={0.5} />
-          <pointLight position={[10, 10, 10]} intensity={1} color="#a855f7" />
-          <Float speed={2} rotationIntensity={1} floatIntensity={1}>
-            <PortalCore />
-          </Float>
-          <OrbitControls enableZoom={false} />
-        </Canvas>
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-black to-indigo-900/40" />
+        {[...Array(6)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute rounded-full border border-purple-500/30"
+            style={{ width: 80 + i * 60, height: 80 + i * 60, top: '50%', left: '50%', marginTop: -(40 + i * 30), marginLeft: -(40 + i * 30) }}
+            animate={{ rotate: 360, scale: [1, 1.05, 1] }}
+            transition={{ duration: 8 + i * 2, repeat: Infinity, ease: 'linear' }}
+          />
+        ))}
+        <motion.div
+          className="absolute w-32 h-32 bg-purple-600/30 rounded-full blur-2xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          animate={{ scale: [1, 1.4, 1], opacity: [0.4, 0.8, 0.4] }}
+          transition={{ duration: 3, repeat: Infinity }}
+        />
       </div>
 
       <CardContent className="relative z-10 h-full flex flex-col justify-between p-6">
@@ -57,7 +43,7 @@ export default function MetaversePortal() {
 
         <AnimatePresence>
           {!isEntering ? (
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, scale: 2 }}
@@ -68,7 +54,7 @@ export default function MetaversePortal() {
                   Step inside the virtual ride experience. Seamlessly transition from your physical commute to a productivity-focused metaverse workspace or social hub.
                 </p>
               </div>
-              <Button 
+              <Button
                 onClick={() => setIsEntering(true)}
                 className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold h-12 rounded-xl group"
               >
@@ -77,7 +63,7 @@ export default function MetaversePortal() {
               </Button>
             </motion.div>
           ) : (
-            <motion.div 
+            <motion.div
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               className="text-center space-y-4"
@@ -87,11 +73,7 @@ export default function MetaversePortal() {
               </div>
               <h4 className="text-xl font-bold">Synchronizing...</h4>
               <p className="text-xs text-gray-400 font-mono">UPLOADING_CONSCIOUSNESS_STATE</p>
-              <Button 
-                variant="ghost" 
-                onClick={() => setIsEntering(false)}
-                className="text-purple-400 hover:text-purple-300"
-              >
+              <Button variant="ghost" onClick={() => setIsEntering(false)} className="text-purple-400 hover:text-purple-300">
                 Abort Link
               </Button>
             </motion.div>
