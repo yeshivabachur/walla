@@ -1,0 +1,72 @@
+{
+  "name": "PassengerPreferences",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string",
+      "description": "Email of the passenger"
+    },
+    "preferred_vehicle_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Preferred vehicle types (e.g., SUV, Sedan, Electric)"
+    },
+    "ride_preferences": {
+      "type": "object",
+      "properties": {
+        "quiet_ride": {
+          "type": "boolean",
+          "default": false
+        },
+        "temperature_preference": {
+          "type": "string",
+          "enum": [
+            "cool",
+            "warm",
+            "no_preference"
+          ],
+          "default": "no_preference"
+        },
+        "music_preference": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "no_preference"
+          ],
+          "default": "no_preference"
+        }
+      }
+    },
+    "favorite_routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "pickup_location": {
+            "type": "string"
+          },
+          "dropoff_location": {
+            "type": "string"
+          },
+          "pickup_coords": {
+            "type": "object"
+          },
+          "dropoff_coords": {
+            "type": "object"
+          }
+        }
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "passenger_email"
+  ]
+}

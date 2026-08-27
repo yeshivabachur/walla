@@ -1,0 +1,34 @@
+{
+  "name": "EmergencyEvacuation",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "string"
+    },
+    "emergency_type": {
+      "type": "string",
+      "enum": [
+        "fire",
+        "flood",
+        "hurricane",
+        "earthquake"
+      ]
+    },
+    "evacuation_route": {
+      "type": "string"
+    },
+    "surge_disabled": {
+      "type": "boolean"
+    },
+    "priority_level": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "zone",
+    "emergency_type"
+  ]
+}

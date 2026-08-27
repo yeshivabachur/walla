@@ -1,0 +1,31 @@
+{
+  "name": "SmartParkingRecommendation",
+  "type": "object",
+  "properties": {
+    "location": {
+      "type": "string"
+    },
+    "parking_name": {
+      "type": "string"
+    },
+    "available_spots": {
+      "type": "number"
+    },
+    "hourly_rate": {
+      "type": "number"
+    },
+    "distance_meters": {
+      "type": "number"
+    },
+    "covered": {
+      "type": "boolean"
+    },
+    "ev_charging": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "location",
+    "parking_name"
+  ]
+}

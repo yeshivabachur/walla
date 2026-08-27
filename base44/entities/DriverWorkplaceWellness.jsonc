@@ -1,0 +1,24 @@
+{
+  "name": "DriverWorkplaceWellness",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "wellness_programs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "health_screenings": {
+      "type": "number"
+    },
+    "wellness_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

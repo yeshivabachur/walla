@@ -1,0 +1,21 @@
+{
+  "name": "DriverSmartSavings",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "auto_savings": {
+      "type": "boolean"
+    },
+    "savings_balance": {
+      "type": "number"
+    },
+    "interest_earned": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

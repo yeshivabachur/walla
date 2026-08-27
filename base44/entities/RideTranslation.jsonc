@@ -1,0 +1,48 @@
+{
+  "name": "RideTranslation",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_language": {
+      "type": "string",
+      "default": "en"
+    },
+    "driver_language": {
+      "type": "string",
+      "default": "en"
+    },
+    "translation_enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "messages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "original_text": {
+            "type": "string"
+          },
+          "translated_text": {
+            "type": "string"
+          },
+          "from_lang": {
+            "type": "string"
+          },
+          "to_lang": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

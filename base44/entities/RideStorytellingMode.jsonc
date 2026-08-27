@@ -1,0 +1,21 @@
+{
+  "name": "RideStorytellingMode",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "storytelling_enabled": {
+      "type": "boolean"
+    },
+    "genre_preference": {
+      "type": "string"
+    },
+    "interactive_stories": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

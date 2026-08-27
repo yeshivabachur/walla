@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRideFrequency",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "rides_per_week": {
+      "type": "number"
+    },
+    "frequency_tier": {
+      "type": "string"
+    },
+    "discount_applied": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

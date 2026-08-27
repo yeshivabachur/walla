@@ -1,0 +1,21 @@
+{
+  "name": "RideWellnessJourney",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "wellness_rides": {
+      "type": "number"
+    },
+    "meditation_minutes": {
+      "type": "number"
+    },
+    "stress_reduction_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

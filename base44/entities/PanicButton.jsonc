@@ -1,0 +1,43 @@
+{
+  "name": "PanicButton",
+  "type": "object",
+  "properties": {
+    "triggered_by": {
+      "type": "string"
+    },
+    "ride_request_id": {
+      "type": "string"
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      }
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "response_status": {
+      "type": "string",
+      "enum": [
+        "triggered",
+        "dispatched",
+        "resolved",
+        "false_alarm"
+      ]
+    },
+    "response_time_seconds": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "triggered_by",
+    "ride_request_id"
+  ]
+}

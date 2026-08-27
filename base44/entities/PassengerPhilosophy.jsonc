@@ -1,0 +1,21 @@
+{
+  "name": "PassengerPhilosophy",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "philosophical_discussions": {
+      "type": "boolean"
+    },
+    "deep_conversations": {
+      "type": "boolean"
+    },
+    "thought_provoking": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

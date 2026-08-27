@@ -1,0 +1,27 @@
+{
+  "name": "RideLightingPreference",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "brightness": {
+      "type": "string",
+      "enum": [
+        "off",
+        "dim",
+        "medium",
+        "bright"
+      ]
+    },
+    "color": {
+      "type": "string"
+    },
+    "dynamic_lighting": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

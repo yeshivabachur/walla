@@ -1,0 +1,24 @@
+{
+  "name": "RideRefundPolicy",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "eligible_for_refund": {
+      "type": "boolean"
+    },
+    "refund_amount": {
+      "type": "number"
+    },
+    "refund_reason": {
+      "type": "string"
+    },
+    "processed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

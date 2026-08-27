@@ -1,0 +1,22 @@
+{
+  "name": "PassengerRideCancel",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "cancel_reason": {
+      "type": "string"
+    },
+    "cancel_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fee_charged": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

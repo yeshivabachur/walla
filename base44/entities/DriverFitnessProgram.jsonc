@@ -1,0 +1,21 @@
+{
+  "name": "DriverFitnessProgram",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "enrolled": {
+      "type": "boolean"
+    },
+    "weekly_goals": {
+      "type": "object"
+    },
+    "rewards_earned": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

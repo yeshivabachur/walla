@@ -1,0 +1,18 @@
+{
+  "name": "DriverConcertBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "concert_trips": {
+      "type": "number"
+    },
+    "event_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

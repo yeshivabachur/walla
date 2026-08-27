@@ -1,0 +1,38 @@
+{
+  "name": "DemandHotspot",
+  "type": "object",
+  "properties": {
+    "zone_name": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "demand_level": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "extreme"
+      ]
+    },
+    "predicted_surge": {
+      "type": "number"
+    },
+    "active_drivers_needed": {
+      "type": "number"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "zone_name",
+    "demand_level"
+  ]
+}

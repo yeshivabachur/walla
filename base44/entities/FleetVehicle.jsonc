@@ -1,0 +1,62 @@
+{
+  "name": "FleetVehicle",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "make": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "year": {
+      "type": "number"
+    },
+    "license_plate": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "maintenance",
+        "offline",
+        "retired"
+      ],
+      "default": "active"
+    },
+    "total_miles": {
+      "type": "number",
+      "default": 0
+    },
+    "last_maintenance": {
+      "type": "string",
+      "format": "date"
+    },
+    "next_maintenance_due": {
+      "type": "string",
+      "format": "date"
+    },
+    "fuel_type": {
+      "type": "string",
+      "enum": [
+        "gas",
+        "electric",
+        "hybrid"
+      ]
+    },
+    "emissions_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "make",
+    "model"
+  ]
+}

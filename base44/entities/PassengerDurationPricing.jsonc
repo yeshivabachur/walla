@@ -1,0 +1,15 @@
+{
+  "name": "PassengerDurationPricing",
+  "type": "object",
+  "properties": {
+    "time_bracket": {
+      "type": "string"
+    },
+    "price_per_minute": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "time_bracket"
+  ]
+}

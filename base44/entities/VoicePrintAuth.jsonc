@@ -1,0 +1,21 @@
+{
+  "name": "VoicePrintAuth",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "voice_enrolled": {
+      "type": "boolean"
+    },
+    "passphrase": {
+      "type": "string"
+    },
+    "accuracy": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

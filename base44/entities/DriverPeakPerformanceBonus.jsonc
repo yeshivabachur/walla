@@ -1,0 +1,21 @@
+{
+  "name": "DriverPeakPerformanceBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "performance_metrics": {
+      "type": "object"
+    },
+    "bonus_tier": {
+      "type": "string"
+    },
+    "bonus_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

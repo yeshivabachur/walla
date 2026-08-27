@@ -1,0 +1,21 @@
+{
+  "name": "DriverLifeInsurance",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "coverage_amount": {
+      "type": "number"
+    },
+    "beneficiary": {
+      "type": "string"
+    },
+    "monthly_premium": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

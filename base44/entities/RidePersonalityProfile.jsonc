@@ -1,0 +1,21 @@
+{
+  "name": "RidePersonalityProfile",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "personality_type": {
+      "type": "string"
+    },
+    "preferences_learned": {
+      "type": "object"
+    },
+    "match_compatibility": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

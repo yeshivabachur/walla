@@ -1,0 +1,21 @@
+{
+  "name": "RideDelayNotification",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "delay_minutes": {
+      "type": "number"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "notification_sent": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

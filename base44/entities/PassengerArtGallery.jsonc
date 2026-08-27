@@ -1,0 +1,21 @@
+{
+  "name": "PassengerArtGallery",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "art_displays": {
+      "type": "boolean"
+    },
+    "local_artists": {
+      "type": "boolean"
+    },
+    "rotating_exhibits": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

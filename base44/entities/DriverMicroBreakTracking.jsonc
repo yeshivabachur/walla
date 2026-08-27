@@ -1,0 +1,21 @@
+{
+  "name": "DriverMicroBreakTracking",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "breaks_taken": {
+      "type": "number"
+    },
+    "average_break_duration": {
+      "type": "number"
+    },
+    "wellness_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

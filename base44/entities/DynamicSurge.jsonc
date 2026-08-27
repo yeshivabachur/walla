@@ -1,0 +1,38 @@
+{
+  "name": "DynamicSurge",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "string"
+    },
+    "surge_multiplier": {
+      "type": "number"
+    },
+    "reason": {
+      "type": "string",
+      "enum": [
+        "high_demand",
+        "low_supply",
+        "weather",
+        "event",
+        "peak_hour"
+      ]
+    },
+    "start_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expected_end_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "affected_riders": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "zone",
+    "surge_multiplier",
+    "reason"
+  ]
+}

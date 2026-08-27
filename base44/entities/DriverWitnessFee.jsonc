@@ -1,0 +1,18 @@
+{
+  "name": "DriverWitnessFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "witness_to_crime": {
+      "type": "boolean"
+    },
+    "testimony_compensation": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

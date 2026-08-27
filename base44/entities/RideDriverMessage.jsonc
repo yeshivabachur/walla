@@ -1,0 +1,22 @@
+{
+  "name": "RideDriverMessage",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "message_text": {
+      "type": "string"
+    },
+    "sent_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "read": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

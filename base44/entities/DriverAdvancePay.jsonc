@@ -1,0 +1,26 @@
+{
+  "name": "DriverAdvancePay",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "advance_amount": {
+      "type": "number"
+    },
+    "fee_percentage": {
+      "type": "number"
+    },
+    "repayment_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "repaid": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email",
+    "advance_amount"
+  ]
+}

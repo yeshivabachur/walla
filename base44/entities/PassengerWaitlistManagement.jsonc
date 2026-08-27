@@ -1,0 +1,22 @@
+{
+  "name": "PassengerWaitlistManagement",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "service_type": {
+      "type": "string"
+    },
+    "position": {
+      "type": "number"
+    },
+    "estimated_wait": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email",
+    "service_type"
+  ]
+}

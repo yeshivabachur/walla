@@ -1,0 +1,21 @@
+{
+  "name": "PassengerCreativeWriting",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "writing_prompts": {
+      "type": "boolean"
+    },
+    "stories_created": {
+      "type": "number"
+    },
+    "sharing_enabled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "DriverGoal",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "goal_type": {
+      "type": "string",
+      "enum": [
+        "rides",
+        "earnings",
+        "rating",
+        "hours"
+      ]
+    },
+    "target_value": {
+      "type": "number"
+    },
+    "current_value": {
+      "type": "number",
+      "default": 0
+    },
+    "deadline": {
+      "type": "string",
+      "format": "date"
+    },
+    "reward": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "driver_email",
+    "goal_type",
+    "target_value"
+  ]
+}

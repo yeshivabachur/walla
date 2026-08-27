@@ -1,0 +1,47 @@
+{
+  "name": "RideStreak",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "current_streak": {
+      "type": "number",
+      "default": 0,
+      "description": "Consecutive days with rides"
+    },
+    "longest_streak": {
+      "type": "number",
+      "default": 0
+    },
+    "last_ride_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "streak_rewards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "streak_days": {
+            "type": "number"
+          },
+          "reward": {
+            "type": "string"
+          },
+          "claimed": {
+            "type": "boolean"
+          }
+        }
+      },
+      "default": []
+    },
+    "total_rides": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "PassengerWalletIntegration",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "apple_pay": {
+      "type": "boolean"
+    },
+    "google_pay": {
+      "type": "boolean"
+    },
+    "samsung_pay": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

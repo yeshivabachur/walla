@@ -1,0 +1,22 @@
+{
+  "name": "UniversalLinks",
+  "type": "object",
+  "properties": {
+    "domain": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "app_id": {
+      "type": "string"
+    },
+    "fallback_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "domain",
+    "path"
+  ]
+}

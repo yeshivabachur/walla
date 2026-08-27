@@ -1,0 +1,30 @@
+{
+  "name": "RideBookingPattern",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "pattern_type": {
+      "type": "string"
+    },
+    "frequency": {
+      "type": "string"
+    },
+    "peak_hours": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "common_routes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

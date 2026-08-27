@@ -1,0 +1,21 @@
+{
+  "name": "PassengerHappinessIndex",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "happiness_score": {
+      "type": "number"
+    },
+    "satisfaction_level": {
+      "type": "number"
+    },
+    "wellbeing_rating": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

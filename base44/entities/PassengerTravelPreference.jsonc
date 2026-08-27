@@ -1,0 +1,40 @@
+{
+  "name": "PassengerTravelPreference",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string"
+    },
+    "preferred_music_genre": {
+      "type": "string"
+    },
+    "preferred_temperature": {
+      "type": "number"
+    },
+    "conversation_preference": {
+      "type": "string",
+      "enum": [
+        "quiet",
+        "moderate",
+        "chatty"
+      ]
+    },
+    "seat_preference": {
+      "type": "string",
+      "enum": [
+        "front",
+        "back"
+      ]
+    },
+    "special_requests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "passenger_email"
+  ]
+}

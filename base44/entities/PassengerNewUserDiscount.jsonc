@@ -1,0 +1,18 @@
+{
+  "name": "PassengerNewUserDiscount",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "first_ride": {
+      "type": "boolean"
+    },
+    "discount_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

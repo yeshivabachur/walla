@@ -1,0 +1,21 @@
+{
+  "name": "DriverRatingProtection",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "protection_active": {
+      "type": "boolean"
+    },
+    "unfair_ratings_removed": {
+      "type": "number"
+    },
+    "appeal_allowed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "PassengerLuxuryFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "luxury_surcharge": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

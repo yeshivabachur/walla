@@ -1,0 +1,38 @@
+{
+  "name": "DriverCertification",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "certification_type": {
+      "type": "string",
+      "enum": [
+        "defensive_driving",
+        "first_aid",
+        "wheelchair_access",
+        "luxury_service",
+        "electric_vehicle"
+      ]
+    },
+    "issued_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "certification_number": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email",
+    "certification_type"
+  ]
+}

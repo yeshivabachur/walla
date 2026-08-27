@@ -1,0 +1,39 @@
+{
+  "name": "RideMode",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "quiet",
+        "talkative",
+        "default"
+      ]
+    },
+    "preferences": {
+      "type": "object",
+      "properties": {
+        "conversation_level": {
+          "type": "string"
+        },
+        "music_preference": {
+          "type": "string"
+        },
+        "temperature_preference": {
+          "type": "string"
+        }
+      }
+    },
+    "auto_apply": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "user_email",
+    "mode"
+  ]
+}

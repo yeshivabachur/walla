@@ -1,0 +1,18 @@
+{
+  "name": "DriverColonoscopyBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "colonoscopy_trips": {
+      "type": "number"
+    },
+    "preventive_care_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

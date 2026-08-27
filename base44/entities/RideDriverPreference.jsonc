@@ -1,0 +1,27 @@
+{
+  "name": "RideDriverPreference",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "preferred_drivers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocked_drivers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "auto_request": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

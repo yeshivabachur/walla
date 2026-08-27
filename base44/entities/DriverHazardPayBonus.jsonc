@@ -1,0 +1,25 @@
+{
+  "name": "DriverHazardPayBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "hazard_type": {
+      "type": "string"
+    },
+    "bonus_multiplier": {
+      "type": "number"
+    },
+    "rides_in_hazard": {
+      "type": "number"
+    },
+    "bonus_earned": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "hazard_type"
+  ]
+}

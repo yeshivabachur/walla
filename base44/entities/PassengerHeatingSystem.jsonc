@@ -1,0 +1,18 @@
+{
+  "name": "PassengerHeatingSystem",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "heating_working": {
+      "type": "boolean"
+    },
+    "warmth_adequate": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

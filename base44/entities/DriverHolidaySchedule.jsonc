@@ -1,0 +1,22 @@
+{
+  "name": "DriverHolidaySchedule",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "holiday_name": {
+      "type": "string"
+    },
+    "working": {
+      "type": "boolean"
+    },
+    "bonus_rate": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "holiday_name"
+  ]
+}

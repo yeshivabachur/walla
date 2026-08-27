@@ -1,0 +1,28 @@
+{
+  "name": "UserChallengeProgress",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "challenge_id": {
+      "type": "string"
+    },
+    "current_progress": {
+      "type": "number"
+    },
+    "target": {
+      "type": "number"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "reward_claimed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "challenge_id"
+  ]
+}

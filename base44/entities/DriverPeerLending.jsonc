@@ -1,0 +1,21 @@
+{
+  "name": "DriverPeerLending",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "amount_borrowed": {
+      "type": "number"
+    },
+    "amount_lent": {
+      "type": "number"
+    },
+    "repayment_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

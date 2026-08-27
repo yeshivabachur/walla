@@ -1,0 +1,45 @@
+{
+  "name": "CalendarSync",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "calendar_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "event_id": {
+            "type": "string"
+          },
+          "event_title": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "start_time": {
+            "type": "string"
+          },
+          "auto_book": {
+            "type": "boolean"
+          }
+        }
+      },
+      "default": []
+    },
+    "lead_time_minutes": {
+      "type": "number",
+      "default": 30,
+      "description": "How early to book before event"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

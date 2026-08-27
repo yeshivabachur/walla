@@ -1,0 +1,22 @@
+{
+  "name": "RideDriverNotes",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "private": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "driver_email"
+  ]
+}

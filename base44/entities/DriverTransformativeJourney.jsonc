@@ -1,0 +1,25 @@
+{
+  "name": "DriverTransformativeJourney",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "journey_start": {
+      "type": "string",
+      "format": "date"
+    },
+    "transformation_milestones": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "personal_growth": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

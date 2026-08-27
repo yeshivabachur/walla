@@ -1,0 +1,33 @@
+{
+  "name": "EventSurgeTracking",
+  "type": "object",
+  "properties": {
+    "event_name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "start_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "end_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expected_attendance": {
+      "type": "number"
+    },
+    "surge_multiplier": {
+      "type": "number"
+    },
+    "radius_km": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "event_name",
+    "location"
+  ]
+}

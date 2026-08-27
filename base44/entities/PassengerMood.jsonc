@@ -1,0 +1,59 @@
+{
+  "name": "PassengerMood",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "ride_request_id": {
+      "type": "string"
+    },
+    "pre_ride_mood": {
+      "type": "string",
+      "enum": [
+        "excited",
+        "neutral",
+        "stressed",
+        "tired",
+        "happy",
+        "anxious"
+      ],
+      "description": "Mood before ride"
+    },
+    "post_ride_mood": {
+      "type": "string",
+      "enum": [
+        "excited",
+        "neutral",
+        "stressed",
+        "tired",
+        "happy",
+        "anxious"
+      ],
+      "description": "Mood after ride"
+    },
+    "music_helped": {
+      "type": "boolean",
+      "default": false
+    },
+    "conversation_level": {
+      "type": "string",
+      "enum": [
+        "none",
+        "minimal",
+        "friendly",
+        "engaging"
+      ]
+    },
+    "improvement_factors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

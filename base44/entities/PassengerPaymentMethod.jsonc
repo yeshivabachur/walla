@@ -1,0 +1,25 @@
+{
+  "name": "PassengerPaymentMethod",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "method_type": {
+      "type": "string"
+    },
+    "last_four": {
+      "type": "string"
+    },
+    "default": {
+      "type": "boolean"
+    },
+    "verified": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "method_type"
+  ]
+}

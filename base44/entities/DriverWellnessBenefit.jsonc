@@ -1,0 +1,21 @@
+{
+  "name": "DriverWellnessBenefit",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "therapy_sessions": {
+      "type": "number"
+    },
+    "massage_vouchers": {
+      "type": "number"
+    },
+    "wellness_stipend": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

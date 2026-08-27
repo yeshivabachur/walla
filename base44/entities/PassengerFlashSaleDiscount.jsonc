@@ -1,0 +1,22 @@
+{
+  "name": "PassengerFlashSaleDiscount",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "flash_sale_active": {
+      "type": "boolean"
+    },
+    "discount_percentage": {
+      "type": "number"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "RideVehicleInfo",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "vehicle_make": {
+      "type": "string"
+    },
+    "vehicle_model": {
+      "type": "string"
+    },
+    "vehicle_year": {
+      "type": "number"
+    },
+    "color": {
+      "type": "string"
+    },
+    "license_plate": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "RideCredits",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "balance": {
+      "type": "number",
+      "default": 0,
+      "description": "Current credit balance in dollars"
+    },
+    "transactions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "amount": {
+            "type": "number"
+          },
+          "type": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date",
+      "description": "When credits expire"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

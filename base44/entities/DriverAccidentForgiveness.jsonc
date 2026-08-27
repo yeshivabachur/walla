@@ -1,0 +1,22 @@
+{
+  "name": "DriverAccidentForgiveness",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "first_accident_forgiven": {
+      "type": "boolean"
+    },
+    "forgiveness_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "premium_not_increased": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

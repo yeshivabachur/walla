@@ -1,0 +1,24 @@
+{
+  "name": "DriverAICoach",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "coaching_sessions": {
+      "type": "number"
+    },
+    "improvement_areas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "progress_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

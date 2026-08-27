@@ -1,0 +1,39 @@
+{
+  "name": "CustomerLifetimeValue",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string"
+    },
+    "total_spent": {
+      "type": "number"
+    },
+    "total_rides": {
+      "type": "number"
+    },
+    "average_ride_value": {
+      "type": "number"
+    },
+    "predicted_lifetime_value": {
+      "type": "number"
+    },
+    "churn_risk": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "retention_score": {
+      "type": "number"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "passenger_email"
+  ]
+}

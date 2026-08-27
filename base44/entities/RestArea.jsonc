@@ -1,0 +1,33 @@
+{
+  "name": "RestArea",
+  "type": "object",
+  "properties": {
+    "area_name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "coordinates": {
+      "type": "object"
+    },
+    "amenities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "rating": {
+      "type": "number"
+    },
+    "open_24_hours": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "area_name",
+    "location"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "RideSafetyRating",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "safety_score": {
+      "type": "number"
+    },
+    "incidents": {
+      "type": "number"
+    },
+    "passenger_felt_safe": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "PassengerVehicleRegistration",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "registration_current": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

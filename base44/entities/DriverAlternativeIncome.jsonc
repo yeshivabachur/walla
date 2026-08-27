@@ -1,0 +1,21 @@
+{
+  "name": "DriverAlternativeIncome",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "delivery_earnings": {
+      "type": "number"
+    },
+    "advertising_revenue": {
+      "type": "number"
+    },
+    "total_alternative": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

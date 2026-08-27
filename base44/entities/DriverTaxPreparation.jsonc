@@ -1,0 +1,25 @@
+{
+  "name": "DriverTaxPreparation",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "tax_year": {
+      "type": "number"
+    },
+    "service_provided": {
+      "type": "boolean"
+    },
+    "cost": {
+      "type": "number"
+    },
+    "refund_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "tax_year"
+  ]
+}

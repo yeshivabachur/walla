@@ -1,0 +1,21 @@
+{
+  "name": "RideCompletionBonus",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "rides_completed": {
+      "type": "number"
+    },
+    "milestone": {
+      "type": "number"
+    },
+    "bonus_value": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

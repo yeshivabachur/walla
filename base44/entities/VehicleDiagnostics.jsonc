@@ -1,0 +1,37 @@
+{
+  "name": "VehicleDiagnostics",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "check_engine_light": {
+      "type": "boolean"
+    },
+    "dtc_codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "oil_life_percent": {
+      "type": "number"
+    },
+    "tire_pressure_warning": {
+      "type": "boolean"
+    },
+    "battery_health": {
+      "type": "number"
+    },
+    "brake_wear_percent": {
+      "type": "number"
+    },
+    "last_diagnostic": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

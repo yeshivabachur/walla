@@ -1,0 +1,41 @@
+{
+  "name": "DriverSchedule",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "day_of_week": {
+      "type": "string",
+      "enum": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+      ]
+    },
+    "start_time": {
+      "type": "string"
+    },
+    "end_time": {
+      "type": "string"
+    },
+    "recurring": {
+      "type": "boolean",
+      "default": true
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "driver_email",
+    "day_of_week",
+    "start_time",
+    "end_time"
+  ]
+}

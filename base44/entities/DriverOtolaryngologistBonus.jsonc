@@ -1,0 +1,18 @@
+{
+  "name": "DriverOtolaryngologistBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "ent_trips": {
+      "type": "number"
+    },
+    "ent_care_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

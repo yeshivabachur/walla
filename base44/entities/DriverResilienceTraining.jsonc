@@ -1,0 +1,24 @@
+{
+  "name": "DriverResilienceTraining",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "resilience_score": {
+      "type": "number"
+    },
+    "stress_management_training": {
+      "type": "boolean"
+    },
+    "coping_strategies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

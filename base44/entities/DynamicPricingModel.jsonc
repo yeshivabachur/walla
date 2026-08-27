@@ -1,0 +1,38 @@
+{
+  "name": "DynamicPricingModel",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "string"
+    },
+    "base_price": {
+      "type": "number"
+    },
+    "demand_multiplier": {
+      "type": "number"
+    },
+    "supply_multiplier": {
+      "type": "number"
+    },
+    "weather_adjustment": {
+      "type": "number"
+    },
+    "event_adjustment": {
+      "type": "number"
+    },
+    "time_of_day_multiplier": {
+      "type": "number"
+    },
+    "final_price": {
+      "type": "number"
+    },
+    "calculated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "zone",
+    "base_price"
+  ]
+}

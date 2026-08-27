@@ -1,0 +1,24 @@
+{
+  "name": "PassengerSelfCare",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "self_care_reminders": {
+      "type": "boolean"
+    },
+    "wellness_tips": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mental_health_resources": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

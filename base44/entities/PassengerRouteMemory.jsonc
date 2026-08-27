@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRouteMemory",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "frequently_used_routes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "quickbook_enabled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

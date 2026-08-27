@@ -1,0 +1,57 @@
+{
+  "name": "DriverMatch",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_email": {
+      "type": "string"
+    },
+    "matched_drivers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "driver_email": {
+            "type": "string"
+          },
+          "match_score": {
+            "type": "number"
+          },
+          "reasons": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "default": []
+    },
+    "ai_recommendation": {
+      "type": "string"
+    },
+    "match_factors": {
+      "type": "object",
+      "properties": {
+        "rating_match": {
+          "type": "number"
+        },
+        "preference_match": {
+          "type": "number"
+        },
+        "history_match": {
+          "type": "number"
+        },
+        "availability_score": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "passenger_email"
+  ]
+}

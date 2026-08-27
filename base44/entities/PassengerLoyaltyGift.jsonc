@@ -1,0 +1,21 @@
+{
+  "name": "PassengerLoyaltyGift",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "gift_type": {
+      "type": "string"
+    },
+    "gift_value": {
+      "type": "number"
+    },
+    "milestone_reached": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverCarpoolBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "carpool_rides": {
+      "type": "number"
+    },
+    "environmental_bonus": {
+      "type": "number"
+    },
+    "efficiency_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

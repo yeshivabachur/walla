@@ -1,0 +1,18 @@
+{
+  "name": "DriverNursingHomeBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "nursing_home_trips": {
+      "type": "number"
+    },
+    "senior_care_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

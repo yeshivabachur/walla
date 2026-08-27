@@ -1,0 +1,24 @@
+{
+  "name": "RidePriceComparison",
+  "type": "object",
+  "properties": {
+    "route": {
+      "type": "string"
+    },
+    "our_price": {
+      "type": "number"
+    },
+    "competitor_prices": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "savings": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "route"
+  ]
+}

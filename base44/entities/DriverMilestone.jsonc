@@ -1,0 +1,37 @@
+{
+  "name": "DriverMilestone",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "milestone_type": {
+      "type": "string",
+      "enum": [
+        "first_ride",
+        "100_rides",
+        "500_rides",
+        "1000_rides",
+        "5000_rides",
+        "first_5_star",
+        "perfect_week"
+      ]
+    },
+    "achieved_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "reward_amount": {
+      "type": "number"
+    },
+    "celebrated": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "driver_email",
+    "milestone_type",
+    "achieved_date"
+  ]
+}

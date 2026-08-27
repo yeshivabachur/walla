@@ -1,0 +1,39 @@
+{
+  "name": "HyperPersonalizedETA",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "standard_eta_minutes": {
+      "type": "number"
+    },
+    "personalized_eta_minutes": {
+      "type": "number"
+    },
+    "factors": {
+      "type": "object",
+      "properties": {
+        "driver_behavior_adjustment": {
+          "type": "number"
+        },
+        "route_preference_adjustment": {
+          "type": "number"
+        },
+        "weather_adjustment": {
+          "type": "number"
+        }
+      }
+    },
+    "confidence_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "driver_email"
+  ]
+}

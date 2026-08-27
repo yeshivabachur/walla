@@ -1,0 +1,23 @@
+{
+  "name": "SuspiciousActivityAlert",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "activity_type": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "user_notified": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "activity_type"
+  ]
+}

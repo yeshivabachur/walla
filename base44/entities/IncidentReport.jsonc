@@ -1,0 +1,76 @@
+{
+  "name": "IncidentReport",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "reporter_email": {
+      "type": "string"
+    },
+    "incident_type": {
+      "type": "string",
+      "enum": [
+        "accident",
+        "emergency",
+        "harassment",
+        "safety_concern",
+        "vehicle_issue",
+        "other"
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "default": "medium"
+    },
+    "description": {
+      "type": "string"
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        },
+        "address": {
+          "type": "string"
+        }
+      }
+    },
+    "evidence_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "reported",
+        "investigating",
+        "resolved",
+        "escalated"
+      ],
+      "default": "reported"
+    },
+    "ai_analysis": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "reporter_email",
+    "incident_type",
+    "description"
+  ]
+}

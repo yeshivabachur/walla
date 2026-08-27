@@ -1,0 +1,22 @@
+{
+  "name": "DriverQualityBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "quality_score": {
+      "type": "number"
+    },
+    "bonus_earned": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "period"
+  ]
+}

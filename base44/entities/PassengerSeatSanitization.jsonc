@@ -1,0 +1,15 @@
+{
+  "name": "PassengerSeatSanitization",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "seats_sanitized": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

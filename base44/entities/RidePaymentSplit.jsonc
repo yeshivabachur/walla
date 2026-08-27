@@ -1,0 +1,24 @@
+{
+  "name": "RidePaymentSplit",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "split_enabled": {
+      "type": "boolean"
+    },
+    "participants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "split_method": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

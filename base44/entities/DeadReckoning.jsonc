@@ -1,0 +1,21 @@
+{
+  "name": "DeadReckoning",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "last_known_position": {
+      "type": "object"
+    },
+    "estimated_position": {
+      "type": "object"
+    },
+    "confidence": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

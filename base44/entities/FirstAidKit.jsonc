@@ -1,0 +1,29 @@
+{
+  "name": "FirstAidKit",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "present": {
+      "type": "boolean"
+    },
+    "last_checked": {
+      "type": "string",
+      "format": "date"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

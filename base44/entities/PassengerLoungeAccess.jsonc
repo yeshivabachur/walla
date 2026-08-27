@@ -1,0 +1,27 @@
+{
+  "name": "PassengerLoungeAccess",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "airport_lounges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "city_lounges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "visits_remaining": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

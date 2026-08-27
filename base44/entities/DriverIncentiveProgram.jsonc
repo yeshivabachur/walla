@@ -1,0 +1,32 @@
+{
+  "name": "DriverIncentiveProgram",
+  "type": "object",
+  "properties": {
+    "program_name": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "target_rides": {
+      "type": "number"
+    },
+    "current_rides": {
+      "type": "number"
+    },
+    "bonus_amount": {
+      "type": "number"
+    },
+    "deadline": {
+      "type": "string",
+      "format": "date"
+    },
+    "completed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "program_name",
+    "driver_email"
+  ]
+}

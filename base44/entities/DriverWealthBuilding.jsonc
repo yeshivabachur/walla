@@ -1,0 +1,24 @@
+{
+  "name": "DriverWealthBuilding",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "investment_portfolio": {
+      "type": "number"
+    },
+    "auto_invest_percentage": {
+      "type": "number"
+    },
+    "financial_goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

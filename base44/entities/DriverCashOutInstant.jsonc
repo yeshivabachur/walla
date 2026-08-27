@@ -1,0 +1,22 @@
+{
+  "name": "DriverCashOutInstant",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "fee": {
+      "type": "number"
+    },
+    "processed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email",
+    "amount"
+  ]
+}

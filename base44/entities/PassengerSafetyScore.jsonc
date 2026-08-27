@@ -1,0 +1,39 @@
+{
+  "name": "PassengerSafetyScore",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "safety_score": {
+      "type": "number",
+      "default": 100
+    },
+    "total_rides": {
+      "type": "number",
+      "default": 0
+    },
+    "incident_count": {
+      "type": "number",
+      "default": 0
+    },
+    "positive_reviews": {
+      "type": "number",
+      "default": 0
+    },
+    "safety_badges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

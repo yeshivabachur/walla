@@ -1,0 +1,26 @@
+{
+  "name": "ConsentManagement",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "consent_type": {
+      "type": "string"
+    },
+    "granted": {
+      "type": "boolean"
+    },
+    "granted_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "revoked": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "consent_type"
+  ]
+}

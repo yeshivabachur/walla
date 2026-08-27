@@ -1,0 +1,26 @@
+{
+  "name": "DeviceRecognition",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "device_id": {
+      "type": "string"
+    },
+    "device_type": {
+      "type": "string"
+    },
+    "trusted": {
+      "type": "boolean"
+    },
+    "last_used": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "user_email",
+    "device_id"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "DriverNetwork",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "connected_driver_emails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "network_benefits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "group_shifts": {
+      "type": "boolean",
+      "default": false
+    },
+    "shared_insights": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

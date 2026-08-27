@@ -1,0 +1,25 @@
+{
+  "name": "DriverBadWeatherPay",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "weather_type": {
+      "type": "string"
+    },
+    "multiplier": {
+      "type": "number"
+    },
+    "rides_completed": {
+      "type": "number"
+    },
+    "extra_earnings": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "weather_type"
+  ]
+}

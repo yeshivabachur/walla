@@ -1,0 +1,21 @@
+{
+  "name": "DriverInclusivityScore",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "inclusivity_rating": {
+      "type": "number"
+    },
+    "diversity_training": {
+      "type": "boolean"
+    },
+    "accessibility_support": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

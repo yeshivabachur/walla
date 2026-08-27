@@ -1,0 +1,18 @@
+{
+  "name": "DriverFogFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "heavy_fog": {
+      "type": "boolean"
+    },
+    "visibility_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

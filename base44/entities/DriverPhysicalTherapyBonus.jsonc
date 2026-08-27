@@ -1,0 +1,18 @@
+{
+  "name": "DriverPhysicalTherapyBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "pt_trips": {
+      "type": "number"
+    },
+    "rehabilitation_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

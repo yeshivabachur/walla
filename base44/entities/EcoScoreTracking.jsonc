@@ -1,0 +1,24 @@
+{
+  "name": "EcoScoreTracking",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "eco_score": {
+      "type": "number"
+    },
+    "carbon_saved": {
+      "type": "number"
+    },
+    "eco_rides_count": {
+      "type": "number"
+    },
+    "tree_equivalent": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

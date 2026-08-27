@@ -1,0 +1,21 @@
+{
+  "name": "SuicidePrevention",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "risk_level": {
+      "type": "string"
+    },
+    "hotline_number": {
+      "type": "string"
+    },
+    "immediate_intervention": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

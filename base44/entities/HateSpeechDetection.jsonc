@@ -1,0 +1,24 @@
+{
+  "name": "HateSpeechDetection",
+  "type": "object",
+  "properties": {
+    "message_id": {
+      "type": "string"
+    },
+    "hate_speech_score": {
+      "type": "number"
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocked": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "message_id"
+  ]
+}

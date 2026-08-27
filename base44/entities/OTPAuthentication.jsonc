@@ -1,0 +1,25 @@
+{
+  "name": "OTPAuthentication",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "otp_code": {
+      "type": "string"
+    },
+    "delivery_method": {
+      "type": "string"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "verified": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

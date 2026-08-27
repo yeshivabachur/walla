@@ -1,0 +1,21 @@
+{
+  "name": "PushNotificationSettings",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "web_push_enabled": {
+      "type": "boolean"
+    },
+    "mobile_push_enabled": {
+      "type": "boolean"
+    },
+    "notification_token": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

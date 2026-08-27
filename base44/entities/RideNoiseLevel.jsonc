@@ -1,0 +1,24 @@
+{
+  "name": "RideNoiseLevel",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "noise_preference": {
+      "type": "string",
+      "enum": [
+        "silent",
+        "quiet",
+        "moderate",
+        "lively"
+      ]
+    },
+    "decibel_limit": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

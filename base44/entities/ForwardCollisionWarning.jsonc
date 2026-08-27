@@ -1,0 +1,21 @@
+{
+  "name": "ForwardCollisionWarning",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "system_active": {
+      "type": "boolean"
+    },
+    "warnings_issued": {
+      "type": "number"
+    },
+    "prevented_collisions": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

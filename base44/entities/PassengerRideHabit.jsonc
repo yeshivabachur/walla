@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRideHabit",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "habit_type": {
+      "type": "string"
+    },
+    "frequency": {
+      "type": "string"
+    },
+    "consistency_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

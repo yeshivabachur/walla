@@ -1,0 +1,24 @@
+{
+  "name": "ObjectDetection",
+  "type": "object",
+  "properties": {
+    "camera_id": {
+      "type": "string"
+    },
+    "objects_detected": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence_scores": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    }
+  },
+  "required": [
+    "camera_id"
+  ]
+}

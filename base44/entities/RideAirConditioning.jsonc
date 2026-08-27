@@ -1,0 +1,21 @@
+{
+  "name": "RideAirConditioning",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "ac_on": {
+      "type": "boolean"
+    },
+    "temperature": {
+      "type": "number"
+    },
+    "fan_speed": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

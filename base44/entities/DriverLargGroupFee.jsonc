@@ -1,0 +1,18 @@
+{
+  "name": "DriverLargGroupFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passengers": {
+      "type": "number"
+    },
+    "group_surcharge": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

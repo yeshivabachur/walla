@@ -1,0 +1,21 @@
+{
+  "name": "RideMusicSync",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "spotify_connected": {
+      "type": "boolean"
+    },
+    "apple_music_connected": {
+      "type": "boolean"
+    },
+    "auto_play": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

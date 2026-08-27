@@ -1,0 +1,21 @@
+{
+  "name": "PassengerMindfulnessMode",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "meditation_audio": {
+      "type": "boolean"
+    },
+    "calming_visuals": {
+      "type": "boolean"
+    },
+    "breathing_exercises": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "PassengerNetworking",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "professional_connections": {
+      "type": "number"
+    },
+    "business_cards_exchanged": {
+      "type": "number"
+    },
+    "networking_rides": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

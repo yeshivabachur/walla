@@ -1,0 +1,21 @@
+{
+  "name": "DriverResilientSupport",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "crisis_support": {
+      "type": "boolean"
+    },
+    "emergency_fund_access": {
+      "type": "number"
+    },
+    "recovery_assistance": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

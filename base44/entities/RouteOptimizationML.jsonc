@@ -1,0 +1,31 @@
+{
+  "name": "RouteOptimizationML",
+  "type": "object",
+  "properties": {
+    "origin": {
+      "type": "string"
+    },
+    "destination": {
+      "type": "string"
+    },
+    "suggested_route": {
+      "type": "string"
+    },
+    "time_saved_minutes": {
+      "type": "number"
+    },
+    "fuel_saved": {
+      "type": "number"
+    },
+    "traffic_pattern": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "origin",
+    "destination"
+  ]
+}

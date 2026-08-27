@@ -1,0 +1,49 @@
+{
+  "name": "WeatherAlert",
+  "type": "object",
+  "properties": {
+    "location": {
+      "type": "string"
+    },
+    "weather_condition": {
+      "type": "string",
+      "enum": [
+        "rain",
+        "snow",
+        "storm",
+        "fog",
+        "extreme_heat",
+        "extreme_cold"
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "moderate",
+        "high",
+        "severe"
+      ],
+      "default": "moderate"
+    },
+    "impact_on_rides": {
+      "type": "string",
+      "description": "How this affects ride times/safety"
+    },
+    "recommendation": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "created_date": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "location",
+    "weather_condition"
+  ]
+}

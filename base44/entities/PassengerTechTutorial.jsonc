@@ -1,0 +1,21 @@
+{
+  "name": "PassengerTechTutorial",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "tech_tutorials": {
+      "type": "boolean"
+    },
+    "coding_lessons": {
+      "type": "boolean"
+    },
+    "digital_literacy": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

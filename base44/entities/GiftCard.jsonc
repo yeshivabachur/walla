@@ -1,0 +1,46 @@
+{
+  "name": "GiftCard",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "Unique gift card code"
+    },
+    "sender_email": {
+      "type": "string"
+    },
+    "recipient_email": {
+      "type": "string"
+    },
+    "recipient_name": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "balance": {
+      "type": "number"
+    },
+    "message": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "redeemed",
+        "expired"
+      ],
+      "default": "active"
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "code",
+    "sender_email",
+    "amount"
+  ]
+}

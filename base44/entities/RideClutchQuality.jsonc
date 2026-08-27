@@ -1,0 +1,15 @@
+{
+  "name": "RideClutchQuality",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "clutch_smooth": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

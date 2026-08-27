@@ -1,0 +1,21 @@
+{
+  "name": "DriverLongDistanceBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "ride_distance_km": {
+      "type": "number"
+    },
+    "bonus_per_km": {
+      "type": "number"
+    },
+    "total_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "LatencyMonitoring",
+  "type": "object",
+  "properties": {
+    "endpoint": {
+      "type": "string"
+    },
+    "p50_latency": {
+      "type": "number"
+    },
+    "p95_latency": {
+      "type": "number"
+    },
+    "p99_latency": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "endpoint"
+  ]
+}

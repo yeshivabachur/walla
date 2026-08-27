@@ -1,0 +1,24 @@
+{
+  "name": "PassengerMoodPrediction",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "predicted_mood": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "based_on_time": {
+      "type": "boolean"
+    },
+    "based_on_weather": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

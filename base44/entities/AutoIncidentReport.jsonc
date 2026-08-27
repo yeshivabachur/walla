@@ -1,0 +1,42 @@
+{
+  "name": "AutoIncidentReport",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "generated_report": {
+      "type": "string"
+    },
+    "incident_type": {
+      "type": "string"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "minor",
+        "moderate",
+        "severe",
+        "critical"
+      ]
+    },
+    "key_events": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "gps_data": {
+      "type": "object"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "generated_report"
+  ]
+}

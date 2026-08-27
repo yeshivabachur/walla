@@ -1,0 +1,21 @@
+{
+  "name": "DriverEmotionalIntelligence",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "eq_score": {
+      "type": "number"
+    },
+    "empathy_rating": {
+      "type": "number"
+    },
+    "conflict_resolution": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

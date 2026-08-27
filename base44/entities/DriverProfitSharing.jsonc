@@ -1,0 +1,29 @@
+{
+  "name": "DriverProfitSharing",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "quarter": {
+      "type": "number"
+    },
+    "year": {
+      "type": "number"
+    },
+    "company_profit": {
+      "type": "number"
+    },
+    "driver_share": {
+      "type": "number"
+    },
+    "payout_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "quarter",
+    "year"
+  ]
+}

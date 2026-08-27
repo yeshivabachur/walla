@@ -1,0 +1,57 @@
+{
+  "name": "RidePattern",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string",
+      "description": "Passenger's email"
+    },
+    "pattern_type": {
+      "type": "string",
+      "enum": [
+        "daily_commute",
+        "weekend_routine",
+        "frequent_route",
+        "scheduled"
+      ],
+      "description": "Type of detected pattern"
+    },
+    "pickup_location": {
+      "type": "string"
+    },
+    "dropoff_location": {
+      "type": "string"
+    },
+    "typical_time": {
+      "type": "string",
+      "description": "Typical time for this pattern (e.g., '08:30')"
+    },
+    "typical_days": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Days this pattern occurs"
+    },
+    "frequency": {
+      "type": "number",
+      "default": 1,
+      "description": "Number of times this pattern occurred"
+    },
+    "last_suggested": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last time we suggested this ride"
+    },
+    "ai_confidence": {
+      "type": "number",
+      "description": "AI confidence score (0-100)"
+    }
+  },
+  "required": [
+    "passenger_email",
+    "pattern_type",
+    "pickup_location",
+    "dropoff_location"
+  ]
+}

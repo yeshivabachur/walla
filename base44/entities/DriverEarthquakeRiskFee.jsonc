@@ -1,0 +1,18 @@
+{
+  "name": "DriverEarthquakeRiskFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "seismic_activity": {
+      "type": "boolean"
+    },
+    "risk_premium": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

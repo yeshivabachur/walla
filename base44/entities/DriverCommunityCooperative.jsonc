@@ -1,0 +1,21 @@
+{
+  "name": "DriverCommunityCooperative",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "cooperative_member": {
+      "type": "boolean"
+    },
+    "collective_ownership": {
+      "type": "number"
+    },
+    "democratic_participation": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

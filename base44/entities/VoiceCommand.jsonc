@@ -1,0 +1,48 @@
+{
+  "name": "VoiceCommand",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "command_text": {
+      "type": "string"
+    },
+    "intent": {
+      "type": "string",
+      "enum": [
+        "book_ride",
+        "check_status",
+        "cancel_ride",
+        "change_destination",
+        "call_driver",
+        "other"
+      ]
+    },
+    "parsed_data": {
+      "type": "object",
+      "properties": {
+        "pickup": {
+          "type": "string"
+        },
+        "dropoff": {
+          "type": "string"
+        },
+        "time": {
+          "type": "string"
+        }
+      }
+    },
+    "executed": {
+      "type": "boolean",
+      "default": false
+    },
+    "confidence": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email",
+    "command_text"
+  ]
+}

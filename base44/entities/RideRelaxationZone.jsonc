@@ -1,0 +1,21 @@
+{
+  "name": "RideRelaxationZone",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "relaxation_mode": {
+      "type": "boolean"
+    },
+    "spa_music": {
+      "type": "boolean"
+    },
+    "stress_free_guarantee": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

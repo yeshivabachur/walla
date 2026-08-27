@@ -1,0 +1,35 @@
+{
+  "name": "HolidaySurgeSchedule",
+  "type": "object",
+  "properties": {
+    "holiday_name": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "surge_multiplier": {
+      "type": "number"
+    },
+    "all_day": {
+      "type": "boolean"
+    },
+    "peak_hours": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "zones_affected": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "holiday_name",
+    "date"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "name": "SafetyAlert",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string",
+      "description": "Email of the driver"
+    },
+    "ride_request_id": {
+      "type": "string",
+      "description": "ID of the active ride"
+    },
+    "alert_type": {
+      "type": "string",
+      "enum": [
+        "fatigue",
+        "speeding",
+        "harsh_braking",
+        "accident",
+        "distraction"
+      ],
+      "description": "Type of safety alert"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "description": "Severity level"
+    },
+    "description": {
+      "type": "string",
+      "description": "Details of the alert"
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      }
+    },
+    "speed": {
+      "type": "number",
+      "description": "Speed at time of alert (mph)"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "acknowledged",
+        "resolved"
+      ],
+      "default": "active"
+    },
+    "emergency_contacted": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "driver_email",
+    "alert_type",
+    "severity"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "EarningsOptimization",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "analysis_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "current_hourly_rate": {
+      "type": "number"
+    },
+    "potential_hourly_rate": {
+      "type": "number"
+    },
+    "optimization_tips": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "best_hours": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "driver_email",
+    "analysis_date"
+  ]
+}

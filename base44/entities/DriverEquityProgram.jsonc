@@ -1,0 +1,21 @@
+{
+  "name": "DriverEquityProgram",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "equity_percentage": {
+      "type": "number"
+    },
+    "vesting_schedule": {
+      "type": "string"
+    },
+    "equity_value": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

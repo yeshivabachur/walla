@@ -1,0 +1,25 @@
+{
+  "name": "DriverLanguageSkills",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "languages_spoken": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "proficiency_levels": {
+      "type": "object"
+    },
+    "translation_app_used": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email",
+    "languages_spoken"
+  ]
+}

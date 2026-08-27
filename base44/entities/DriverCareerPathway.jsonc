@@ -1,0 +1,21 @@
+{
+  "name": "DriverCareerPathway",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "current_level": {
+      "type": "string"
+    },
+    "next_milestone": {
+      "type": "string"
+    },
+    "completion_percentage": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

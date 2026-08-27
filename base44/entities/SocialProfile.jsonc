@@ -1,0 +1,65 @@
+{
+  "name": "SocialProfile",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "display_name": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "string"
+    },
+    "avatar_url": {
+      "type": "string"
+    },
+    "friends": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "List of friend emails"
+    },
+    "friend_requests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "from_email": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    },
+    "privacy_settings": {
+      "type": "object",
+      "properties": {
+        "show_ride_history": {
+          "type": "boolean",
+          "default": false
+        },
+        "allow_friend_requests": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "default": {}
+    },
+    "badges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

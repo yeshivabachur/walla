@@ -1,0 +1,21 @@
+{
+  "name": "PassengerSpiritualGrowth",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "spiritual_content": {
+      "type": "boolean"
+    },
+    "meditation_guides": {
+      "type": "boolean"
+    },
+    "wisdom_sharing": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

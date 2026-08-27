@@ -1,0 +1,21 @@
+{
+  "name": "RideNeuroscience",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "brain_stimulation": {
+      "type": "boolean"
+    },
+    "focus_music": {
+      "type": "boolean"
+    },
+    "cognitive_enhancement": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "FavoriteLocation",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User's email"
+    },
+    "label": {
+      "type": "string",
+      "enum": [
+        "home",
+        "work",
+        "gym",
+        "school",
+        "airport",
+        "custom"
+      ],
+      "description": "Location label"
+    },
+    "custom_label": {
+      "type": "string",
+      "description": "Custom label if type is custom"
+    },
+    "address": {
+      "type": "string",
+      "description": "Full address"
+    },
+    "coordinates": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      }
+    },
+    "icon": {
+      "type": "string",
+      "description": "Icon name for UI"
+    },
+    "use_count": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "user_email",
+    "label",
+    "address",
+    "coordinates"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "BridgeTollRate",
+  "type": "object",
+  "properties": {
+    "bridge_name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "toll_amount": {
+      "type": "number"
+    },
+    "peak_toll": {
+      "type": "number"
+    },
+    "off_peak_toll": {
+      "type": "number"
+    },
+    "transponder_required": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "bridge_name",
+    "toll_amount"
+  ]
+}

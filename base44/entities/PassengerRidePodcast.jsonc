@@ -1,0 +1,25 @@
+{
+  "name": "PassengerRidePodcast",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "podcast_id": {
+      "type": "string"
+    },
+    "episode_number": {
+      "type": "number"
+    },
+    "timestamp": {
+      "type": "number"
+    },
+    "auto_resume": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "podcast_id"
+  ]
+}

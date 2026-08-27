@@ -1,0 +1,24 @@
+{
+  "name": "DriverPerformanceEvolution",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "performance_trend": {
+      "type": "string"
+    },
+    "skill_improvements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evolution_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

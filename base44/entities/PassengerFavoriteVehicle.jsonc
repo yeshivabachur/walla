@@ -1,0 +1,21 @@
+{
+  "name": "PassengerFavoriteVehicle",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "vehicle_type": {
+      "type": "string"
+    },
+    "brand_preference": {
+      "type": "string"
+    },
+    "model_preference": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

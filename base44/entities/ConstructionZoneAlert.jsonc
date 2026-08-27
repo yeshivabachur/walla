@@ -1,0 +1,29 @@
+{
+  "name": "ConstructionZoneAlert",
+  "type": "object",
+  "properties": {
+    "location": {
+      "type": "string"
+    },
+    "project_name": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "lane_closures": {
+      "type": "number"
+    },
+    "detour_route": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "location"
+  ]
+}

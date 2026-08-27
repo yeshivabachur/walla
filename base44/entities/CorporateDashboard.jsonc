@@ -1,0 +1,59 @@
+{
+  "name": "CorporateDashboard",
+  "type": "object",
+  "properties": {
+    "company_name": {
+      "type": "string"
+    },
+    "admin_email": {
+      "type": "string"
+    },
+    "employees": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "monthly_budget": {
+      "type": "number"
+    },
+    "current_spend": {
+      "type": "number",
+      "default": 0
+    },
+    "cost_centers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "budget": {
+            "type": "number"
+          },
+          "spent": {
+            "type": "number"
+          }
+        }
+      },
+      "default": []
+    },
+    "approval_required": {
+      "type": "boolean",
+      "default": false
+    },
+    "approved_routes": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "company_name",
+    "admin_email"
+  ]
+}

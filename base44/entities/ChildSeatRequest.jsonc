@@ -1,0 +1,40 @@
+{
+  "name": "ChildSeatRequest",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "seat_type": {
+      "type": "string",
+      "enum": [
+        "infant",
+        "convertible",
+        "booster",
+        "all-in-one"
+      ]
+    },
+    "child_age": {
+      "type": "number"
+    },
+    "child_weight": {
+      "type": "number"
+    },
+    "quantity": {
+      "type": "number",
+      "default": 1
+    },
+    "installation_verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "additional_fee": {
+      "type": "number",
+      "default": 10
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "seat_type"
+  ]
+}

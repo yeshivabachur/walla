@@ -1,0 +1,21 @@
+{
+  "name": "SeatbeltCompliance",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "all_passengers_buckled": {
+      "type": "boolean"
+    },
+    "reminder_given": {
+      "type": "boolean"
+    },
+    "compliance_verified": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

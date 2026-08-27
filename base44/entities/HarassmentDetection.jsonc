@@ -1,0 +1,25 @@
+{
+  "name": "HarassmentDetection",
+  "type": "object",
+  "properties": {
+    "reported_by": {
+      "type": "string"
+    },
+    "reported_against": {
+      "type": "string"
+    },
+    "incident_description": {
+      "type": "string"
+    },
+    "severity": {
+      "type": "string"
+    },
+    "action_taken": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "reported_by",
+    "reported_against"
+  ]
+}

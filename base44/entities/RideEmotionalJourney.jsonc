@@ -1,0 +1,21 @@
+{
+  "name": "RideEmotionalJourney",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "start_mood": {
+      "type": "string"
+    },
+    "end_mood": {
+      "type": "string"
+    },
+    "mood_improvement": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

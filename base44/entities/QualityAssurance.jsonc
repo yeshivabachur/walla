@@ -1,0 +1,52 @@
+{
+  "name": "QualityAssurance",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "inspection_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "quality_score": {
+      "type": "number"
+    },
+    "categories": {
+      "type": "object",
+      "properties": {
+        "vehicle_cleanliness": {
+          "type": "number"
+        },
+        "driving_quality": {
+          "type": "number"
+        },
+        "professionalism": {
+          "type": "number"
+        },
+        "route_efficiency": {
+          "type": "number"
+        }
+      }
+    },
+    "issues_detected": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "action_required": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "driver_email",
+    "quality_score"
+  ]
+}

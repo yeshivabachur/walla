@@ -1,0 +1,21 @@
+{
+  "name": "DriverMileageBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "miles_driven": {
+      "type": "number"
+    },
+    "bonus_per_mile": {
+      "type": "number"
+    },
+    "bonus_earned": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

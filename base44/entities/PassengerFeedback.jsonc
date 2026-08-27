@@ -1,0 +1,47 @@
+{
+  "name": "PassengerFeedback",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_email": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "feedback_type": {
+      "type": "string",
+      "enum": [
+        "positive",
+        "neutral",
+        "negative"
+      ]
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "comment": {
+      "type": "string"
+    },
+    "sentiment_score": {
+      "type": "number"
+    },
+    "ai_insights": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "passenger_email",
+    "rating"
+  ]
+}

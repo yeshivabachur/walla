@@ -1,0 +1,49 @@
+{
+  "name": "FraudAlert",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "alert_type": {
+      "type": "string",
+      "enum": [
+        "suspicious_booking",
+        "payment_fraud",
+        "fake_account",
+        "multiple_cancellations"
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "default": "low"
+    },
+    "details": {
+      "type": "string"
+    },
+    "patterns_detected": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "action_taken": {
+      "type": "string"
+    },
+    "resolved": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "user_email",
+    "alert_type"
+  ]
+}

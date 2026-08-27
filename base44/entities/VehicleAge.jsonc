@@ -1,0 +1,28 @@
+{
+  "name": "VehicleAge",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "year": {
+      "type": "number"
+    },
+    "make": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "age_years": {
+      "type": "number"
+    },
+    "acceptable_for_service": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "year"
+  ]
+}

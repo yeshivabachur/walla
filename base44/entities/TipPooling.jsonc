@@ -1,0 +1,24 @@
+{
+  "name": "TipPooling",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "pool_period": {
+      "type": "string"
+    },
+    "tips_contributed": {
+      "type": "number"
+    },
+    "pool_share_received": {
+      "type": "number"
+    },
+    "participating_drivers": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

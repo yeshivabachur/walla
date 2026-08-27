@@ -1,0 +1,21 @@
+{
+  "name": "FaultTolerance",
+  "type": "object",
+  "properties": {
+    "system_name": {
+      "type": "string"
+    },
+    "redundancy_level": {
+      "type": "number"
+    },
+    "fault_detection_time": {
+      "type": "number"
+    },
+    "recovery_time": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "system_name"
+  ]
+}

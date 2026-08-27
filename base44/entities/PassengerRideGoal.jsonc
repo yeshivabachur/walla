@@ -1,0 +1,25 @@
+{
+  "name": "PassengerRideGoal",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "goal_type": {
+      "type": "string"
+    },
+    "target_value": {
+      "type": "number"
+    },
+    "current_progress": {
+      "type": "number"
+    },
+    "reward": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "goal_type"
+  ]
+}

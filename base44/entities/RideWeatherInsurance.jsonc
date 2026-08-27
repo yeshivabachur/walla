@@ -1,0 +1,21 @@
+{
+  "name": "RideWeatherInsurance",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "coverage_type": {
+      "type": "string"
+    },
+    "premium": {
+      "type": "number"
+    },
+    "refund_if_weather": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

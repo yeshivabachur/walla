@@ -1,0 +1,18 @@
+{
+  "name": "DriverDustStormFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "dust_storm": {
+      "type": "boolean"
+    },
+    "visibility_hazard_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

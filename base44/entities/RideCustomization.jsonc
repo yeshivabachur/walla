@@ -1,0 +1,21 @@
+{
+  "name": "RideCustomization",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "custom_greeting": {
+      "type": "string"
+    },
+    "preferred_route_type": {
+      "type": "string"
+    },
+    "entertainment_choice": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

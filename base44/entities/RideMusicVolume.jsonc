@@ -1,0 +1,18 @@
+{
+  "name": "RideMusicVolume",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "volume_level": {
+      "type": "number"
+    },
+    "user_controlled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

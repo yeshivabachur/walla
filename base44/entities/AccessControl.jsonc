@@ -1,0 +1,25 @@
+{
+  "name": "AccessControl",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "permissions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "access_level": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email",
+    "role"
+  ]
+}

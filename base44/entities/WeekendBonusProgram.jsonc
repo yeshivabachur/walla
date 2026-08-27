@@ -1,0 +1,29 @@
+{
+  "name": "WeekendBonusProgram",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "weekend_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "rides_completed": {
+      "type": "number"
+    },
+    "bonus_multiplier": {
+      "type": "number"
+    },
+    "bonus_earned": {
+      "type": "number"
+    },
+    "paid": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email",
+    "weekend_date"
+  ]
+}

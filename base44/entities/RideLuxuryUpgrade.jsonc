@@ -1,0 +1,21 @@
+{
+  "name": "RideLuxuryUpgrade",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "upgrade_type": {
+      "type": "string"
+    },
+    "upgrade_cost": {
+      "type": "number"
+    },
+    "accepted": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

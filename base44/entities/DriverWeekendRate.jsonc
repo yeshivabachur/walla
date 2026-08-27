@@ -1,0 +1,21 @@
+{
+  "name": "DriverWeekendRate",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "base_rate": {
+      "type": "number"
+    },
+    "weekend_multiplier": {
+      "type": "number"
+    },
+    "earnings_increase": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

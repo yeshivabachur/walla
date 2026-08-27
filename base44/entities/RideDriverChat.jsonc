@@ -1,0 +1,24 @@
+{
+  "name": "RideDriverChat",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "chat_enabled": {
+      "type": "boolean"
+    },
+    "messages_count": {
+      "type": "number"
+    },
+    "quick_replies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

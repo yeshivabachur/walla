@@ -1,0 +1,28 @@
+{
+  "name": "DataAccessRequest",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "request_type": {
+      "type": "string",
+      "enum": [
+        "access",
+        "deletion",
+        "portability"
+      ]
+    },
+    "status": {
+      "type": "string"
+    },
+    "completed_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "user_email",
+    "request_type"
+  ]
+}

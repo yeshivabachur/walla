@@ -1,0 +1,24 @@
+{
+  "name": "RidePersonalShopper",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "shopping_list": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "store_location": {
+      "type": "string"
+    },
+    "service_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

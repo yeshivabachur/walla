@@ -1,0 +1,18 @@
+{
+  "name": "DriverSWATOperationFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "swat_presence": {
+      "type": "boolean"
+    },
+    "tactical_situation_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

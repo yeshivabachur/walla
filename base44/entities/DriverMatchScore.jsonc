@@ -1,0 +1,44 @@
+{
+  "name": "DriverMatchScore",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "passenger_email": {
+      "type": "string"
+    },
+    "match_score": {
+      "type": "number"
+    },
+    "factors": {
+      "type": "object",
+      "properties": {
+        "proximity_score": {
+          "type": "number"
+        },
+        "rating_compatibility": {
+          "type": "number"
+        },
+        "preference_match": {
+          "type": "number"
+        },
+        "history_score": {
+          "type": "number"
+        }
+      }
+    },
+    "recommended": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "driver_email",
+    "match_score"
+  ]
+}

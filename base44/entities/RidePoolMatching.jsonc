@@ -1,0 +1,25 @@
+{
+  "name": "RidePoolMatching",
+  "type": "object",
+  "properties": {
+    "primary_ride_id": {
+      "type": "string"
+    },
+    "matched_ride_id": {
+      "type": "string"
+    },
+    "route_overlap_percent": {
+      "type": "number"
+    },
+    "cost_savings_per_person": {
+      "type": "number"
+    },
+    "match_accepted": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "primary_ride_id",
+    "matched_ride_id"
+  ]
+}

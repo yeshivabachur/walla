@@ -1,0 +1,18 @@
+{
+  "name": "HighContrastMode",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "contrast_level": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

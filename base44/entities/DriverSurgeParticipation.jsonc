@@ -1,0 +1,21 @@
+{
+  "name": "DriverSurgeParticipation",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "surge_rides": {
+      "type": "number"
+    },
+    "surge_earnings": {
+      "type": "number"
+    },
+    "participation_rate": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

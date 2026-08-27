@@ -1,0 +1,24 @@
+{
+  "name": "RideCelebrationMode",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "occasion": {
+      "type": "string"
+    },
+    "decorations": {
+      "type": "boolean"
+    },
+    "special_music": {
+      "type": "boolean"
+    },
+    "confetti_available": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

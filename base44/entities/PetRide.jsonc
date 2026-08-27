@@ -1,0 +1,47 @@
+{
+  "name": "PetRide",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_email": {
+      "type": "string"
+    },
+    "pet_type": {
+      "type": "string",
+      "enum": [
+        "dog",
+        "cat",
+        "bird",
+        "other"
+      ],
+      "default": "dog"
+    },
+    "pet_size": {
+      "type": "string",
+      "enum": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "default": "medium"
+    },
+    "carrier_required": {
+      "type": "boolean",
+      "default": false
+    },
+    "special_instructions": {
+      "type": "string"
+    },
+    "driver_certified": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "passenger_email",
+    "pet_type"
+  ]
+}

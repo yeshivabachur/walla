@@ -1,0 +1,21 @@
+{
+  "name": "FaceRecognitionAuth",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "face_data_enrolled": {
+      "type": "boolean"
+    },
+    "liveness_detection": {
+      "type": "boolean"
+    },
+    "accuracy_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

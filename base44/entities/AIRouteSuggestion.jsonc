@@ -1,0 +1,38 @@
+{
+  "name": "AIRouteSuggestion",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "current_location": {
+      "type": "string"
+    },
+    "suggested_destination": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "estimated_earnings": {
+      "type": "number"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "demand_score": {
+      "type": "number"
+    },
+    "competition_level": {
+      "type": "string"
+    },
+    "accepted": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email",
+    "current_location",
+    "suggested_destination"
+  ]
+}

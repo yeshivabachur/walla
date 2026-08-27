@@ -1,0 +1,37 @@
+{
+  "name": "PersonalizedHeatmap",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "vehicle_type": {
+      "type": "string"
+    },
+    "zones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "zone_name": {
+            "type": "string"
+          },
+          "earning_potential": {
+            "type": "number"
+          },
+          "compatibility_score": {
+            "type": "number"
+          }
+        }
+      },
+      "default": []
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "RideAnxietySupport",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "anxiety_triggers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "preferred_support": {
+      "type": "string"
+    },
+    "calming_music": {
+      "type": "boolean"
+    },
+    "minimal_conversation": {
+      "type": "boolean"
+    },
+    "trusted_driver_only": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

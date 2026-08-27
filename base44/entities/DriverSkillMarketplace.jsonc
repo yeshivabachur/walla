@@ -1,0 +1,24 @@
+{
+  "name": "DriverSkillMarketplace",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "skills_offered": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hourly_rate": {
+      "type": "number"
+    },
+    "gigs_completed": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

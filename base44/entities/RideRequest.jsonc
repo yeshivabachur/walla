@@ -1,0 +1,127 @@
+{
+  "name": "RideRequest",
+  "type": "object",
+  "properties": {
+    "passenger_name": {
+      "type": "string",
+      "description": "Name of the passenger"
+    },
+    "passenger_email": {
+      "type": "string",
+      "description": "Email of the passenger"
+    },
+    "pickup_location": {
+      "type": "string",
+      "description": "Pickup location/address"
+    },
+    "dropoff_location": {
+      "type": "string",
+      "description": "Drop-off location/address"
+    },
+    "pickup_coords": {
+      "type": "object",
+      "description": "Pickup coordinates",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      }
+    },
+    "dropoff_coords": {
+      "type": "object",
+      "description": "Drop-off coordinates",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      }
+    },
+    "pickup_time": {
+      "type": "string",
+      "description": "Requested pickup time (e.g., 'now' or specific time)"
+    },
+    "scheduled_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Scheduled date for future rides"
+    },
+    "scheduled_time": {
+      "type": "string",
+      "description": "Scheduled time for future rides (HH:mm format)"
+    },
+    "is_scheduled": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether this is a scheduled ride"
+    },
+    "passengers": {
+      "type": "number",
+      "default": 1,
+      "description": "Number of passengers"
+    },
+    "estimated_price": {
+      "type": "number",
+      "description": "Estimated fare"
+    },
+    "surge_multiplier": {
+      "type": "number",
+      "default": 1.0,
+      "description": "Surge pricing multiplier"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "accepted",
+        "in_progress",
+        "completed",
+        "cancelled"
+      ],
+      "default": "pending",
+      "description": "Status of the ride request"
+    },
+    "driver_email": {
+      "type": "string",
+      "description": "Email of the driver who accepted (if accepted)"
+    },
+    "driver_name": {
+      "type": "string",
+      "description": "Name of the driver who accepted (if accepted)"
+    },
+    "vehicle_info": {
+      "type": "string",
+      "description": "Vehicle information"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Special instructions or notes"
+    },
+    "current_location": {
+      "type": "object",
+      "description": "Current GPS location of the driver",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        },
+        "timestamp": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "passenger_name",
+    "passenger_email",
+    "pickup_location",
+    "dropoff_location"
+  ]
+}

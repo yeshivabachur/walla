@@ -1,0 +1,27 @@
+{
+  "name": "DriverVehicleSwap",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "current_vehicle_id": {
+      "type": "string"
+    },
+    "new_vehicle_id": {
+      "type": "string"
+    },
+    "swap_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email",
+    "current_vehicle_id",
+    "new_vehicle_id"
+  ]
+}

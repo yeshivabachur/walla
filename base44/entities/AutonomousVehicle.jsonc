@@ -1,0 +1,42 @@
+{
+  "name": "AutonomousVehicle",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "autonomy_level": {
+      "type": "string",
+      "enum": [
+        "level_2",
+        "level_3",
+        "level_4",
+        "level_5"
+      ],
+      "default": "level_4"
+    },
+    "ai_driver_name": {
+      "type": "string",
+      "default": "Walla AI"
+    },
+    "safety_score": {
+      "type": "number",
+      "default": 100
+    },
+    "miles_driven": {
+      "type": "number",
+      "default": 0
+    },
+    "available_for_rides": {
+      "type": "boolean",
+      "default": true
+    },
+    "last_maintenance": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

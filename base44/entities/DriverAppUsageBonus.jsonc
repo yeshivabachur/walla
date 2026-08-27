@@ -1,0 +1,21 @@
+{
+  "name": "DriverAppUsageBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "active_hours": {
+      "type": "number"
+    },
+    "bonus_per_hour": {
+      "type": "number"
+    },
+    "total_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

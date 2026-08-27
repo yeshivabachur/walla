@@ -1,0 +1,27 @@
+{
+  "name": "PassengerJourneyStory",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "journey_title": {
+      "type": "string"
+    },
+    "story_content": {
+      "type": "string"
+    },
+    "photos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "shared_publicly": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverFinancialLiteracy",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "courses_completed": {
+      "type": "number"
+    },
+    "literacy_score": {
+      "type": "number"
+    },
+    "certification_earned": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

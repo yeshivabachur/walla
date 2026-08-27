@@ -1,0 +1,36 @@
+{
+  "name": "RideDiscount",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "discount_type": {
+      "type": "string",
+      "enum": [
+        "first_ride",
+        "loyalty",
+        "referral",
+        "promotional"
+      ]
+    },
+    "discount_percentage": {
+      "type": "number"
+    },
+    "max_discount_amount": {
+      "type": "number"
+    },
+    "valid_until": {
+      "type": "string",
+      "format": "date"
+    },
+    "used": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "user_email",
+    "discount_type"
+  ]
+}

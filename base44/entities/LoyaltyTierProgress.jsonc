@@ -1,0 +1,45 @@
+{
+  "name": "LoyaltyTierProgress",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "current_tier": {
+      "type": "string",
+      "enum": [
+        "bronze",
+        "silver",
+        "gold",
+        "platinum",
+        "diamond"
+      ]
+    },
+    "points_earned": {
+      "type": "number"
+    },
+    "points_to_next_tier": {
+      "type": "number"
+    },
+    "rides_this_period": {
+      "type": "number"
+    },
+    "total_spent": {
+      "type": "number"
+    },
+    "tier_benefits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "renewal_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "user_email",
+    "current_tier"
+  ]
+}

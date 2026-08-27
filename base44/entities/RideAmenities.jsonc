@@ -1,0 +1,27 @@
+{
+  "name": "RideAmenities",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "water_bottles": {
+      "type": "boolean"
+    },
+    "snacks": {
+      "type": "boolean"
+    },
+    "phone_charger": {
+      "type": "boolean"
+    },
+    "umbrella": {
+      "type": "boolean"
+    },
+    "wifi": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

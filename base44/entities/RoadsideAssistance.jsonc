@@ -1,0 +1,28 @@
+{
+  "name": "RoadsideAssistance",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "issue_type": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "assistance_called": {
+      "type": "boolean"
+    },
+    "eta_minutes": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "issue_type"
+  ]
+}

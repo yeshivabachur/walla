@@ -1,0 +1,21 @@
+{
+  "name": "PassengerBusinessStrategy",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "business_podcasts": {
+      "type": "boolean"
+    },
+    "strategy_sessions": {
+      "type": "number"
+    },
+    "executive_content": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

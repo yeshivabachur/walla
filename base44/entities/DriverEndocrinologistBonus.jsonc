@@ -1,0 +1,18 @@
+{
+  "name": "DriverEndocrinologistBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "endocrinologist_trips": {
+      "type": "number"
+    },
+    "hormone_care_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

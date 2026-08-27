@@ -1,0 +1,18 @@
+{
+  "name": "DriverBlackFridayBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "black_friday_rides": {
+      "type": "number"
+    },
+    "shopping_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "VehiclePreference",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "preferred_vehicle_type": {
+      "type": "string",
+      "enum": [
+        "economy",
+        "comfort",
+        "luxury",
+        "suv",
+        "electric"
+      ]
+    },
+    "temperature_preference": {
+      "type": "number"
+    },
+    "music_volume": {
+      "type": "string",
+      "enum": [
+        "off",
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "additional_preferences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "user_email",
+    "preferred_vehicle_type"
+  ]
+}

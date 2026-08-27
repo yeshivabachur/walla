@@ -1,0 +1,18 @@
+{
+  "name": "ImageStabilization",
+  "type": "object",
+  "properties": {
+    "camera_id": {
+      "type": "string"
+    },
+    "stabilization_type": {
+      "type": "string"
+    },
+    "effectiveness": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "camera_id"
+  ]
+}

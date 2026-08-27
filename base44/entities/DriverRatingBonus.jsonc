@@ -1,0 +1,21 @@
+{
+  "name": "DriverRatingBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "rating_threshold": {
+      "type": "number"
+    },
+    "current_rating": {
+      "type": "number"
+    },
+    "bonus_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

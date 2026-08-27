@@ -1,0 +1,21 @@
+{
+  "name": "DriverMultiVehicle",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "vehicle_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "active_vehicle": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

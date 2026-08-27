@@ -1,0 +1,31 @@
+{
+  "name": "PassengerMoodDetection",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "detected_mood": {
+      "type": "string",
+      "enum": [
+        "happy",
+        "neutral",
+        "stressed",
+        "tired",
+        "excited"
+      ]
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "recommended_experience": {
+      "type": "string"
+    },
+    "music_suggestion": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "RideAromatherapy",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "scent_preference": {
+      "type": "string"
+    },
+    "essential_oils": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "diffuser_active": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

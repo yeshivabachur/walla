@@ -1,0 +1,74 @@
+{
+  "name": "RidePool",
+  "type": "object",
+  "properties": {
+    "pool_id": {
+      "type": "string",
+      "description": "Unique pool identifier"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "ride_request_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Linked ride requests in this pool"
+    },
+    "passengers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "pickup_location": {
+            "type": "string"
+          },
+          "dropoff_location": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    },
+    "route_sequence": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "description": "Optimized stop sequence"
+    },
+    "max_passengers": {
+      "type": "number",
+      "default": 4
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "forming",
+        "full",
+        "in_progress",
+        "completed"
+      ],
+      "default": "forming"
+    },
+    "discount_percentage": {
+      "type": "number",
+      "default": 25,
+      "description": "Discount for pooled rides"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

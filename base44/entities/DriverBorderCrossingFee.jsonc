@@ -1,0 +1,21 @@
+{
+  "name": "DriverBorderCrossingFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "international_border": {
+      "type": "boolean"
+    },
+    "customs_fee": {
+      "type": "number"
+    },
+    "documentation_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

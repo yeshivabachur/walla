@@ -1,0 +1,43 @@
+{
+  "name": "GeofenceAlert",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "geofence_name": {
+      "type": "string"
+    },
+    "alert_type": {
+      "type": "string",
+      "enum": [
+        "entered",
+        "exited",
+        "dwelling"
+      ]
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number"
+        },
+        "lng": {
+          "type": "number"
+        }
+      }
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "notification_sent": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "geofence_name",
+    "alert_type"
+  ]
+}

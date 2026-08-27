@@ -1,0 +1,21 @@
+{
+  "name": "RideVideoCall",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "call_enabled": {
+      "type": "boolean"
+    },
+    "participant_email": {
+      "type": "string"
+    },
+    "duration_seconds": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

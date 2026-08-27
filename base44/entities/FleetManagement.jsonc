@@ -1,0 +1,51 @@
+{
+  "name": "FleetManagement",
+  "type": "object",
+  "properties": {
+    "organization_name": {
+      "type": "string"
+    },
+    "admin_email": {
+      "type": "string"
+    },
+    "fleet_type": {
+      "type": "string",
+      "enum": [
+        "business",
+        "school",
+        "hospital",
+        "hotel"
+      ],
+      "default": "business"
+    },
+    "authorized_users": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "approved_routes": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "default": []
+    },
+    "monthly_budget": {
+      "type": "number"
+    },
+    "current_spend": {
+      "type": "number",
+      "default": 0
+    },
+    "real_time_tracking": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "organization_name",
+    "admin_email"
+  ]
+}

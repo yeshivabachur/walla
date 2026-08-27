@@ -1,0 +1,32 @@
+{
+  "name": "RoutePreference",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "preference_type": {
+      "type": "string",
+      "enum": [
+        "scenic",
+        "fastest",
+        "less_turns",
+        "smoother_roads",
+        "avoid_tolls",
+        "avoid_highways"
+      ]
+    },
+    "priority": {
+      "type": "number",
+      "default": 1
+    },
+    "learned_from_rides": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "user_email",
+    "preference_type"
+  ]
+}

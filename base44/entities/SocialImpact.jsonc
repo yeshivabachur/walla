@@ -1,0 +1,35 @@
+{
+  "name": "SocialImpact",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "charity_donations": {
+      "type": "number",
+      "default": 0
+    },
+    "rides_donated": {
+      "type": "number",
+      "default": 0
+    },
+    "community_service_hours": {
+      "type": "number",
+      "default": 0
+    },
+    "impact_score": {
+      "type": "number",
+      "default": 0
+    },
+    "causes_supported": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

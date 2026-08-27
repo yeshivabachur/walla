@@ -1,0 +1,48 @@
+{
+  "name": "CustomerSentiment",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "analysis_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "overall_sentiment": {
+      "type": "string",
+      "enum": [
+        "very_positive",
+        "positive",
+        "neutral",
+        "negative",
+        "very_negative"
+      ]
+    },
+    "sentiment_score": {
+      "type": "number"
+    },
+    "key_themes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "churn_risk": {
+      "type": "number"
+    },
+    "retention_recommendations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "user_email",
+    "overall_sentiment",
+    "sentiment_score"
+  ]
+}

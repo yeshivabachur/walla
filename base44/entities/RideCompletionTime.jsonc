@@ -1,0 +1,24 @@
+{
+  "name": "RideCompletionTime",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "estimated_time": {
+      "type": "number"
+    },
+    "actual_time": {
+      "type": "number"
+    },
+    "variance_minutes": {
+      "type": "number"
+    },
+    "on_time": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

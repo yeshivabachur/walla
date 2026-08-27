@@ -1,0 +1,15 @@
+{
+  "name": "PassengerCupHolder",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "cup_holders_clean": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

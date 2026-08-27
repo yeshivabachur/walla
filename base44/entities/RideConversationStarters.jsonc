@@ -1,0 +1,21 @@
+{
+  "name": "RideConversationStarters",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "preferred_topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "conversation_wanted": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

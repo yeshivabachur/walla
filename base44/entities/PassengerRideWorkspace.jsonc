@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRideWorkspace",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "mobile_office": {
+      "type": "boolean"
+    },
+    "laptop_table": {
+      "type": "boolean"
+    },
+    "video_call_privacy": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

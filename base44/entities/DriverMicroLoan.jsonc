@@ -1,0 +1,28 @@
+{
+  "name": "DriverMicroLoan",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "loan_amount": {
+      "type": "number"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "interest_rate": {
+      "type": "number"
+    },
+    "repayment_weeks": {
+      "type": "number"
+    },
+    "balance": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "loan_amount"
+  ]
+}

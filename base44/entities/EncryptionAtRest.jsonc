@@ -1,0 +1,19 @@
+{
+  "name": "EncryptionAtRest",
+  "type": "object",
+  "properties": {
+    "data_type": {
+      "type": "string"
+    },
+    "encryption_algorithm": {
+      "type": "string"
+    },
+    "key_rotation_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "data_type"
+  ]
+}

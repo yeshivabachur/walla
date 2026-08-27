@@ -1,0 +1,21 @@
+{
+  "name": "DriverZeroEmissionBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "ev_vehicle": {
+      "type": "boolean"
+    },
+    "monthly_bonus": {
+      "type": "number"
+    },
+    "environmental_impact": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

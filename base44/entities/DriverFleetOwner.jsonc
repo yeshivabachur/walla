@@ -1,0 +1,24 @@
+{
+  "name": "DriverFleetOwner",
+  "type": "object",
+  "properties": {
+    "owner_email": {
+      "type": "string"
+    },
+    "fleet_size": {
+      "type": "number"
+    },
+    "drivers_managed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fleet_earnings": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "owner_email"
+  ]
+}

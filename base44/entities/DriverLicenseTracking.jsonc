@@ -1,0 +1,29 @@
+{
+  "name": "DriverLicenseTracking",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "license_number": {
+      "type": "string"
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "endorsements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "points": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "license_number"
+  ]
+}

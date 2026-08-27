@@ -1,0 +1,38 @@
+{
+  "name": "DriverFatigueDetection",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "detection_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "continuous_driving_minutes": {
+      "type": "number"
+    },
+    "yawn_count": {
+      "type": "number"
+    },
+    "eye_closure_events": {
+      "type": "number"
+    },
+    "lane_deviation_count": {
+      "type": "number"
+    },
+    "fatigue_score": {
+      "type": "number"
+    },
+    "alert_triggered": {
+      "type": "boolean"
+    },
+    "break_recommended": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email",
+    "detection_time"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "PassengerMotivation",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "motivational_content": {
+      "type": "boolean"
+    },
+    "inspirational_quotes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "goal_setting": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

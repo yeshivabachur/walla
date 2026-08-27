@@ -1,0 +1,50 @@
+{
+  "name": "AirportService",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_email": {
+      "type": "string"
+    },
+    "airport_code": {
+      "type": "string"
+    },
+    "flight_number": {
+      "type": "string"
+    },
+    "terminal": {
+      "type": "string"
+    },
+    "flight_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "meet_and_greet": {
+      "type": "boolean",
+      "default": false
+    },
+    "luggage_assistance": {
+      "type": "boolean",
+      "default": false
+    },
+    "fast_track_security": {
+      "type": "boolean",
+      "default": false
+    },
+    "lounge_access": {
+      "type": "boolean",
+      "default": false
+    },
+    "flight_tracking": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "passenger_email",
+    "airport_code"
+  ]
+}

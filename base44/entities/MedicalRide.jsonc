@@ -1,0 +1,49 @@
+{
+  "name": "MedicalRide",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "patient_email": {
+      "type": "string"
+    },
+    "medical_facility": {
+      "type": "string"
+    },
+    "appointment_type": {
+      "type": "string",
+      "enum": [
+        "dialysis",
+        "chemotherapy",
+        "physical_therapy",
+        "checkup",
+        "emergency"
+      ],
+      "default": "checkup"
+    },
+    "wheelchair_needed": {
+      "type": "boolean",
+      "default": false
+    },
+    "oxygen_needed": {
+      "type": "boolean",
+      "default": false
+    },
+    "insurance_covered": {
+      "type": "boolean",
+      "default": false
+    },
+    "insurance_provider": {
+      "type": "string"
+    },
+    "caregiver_email": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "patient_email",
+    "medical_facility"
+  ]
+}

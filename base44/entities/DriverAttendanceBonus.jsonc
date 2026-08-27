@@ -1,0 +1,21 @@
+{
+  "name": "DriverAttendanceBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "days_worked": {
+      "type": "number"
+    },
+    "days_target": {
+      "type": "number"
+    },
+    "bonus_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

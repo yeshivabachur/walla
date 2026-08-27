@@ -1,0 +1,22 @@
+{
+  "name": "PassengerDriverMatch",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "match_quality": {
+      "type": "number"
+    },
+    "successful_rides": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email",
+    "driver_email"
+  ]
+}

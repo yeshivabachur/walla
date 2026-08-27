@@ -1,0 +1,25 @@
+{
+  "name": "PassengerArrivalNotification",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "notify_contacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notification_sent": {
+      "type": "boolean"
+    },
+    "arrival_time": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

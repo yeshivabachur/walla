@@ -1,0 +1,18 @@
+{
+  "name": "NSFWDetection",
+  "type": "object",
+  "properties": {
+    "image_id": {
+      "type": "string"
+    },
+    "nsfw_score": {
+      "type": "number"
+    },
+    "flagged": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "image_id"
+  ]
+}

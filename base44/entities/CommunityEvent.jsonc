@@ -1,0 +1,63 @@
+{
+  "name": "CommunityEvent",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "challenge",
+        "meetup",
+        "training",
+        "celebration"
+      ]
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "participants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "rewards": {
+      "type": "object",
+      "properties": {
+        "points": {
+          "type": "number"
+        },
+        "badges": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "upcoming",
+        "active",
+        "completed"
+      ],
+      "default": "upcoming"
+    }
+  },
+  "required": [
+    "title",
+    "event_type"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "PassengerSplitRide",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "split_with": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "split_method": {
+      "type": "string"
+    },
+    "amount_per_person": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

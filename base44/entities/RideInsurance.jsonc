@@ -1,0 +1,44 @@
+{
+  "name": "RideInsurance",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_email": {
+      "type": "string"
+    },
+    "coverage_type": {
+      "type": "string",
+      "enum": [
+        "basic",
+        "premium",
+        "platinum"
+      ],
+      "default": "basic"
+    },
+    "coverage_amount": {
+      "type": "number",
+      "description": "Coverage in dollars"
+    },
+    "premium_paid": {
+      "type": "number"
+    },
+    "benefits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "passenger_email",
+    "coverage_type"
+  ]
+}

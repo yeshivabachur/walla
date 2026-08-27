@@ -1,0 +1,27 @@
+{
+  "name": "PassengerConversationLevel",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "none",
+        "minimal",
+        "moderate",
+        "chatty"
+      ]
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

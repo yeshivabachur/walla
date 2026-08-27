@@ -1,0 +1,25 @@
+{
+  "name": "DriverEliteStatus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "elite_tier": {
+      "type": "string"
+    },
+    "perks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "qualification_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "AIRideOptimizer",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "optimization_settings": {
+      "type": "object",
+      "properties": {
+        "priority": {
+          "type": "string",
+          "enum": [
+            "speed",
+            "cost",
+            "comfort",
+            "eco"
+          ],
+          "default": "speed"
+        },
+        "auto_optimize": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+    "ml_predictions": {
+      "type": "object",
+      "properties": {
+        "best_booking_time": {
+          "type": "string"
+        },
+        "predicted_savings": {
+          "type": "number"
+        },
+        "route_optimization": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

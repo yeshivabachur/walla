@@ -1,0 +1,58 @@
+{
+  "name": "DriverWellbeing",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string",
+      "description": "Driver's email"
+    },
+    "fatigue_score": {
+      "type": "number",
+      "default": 0,
+      "description": "AI-calculated fatigue score (0-100)"
+    },
+    "stress_indicators": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Detected stress indicators"
+    },
+    "hours_driven_today": {
+      "type": "number",
+      "default": 0,
+      "description": "Hours driven today"
+    },
+    "last_break_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last break time"
+    },
+    "suggested_break_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "AI-suggested next break"
+    },
+    "well_being_status": {
+      "type": "string",
+      "enum": [
+        "excellent",
+        "good",
+        "fair",
+        "needs_attention"
+      ],
+      "default": "good"
+    },
+    "ai_recommendations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

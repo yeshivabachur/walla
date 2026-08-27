@@ -1,0 +1,46 @@
+{
+  "name": "QuickBookLocation",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "location_name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "location_type": {
+      "type": "string",
+      "enum": [
+        "home",
+        "work",
+        "gym",
+        "school",
+        "favorite",
+        "other"
+      ]
+    },
+    "coordinates": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number"
+        },
+        "lng": {
+          "type": "number"
+        }
+      }
+    },
+    "usage_count": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "user_email",
+    "location_name",
+    "address"
+  ]
+}

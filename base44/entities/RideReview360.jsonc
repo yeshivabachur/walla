@@ -1,0 +1,27 @@
+{
+  "name": "RideReview360",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_review": {
+      "type": "object"
+    },
+    "driver_review": {
+      "type": "object"
+    },
+    "platform_rating": {
+      "type": "number"
+    },
+    "route_quality": {
+      "type": "number"
+    },
+    "vehicle_condition": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

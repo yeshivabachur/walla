@@ -1,0 +1,46 @@
+{
+  "name": "MultiTouchAttribution",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "touchpoints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "channel": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          },
+          "attribution_weight": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "conversion_event": {
+      "type": "string"
+    },
+    "total_value": {
+      "type": "number"
+    },
+    "attribution_model": {
+      "type": "string",
+      "enum": [
+        "first_touch",
+        "last_touch",
+        "linear",
+        "time_decay",
+        "position_based"
+      ]
+    }
+  },
+  "required": [
+    "user_email",
+    "conversion_event"
+  ]
+}

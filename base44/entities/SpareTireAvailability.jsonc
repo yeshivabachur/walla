@@ -1,0 +1,27 @@
+{
+  "name": "SpareTireAvailability",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "spare_tire_type": {
+      "type": "string",
+      "enum": [
+        "full_size",
+        "compact",
+        "run_flat",
+        "none"
+      ]
+    },
+    "condition": {
+      "type": "string"
+    },
+    "pressure": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

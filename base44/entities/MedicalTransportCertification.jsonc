@@ -1,0 +1,25 @@
+{
+  "name": "MedicalTransportCertification",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "cpr_certified": {
+      "type": "boolean"
+    },
+    "first_aid_certified": {
+      "type": "boolean"
+    },
+    "medical_transport_trained": {
+      "type": "boolean"
+    },
+    "certification_expiry": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

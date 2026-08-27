@@ -1,0 +1,18 @@
+{
+  "name": "DriverMRIBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "mri_trips": {
+      "type": "number"
+    },
+    "imaging_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

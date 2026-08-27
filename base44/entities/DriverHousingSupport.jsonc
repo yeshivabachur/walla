@@ -1,0 +1,21 @@
+{
+  "name": "DriverHousingSupport",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "housing_subsidy": {
+      "type": "number"
+    },
+    "rent_assistance": {
+      "type": "boolean"
+    },
+    "mortgage_support": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

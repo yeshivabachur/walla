@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRideGratitude",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "thank_you_note": {
+      "type": "string"
+    },
+    "gratitude_expressed": {
+      "type": "boolean"
+    },
+    "driver_appreciation": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

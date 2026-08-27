@@ -1,0 +1,21 @@
+{
+  "name": "PassengerSubscriptionDiscount",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "subscription_tier": {
+      "type": "string"
+    },
+    "discount_percentage": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

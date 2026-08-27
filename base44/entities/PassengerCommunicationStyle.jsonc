@@ -1,0 +1,33 @@
+{
+  "name": "PassengerCommunicationStyle",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "preferred_style": {
+      "type": "string",
+      "enum": [
+        "silent",
+        "minimal",
+        "friendly",
+        "chatty"
+      ]
+    },
+    "topics_to_avoid": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "preferred_topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

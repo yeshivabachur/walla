@@ -1,0 +1,24 @@
+{
+  "name": "DriverPerformanceDashboard",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "daily_metrics": {
+      "type": "object"
+    },
+    "weekly_trends": {
+      "type": "object"
+    },
+    "improvement_tips": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

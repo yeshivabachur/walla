@@ -1,0 +1,15 @@
+{
+  "name": "PassengerReadingLight",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "reading_light_on": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

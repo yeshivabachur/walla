@@ -1,0 +1,21 @@
+{
+  "name": "PassengerCarbonDashboard",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "total_carbon_offset": {
+      "type": "number"
+    },
+    "eco_rides_percentage": {
+      "type": "number"
+    },
+    "carbon_neutral": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

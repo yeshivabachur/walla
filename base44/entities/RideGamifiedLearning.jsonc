@@ -1,0 +1,21 @@
+{
+  "name": "RideGamifiedLearning",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "educational_content": {
+      "type": "boolean"
+    },
+    "language_lessons": {
+      "type": "boolean"
+    },
+    "quiz_games": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "RideEventSurcharge",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "event_name": {
+      "type": "string"
+    },
+    "surcharge": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

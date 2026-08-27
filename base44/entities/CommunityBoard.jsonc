@@ -1,0 +1,54 @@
+{
+  "name": "CommunityBoard",
+  "type": "object",
+  "properties": {
+    "post_author": {
+      "type": "string"
+    },
+    "author_type": {
+      "type": "string",
+      "enum": [
+        "driver",
+        "passenger"
+      ],
+      "default": "passenger"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "story",
+        "tip",
+        "question",
+        "appreciation",
+        "issue"
+      ],
+      "default": "story"
+    },
+    "likes": {
+      "type": "number",
+      "default": 0
+    },
+    "comments": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "default": []
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "post_author",
+    "title",
+    "content"
+  ]
+}

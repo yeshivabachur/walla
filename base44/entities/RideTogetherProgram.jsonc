@@ -1,0 +1,28 @@
+{
+  "name": "RideTogetherProgram",
+  "type": "object",
+  "properties": {
+    "group_id": {
+      "type": "string"
+    },
+    "group_name": {
+      "type": "string"
+    },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "shared_rides": {
+      "type": "number"
+    },
+    "savings": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "group_id",
+    "group_name"
+  ]
+}

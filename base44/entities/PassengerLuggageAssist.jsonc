@@ -1,0 +1,15 @@
+{
+  "name": "PassengerLuggageAssist",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "luggage_help": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverCoopProgram",
+  "type": "object",
+  "properties": {
+    "coop_name": {
+      "type": "string"
+    },
+    "member_count": {
+      "type": "number"
+    },
+    "shared_earnings": {
+      "type": "number"
+    },
+    "profit_sharing_rate": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "coop_name"
+  ]
+}

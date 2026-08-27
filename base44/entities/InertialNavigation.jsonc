@@ -1,0 +1,21 @@
+{
+  "name": "InertialNavigation",
+  "type": "object",
+  "properties": {
+    "device_id": {
+      "type": "string"
+    },
+    "accelerometer_data": {
+      "type": "object"
+    },
+    "gyroscope_data": {
+      "type": "object"
+    },
+    "magnetometer_data": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "device_id"
+  ]
+}

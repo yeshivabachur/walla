@@ -1,0 +1,55 @@
+{
+  "name": "SmartDestination",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "context": {
+      "type": "string",
+      "enum": [
+        "morning",
+        "lunch",
+        "evening",
+        "weekend",
+        "date_night",
+        "business"
+      ],
+      "description": "Current context for recommendations"
+    },
+    "suggested_destinations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "number"
+          }
+        }
+      },
+      "default": []
+    },
+    "user_interests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "PassengerPaymentPlan",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "plan_type": {
+      "type": "string"
+    },
+    "installments": {
+      "type": "number"
+    },
+    "remaining_payments": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

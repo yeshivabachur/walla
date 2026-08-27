@@ -1,0 +1,21 @@
+{
+  "name": "DriverFinancialAdvisor",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "advisor_assigned": {
+      "type": "boolean"
+    },
+    "consultations": {
+      "type": "number"
+    },
+    "financial_health_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

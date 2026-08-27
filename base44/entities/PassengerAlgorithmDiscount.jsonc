@@ -1,0 +1,18 @@
+{
+  "name": "PassengerAlgorithmDiscount",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "ai_generated_discount": {
+      "type": "number"
+    },
+    "discount_reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

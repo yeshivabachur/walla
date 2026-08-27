@@ -1,0 +1,53 @@
+{
+  "name": "InRideActivity",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "activity_type": {
+      "type": "string",
+      "enum": [
+        "music",
+        "podcast",
+        "game",
+        "work",
+        "meditation",
+        "news"
+      ],
+      "default": "music"
+    },
+    "content_preferences": {
+      "type": "object",
+      "properties": {
+        "genre": {
+          "type": "string"
+        },
+        "energy_level": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "number"
+        }
+      }
+    },
+    "completed_activities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "productivity_score": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "user_email"
+  ]
+}

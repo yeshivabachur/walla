@@ -1,0 +1,18 @@
+{
+  "name": "DriverTheaterBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "theater_trips": {
+      "type": "number"
+    },
+    "entertainment_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

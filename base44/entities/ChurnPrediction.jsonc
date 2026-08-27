@@ -1,0 +1,44 @@
+{
+  "name": "ChurnPrediction",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "churn_probability": {
+      "type": "number"
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "contributing_factors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "recommended_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "last_ride_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "user_email",
+    "churn_probability",
+    "risk_level"
+  ]
+}

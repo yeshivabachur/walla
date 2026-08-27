@@ -1,0 +1,22 @@
+{
+  "name": "AutoEmergencyBraking",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "system_operational": {
+      "type": "boolean"
+    },
+    "activations_count": {
+      "type": "number"
+    },
+    "last_activation": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

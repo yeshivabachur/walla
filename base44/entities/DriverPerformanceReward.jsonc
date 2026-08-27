@@ -1,0 +1,25 @@
+{
+  "name": "DriverPerformanceReward",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "metric": {
+      "type": "string"
+    },
+    "target_value": {
+      "type": "number"
+    },
+    "achieved_value": {
+      "type": "number"
+    },
+    "reward_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "metric"
+  ]
+}

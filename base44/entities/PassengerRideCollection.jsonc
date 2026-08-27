@@ -1,0 +1,25 @@
+{
+  "name": "PassengerRideCollection",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "collection_name": {
+      "type": "string"
+    },
+    "rides": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "theme": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "collection_name"
+  ]
+}

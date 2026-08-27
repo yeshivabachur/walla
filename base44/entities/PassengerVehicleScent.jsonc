@@ -1,0 +1,18 @@
+{
+  "name": "PassengerVehicleScent",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "scent_rating": {
+      "type": "number"
+    },
+    "pleasant": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

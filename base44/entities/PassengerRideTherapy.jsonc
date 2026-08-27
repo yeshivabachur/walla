@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRideTherapy",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "therapy_session": {
+      "type": "boolean"
+    },
+    "counselor_available": {
+      "type": "boolean"
+    },
+    "mental_health_support": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

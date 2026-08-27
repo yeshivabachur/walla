@@ -1,0 +1,34 @@
+{
+  "name": "DriverPerformanceReview",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "review_period": {
+      "type": "string"
+    },
+    "overall_score": {
+      "type": "number"
+    },
+    "strengths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "improvement_areas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "action_plan": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email",
+    "review_period"
+  ]
+}

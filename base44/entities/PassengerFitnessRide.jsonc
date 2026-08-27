@@ -1,0 +1,21 @@
+{
+  "name": "PassengerFitnessRide",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "workout_suggestions": {
+      "type": "boolean"
+    },
+    "fitness_tracking": {
+      "type": "boolean"
+    },
+    "health_tips": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

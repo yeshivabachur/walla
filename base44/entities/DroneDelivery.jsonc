@@ -1,0 +1,45 @@
+{
+  "name": "DroneDelivery",
+  "type": "object",
+  "properties": {
+    "delivery_id": {
+      "type": "string"
+    },
+    "package_id": {
+      "type": "string"
+    },
+    "drone_id": {
+      "type": "string"
+    },
+    "pickup_coords": {
+      "type": "object"
+    },
+    "dropoff_coords": {
+      "type": "object"
+    },
+    "flight_path": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "default": []
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "in_flight",
+        "delivered",
+        "returned"
+      ],
+      "default": "pending"
+    },
+    "eta_minutes": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "delivery_id",
+    "package_id"
+  ]
+}

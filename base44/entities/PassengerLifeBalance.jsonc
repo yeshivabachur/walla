@@ -1,0 +1,21 @@
+{
+  "name": "PassengerLifeBalance",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "balance_score": {
+      "type": "number"
+    },
+    "work_life_harmony": {
+      "type": "number"
+    },
+    "wellness_integration": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

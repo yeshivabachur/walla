@@ -1,0 +1,21 @@
+{
+  "name": "DriverWindyWeatherFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "high_winds": {
+      "type": "boolean"
+    },
+    "wind_speed": {
+      "type": "number"
+    },
+    "safety_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

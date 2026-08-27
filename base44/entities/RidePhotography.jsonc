@@ -1,0 +1,21 @@
+{
+  "name": "RidePhotography",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "photo_stops": {
+      "type": "number"
+    },
+    "scenic_routes": {
+      "type": "boolean"
+    },
+    "photographer_driver": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

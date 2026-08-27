@@ -1,0 +1,22 @@
+{
+  "name": "PassengerRideExperiment",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "experiment_id": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "string"
+    },
+    "participated": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "experiment_id"
+  ]
+}

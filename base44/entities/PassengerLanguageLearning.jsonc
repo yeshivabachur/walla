@@ -1,0 +1,21 @@
+{
+  "name": "PassengerLanguageLearning",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "target_language": {
+      "type": "string"
+    },
+    "lessons_completed": {
+      "type": "number"
+    },
+    "fluency_progress": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

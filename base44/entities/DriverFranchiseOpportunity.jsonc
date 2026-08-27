@@ -1,0 +1,21 @@
+{
+  "name": "DriverFranchiseOpportunity",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "eligible": {
+      "type": "boolean"
+    },
+    "investment_required": {
+      "type": "number"
+    },
+    "projected_revenue": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

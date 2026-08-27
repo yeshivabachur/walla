@@ -1,0 +1,49 @@
+{
+  "name": "VIPMembership",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "tier": {
+      "type": "string",
+      "enum": [
+        "silver",
+        "gold",
+        "platinum"
+      ],
+      "default": "silver"
+    },
+    "benefits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "priority_matching",
+        "24_7_support",
+        "price_protection"
+      ]
+    },
+    "rides_this_month": {
+      "type": "number",
+      "default": 0
+    },
+    "total_spent": {
+      "type": "number",
+      "default": 0
+    },
+    "monthly_fee": {
+      "type": "number",
+      "default": 9.99
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "user_email",
+    "tier"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "RideInsight",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_email": {
+      "type": "string"
+    },
+    "insight_type": {
+      "type": "string",
+      "enum": [
+        "cost_savings",
+        "time_optimization",
+        "route_efficiency",
+        "eco_impact"
+      ]
+    },
+    "insight_data": {
+      "type": "object",
+      "properties": {
+        "metric": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        },
+        "comparison": {
+          "type": "string"
+        }
+      }
+    },
+    "recommendations": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "passenger_email",
+    "insight_type"
+  ]
+}

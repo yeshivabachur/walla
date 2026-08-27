@@ -1,0 +1,21 @@
+{
+  "name": "DriverLeadershipProgram",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "enrolled": {
+      "type": "boolean"
+    },
+    "modules_completed": {
+      "type": "number"
+    },
+    "leadership_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

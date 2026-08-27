@@ -1,0 +1,23 @@
+{
+  "name": "RightToBeForgotten",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "request_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "data_deleted": {
+      "type": "boolean"
+    },
+    "deletion_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

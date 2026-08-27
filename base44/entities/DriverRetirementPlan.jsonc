@@ -1,0 +1,24 @@
+{
+  "name": "DriverRetirementPlan",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "monthly_contribution": {
+      "type": "number"
+    },
+    "employer_match": {
+      "type": "number"
+    },
+    "total_balance": {
+      "type": "number"
+    },
+    "vesting_percentage": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

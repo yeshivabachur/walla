@@ -1,0 +1,24 @@
+{
+  "name": "ImageOptimization",
+  "type": "object",
+  "properties": {
+    "image_url": {
+      "type": "string"
+    },
+    "original_size": {
+      "type": "number"
+    },
+    "optimized_size": {
+      "type": "number"
+    },
+    "format": {
+      "type": "string"
+    },
+    "quality": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "image_url"
+  ]
+}

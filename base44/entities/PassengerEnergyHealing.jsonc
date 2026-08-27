@@ -1,0 +1,21 @@
+{
+  "name": "PassengerEnergyHealing",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "reiki_session": {
+      "type": "boolean"
+    },
+    "energy_work": {
+      "type": "boolean"
+    },
+    "chakra_balancing": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

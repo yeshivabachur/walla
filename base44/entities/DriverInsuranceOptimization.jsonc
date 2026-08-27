@@ -1,0 +1,21 @@
+{
+  "name": "DriverInsuranceOptimization",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "current_premium": {
+      "type": "number"
+    },
+    "optimized_premium": {
+      "type": "number"
+    },
+    "savings_monthly": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

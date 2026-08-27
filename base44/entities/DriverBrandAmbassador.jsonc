@@ -1,0 +1,21 @@
+{
+  "name": "DriverBrandAmbassador",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "ambassador_status": {
+      "type": "boolean"
+    },
+    "content_created": {
+      "type": "number"
+    },
+    "monthly_stipend": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

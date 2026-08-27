@@ -1,0 +1,21 @@
+{
+  "name": "DriverVehicleCleaningBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "cleaning_frequency": {
+      "type": "number"
+    },
+    "quality_score": {
+      "type": "number"
+    },
+    "bonus_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

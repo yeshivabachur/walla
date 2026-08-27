@@ -1,0 +1,26 @@
+{
+  "name": "RideLocationMemory",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "nickname": {
+      "type": "string"
+    },
+    "visit_count": {
+      "type": "number"
+    },
+    "last_visit": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "user_email",
+    "location"
+  ]
+}

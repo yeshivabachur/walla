@@ -1,0 +1,36 @@
+{
+  "name": "SilentRideMode",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_email": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "no_conversation": {
+      "type": "boolean",
+      "default": true
+    },
+    "no_phone_calls": {
+      "type": "boolean",
+      "default": true
+    },
+    "no_radio": {
+      "type": "boolean",
+      "default": true
+    },
+    "driver_notified": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "passenger_email"
+  ]
+}

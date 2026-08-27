@@ -1,0 +1,21 @@
+{
+  "name": "DriverVoiceHealthMonitor",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "stress_level": {
+      "type": "number"
+    },
+    "fatigue_detected": {
+      "type": "boolean"
+    },
+    "wellness_alert": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

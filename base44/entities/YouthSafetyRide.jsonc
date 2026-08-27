@@ -1,0 +1,29 @@
+{
+  "name": "YouthSafetyRide",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_age": {
+      "type": "number"
+    },
+    "parent_email": {
+      "type": "string"
+    },
+    "parent_notified": {
+      "type": "boolean"
+    },
+    "tracking_shared": {
+      "type": "boolean"
+    },
+    "verified_driver_only": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "passenger_age",
+    "parent_email"
+  ]
+}

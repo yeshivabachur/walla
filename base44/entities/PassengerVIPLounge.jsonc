@@ -1,0 +1,24 @@
+{
+  "name": "PassengerVIPLounge",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "lounge_access": {
+      "type": "boolean"
+    },
+    "locations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "visits_this_month": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

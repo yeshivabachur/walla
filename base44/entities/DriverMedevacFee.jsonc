@@ -1,0 +1,18 @@
+{
+  "name": "DriverMedevacFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "medical_emergency_transport": {
+      "type": "boolean"
+    },
+    "lifesaving_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

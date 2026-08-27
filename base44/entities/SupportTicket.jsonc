@@ -1,0 +1,77 @@
+{
+  "name": "SupportTicket",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user who created the ticket"
+    },
+    "user_type": {
+      "type": "string",
+      "enum": [
+        "passenger",
+        "driver"
+      ],
+      "description": "Type of user"
+    },
+    "subject": {
+      "type": "string",
+      "description": "Subject of the support ticket"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description of the issue"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "fare_inquiry",
+        "lost_item",
+        "safety_concern",
+        "technical_issue",
+        "account_issue",
+        "other"
+      ],
+      "description": "Category of the issue"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "urgent"
+      ],
+      "default": "medium"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "in_progress",
+        "resolved",
+        "closed"
+      ],
+      "default": "open"
+    },
+    "ride_id": {
+      "type": "string",
+      "description": "Related ride ID if applicable"
+    },
+    "ai_response": {
+      "type": "string",
+      "description": "Initial AI-generated response"
+    },
+    "assigned_to": {
+      "type": "string",
+      "description": "Email of support agent if escalated"
+    }
+  },
+  "required": [
+    "user_email",
+    "user_type",
+    "subject",
+    "description",
+    "category"
+  ]
+}

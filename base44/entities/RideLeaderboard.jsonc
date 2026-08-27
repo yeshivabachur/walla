@@ -1,0 +1,38 @@
+{
+  "name": "RideLeaderboard",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "total_points": {
+      "type": "number",
+      "default": 0
+    },
+    "rank": {
+      "type": "number"
+    },
+    "total_rides": {
+      "type": "number",
+      "default": 0
+    },
+    "achievements_count": {
+      "type": "number",
+      "default": 0
+    },
+    "streak_days": {
+      "type": "number",
+      "default": 0
+    },
+    "region": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "username"
+  ]
+}

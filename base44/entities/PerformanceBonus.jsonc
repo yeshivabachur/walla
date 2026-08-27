@@ -1,0 +1,37 @@
+{
+  "name": "PerformanceBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "bonus_type": {
+      "type": "string",
+      "enum": [
+        "completion_rate",
+        "rating",
+        "attendance",
+        "referral"
+      ]
+    },
+    "amount": {
+      "type": "number"
+    },
+    "earned_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "paid": {
+      "type": "boolean",
+      "default": false
+    },
+    "criteria_met": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email",
+    "bonus_type",
+    "amount"
+  ]
+}

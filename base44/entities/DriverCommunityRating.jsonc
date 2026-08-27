@@ -1,0 +1,21 @@
+{
+  "name": "DriverCommunityRating",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "peer_rating": {
+      "type": "number"
+    },
+    "community_contributions": {
+      "type": "number"
+    },
+    "reputation_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

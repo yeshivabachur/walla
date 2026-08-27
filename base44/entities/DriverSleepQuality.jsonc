@@ -1,0 +1,21 @@
+{
+  "name": "DriverSleepQuality",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "hours_slept": {
+      "type": "number"
+    },
+    "sleep_quality_score": {
+      "type": "number"
+    },
+    "fatigue_alerts": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "PassengerOzoneGenerator",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "ozone_sanitization": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

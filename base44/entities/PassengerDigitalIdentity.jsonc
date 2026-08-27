@@ -1,0 +1,21 @@
+{
+  "name": "PassengerDigitalIdentity",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "verified_identity": {
+      "type": "boolean"
+    },
+    "identity_provider": {
+      "type": "string"
+    },
+    "verification_level": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

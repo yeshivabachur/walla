@@ -1,0 +1,21 @@
+{
+  "name": "DriverLeadershipAcademy",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "leadership_courses": {
+      "type": "number"
+    },
+    "management_training": {
+      "type": "boolean"
+    },
+    "leadership_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

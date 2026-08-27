@@ -1,0 +1,21 @@
+{
+  "name": "PassengerSmartBooking",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "ai_suggestions": {
+      "type": "boolean"
+    },
+    "auto_optimize": {
+      "type": "boolean"
+    },
+    "learn_patterns": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

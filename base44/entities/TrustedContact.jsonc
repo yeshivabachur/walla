@@ -1,0 +1,33 @@
+{
+  "name": "TrustedContact",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "contact_name": {
+      "type": "string"
+    },
+    "contact_email": {
+      "type": "string"
+    },
+    "contact_phone": {
+      "type": "string"
+    },
+    "relationship": {
+      "type": "string"
+    },
+    "auto_notify": {
+      "type": "boolean",
+      "default": false
+    },
+    "notify_on_night_rides": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "user_email",
+    "contact_name"
+  ]
+}

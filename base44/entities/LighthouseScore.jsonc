@@ -1,0 +1,24 @@
+{
+  "name": "LighthouseScore",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string"
+    },
+    "performance": {
+      "type": "number"
+    },
+    "accessibility": {
+      "type": "number"
+    },
+    "best_practices": {
+      "type": "number"
+    },
+    "seo": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "url"
+  ]
+}

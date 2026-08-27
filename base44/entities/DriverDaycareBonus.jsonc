@@ -1,0 +1,18 @@
+{
+  "name": "DriverDaycareBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "daycare_trips": {
+      "type": "number"
+    },
+    "childcare_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

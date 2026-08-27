@@ -1,0 +1,30 @@
+{
+  "name": "BreakReminder",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "suggested_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "suggested_location": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "duration_minutes": {
+      "type": "number"
+    },
+    "acknowledged": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "driver_email",
+    "suggested_time"
+  ]
+}

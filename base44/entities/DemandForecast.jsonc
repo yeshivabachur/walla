@@ -1,0 +1,39 @@
+{
+  "name": "DemandForecast",
+  "type": "object",
+  "properties": {
+    "zone_name": {
+      "type": "string"
+    },
+    "forecast_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "predicted_demand": {
+      "type": "number",
+      "description": "Expected number of ride requests"
+    },
+    "confidence": {
+      "type": "number",
+      "description": "Prediction confidence 0-1"
+    },
+    "surge_probability": {
+      "type": "number"
+    },
+    "recommended_driver_count": {
+      "type": "number"
+    },
+    "factors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "zone_name",
+    "forecast_time",
+    "predicted_demand"
+  ]
+}

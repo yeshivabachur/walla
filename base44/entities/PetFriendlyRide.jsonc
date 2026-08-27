@@ -1,0 +1,33 @@
+{
+  "name": "PetFriendlyRide",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "pet_type": {
+      "type": "string"
+    },
+    "pet_size": {
+      "type": "string",
+      "enum": [
+        "small",
+        "medium",
+        "large"
+      ]
+    },
+    "carrier_required": {
+      "type": "boolean"
+    },
+    "additional_fee": {
+      "type": "number"
+    },
+    "driver_notified": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "pet_type"
+  ]
+}

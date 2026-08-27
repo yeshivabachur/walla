@@ -1,0 +1,21 @@
+{
+  "name": "PassengerTimePayment",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "duration_minutes": {
+      "type": "number"
+    },
+    "per_minute_rate": {
+      "type": "number"
+    },
+    "total_fare": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

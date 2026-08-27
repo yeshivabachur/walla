@@ -1,0 +1,25 @@
+{
+  "name": "EmergencyHotline",
+  "type": "object",
+  "properties": {
+    "hotline_type": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "available_hours": {
+      "type": "string"
+    },
+    "languages_supported": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "hotline_type",
+    "phone_number"
+  ]
+}

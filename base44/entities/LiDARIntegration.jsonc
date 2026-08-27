@@ -1,0 +1,21 @@
+{
+  "name": "LiDARIntegration",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "lidar_model": {
+      "type": "string"
+    },
+    "range_meters": {
+      "type": "number"
+    },
+    "point_cloud_density": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

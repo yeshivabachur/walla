@@ -1,0 +1,46 @@
+{
+  "name": "MultiModalTrip",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "destination": {
+      "type": "string"
+    },
+    "modes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "number"
+          },
+          "cost": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "total_duration": {
+      "type": "number"
+    },
+    "total_cost": {
+      "type": "number"
+    },
+    "carbon_savings": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email",
+    "origin",
+    "destination"
+  ]
+}

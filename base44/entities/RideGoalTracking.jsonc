@@ -1,0 +1,29 @@
+{
+  "name": "RideGoalTracking",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "goal_type": {
+      "type": "string"
+    },
+    "target_value": {
+      "type": "number"
+    },
+    "current_value": {
+      "type": "number"
+    },
+    "deadline": {
+      "type": "string",
+      "format": "date"
+    },
+    "completed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "goal_type"
+  ]
+}

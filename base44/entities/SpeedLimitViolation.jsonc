@@ -1,0 +1,36 @@
+{
+  "name": "SpeedLimitViolation",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "speed_limit": {
+      "type": "number"
+    },
+    "actual_speed": {
+      "type": "number"
+    },
+    "excess_speed": {
+      "type": "number"
+    },
+    "location": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "warning_issued": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "driver_email",
+    "actual_speed"
+  ]
+}

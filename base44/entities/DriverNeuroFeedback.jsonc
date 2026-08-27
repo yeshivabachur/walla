@@ -1,0 +1,21 @@
+{
+  "name": "DriverNeuroFeedback",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "focus_score": {
+      "type": "number"
+    },
+    "stress_indicators": {
+      "type": "number"
+    },
+    "break_recommended": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

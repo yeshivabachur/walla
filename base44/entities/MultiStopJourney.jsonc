@@ -1,0 +1,53 @@
+{
+  "name": "MultiStopJourney",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string"
+    },
+    "ride_request_id": {
+      "type": "string"
+    },
+    "stops": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string"
+          },
+          "coords": {
+            "type": "object"
+          },
+          "time_window_start": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "time_window_end": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "duration_minutes": {
+            "type": "number"
+          },
+          "completed": {
+            "type": "boolean"
+          }
+        }
+      },
+      "default": []
+    },
+    "optimized_route": {
+      "type": "string"
+    },
+    "total_estimated_time": {
+      "type": "number"
+    },
+    "total_estimated_price": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "passenger_email"
+  ]
+}

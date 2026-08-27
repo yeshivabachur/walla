@@ -1,0 +1,21 @@
+{
+  "name": "DriverPlatformLoyalty",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "years_active": {
+      "type": "number"
+    },
+    "lifetime_rides": {
+      "type": "number"
+    },
+    "loyalty_rewards": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

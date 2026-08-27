@@ -1,0 +1,21 @@
+{
+  "name": "RidePersonalization",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "personalization_level": {
+      "type": "number"
+    },
+    "preferences_saved": {
+      "type": "number"
+    },
+    "ai_learns": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

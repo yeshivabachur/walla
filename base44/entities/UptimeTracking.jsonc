@@ -1,0 +1,21 @@
+{
+  "name": "UptimeTracking",
+  "type": "object",
+  "properties": {
+    "service": {
+      "type": "string"
+    },
+    "uptime_percentage": {
+      "type": "number"
+    },
+    "downtime_minutes": {
+      "type": "number"
+    },
+    "sla_met": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "service"
+  ]
+}

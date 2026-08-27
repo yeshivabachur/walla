@@ -1,0 +1,45 @@
+{
+  "name": "QuarterlyTaxEstimate",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "quarter": {
+      "type": "number"
+    },
+    "year": {
+      "type": "number"
+    },
+    "gross_income": {
+      "type": "number"
+    },
+    "deductible_expenses": {
+      "type": "number"
+    },
+    "net_income": {
+      "type": "number"
+    },
+    "estimated_tax_owed": {
+      "type": "number"
+    },
+    "self_employment_tax": {
+      "type": "number"
+    },
+    "federal_income_tax": {
+      "type": "number"
+    },
+    "state_income_tax": {
+      "type": "number"
+    },
+    "payment_due_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "driver_email",
+    "quarter",
+    "year"
+  ]
+}

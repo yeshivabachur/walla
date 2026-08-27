@@ -1,0 +1,24 @@
+{
+  "name": "RideCharitableDonation",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "charity_name": {
+      "type": "string"
+    },
+    "donation_per_ride": {
+      "type": "number"
+    },
+    "total_donated": {
+      "type": "number"
+    },
+    "tax_deductible": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "DriverAnalytics",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "total_rides": {
+      "type": "number",
+      "default": 0
+    },
+    "total_earnings": {
+      "type": "number",
+      "default": 0
+    },
+    "average_rating": {
+      "type": "number"
+    },
+    "acceptance_rate": {
+      "type": "number"
+    },
+    "cancellation_rate": {
+      "type": "number"
+    },
+    "online_hours": {
+      "type": "number",
+      "default": 0
+    },
+    "earnings_per_hour": {
+      "type": "number"
+    },
+    "peak_performance_hours": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "driver_email",
+    "date"
+  ]
+}

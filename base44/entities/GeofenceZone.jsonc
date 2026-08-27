@@ -1,0 +1,39 @@
+{
+  "name": "GeofenceZone",
+  "type": "object",
+  "properties": {
+    "zone_name": {
+      "type": "string"
+    },
+    "zone_type": {
+      "type": "string",
+      "enum": [
+        "pricing",
+        "restricted",
+        "priority",
+        "event"
+      ]
+    },
+    "boundaries": {
+      "type": "object"
+    },
+    "pricing_multiplier": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "zone_name",
+    "zone_type"
+  ]
+}

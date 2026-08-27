@@ -1,0 +1,48 @@
+{
+  "name": "HourlyRental",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "start_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "duration_hours": {
+      "type": "number"
+    },
+    "hourly_rate": {
+      "type": "number"
+    },
+    "total_cost": {
+      "type": "number"
+    },
+    "pickup_location": {
+      "type": "string"
+    },
+    "destinations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "active",
+        "completed",
+        "cancelled"
+      ]
+    }
+  },
+  "required": [
+    "passenger_email",
+    "duration_hours",
+    "hourly_rate"
+  ]
+}

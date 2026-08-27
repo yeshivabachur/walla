@@ -1,0 +1,39 @@
+{
+  "name": "PromoCodeGenerator",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "discount_type": {
+      "type": "string",
+      "enum": [
+        "percentage",
+        "fixed_amount",
+        "free_ride"
+      ]
+    },
+    "discount_value": {
+      "type": "number"
+    },
+    "valid_from": {
+      "type": "string",
+      "format": "date"
+    },
+    "valid_until": {
+      "type": "string",
+      "format": "date"
+    },
+    "usage_limit": {
+      "type": "number"
+    },
+    "times_used": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "code",
+    "discount_type",
+    "discount_value"
+  ]
+}

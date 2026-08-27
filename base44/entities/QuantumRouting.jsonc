@@ -1,0 +1,42 @@
+{
+  "name": "QuantumRouting",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "quantum_algorithm": {
+      "type": "string",
+      "enum": [
+        "standard",
+        "quantum_annealing",
+        "quantum_ml"
+      ],
+      "default": "standard"
+    },
+    "route_possibilities": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "default": []
+    },
+    "optimal_route": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "array"
+        },
+        "time_saved": {
+          "type": "number"
+        },
+        "confidence": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

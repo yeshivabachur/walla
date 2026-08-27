@@ -1,0 +1,40 @@
+{
+  "name": "EVChargingStation",
+  "type": "object",
+  "properties": {
+    "station_name": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "available_chargers": {
+      "type": "number"
+    },
+    "charger_type": {
+      "type": "string",
+      "enum": [
+        "level_1",
+        "level_2",
+        "dc_fast"
+      ]
+    },
+    "price_per_kwh": {
+      "type": "number"
+    },
+    "currently_available": {
+      "type": "boolean"
+    },
+    "estimated_wait_minutes": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "station_name",
+    "latitude",
+    "longitude"
+  ]
+}

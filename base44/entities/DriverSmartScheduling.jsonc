@@ -1,0 +1,24 @@
+{
+  "name": "DriverSmartScheduling",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "ai_schedule": {
+      "type": "boolean"
+    },
+    "optimal_hours": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "earnings_maximized": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

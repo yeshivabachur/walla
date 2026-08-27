@@ -1,0 +1,24 @@
+{
+  "name": "PassengerSocialConnect",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "connect_with_others": {
+      "type": "boolean"
+    },
+    "ride_buddies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "social_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

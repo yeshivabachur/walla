@@ -1,0 +1,21 @@
+{
+  "name": "RideEmotionalWellbeing",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "mood_enhancement": {
+      "type": "boolean"
+    },
+    "stress_reduction": {
+      "type": "boolean"
+    },
+    "positive_affirmations": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

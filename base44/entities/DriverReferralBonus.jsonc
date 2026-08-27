@@ -1,0 +1,25 @@
+{
+  "name": "DriverReferralBonus",
+  "type": "object",
+  "properties": {
+    "referrer_email": {
+      "type": "string"
+    },
+    "referee_email": {
+      "type": "string"
+    },
+    "bonus_tier": {
+      "type": "string"
+    },
+    "bonus_amount": {
+      "type": "number"
+    },
+    "paid_out": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "referrer_email",
+    "referee_email"
+  ]
+}

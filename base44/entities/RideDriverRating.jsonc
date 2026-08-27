@@ -1,0 +1,21 @@
+{
+  "name": "RideDriverRating",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "review_text": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

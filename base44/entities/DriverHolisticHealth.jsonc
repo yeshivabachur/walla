@@ -1,0 +1,24 @@
+{
+  "name": "DriverHolisticHealth",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "physical_health": {
+      "type": "number"
+    },
+    "mental_health": {
+      "type": "number"
+    },
+    "emotional_health": {
+      "type": "number"
+    },
+    "overall_wellness": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

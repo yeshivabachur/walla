@@ -1,0 +1,21 @@
+{
+  "name": "RideDriverExperience",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "years_driving": {
+      "type": "number"
+    },
+    "total_rides": {
+      "type": "number"
+    },
+    "experience_level": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

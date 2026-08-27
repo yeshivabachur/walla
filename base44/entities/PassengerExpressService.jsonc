@@ -1,0 +1,21 @@
+{
+  "name": "PassengerExpressService",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "express_enabled": {
+      "type": "boolean"
+    },
+    "guaranteed_pickup_time": {
+      "type": "number"
+    },
+    "premium_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

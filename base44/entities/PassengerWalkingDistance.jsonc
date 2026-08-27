@@ -1,0 +1,18 @@
+{
+  "name": "PassengerWalkingDistance",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "max_walk_meters": {
+      "type": "number"
+    },
+    "flexible_pickup": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

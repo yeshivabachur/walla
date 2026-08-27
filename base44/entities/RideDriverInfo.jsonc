@@ -1,0 +1,24 @@
+{
+  "name": "RideDriverInfo",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "driver_name": {
+      "type": "string"
+    },
+    "driver_photo": {
+      "type": "string"
+    },
+    "driver_rating": {
+      "type": "number"
+    },
+    "total_rides": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

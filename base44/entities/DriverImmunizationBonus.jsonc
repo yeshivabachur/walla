@@ -1,0 +1,18 @@
+{
+  "name": "DriverImmunizationBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "immunization_trips": {
+      "type": "number"
+    },
+    "protection_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

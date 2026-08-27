@@ -1,0 +1,24 @@
+{
+  "name": "DriverInsurancePool",
+  "type": "object",
+  "properties": {
+    "pool_id": {
+      "type": "string"
+    },
+    "driver_count": {
+      "type": "number"
+    },
+    "total_premium": {
+      "type": "number"
+    },
+    "claims_paid": {
+      "type": "number"
+    },
+    "pool_balance": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "pool_id"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "name": "PackageDelivery",
+  "type": "object",
+  "properties": {
+    "sender_email": {
+      "type": "string"
+    },
+    "sender_name": {
+      "type": "string"
+    },
+    "sender_phone": {
+      "type": "string"
+    },
+    "recipient_name": {
+      "type": "string"
+    },
+    "recipient_phone": {
+      "type": "string"
+    },
+    "pickup_location": {
+      "type": "string"
+    },
+    "pickup_coords": {
+      "type": "object"
+    },
+    "delivery_location": {
+      "type": "string"
+    },
+    "delivery_coords": {
+      "type": "object"
+    },
+    "package_size": {
+      "type": "string",
+      "enum": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "default": "small"
+    },
+    "package_description": {
+      "type": "string"
+    },
+    "special_instructions": {
+      "type": "string"
+    },
+    "estimated_price": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "picked_up",
+        "in_transit",
+        "delivered",
+        "cancelled"
+      ],
+      "default": "pending"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "verification_code": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "sender_email",
+    "pickup_location",
+    "delivery_location",
+    "recipient_phone"
+  ]
+}

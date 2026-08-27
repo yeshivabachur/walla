@@ -1,0 +1,21 @@
+{
+  "name": "DriverReactivationBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "inactive_days": {
+      "type": "number"
+    },
+    "comeback_bonus": {
+      "type": "number"
+    },
+    "rides_required": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

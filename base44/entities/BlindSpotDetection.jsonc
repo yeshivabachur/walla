@@ -1,0 +1,22 @@
+{
+  "name": "BlindSpotDetection",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "system_active": {
+      "type": "boolean"
+    },
+    "alert_type": {
+      "type": "string"
+    },
+    "last_calibration": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

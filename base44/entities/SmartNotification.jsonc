@@ -1,0 +1,54 @@
+{
+  "name": "SmartNotification",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "ride_reminder",
+        "surge_drop",
+        "driver_nearby",
+        "reward_available",
+        "promo",
+        "achievement"
+      ],
+      "default": "ride_reminder"
+    },
+    "title": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "urgent"
+      ],
+      "default": "medium"
+    },
+    "read": {
+      "type": "boolean",
+      "default": false
+    },
+    "action_url": {
+      "type": "string"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "user_email",
+    "type",
+    "title",
+    "message"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "RidePhotoSharing",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "photo_url": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "shared_publicly": {
+      "type": "boolean"
+    },
+    "likes": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "user_email",
+    "photo_url"
+  ]
+}

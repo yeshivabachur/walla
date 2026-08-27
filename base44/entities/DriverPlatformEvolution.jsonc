@@ -1,0 +1,24 @@
+{
+  "name": "DriverPlatformEvolution",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "tenure_years": {
+      "type": "number"
+    },
+    "evolution_witnessed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "veteran_status": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

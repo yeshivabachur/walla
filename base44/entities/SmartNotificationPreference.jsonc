@@ -1,0 +1,51 @@
+{
+  "name": "SmartNotificationPreference",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "channels": {
+      "type": "object",
+      "properties": {
+        "push": {
+          "type": "boolean"
+        },
+        "email": {
+          "type": "boolean"
+        },
+        "sms": {
+          "type": "boolean"
+        }
+      }
+    },
+    "quiet_hours": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "string"
+        },
+        "end": {
+          "type": "string"
+        }
+      }
+    },
+    "categories": {
+      "type": "object",
+      "properties": {
+        "promotions": {
+          "type": "boolean"
+        },
+        "ride_updates": {
+          "type": "boolean"
+        },
+        "safety_alerts": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

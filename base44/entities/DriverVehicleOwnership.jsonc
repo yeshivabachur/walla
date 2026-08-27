@@ -1,0 +1,21 @@
+{
+  "name": "DriverVehicleOwnership",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "ownership_path": {
+      "type": "boolean"
+    },
+    "savings_toward_vehicle": {
+      "type": "number"
+    },
+    "months_to_ownership": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

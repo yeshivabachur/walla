@@ -1,0 +1,21 @@
+{
+  "name": "DriverVoiceOfDriver",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "feedback_submissions": {
+      "type": "number"
+    },
+    "platform_improvements": {
+      "type": "number"
+    },
+    "voice_heard_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

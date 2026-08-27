@@ -1,0 +1,21 @@
+{
+  "name": "DriverVehicleTypeBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "vehicle_type": {
+      "type": "string"
+    },
+    "bonus_multiplier": {
+      "type": "number"
+    },
+    "premium_rides": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

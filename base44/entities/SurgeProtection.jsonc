@@ -1,0 +1,29 @@
+{
+  "name": "SurgeProtection",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "max_multiplier": {
+      "type": "number",
+      "default": 1.5,
+      "description": "Maximum surge multiplier user will accept"
+    },
+    "auto_decline_above": {
+      "type": "number",
+      "description": "Auto decline if surge exceeds this"
+    },
+    "notification_threshold": {
+      "type": "number",
+      "default": 1.3
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

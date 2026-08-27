@@ -1,0 +1,22 @@
+{
+  "name": "PassengerGroupBooking",
+  "type": "object",
+  "properties": {
+    "organizer_email": {
+      "type": "string"
+    },
+    "group_size": {
+      "type": "number"
+    },
+    "vehicles_needed": {
+      "type": "number"
+    },
+    "discount_applied": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "organizer_email",
+    "group_size"
+  ]
+}

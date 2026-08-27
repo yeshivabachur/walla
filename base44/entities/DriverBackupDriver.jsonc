@@ -1,0 +1,22 @@
+{
+  "name": "DriverBackupDriver",
+  "type": "object",
+  "properties": {
+    "primary_driver_email": {
+      "type": "string"
+    },
+    "backup_driver_email": {
+      "type": "string"
+    },
+    "relationship": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "primary_driver_email",
+    "backup_driver_email"
+  ]
+}

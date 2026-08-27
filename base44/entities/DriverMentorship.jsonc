@@ -1,0 +1,44 @@
+{
+  "name": "DriverMentorship",
+  "type": "object",
+  "properties": {
+    "mentor_email": {
+      "type": "string"
+    },
+    "mentee_email": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "completed",
+        "paused"
+      ],
+      "default": "active"
+    },
+    "sessions_completed": {
+      "type": "number",
+      "default": 0
+    },
+    "mentee_progress": {
+      "type": "number",
+      "default": 0
+    },
+    "focus_areas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "next_session": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "mentor_email",
+    "mentee_email"
+  ]
+}

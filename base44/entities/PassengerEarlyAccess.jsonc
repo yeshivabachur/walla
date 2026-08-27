@@ -1,0 +1,22 @@
+{
+  "name": "PassengerEarlyAccess",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "feature_name": {
+      "type": "string"
+    },
+    "early_access_granted": {
+      "type": "boolean"
+    },
+    "feedback_provided": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "feature_name"
+  ]
+}

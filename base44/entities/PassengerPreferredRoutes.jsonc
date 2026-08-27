@@ -1,0 +1,32 @@
+{
+  "name": "PassengerPreferredRoutes",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "destination": {
+      "type": "string"
+    },
+    "preferred_via": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "avoid": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "user_email",
+    "origin",
+    "destination"
+  ]
+}

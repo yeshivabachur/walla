@@ -1,0 +1,24 @@
+{
+  "name": "RideSafetyChecklist",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "seatbelt_check": {
+      "type": "boolean"
+    },
+    "door_lock_check": {
+      "type": "boolean"
+    },
+    "route_verified": {
+      "type": "boolean"
+    },
+    "emergency_contact_notified": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

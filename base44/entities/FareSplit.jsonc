@@ -1,0 +1,60 @@
+{
+  "name": "FareSplit",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "initiator_email": {
+      "type": "string"
+    },
+    "total_fare": {
+      "type": "number"
+    },
+    "split_method": {
+      "type": "string",
+      "enum": [
+        "equal",
+        "custom",
+        "percentage"
+      ],
+      "default": "equal"
+    },
+    "participants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "number"
+          },
+          "paid": {
+            "type": "boolean",
+            "default": false
+          }
+        }
+      },
+      "default": []
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "partial",
+        "completed"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "initiator_email",
+    "total_fare"
+  ]
+}

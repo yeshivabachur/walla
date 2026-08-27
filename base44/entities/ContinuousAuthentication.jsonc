@@ -1,0 +1,21 @@
+{
+  "name": "ContinuousAuthentication",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "monitoring_active": {
+      "type": "boolean"
+    },
+    "anomaly_detected": {
+      "type": "boolean"
+    },
+    "risk_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

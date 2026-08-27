@@ -1,0 +1,18 @@
+{
+  "name": "DriverOvernightFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "overnight_hours": {
+      "type": "number"
+    },
+    "late_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

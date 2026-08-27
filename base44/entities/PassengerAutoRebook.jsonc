@@ -1,0 +1,21 @@
+{
+  "name": "PassengerAutoRebook",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "rebooking_rules": {
+      "type": "object"
+    },
+    "success_rate": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

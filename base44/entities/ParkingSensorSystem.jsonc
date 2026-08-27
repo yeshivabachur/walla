@@ -1,0 +1,24 @@
+{
+  "name": "ParkingSensorSystem",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "front_sensors": {
+      "type": "boolean"
+    },
+    "rear_sensors": {
+      "type": "boolean"
+    },
+    "side_sensors": {
+      "type": "boolean"
+    },
+    "all_operational": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

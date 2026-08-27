@@ -1,0 +1,21 @@
+{
+  "name": "DriverPerformanceThreshold",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "performance_floor": {
+      "type": "number"
+    },
+    "threshold_alerts": {
+      "type": "number"
+    },
+    "improvement_plan": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

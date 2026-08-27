@@ -1,0 +1,41 @@
+{
+  "name": "DriverWelfareCheck",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "check_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "mood_score": {
+      "type": "number"
+    },
+    "stress_level": {
+      "type": "string",
+      "enum": [
+        "low",
+        "moderate",
+        "high"
+      ]
+    },
+    "sleep_hours": {
+      "type": "number"
+    },
+    "concerns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "support_offered": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "driver_email",
+    "check_date"
+  ]
+}

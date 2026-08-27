@@ -1,0 +1,28 @@
+{
+  "name": "RidePhotoAlbum",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "album_name": {
+      "type": "string"
+    },
+    "photo_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ride_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "user_email",
+    "album_name"
+  ]
+}

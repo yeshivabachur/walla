@@ -1,0 +1,21 @@
+{
+  "name": "HapticFeedback",
+  "type": "object",
+  "properties": {
+    "device_id": {
+      "type": "string"
+    },
+    "vibration_patterns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "intensity_level": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "device_id"
+  ]
+}

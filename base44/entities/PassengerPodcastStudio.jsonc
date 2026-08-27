@@ -1,0 +1,21 @@
+{
+  "name": "PassengerPodcastStudio",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "podcast_recording": {
+      "type": "boolean"
+    },
+    "microphone_quality": {
+      "type": "string"
+    },
+    "editing_service": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

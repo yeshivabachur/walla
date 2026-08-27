@@ -1,0 +1,32 @@
+{
+  "name": "RideBundlePackage",
+  "type": "object",
+  "properties": {
+    "package_name": {
+      "type": "string"
+    },
+    "number_of_rides": {
+      "type": "number"
+    },
+    "total_price": {
+      "type": "number"
+    },
+    "price_per_ride": {
+      "type": "number"
+    },
+    "savings_amount": {
+      "type": "number"
+    },
+    "valid_days": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "package_name",
+    "number_of_rides",
+    "total_price"
+  ]
+}

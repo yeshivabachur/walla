@@ -1,0 +1,22 @@
+{
+  "name": "FingerprintAuth",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "fingerprints_enrolled": {
+      "type": "number"
+    },
+    "last_used": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "success_rate": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

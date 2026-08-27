@@ -1,0 +1,25 @@
+{
+  "name": "PredictiveBooking",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "predicted_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "predicted_destination": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "auto_book": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

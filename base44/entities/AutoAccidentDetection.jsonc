@@ -1,0 +1,49 @@
+{
+  "name": "AutoAccidentDetection",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "detection_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number"
+        },
+        "lng": {
+          "type": "number"
+        }
+      }
+    },
+    "impact_severity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "severe"
+      ]
+    },
+    "airbag_deployed": {
+      "type": "boolean"
+    },
+    "emergency_services_called": {
+      "type": "boolean"
+    },
+    "passengers_responded": {
+      "type": "boolean"
+    },
+    "false_alarm": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "detection_time"
+  ]
+}

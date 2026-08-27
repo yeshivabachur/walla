@@ -1,0 +1,24 @@
+{
+  "name": "DriverQuotaSystem",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "weekly_ride_quota": {
+      "type": "number"
+    },
+    "current_count": {
+      "type": "number"
+    },
+    "quota_met": {
+      "type": "boolean"
+    },
+    "bonus_for_exceeding": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

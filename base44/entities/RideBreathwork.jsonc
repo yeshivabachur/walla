@@ -1,0 +1,21 @@
+{
+  "name": "RideBreathwork",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "breathing_exercises": {
+      "type": "boolean"
+    },
+    "guided_breathwork": {
+      "type": "boolean"
+    },
+    "stress_release": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverCelebrityFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "celebrity_passenger": {
+      "type": "boolean"
+    },
+    "discretion_fee": {
+      "type": "number"
+    },
+    "nda_required": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

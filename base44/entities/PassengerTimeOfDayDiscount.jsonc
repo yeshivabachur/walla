@@ -1,0 +1,18 @@
+{
+  "name": "PassengerTimeOfDayDiscount",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "time_slot": {
+      "type": "string"
+    },
+    "discount_percentage": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

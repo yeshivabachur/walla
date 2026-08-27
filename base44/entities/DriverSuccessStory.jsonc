@@ -1,0 +1,21 @@
+{
+  "name": "DriverSuccessStory",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "story_text": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "views": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

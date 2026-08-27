@@ -1,0 +1,24 @@
+{
+  "name": "RideConciergeService",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "concierge_requests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requests_fulfilled": {
+      "type": "number"
+    },
+    "service_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

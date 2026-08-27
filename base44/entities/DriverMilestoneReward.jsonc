@@ -1,0 +1,22 @@
+{
+  "name": "DriverMilestoneReward",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "milestone": {
+      "type": "string"
+    },
+    "milestone_value": {
+      "type": "number"
+    },
+    "reward_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "milestone"
+  ]
+}

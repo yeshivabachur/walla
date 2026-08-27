@@ -1,0 +1,24 @@
+{
+  "name": "DriverTrustScore",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "trust_score": {
+      "type": "number"
+    },
+    "verification_badges": {
+      "type": "number"
+    },
+    "positive_reviews": {
+      "type": "number"
+    },
+    "years_of_service": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "RidePetTherapy",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "therapy_pet_available": {
+      "type": "boolean"
+    },
+    "pet_type": {
+      "type": "string"
+    },
+    "certified_therapy": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

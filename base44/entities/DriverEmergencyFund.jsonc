@@ -1,0 +1,21 @@
+{
+  "name": "DriverEmergencyFund",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "fund_balance": {
+      "type": "number"
+    },
+    "monthly_contribution": {
+      "type": "number"
+    },
+    "withdrawals": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

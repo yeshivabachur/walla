@@ -1,0 +1,35 @@
+{
+  "name": "TrainingCompletion",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string",
+      "description": "Driver's email"
+    },
+    "lesson_id": {
+      "type": "string",
+      "description": "Completed lesson ID"
+    },
+    "quiz_score": {
+      "type": "number",
+      "description": "Quiz score percentage"
+    },
+    "time_spent_minutes": {
+      "type": "number",
+      "description": "Time spent on lesson"
+    },
+    "badge_earned": {
+      "type": "string",
+      "description": "Badge earned"
+    },
+    "passed": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether quiz was passed (70%+)"
+    }
+  },
+  "required": [
+    "driver_email",
+    "lesson_id"
+  ]
+}

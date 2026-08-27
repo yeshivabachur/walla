@@ -1,0 +1,40 @@
+{
+  "name": "TrafficIncidentAlert",
+  "type": "object",
+  "properties": {
+    "location": {
+      "type": "string"
+    },
+    "incident_type": {
+      "type": "string",
+      "enum": [
+        "accident",
+        "construction",
+        "closure",
+        "congestion"
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "minor",
+        "moderate",
+        "severe"
+      ]
+    },
+    "delay_minutes": {
+      "type": "number"
+    },
+    "alternative_route": {
+      "type": "string"
+    },
+    "reported_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "location",
+    "incident_type"
+  ]
+}

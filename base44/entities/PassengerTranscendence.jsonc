@@ -1,0 +1,21 @@
+{
+  "name": "PassengerTranscendence",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "transcendent_experiences": {
+      "type": "number"
+    },
+    "spiritual_awakening": {
+      "type": "boolean"
+    },
+    "higher_consciousness": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

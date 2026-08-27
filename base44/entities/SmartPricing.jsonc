@@ -1,0 +1,34 @@
+{
+  "name": "SmartPricing",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "base_price": {
+      "type": "number"
+    },
+    "personalized_price": {
+      "type": "number"
+    },
+    "factors": {
+      "type": "object",
+      "properties": {
+        "loyalty_discount": {
+          "type": "number"
+        },
+        "time_of_day": {
+          "type": "number"
+        },
+        "demand_multiplier": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "base_price",
+    "personalized_price"
+  ]
+}

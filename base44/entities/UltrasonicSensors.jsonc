@@ -1,0 +1,18 @@
+{
+  "name": "UltrasonicSensors",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "sensor_count": {
+      "type": "number"
+    },
+    "all_operational": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

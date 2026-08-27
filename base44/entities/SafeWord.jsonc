@@ -1,0 +1,29 @@
+{
+  "name": "SafeWord",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "safe_phrase": {
+      "type": "string"
+    },
+    "emergency_action": {
+      "type": "string",
+      "enum": [
+        "alert_contacts",
+        "call_support",
+        "call_authorities"
+      ]
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "user_email",
+    "safe_phrase",
+    "emergency_action"
+  ]
+}

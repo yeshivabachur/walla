@@ -1,0 +1,35 @@
+{
+  "name": "PassengerComfort",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string"
+    },
+    "preferred_temperature_celsius": {
+      "type": "number"
+    },
+    "seat_adjustment": {
+      "type": "string",
+      "enum": [
+        "upright",
+        "reclined",
+        "no_preference"
+      ]
+    },
+    "window_preference": {
+      "type": "string",
+      "enum": [
+        "open",
+        "closed",
+        "no_preference"
+      ]
+    },
+    "ride_smoothness_priority": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "passenger_email"
+  ]
+}

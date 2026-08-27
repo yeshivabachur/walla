@@ -1,0 +1,21 @@
+{
+  "name": "DriverAppreciationProgram",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "appreciation_events": {
+      "type": "number"
+    },
+    "recognition_received": {
+      "type": "number"
+    },
+    "gratitude_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

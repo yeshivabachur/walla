@@ -1,0 +1,21 @@
+{
+  "name": "DriverIncomeStability",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "income_variance": {
+      "type": "number"
+    },
+    "guaranteed_minimum": {
+      "type": "number"
+    },
+    "stability_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

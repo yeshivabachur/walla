@@ -1,0 +1,22 @@
+{
+  "name": "CounselingReferral",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "counselor_name": {
+      "type": "string"
+    },
+    "appointment_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "service_type": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "BrailleLabeling",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "braille_present": {
+      "type": "boolean"
+    },
+    "labeled_controls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverVoiceInPlatform",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "policy_votes": {
+      "type": "number"
+    },
+    "feature_requests": {
+      "type": "number"
+    },
+    "influence_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

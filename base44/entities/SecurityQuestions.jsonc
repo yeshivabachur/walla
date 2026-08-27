@@ -1,0 +1,21 @@
+{
+  "name": "SecurityQuestions",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "answers_hashed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

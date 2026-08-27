@@ -1,0 +1,24 @@
+{
+  "name": "DriverComplianceTracking",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "license_valid": {
+      "type": "boolean"
+    },
+    "insurance_valid": {
+      "type": "boolean"
+    },
+    "background_check_current": {
+      "type": "boolean"
+    },
+    "compliance_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

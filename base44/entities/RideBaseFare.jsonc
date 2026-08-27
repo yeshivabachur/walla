@@ -1,0 +1,15 @@
+{
+  "name": "RideBaseFare",
+  "type": "object",
+  "properties": {
+    "vehicle_type": {
+      "type": "string"
+    },
+    "base_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "vehicle_type"
+  ]
+}

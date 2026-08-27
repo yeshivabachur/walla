@@ -1,0 +1,21 @@
+{
+  "name": "PassengerGiftCardPayment",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "gift_cards": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "total_balance": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

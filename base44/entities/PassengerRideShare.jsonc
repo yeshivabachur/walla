@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRideShare",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "shared_with": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "engagement": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

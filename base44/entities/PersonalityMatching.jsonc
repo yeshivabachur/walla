@@ -1,0 +1,30 @@
+{
+  "name": "PersonalityMatching",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "personality_type": {
+      "type": "string"
+    },
+    "communication_style": {
+      "type": "string"
+    },
+    "music_preference": {
+      "type": "string"
+    },
+    "conversation_level": {
+      "type": "string",
+      "enum": [
+        "none",
+        "minimal",
+        "moderate",
+        "chatty"
+      ]
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

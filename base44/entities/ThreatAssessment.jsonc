@@ -1,0 +1,30 @@
+{
+  "name": "ThreatAssessment",
+  "type": "object",
+  "properties": {
+    "threat_id": {
+      "type": "string"
+    },
+    "threat_level": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "threat_type": {
+      "type": "string"
+    },
+    "mitigation_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "threat_id"
+  ]
+}

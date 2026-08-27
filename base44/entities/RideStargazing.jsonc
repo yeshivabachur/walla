@@ -1,0 +1,21 @@
+{
+  "name": "RideStargazing",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "panoramic_roof_open": {
+      "type": "boolean"
+    },
+    "astronomy_guide": {
+      "type": "boolean"
+    },
+    "constellation_info": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

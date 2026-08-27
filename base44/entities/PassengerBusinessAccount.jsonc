@@ -1,0 +1,25 @@
+{
+  "name": "PassengerBusinessAccount",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "company_name": {
+      "type": "string"
+    },
+    "tax_id": {
+      "type": "string"
+    },
+    "monthly_budget": {
+      "type": "number"
+    },
+    "employee_count": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email",
+    "company_name"
+  ]
+}

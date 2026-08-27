@@ -1,0 +1,21 @@
+{
+  "name": "DriverSustainabilityScore",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "eco_score": {
+      "type": "number"
+    },
+    "carbon_saved": {
+      "type": "number"
+    },
+    "green_rides": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

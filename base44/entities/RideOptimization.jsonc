@@ -1,0 +1,37 @@
+{
+  "name": "RideOptimization",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "original_route": {
+      "type": "string"
+    },
+    "optimized_route": {
+      "type": "string"
+    },
+    "time_saved_minutes": {
+      "type": "number"
+    },
+    "distance_saved_km": {
+      "type": "number"
+    },
+    "fuel_saved_liters": {
+      "type": "number"
+    },
+    "cost_saved": {
+      "type": "number"
+    },
+    "optimization_factors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

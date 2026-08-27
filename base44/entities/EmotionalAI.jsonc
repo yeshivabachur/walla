@@ -1,0 +1,49 @@
+{
+  "name": "EmotionalAI",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_mood": {
+      "type": "string",
+      "enum": [
+        "happy",
+        "neutral",
+        "stressed",
+        "sad",
+        "excited"
+      ],
+      "default": "neutral"
+    },
+    "music_recommendation": {
+      "type": "string"
+    },
+    "conversation_style": {
+      "type": "string",
+      "enum": [
+        "chatty",
+        "quiet",
+        "minimal"
+      ],
+      "default": "minimal"
+    },
+    "ai_adjustments": {
+      "type": "object",
+      "properties": {
+        "temperature": {
+          "type": "string"
+        },
+        "lighting": {
+          "type": "string"
+        },
+        "route_style": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "PassengerDestinationHistory",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "destinations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "frequency": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

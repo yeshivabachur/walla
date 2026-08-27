@@ -1,0 +1,24 @@
+{
+  "name": "DriverGlobalExpansion",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "cities_operated": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "international_rides": {
+      "type": "number"
+    },
+    "global_rating": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

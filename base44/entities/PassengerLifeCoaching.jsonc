@@ -1,0 +1,24 @@
+{
+  "name": "PassengerLifeCoaching",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "coaching_sessions": {
+      "type": "number"
+    },
+    "goals_set": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "progress_tracking": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

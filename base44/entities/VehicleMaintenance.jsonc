@@ -1,0 +1,51 @@
+{
+  "name": "VehicleMaintenance",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "vehicle_id": {
+      "type": "string"
+    },
+    "maintenance_schedule": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "service_type": {
+            "type": "string"
+          },
+          "due_date": {
+            "type": "string"
+          },
+          "completed": {
+            "type": "boolean"
+          }
+        }
+      },
+      "default": []
+    },
+    "current_mileage": {
+      "type": "number"
+    },
+    "ai_predictions": {
+      "type": "object",
+      "properties": {
+        "next_oil_change": {
+          "type": "string"
+        },
+        "tire_replacement": {
+          "type": "string"
+        },
+        "estimated_costs": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "required": [
+    "driver_email",
+    "vehicle_id"
+  ]
+}

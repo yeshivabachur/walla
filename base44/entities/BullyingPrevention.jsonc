@@ -1,0 +1,21 @@
+{
+  "name": "BullyingPrevention",
+  "type": "object",
+  "properties": {
+    "incident_id": {
+      "type": "string"
+    },
+    "victim_email": {
+      "type": "string"
+    },
+    "pattern_detected": {
+      "type": "boolean"
+    },
+    "intervention_triggered": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "incident_id"
+  ]
+}

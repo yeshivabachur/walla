@@ -1,0 +1,27 @@
+{
+  "name": "DriverCareerPath",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "current_level": {
+      "type": "string"
+    },
+    "next_level": {
+      "type": "string"
+    },
+    "progress_percentage": {
+      "type": "number"
+    },
+    "requirements_met": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

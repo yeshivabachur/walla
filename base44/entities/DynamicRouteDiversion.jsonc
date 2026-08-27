@@ -1,0 +1,33 @@
+{
+  "name": "DynamicRouteDiversion",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "original_route": {
+      "type": "string"
+    },
+    "suggested_route": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "time_saved_minutes": {
+      "type": "number"
+    },
+    "fare_adjustment": {
+      "type": "number"
+    },
+    "accepted": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "suggested_route",
+    "reason"
+  ]
+}

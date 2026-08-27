@@ -1,0 +1,33 @@
+{
+  "name": "CarbonOffset",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "ride_request_id": {
+      "type": "string"
+    },
+    "carbon_emissions_kg": {
+      "type": "number"
+    },
+    "offset_cost": {
+      "type": "number"
+    },
+    "offset_project": {
+      "type": "string"
+    },
+    "offset_purchased": {
+      "type": "boolean",
+      "default": false
+    },
+    "certificate_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "ride_request_id",
+    "carbon_emissions_kg"
+  ]
+}

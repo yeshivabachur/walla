@@ -1,0 +1,40 @@
+{
+  "name": "VehicleTelemetry",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "speed": {
+      "type": "number"
+    },
+    "rpm": {
+      "type": "number"
+    },
+    "fuel_level": {
+      "type": "number"
+    },
+    "engine_temperature": {
+      "type": "number"
+    },
+    "harsh_braking_count": {
+      "type": "number",
+      "default": 0
+    },
+    "rapid_acceleration_count": {
+      "type": "number",
+      "default": 0
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "driver_email"
+  ]
+}

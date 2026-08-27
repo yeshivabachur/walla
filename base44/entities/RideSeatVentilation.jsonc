@@ -1,0 +1,15 @@
+{
+  "name": "RideSeatVentilation",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "ventilated_seats": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

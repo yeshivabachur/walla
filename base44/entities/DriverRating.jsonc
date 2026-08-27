@@ -1,0 +1,28 @@
+{
+  "name": "DriverRating",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "average_rating": {
+      "type": "number"
+    },
+    "total_ratings": {
+      "type": "number",
+      "default": 0
+    },
+    "five_star_count": {
+      "type": "number",
+      "default": 0
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "driver_email",
+    "average_rating"
+  ]
+}

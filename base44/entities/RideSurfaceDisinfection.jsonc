@@ -1,0 +1,18 @@
+{
+  "name": "RideSurfaceDisinfection",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "surfaces_wiped": {
+      "type": "boolean"
+    },
+    "sanitizer_used": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

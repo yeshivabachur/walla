@@ -1,0 +1,15 @@
+{
+  "name": "RideSmokeFree",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "smoke_free_verified": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "DriverRecognitionAward",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "award_category": {
+      "type": "string"
+    },
+    "month": {
+      "type": "string"
+    },
+    "public_recognition": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email",
+    "award_category"
+  ]
+}

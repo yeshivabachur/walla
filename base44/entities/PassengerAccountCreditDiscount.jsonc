@@ -1,0 +1,18 @@
+{
+  "name": "PassengerAccountCreditDiscount",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "credit_balance": {
+      "type": "number"
+    },
+    "applied_to_ride": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "DriverPartner",
+  "type": "object",
+  "properties": {
+    "partner_name": {
+      "type": "string"
+    },
+    "partner_type": {
+      "type": "string",
+      "enum": [
+        "fuel_station",
+        "car_wash",
+        "maintenance",
+        "food",
+        "insurance"
+      ]
+    },
+    "discount_percentage": {
+      "type": "number"
+    },
+    "location": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "partner_name",
+    "partner_type",
+    "discount_percentage"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverPlatformGovernance",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "voting_power": {
+      "type": "number"
+    },
+    "governance_participation": {
+      "type": "number"
+    },
+    "policy_influence": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

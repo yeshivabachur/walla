@@ -1,0 +1,21 @@
+{
+  "name": "DriverLoyaltyBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "years_active": {
+      "type": "number"
+    },
+    "annual_bonus": {
+      "type": "number"
+    },
+    "bonus_percentage": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "AR_Navigation",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "ar_mode": {
+      "type": "string",
+      "enum": [
+        "windshield_projection",
+        "phone_camera",
+        "glasses"
+      ]
+    },
+    "landmarks_shown": {
+      "type": "number"
+    },
+    "accuracy_rating": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

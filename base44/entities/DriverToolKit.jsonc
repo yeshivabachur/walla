@@ -1,0 +1,21 @@
+{
+  "name": "DriverToolKit",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "tools_provided": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "value": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

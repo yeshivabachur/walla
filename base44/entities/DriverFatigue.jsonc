@@ -1,0 +1,36 @@
+{
+  "name": "DriverFatigue",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "hours_driven_today": {
+      "type": "number",
+      "default": 0
+    },
+    "consecutive_hours": {
+      "type": "number",
+      "default": 0
+    },
+    "last_break": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fatigue_score": {
+      "type": "number",
+      "default": 0,
+      "description": "0-100, higher means more fatigued"
+    },
+    "rest_recommended": {
+      "type": "boolean",
+      "default": false
+    },
+    "ai_insights": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "RideQualityScore",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "route_efficiency": {
+      "type": "number"
+    },
+    "passenger_comfort": {
+      "type": "number"
+    },
+    "communication_score": {
+      "type": "number"
+    },
+    "timeliness": {
+      "type": "number"
+    },
+    "overall_score": {
+      "type": "number"
+    },
+    "ai_insights": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "driver_email",
+    "overall_score"
+  ]
+}

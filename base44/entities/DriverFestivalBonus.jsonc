@@ -1,0 +1,22 @@
+{
+  "name": "DriverFestivalBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "festival_name": {
+      "type": "string"
+    },
+    "rides_during_festival": {
+      "type": "number"
+    },
+    "bonus_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "festival_name"
+  ]
+}

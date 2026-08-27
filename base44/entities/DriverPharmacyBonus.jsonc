@@ -1,0 +1,18 @@
+{
+  "name": "DriverPharmacyBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "pharmacy_trips": {
+      "type": "number"
+    },
+    "healthcare_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

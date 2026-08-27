@@ -1,0 +1,21 @@
+{
+  "name": "DriverAnniversaryBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "years_of_service": {
+      "type": "number"
+    },
+    "bonus_amount": {
+      "type": "number"
+    },
+    "special_recognition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "DriverLocation",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "heading": {
+      "type": "number"
+    },
+    "speed": {
+      "type": "number"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "available": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "driver_email",
+    "latitude",
+    "longitude"
+  ]
+}

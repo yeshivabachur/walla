@@ -1,0 +1,24 @@
+{
+  "name": "BiometricVerification",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "fingerprint_enrolled": {
+      "type": "boolean"
+    },
+    "face_id_enrolled": {
+      "type": "boolean"
+    },
+    "iris_scan_enrolled": {
+      "type": "boolean"
+    },
+    "voice_print_enrolled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

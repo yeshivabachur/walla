@@ -1,0 +1,21 @@
+{
+  "name": "RideSafeDropoff",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "safe_location": {
+      "type": "boolean"
+    },
+    "well_lit": {
+      "type": "boolean"
+    },
+    "wait_until_inside": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

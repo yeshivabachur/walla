@@ -1,0 +1,21 @@
+{
+  "name": "DriverSocialNetwork",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "connections": {
+      "type": "number"
+    },
+    "mutual_support_score": {
+      "type": "number"
+    },
+    "collaboration_rides": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

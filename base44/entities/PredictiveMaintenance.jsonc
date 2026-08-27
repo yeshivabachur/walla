@@ -1,0 +1,51 @@
+{
+  "name": "PredictiveMaintenance",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "prediction_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "maintenance_type": {
+      "type": "string",
+      "enum": [
+        "oil_change",
+        "tire_rotation",
+        "brake_service",
+        "battery",
+        "general"
+      ]
+    },
+    "urgency": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "default": "low"
+    },
+    "predicted_failure_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "estimated_cost": {
+      "type": "number"
+    },
+    "current_mileage": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "driver_email",
+    "maintenance_type"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "DriverFoodAllowance",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "daily_allowance": {
+      "type": "number"
+    },
+    "used_today": {
+      "type": "number"
+    },
+    "partner_restaurants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

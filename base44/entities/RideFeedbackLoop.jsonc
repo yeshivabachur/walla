@@ -1,0 +1,25 @@
+{
+  "name": "RideFeedbackLoop",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "feedback_type": {
+      "type": "string"
+    },
+    "sentiment": {
+      "type": "string"
+    },
+    "action_taken": {
+      "type": "string"
+    },
+    "resolved": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "feedback_type"
+  ]
+}

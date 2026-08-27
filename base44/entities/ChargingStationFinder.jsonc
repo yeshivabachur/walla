@@ -1,0 +1,28 @@
+{
+  "name": "ChargingStationFinder",
+  "type": "object",
+  "properties": {
+    "location": {
+      "type": "string"
+    },
+    "station_name": {
+      "type": "string"
+    },
+    "available_plugs": {
+      "type": "number"
+    },
+    "charging_speed": {
+      "type": "string"
+    },
+    "price_per_kwh": {
+      "type": "number"
+    },
+    "distance_km": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "location",
+    "station_name"
+  ]
+}

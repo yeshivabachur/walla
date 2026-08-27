@@ -1,0 +1,25 @@
+{
+  "name": "GenderPreference",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "preferred_driver_gender": {
+      "type": "string",
+      "enum": [
+        "male",
+        "female",
+        "any"
+      ]
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "user_email",
+    "preferred_driver_gender"
+  ]
+}

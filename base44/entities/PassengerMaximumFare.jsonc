@@ -1,0 +1,18 @@
+{
+  "name": "PassengerMaximumFare",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "max_fare_limit": {
+      "type": "number"
+    },
+    "alert_enabled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "PassengerBrakeQuality",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "smooth_braking": {
+      "type": "boolean"
+    },
+    "brake_rating": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverAutomationReadiness",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "automation_training": {
+      "type": "boolean"
+    },
+    "transition_support": {
+      "type": "boolean"
+    },
+    "future_role": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "RideSoundscape",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "soundscape_type": {
+      "type": "string",
+      "enum": [
+        "nature",
+        "city",
+        "ocean",
+        "rain",
+        "silence"
+      ]
+    },
+    "volume_level": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

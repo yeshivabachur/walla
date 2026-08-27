@@ -1,0 +1,18 @@
+{
+  "name": "ThroughputTracking",
+  "type": "object",
+  "properties": {
+    "service": {
+      "type": "string"
+    },
+    "requests_per_second": {
+      "type": "number"
+    },
+    "peak_throughput": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "service"
+  ]
+}

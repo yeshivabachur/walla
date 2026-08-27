@@ -1,0 +1,24 @@
+{
+  "name": "RideAmbiance",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "lighting_preference": {
+      "type": "string"
+    },
+    "scent_preference": {
+      "type": "string"
+    },
+    "music_genre": {
+      "type": "string"
+    },
+    "conversation_level": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "PassengerJourney",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "journey_stage": {
+      "type": "string",
+      "enum": [
+        "new",
+        "active",
+        "loyal",
+        "at_risk",
+        "churned"
+      ],
+      "default": "new"
+    },
+    "first_ride_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "last_ride_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "total_rides": {
+      "type": "number",
+      "default": 0
+    },
+    "total_spent": {
+      "type": "number",
+      "default": 0
+    },
+    "avg_ride_frequency_days": {
+      "type": "number"
+    },
+    "churn_risk_score": {
+      "type": "number",
+      "default": 0
+    },
+    "predicted_next_ride": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "preferred_times": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "preferred_routes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "lifetime_value": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

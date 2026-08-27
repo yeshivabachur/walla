@@ -1,0 +1,33 @@
+{
+  "name": "DriverTeam",
+  "type": "object",
+  "properties": {
+    "team_name": {
+      "type": "string"
+    },
+    "leader_email": {
+      "type": "string"
+    },
+    "member_emails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "zone": {
+      "type": "string"
+    },
+    "team_earnings": {
+      "type": "number",
+      "default": 0
+    },
+    "team_goals": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "team_name",
+    "leader_email"
+  ]
+}

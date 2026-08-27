@@ -1,0 +1,21 @@
+{
+  "name": "DriverErgonomicSetup",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "seat_position_optimized": {
+      "type": "boolean"
+    },
+    "back_support_rating": {
+      "type": "number"
+    },
+    "posture_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

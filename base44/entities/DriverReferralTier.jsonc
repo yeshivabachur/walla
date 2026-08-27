@@ -1,0 +1,21 @@
+{
+  "name": "DriverReferralTier",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "referrals_made": {
+      "type": "number"
+    },
+    "tier": {
+      "type": "string"
+    },
+    "bonus_multiplier": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverThanksgivingBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "thanksgiving_rides": {
+      "type": "number"
+    },
+    "bonus_amount": {
+      "type": "number"
+    },
+    "gratitude_message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "RideBulkBookingDiscount",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "rides_booked": {
+      "type": "number"
+    },
+    "discount_percentage": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

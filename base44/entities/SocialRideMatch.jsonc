@@ -1,0 +1,48 @@
+{
+  "name": "SocialRideMatch",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "route": {
+      "type": "string"
+    },
+    "interests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "match_preferences": {
+      "type": "object",
+      "properties": {
+        "age_range": {
+          "type": "string"
+        },
+        "conversation_level": {
+          "type": "string"
+        },
+        "music_preference": {
+          "type": "string"
+        }
+      }
+    },
+    "matched_riders": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "default": []
+    },
+    "compatibility_score": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "user_email",
+    "route"
+  ]
+}

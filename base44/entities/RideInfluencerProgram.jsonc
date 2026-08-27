@@ -1,0 +1,24 @@
+{
+  "name": "RideInfluencerProgram",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "follower_count": {
+      "type": "number"
+    },
+    "content_created": {
+      "type": "number"
+    },
+    "referrals_generated": {
+      "type": "number"
+    },
+    "commission_earned": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

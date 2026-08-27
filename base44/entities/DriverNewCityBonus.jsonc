@@ -1,0 +1,22 @@
+{
+  "name": "DriverNewCityBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "new_city": {
+      "type": "string"
+    },
+    "rides_in_city": {
+      "type": "number"
+    },
+    "bonus_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "new_city"
+  ]
+}

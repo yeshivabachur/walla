@@ -1,0 +1,18 @@
+{
+  "name": "PWAManifest",
+  "type": "object",
+  "properties": {
+    "app_name": {
+      "type": "string"
+    },
+    "installable": {
+      "type": "boolean"
+    },
+    "installs_count": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "app_name"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "DriverMaintenanceDiscount",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "partner_shop": {
+      "type": "string"
+    },
+    "discount_percentage": {
+      "type": "number"
+    },
+    "services_covered": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

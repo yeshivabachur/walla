@@ -1,0 +1,36 @@
+{
+  "name": "DriverRestRequirement",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "continuous_hours_driven": {
+      "type": "number"
+    },
+    "last_break_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "rest_required": {
+      "type": "boolean",
+      "default": false
+    },
+    "min_rest_minutes": {
+      "type": "number",
+      "default": 15
+    },
+    "compliance_status": {
+      "type": "string",
+      "enum": [
+        "compliant",
+        "warning",
+        "violation"
+      ]
+    }
+  },
+  "required": [
+    "driver_email",
+    "continuous_hours_driven"
+  ]
+}

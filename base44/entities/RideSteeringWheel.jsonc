@@ -1,0 +1,18 @@
+{
+  "name": "RideSteeringWheel",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "steering_condition": {
+      "type": "string"
+    },
+    "wrapped": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

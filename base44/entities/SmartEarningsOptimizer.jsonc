@@ -1,0 +1,27 @@
+{
+  "name": "SmartEarningsOptimizer",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "recommended_zones": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommended_hours": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "potential_increase": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

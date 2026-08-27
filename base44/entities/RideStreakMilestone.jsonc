@@ -1,0 +1,29 @@
+{
+  "name": "RideStreakMilestone",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "milestone_type": {
+      "type": "string"
+    },
+    "milestone_value": {
+      "type": "number"
+    },
+    "achieved_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "reward_points": {
+      "type": "number"
+    },
+    "badge_earned": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "milestone_type"
+  ]
+}

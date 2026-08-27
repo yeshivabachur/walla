@@ -1,0 +1,27 @@
+{
+  "name": "HealthCheck",
+  "type": "object",
+  "properties": {
+    "service_name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "healthy",
+        "degraded",
+        "down"
+      ]
+    },
+    "response_time": {
+      "type": "number"
+    },
+    "last_check": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "service_name"
+  ]
+}

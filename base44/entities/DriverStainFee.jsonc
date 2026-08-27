@@ -1,0 +1,18 @@
+{
+  "name": "DriverStainFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "stain_severity": {
+      "type": "string"
+    },
+    "professional_cleaning_cost": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

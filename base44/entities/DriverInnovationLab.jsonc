@@ -1,0 +1,21 @@
+{
+  "name": "DriverInnovationLab",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "ideas_submitted": {
+      "type": "number"
+    },
+    "ideas_implemented": {
+      "type": "number"
+    },
+    "innovation_rewards": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

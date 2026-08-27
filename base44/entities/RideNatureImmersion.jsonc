@@ -1,0 +1,21 @@
+{
+  "name": "RideNatureImmersion",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "nature_sounds": {
+      "type": "boolean"
+    },
+    "forest_bathing_audio": {
+      "type": "boolean"
+    },
+    "natural_scenery_route": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

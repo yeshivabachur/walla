@@ -1,0 +1,18 @@
+{
+  "name": "DriverOptometristBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "eye_doctor_trips": {
+      "type": "number"
+    },
+    "vision_care_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

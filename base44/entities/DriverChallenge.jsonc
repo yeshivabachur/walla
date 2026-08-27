@@ -1,0 +1,57 @@
+{
+  "name": "DriverChallenge",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "challenge_name": {
+      "type": "string"
+    },
+    "challenge_type": {
+      "type": "string",
+      "enum": [
+        "daily",
+        "weekly",
+        "monthly",
+        "team",
+        "special"
+      ]
+    },
+    "target_value": {
+      "type": "number"
+    },
+    "current_value": {
+      "type": "number",
+      "default": 0
+    },
+    "reward_amount": {
+      "type": "number"
+    },
+    "reward_type": {
+      "type": "string",
+      "enum": [
+        "cash",
+        "points",
+        "badge",
+        "boost"
+      ]
+    },
+    "team_id": {
+      "type": "string"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "driver_email",
+    "challenge_name",
+    "target_value"
+  ]
+}

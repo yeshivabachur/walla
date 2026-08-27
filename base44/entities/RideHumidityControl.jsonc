@@ -1,0 +1,15 @@
+{
+  "name": "RideHumidityControl",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "humidity_controlled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

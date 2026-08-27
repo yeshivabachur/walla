@@ -1,0 +1,18 @@
+{
+  "name": "DriverPowerOutageFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "traffic_light_outage": {
+      "type": "boolean"
+    },
+    "navigation_difficulty_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverExtraEffortBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "extra_effort_instances": {
+      "type": "number"
+    },
+    "bonus_per_instance": {
+      "type": "number"
+    },
+    "total_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

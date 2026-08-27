@@ -1,0 +1,21 @@
+{
+  "name": "RoleBasedAccess",
+  "type": "object",
+  "properties": {
+    "role_name": {
+      "type": "string"
+    },
+    "permissions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "role_name"
+  ]
+}

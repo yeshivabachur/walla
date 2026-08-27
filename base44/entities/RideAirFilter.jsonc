@@ -1,0 +1,15 @@
+{
+  "name": "RideAirFilter",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "cabin_filter_clean": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

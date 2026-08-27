@@ -1,0 +1,33 @@
+{
+  "name": "VoiceBooking",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string"
+    },
+    "voice_command": {
+      "type": "string"
+    },
+    "parsed_pickup": {
+      "type": "string"
+    },
+    "parsed_destination": {
+      "type": "string"
+    },
+    "confidence_score": {
+      "type": "number"
+    },
+    "ride_created": {
+      "type": "boolean",
+      "default": false
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "passenger_email",
+    "voice_command"
+  ]
+}

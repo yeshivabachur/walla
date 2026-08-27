@@ -1,0 +1,39 @@
+{
+  "name": "RideRecording",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "recording_type": {
+      "type": "string",
+      "enum": [
+        "audio",
+        "video",
+        "both"
+      ]
+    },
+    "storage_url": {
+      "type": "string"
+    },
+    "duration_seconds": {
+      "type": "number"
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ended_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "encrypted": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "recording_type"
+  ]
+}

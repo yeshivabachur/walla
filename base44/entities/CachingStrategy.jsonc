@@ -1,0 +1,21 @@
+{
+  "name": "CachingStrategy",
+  "type": "object",
+  "properties": {
+    "cache_name": {
+      "type": "string"
+    },
+    "ttl_seconds": {
+      "type": "number"
+    },
+    "hit_rate": {
+      "type": "number"
+    },
+    "eviction_policy": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "cache_name"
+  ]
+}

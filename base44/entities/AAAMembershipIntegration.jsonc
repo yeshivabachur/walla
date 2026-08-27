@@ -1,0 +1,21 @@
+{
+  "name": "AAAMembershipIntegration",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "membership_number": {
+      "type": "string"
+    },
+    "membership_level": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

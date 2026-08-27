@@ -1,0 +1,27 @@
+{
+  "name": "WebPerformanceMetrics",
+  "type": "object",
+  "properties": {
+    "page": {
+      "type": "string"
+    },
+    "fcp": {
+      "type": "number"
+    },
+    "lcp": {
+      "type": "number"
+    },
+    "fid": {
+      "type": "number"
+    },
+    "cls": {
+      "type": "number"
+    },
+    "ttfb": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "page"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "RideSmartPrice",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "dynamic_price": {
+      "type": "number"
+    },
+    "price_factors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "price_locked": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "VehicleTelematics",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "odometer": {
+      "type": "number"
+    },
+    "fuel_level": {
+      "type": "number"
+    },
+    "engine_temp": {
+      "type": "number"
+    },
+    "battery_voltage": {
+      "type": "number"
+    },
+    "tire_pressure": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "diagnostic_codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "last_update": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "driver_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "WiFiPositioning",
+  "type": "object",
+  "properties": {
+    "location": {
+      "type": "string"
+    },
+    "wifi_networks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "accuracy_meters": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "location"
+  ]
+}

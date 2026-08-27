@@ -1,0 +1,56 @@
+{
+  "name": "WeeklyReport",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "user_type": {
+      "type": "string",
+      "enum": [
+        "driver",
+        "passenger"
+      ]
+    },
+    "week_start": {
+      "type": "string",
+      "format": "date"
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "total_rides": {
+          "type": "number"
+        },
+        "total_amount": {
+          "type": "number"
+        },
+        "avg_rating": {
+          "type": "number"
+        },
+        "best_day": {
+          "type": "string"
+        }
+      }
+    },
+    "achievements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "insights": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "user_email",
+    "user_type",
+    "week_start"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "PassengerRideMood",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "pre_ride_mood": {
+      "type": "string"
+    },
+    "post_ride_mood": {
+      "type": "string"
+    },
+    "mood_factors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

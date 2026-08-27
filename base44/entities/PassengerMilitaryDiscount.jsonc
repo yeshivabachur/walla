@@ -1,0 +1,18 @@
+{
+  "name": "PassengerMilitaryDiscount",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "military_verified": {
+      "type": "boolean"
+    },
+    "discount_percentage": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

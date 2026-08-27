@@ -1,0 +1,33 @@
+{
+  "name": "RideHistoryExport",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "export_format": {
+      "type": "string",
+      "enum": [
+        "csv",
+        "pdf",
+        "json",
+        "excel"
+      ]
+    },
+    "date_range_start": {
+      "type": "string",
+      "format": "date"
+    },
+    "date_range_end": {
+      "type": "string",
+      "format": "date"
+    },
+    "export_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "export_format"
+  ]
+}

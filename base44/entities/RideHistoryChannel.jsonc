@@ -1,0 +1,21 @@
+{
+  "name": "RideHistoryChannel",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "historical_documentaries": {
+      "type": "boolean"
+    },
+    "location_history": {
+      "type": "boolean"
+    },
+    "educational_narration": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

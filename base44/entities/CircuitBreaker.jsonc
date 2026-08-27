@@ -1,0 +1,26 @@
+{
+  "name": "CircuitBreaker",
+  "type": "object",
+  "properties": {
+    "service_name": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "closed",
+        "open",
+        "half_open"
+      ]
+    },
+    "failure_count": {
+      "type": "number"
+    },
+    "threshold": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "service_name"
+  ]
+}

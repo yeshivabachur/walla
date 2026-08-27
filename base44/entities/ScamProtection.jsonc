@@ -1,0 +1,24 @@
+{
+  "name": "ScamProtection",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "scam_attempts_blocked": {
+      "type": "number"
+    },
+    "suspicious_messages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "protection_level": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

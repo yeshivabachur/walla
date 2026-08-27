@@ -1,0 +1,21 @@
+{
+  "name": "DriverAccidentProtection",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "coverage_limit": {
+      "type": "number"
+    },
+    "deductible": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

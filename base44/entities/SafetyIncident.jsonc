@@ -1,0 +1,55 @@
+{
+  "name": "SafetyIncident",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "incident_timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "incident_category": {
+      "type": "string",
+      "enum": [
+        "hard_braking",
+        "rapid_acceleration",
+        "sharp_turn",
+        "speeding",
+        "other"
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default": "low"
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      }
+    },
+    "driver_notified": {
+      "type": "boolean",
+      "default": false
+    },
+    "resolved": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "incident_category"
+  ]
+}

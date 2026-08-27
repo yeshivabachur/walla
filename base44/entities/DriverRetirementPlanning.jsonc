@@ -1,0 +1,21 @@
+{
+  "name": "DriverRetirementPlanning",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "retirement_fund": {
+      "type": "number"
+    },
+    "monthly_contribution": {
+      "type": "number"
+    },
+    "target_retirement_age": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

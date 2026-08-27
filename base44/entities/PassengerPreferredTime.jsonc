@@ -1,0 +1,24 @@
+{
+  "name": "PassengerPreferredTime",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "morning_person": {
+      "type": "boolean"
+    },
+    "night_person": {
+      "type": "boolean"
+    },
+    "preferred_booking_window": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

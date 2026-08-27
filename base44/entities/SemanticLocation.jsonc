@@ -1,0 +1,26 @@
+{
+  "name": "SemanticLocation",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "natural_description": {
+      "type": "string"
+    },
+    "resolved_address": {
+      "type": "string"
+    },
+    "confidence_score": {
+      "type": "number"
+    },
+    "context": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "natural_description",
+    "resolved_address"
+  ]
+}

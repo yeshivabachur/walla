@@ -1,0 +1,41 @@
+{
+  "name": "FlightTracking",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "flight_number": {
+      "type": "string"
+    },
+    "scheduled_arrival": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "actual_arrival": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "delay_minutes": {
+      "type": "number",
+      "default": 0
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "on_time",
+        "delayed",
+        "cancelled",
+        "landed"
+      ]
+    },
+    "pickup_adjusted": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "flight_number"
+  ]
+}

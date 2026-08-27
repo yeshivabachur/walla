@@ -1,0 +1,21 @@
+{
+  "name": "LaneDepartureWarning",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "system_enabled": {
+      "type": "boolean"
+    },
+    "warnings_today": {
+      "type": "number"
+    },
+    "sensitivity_level": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

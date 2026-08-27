@@ -1,0 +1,27 @@
+{
+  "name": "DriverCertificationLevel",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "certification_type": {
+      "type": "string"
+    },
+    "level": {
+      "type": "number"
+    },
+    "earned_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "driver_email",
+    "certification_type"
+  ]
+}

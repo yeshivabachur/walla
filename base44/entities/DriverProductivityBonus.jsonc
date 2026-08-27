@@ -1,0 +1,21 @@
+{
+  "name": "DriverProductivityBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "rides_per_hour": {
+      "type": "number"
+    },
+    "efficiency_score": {
+      "type": "number"
+    },
+    "bonus_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

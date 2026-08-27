@@ -1,0 +1,44 @@
+{
+  "name": "PersonalAI",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "ai_name": {
+      "type": "string",
+      "default": "Walla Assistant"
+    },
+    "personality_type": {
+      "type": "string",
+      "enum": [
+        "professional",
+        "friendly",
+        "concise",
+        "enthusiastic"
+      ],
+      "default": "friendly"
+    },
+    "learned_preferences": {
+      "type": "object",
+      "properties": {
+        "favorite_routes": {
+          "type": "array"
+        },
+        "preferred_times": {
+          "type": "array"
+        },
+        "conversation_style": {
+          "type": "string"
+        }
+      }
+    },
+    "proactive_suggestions": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

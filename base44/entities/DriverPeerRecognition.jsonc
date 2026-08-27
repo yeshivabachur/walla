@@ -1,0 +1,22 @@
+{
+  "name": "DriverPeerRecognition",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "recognized_by": {
+      "type": "string"
+    },
+    "recognition_type": {
+      "type": "string"
+    },
+    "points_awarded": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "recognized_by"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Wallet",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "balance": {
+      "type": "number",
+      "default": 0
+    },
+    "currency": {
+      "type": "string",
+      "default": "USD"
+    },
+    "transactions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "number"
+          },
+          "description": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    },
+    "auto_reload": {
+      "type": "boolean",
+      "default": false
+    },
+    "auto_reload_threshold": {
+      "type": "number",
+      "default": 10
+    },
+    "auto_reload_amount": {
+      "type": "number",
+      "default": 50
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

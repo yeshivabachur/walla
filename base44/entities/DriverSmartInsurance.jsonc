@@ -1,0 +1,21 @@
+{
+  "name": "DriverSmartInsurance",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "usage_based_premium": {
+      "type": "number"
+    },
+    "safe_driving_discount": {
+      "type": "number"
+    },
+    "coverage_optimization": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

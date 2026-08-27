@@ -1,0 +1,43 @@
+{
+  "name": "DriverTier",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "tier": {
+      "type": "string",
+      "enum": [
+        "bronze",
+        "silver",
+        "gold",
+        "platinum",
+        "diamond"
+      ]
+    },
+    "total_rides": {
+      "type": "number",
+      "default": 0
+    },
+    "average_rating": {
+      "type": "number"
+    },
+    "acceptance_rate": {
+      "type": "number"
+    },
+    "cancellation_rate": {
+      "type": "number"
+    },
+    "perks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "driver_email",
+    "tier"
+  ]
+}

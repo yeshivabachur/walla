@@ -1,0 +1,24 @@
+{
+  "name": "RideRevenueSharing",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "base_fare": {
+      "type": "number"
+    },
+    "driver_share": {
+      "type": "number"
+    },
+    "platform_share": {
+      "type": "number"
+    },
+    "bonus_share": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

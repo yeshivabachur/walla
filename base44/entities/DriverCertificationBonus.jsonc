@@ -1,0 +1,22 @@
+{
+  "name": "DriverCertificationBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "certification_name": {
+      "type": "string"
+    },
+    "bonus_amount": {
+      "type": "number"
+    },
+    "recurring": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email",
+    "certification_name"
+  ]
+}

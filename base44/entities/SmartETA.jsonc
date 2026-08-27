@@ -1,0 +1,57 @@
+{
+  "name": "SmartETA",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "predicted_arrival": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "factors": {
+      "type": "object",
+      "properties": {
+        "traffic": {
+          "type": "string"
+        },
+        "weather": {
+          "type": "string"
+        },
+        "events": {
+          "type": "string"
+        },
+        "driver_history": {
+          "type": "string"
+        }
+      }
+    },
+    "alternative_routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "route_name": {
+            "type": "string"
+          },
+          "eta_minutes": {
+            "type": "number"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    },
+    "accuracy": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

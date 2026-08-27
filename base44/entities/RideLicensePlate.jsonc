@@ -1,0 +1,18 @@
+{
+  "name": "RideLicensePlate",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "plate_number": {
+      "type": "string"
+    },
+    "plate_visible": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

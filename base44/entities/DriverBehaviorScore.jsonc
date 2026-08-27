@@ -1,0 +1,57 @@
+{
+  "name": "DriverBehaviorScore",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "overall_score": {
+      "type": "number",
+      "default": 100
+    },
+    "safe_driving_score": {
+      "type": "number",
+      "default": 100
+    },
+    "customer_service_score": {
+      "type": "number",
+      "default": 100
+    },
+    "punctuality_score": {
+      "type": "number",
+      "default": 100
+    },
+    "vehicle_condition_score": {
+      "type": "number",
+      "default": 100
+    },
+    "incidents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    },
+    "improvement_areas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

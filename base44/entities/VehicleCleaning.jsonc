@@ -1,0 +1,37 @@
+{
+  "name": "VehicleCleaning",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "cleaning_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "cleaning_type": {
+      "type": "string",
+      "enum": [
+        "interior",
+        "exterior",
+        "full_detail"
+      ]
+    },
+    "cost": {
+      "type": "number"
+    },
+    "next_cleaning_due": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "driver_email",
+    "cleaning_date",
+    "cleaning_type"
+  ]
+}

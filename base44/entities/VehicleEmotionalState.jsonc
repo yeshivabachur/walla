@@ -1,0 +1,24 @@
+{
+  "name": "VehicleEmotionalState",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "ambient_lighting": {
+      "type": "string"
+    },
+    "music_mood": {
+      "type": "string"
+    },
+    "temperature_mood": {
+      "type": "number"
+    },
+    "ai_personality": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "PassengerPriceAlert",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "route": {
+      "type": "string"
+    },
+    "target_price": {
+      "type": "number"
+    },
+    "alert_sent": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "route"
+  ]
+}

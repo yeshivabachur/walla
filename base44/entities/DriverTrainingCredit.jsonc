@@ -1,0 +1,21 @@
+{
+  "name": "DriverTrainingCredit",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "credits_available": {
+      "type": "number"
+    },
+    "courses_eligible": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "RideCancellationReason",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "cancelled_by": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string",
+      "enum": [
+        "changed_plans",
+        "driver_no_show",
+        "wrong_location",
+        "too_long_wait",
+        "other"
+      ]
+    },
+    "details": {
+      "type": "string"
+    },
+    "refund_issued": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "cancelled_by",
+    "reason"
+  ]
+}

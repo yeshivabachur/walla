@@ -1,0 +1,54 @@
+{
+  "name": "SmartRouting",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "fastest",
+        "cheapest",
+        "scenic",
+        "safest",
+        "eco_friendly"
+      ],
+      "default": "fastest"
+    },
+    "avoid_preferences": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "highways",
+          "tolls",
+          "ferries",
+          "unpaved_roads"
+        ]
+      },
+      "default": []
+    },
+    "optimized_route": {
+      "type": "object",
+      "properties": {
+        "duration": {
+          "type": "number"
+        },
+        "cost": {
+          "type": "number"
+        },
+        "scenic_rating": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "user_email"
+  ]
+}

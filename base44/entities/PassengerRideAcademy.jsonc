@@ -1,0 +1,24 @@
+{
+  "name": "PassengerRideAcademy",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "courses_completed": {
+      "type": "number"
+    },
+    "skills_learned": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "certificates_earned": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

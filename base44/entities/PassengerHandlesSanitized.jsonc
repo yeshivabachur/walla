@@ -1,0 +1,18 @@
+{
+  "name": "PassengerHandlesSanitized",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "door_handles_clean": {
+      "type": "boolean"
+    },
+    "interior_handles_clean": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

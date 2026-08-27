@@ -1,0 +1,21 @@
+{
+  "name": "DriverSmartInvesting",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "investment_account": {
+      "type": "boolean"
+    },
+    "portfolio_value": {
+      "type": "number"
+    },
+    "roi_percentage": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

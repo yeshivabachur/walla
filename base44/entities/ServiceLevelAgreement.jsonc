@@ -1,0 +1,21 @@
+{
+  "name": "ServiceLevelAgreement",
+  "type": "object",
+  "properties": {
+    "service_name": {
+      "type": "string"
+    },
+    "guaranteed_uptime": {
+      "type": "number"
+    },
+    "max_response_time": {
+      "type": "number"
+    },
+    "penalty_for_breach": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "service_name"
+  ]
+}

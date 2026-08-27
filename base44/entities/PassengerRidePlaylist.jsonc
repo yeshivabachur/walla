@@ -1,0 +1,25 @@
+{
+  "name": "PassengerRidePlaylist",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "playlist_name": {
+      "type": "string"
+    },
+    "songs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "auto_play": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "playlist_name"
+  ]
+}

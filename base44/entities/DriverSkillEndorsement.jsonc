@@ -1,0 +1,21 @@
+{
+  "name": "DriverSkillEndorsement",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "skill": {
+      "type": "string"
+    },
+    "endorsements": {
+      "type": "number"
+    },
+    "verified": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

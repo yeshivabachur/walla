@@ -1,0 +1,33 @@
+{
+  "name": "PeakHourBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "peak_hours_worked": {
+      "type": "number"
+    },
+    "rides_during_peak": {
+      "type": "number"
+    },
+    "bonus_multiplier": {
+      "type": "number"
+    },
+    "bonus_amount": {
+      "type": "number"
+    },
+    "paid": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "driver_email",
+    "date"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "DriverUnionMembership",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "union_name": {
+      "type": "string"
+    },
+    "membership_status": {
+      "type": "string"
+    },
+    "monthly_dues": {
+      "type": "number"
+    },
+    "benefits_active": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email",
+    "union_name"
+  ]
+}

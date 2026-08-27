@@ -1,0 +1,21 @@
+{
+  "name": "DriverQualityOfLife",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "life_satisfaction": {
+      "type": "number"
+    },
+    "work_life_balance": {
+      "type": "number"
+    },
+    "happiness_index": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

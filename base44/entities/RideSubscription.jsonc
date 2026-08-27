@@ -1,0 +1,35 @@
+{
+  "name": "RideSubscription",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "plan_name": {
+      "type": "string"
+    },
+    "rides_per_month": {
+      "type": "number"
+    },
+    "rides_used": {
+      "type": "number",
+      "default": 0
+    },
+    "monthly_cost": {
+      "type": "number"
+    },
+    "savings": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "user_email",
+    "plan_name",
+    "rides_per_month",
+    "monthly_cost"
+  ]
+}

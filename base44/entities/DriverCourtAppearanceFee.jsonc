@@ -1,0 +1,19 @@
+{
+  "name": "DriverCourtAppearanceFee",
+  "type": "object",
+  "properties": {
+    "incident_id": {
+      "type": "string"
+    },
+    "court_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "time_compensation": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "incident_id"
+  ]
+}

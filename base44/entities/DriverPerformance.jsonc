@@ -1,0 +1,67 @@
+{
+  "name": "DriverPerformance",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string",
+      "description": "Email of the driver"
+    },
+    "total_rides": {
+      "type": "number",
+      "default": 0
+    },
+    "completed_rides": {
+      "type": "number",
+      "default": 0
+    },
+    "cancelled_rides": {
+      "type": "number",
+      "default": 0
+    },
+    "average_rating": {
+      "type": "number",
+      "default": 0
+    },
+    "on_time_percentage": {
+      "type": "number",
+      "default": 100
+    },
+    "acceptance_rate": {
+      "type": "number",
+      "default": 100
+    },
+    "total_earnings": {
+      "type": "number",
+      "default": 0
+    },
+    "badges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "current_streak": {
+      "type": "number",
+      "default": 0,
+      "description": "Current consecutive days with completed rides"
+    },
+    "best_streak": {
+      "type": "number",
+      "default": 0
+    },
+    "efficiency_score": {
+      "type": "number",
+      "default": 100,
+      "description": "AI-calculated efficiency score (0-100)"
+    },
+    "customer_service_score": {
+      "type": "number",
+      "default": 100,
+      "description": "AI-calculated customer service score (0-100)"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

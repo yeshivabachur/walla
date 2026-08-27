@@ -1,0 +1,24 @@
+{
+  "name": "DriverEntrepreneurship",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "side_businesses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "business_support": {
+      "type": "boolean"
+    },
+    "entrepreneurial_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

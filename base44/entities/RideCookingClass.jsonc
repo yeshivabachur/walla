@@ -1,0 +1,21 @@
+{
+  "name": "RideCookingClass",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "cooking_tutorial": {
+      "type": "boolean"
+    },
+    "recipe_sharing": {
+      "type": "boolean"
+    },
+    "chef_driver": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

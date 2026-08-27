@@ -1,0 +1,21 @@
+{
+  "name": "ChildSafeMode",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "parental_approval_required": {
+      "type": "boolean"
+    },
+    "spending_limit": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

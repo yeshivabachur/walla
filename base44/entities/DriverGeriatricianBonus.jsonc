@@ -1,0 +1,18 @@
+{
+  "name": "DriverGeriatricianBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "geriatrician_trips": {
+      "type": "number"
+    },
+    "elderly_care_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

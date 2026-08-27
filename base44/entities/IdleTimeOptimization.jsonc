@@ -1,0 +1,28 @@
+{
+  "name": "IdleTimeOptimization",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "current_location": {
+      "type": "string"
+    },
+    "suggested_waiting_spot": {
+      "type": "string"
+    },
+    "expected_wait_minutes": {
+      "type": "number"
+    },
+    "reasoning": {
+      "type": "string"
+    },
+    "nearby_demand_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "current_location"
+  ]
+}

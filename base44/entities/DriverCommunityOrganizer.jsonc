@@ -1,0 +1,21 @@
+{
+  "name": "DriverCommunityOrganizer",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "events_organized": {
+      "type": "number"
+    },
+    "participants": {
+      "type": "number"
+    },
+    "community_impact": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

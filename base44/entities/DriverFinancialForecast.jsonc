@@ -1,0 +1,21 @@
+{
+  "name": "DriverFinancialForecast",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "next_month_projection": {
+      "type": "number"
+    },
+    "quarterly_estimate": {
+      "type": "number"
+    },
+    "savings_potential": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

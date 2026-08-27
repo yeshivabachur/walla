@@ -1,0 +1,36 @@
+{
+  "name": "InAppChat",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "sender_email": {
+      "type": "string"
+    },
+    "sender_type": {
+      "type": "string",
+      "enum": [
+        "passenger",
+        "driver"
+      ]
+    },
+    "message": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "read": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "sender_email",
+    "sender_type",
+    "message"
+  ]
+}

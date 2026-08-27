@@ -1,0 +1,21 @@
+{
+  "name": "SmartSurgeAvoidance",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "avoid_surge": {
+      "type": "boolean"
+    },
+    "max_wait_time": {
+      "type": "number"
+    },
+    "alert_when_normal": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

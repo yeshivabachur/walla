@@ -1,0 +1,18 @@
+{
+  "name": "DriverPoliticianFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "politician_passenger": {
+      "type": "boolean"
+    },
+    "security_escort_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

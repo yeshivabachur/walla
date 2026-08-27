@@ -1,0 +1,27 @@
+{
+  "name": "RideLifeTransformation",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "transformation_goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "progress_tracking": {
+      "type": "number"
+    },
+    "success_stories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

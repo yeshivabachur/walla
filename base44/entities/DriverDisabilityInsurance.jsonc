@@ -1,0 +1,21 @@
+{
+  "name": "DriverDisabilityInsurance",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "coverage_amount": {
+      "type": "number"
+    },
+    "monthly_premium": {
+      "type": "number"
+    },
+    "waiting_period_days": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

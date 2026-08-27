@@ -1,0 +1,21 @@
+{
+  "name": "TactileIndicators",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "tactile_feedback": {
+      "type": "boolean"
+    },
+    "button_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

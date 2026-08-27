@@ -1,0 +1,35 @@
+{
+  "name": "ErraticDrivingDetection",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "hard_braking_count": {
+      "type": "number"
+    },
+    "rapid_acceleration_count": {
+      "type": "number"
+    },
+    "sharp_turn_count": {
+      "type": "number"
+    },
+    "swerving_detected": {
+      "type": "boolean"
+    },
+    "safety_score": {
+      "type": "number"
+    },
+    "detection_period": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "driver_email"
+  ]
+}

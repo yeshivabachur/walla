@@ -1,0 +1,54 @@
+{
+  "name": "RideAnomalyDetection",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "detection_timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "anomaly_type": {
+      "type": "string",
+      "enum": [
+        "route_deviation",
+        "excessive_speed",
+        "long_stop",
+        "suspicious_pattern"
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "default": "low"
+    },
+    "details": {
+      "type": "string"
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      }
+    },
+    "resolved": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "anomaly_type"
+  ]
+}

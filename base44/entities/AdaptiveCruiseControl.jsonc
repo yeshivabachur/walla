@@ -1,0 +1,21 @@
+{
+  "name": "AdaptiveCruiseControl",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "available": {
+      "type": "boolean"
+    },
+    "set_speed": {
+      "type": "number"
+    },
+    "following_distance": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "PassengerBookingPreset",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "preset_name": {
+      "type": "string"
+    },
+    "pickup_location": {
+      "type": "string"
+    },
+    "dropoff_location": {
+      "type": "string"
+    },
+    "vehicle_type": {
+      "type": "string"
+    },
+    "quick_book": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "preset_name"
+  ]
+}

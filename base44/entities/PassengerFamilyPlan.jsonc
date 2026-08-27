@@ -1,0 +1,24 @@
+{
+  "name": "PassengerFamilyPlan",
+  "type": "object",
+  "properties": {
+    "primary_email": {
+      "type": "string"
+    },
+    "family_members": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "shared_wallet": {
+      "type": "boolean"
+    },
+    "monthly_limit": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "primary_email"
+  ]
+}

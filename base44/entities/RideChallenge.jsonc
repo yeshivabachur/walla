@@ -1,0 +1,39 @@
+{
+  "name": "RideChallenge",
+  "type": "object",
+  "properties": {
+    "challenge_name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "target": {
+      "type": "number"
+    },
+    "reward_points": {
+      "type": "number"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "challenge_type": {
+      "type": "string",
+      "enum": [
+        "rides",
+        "distance",
+        "earnings",
+        "rating"
+      ]
+    }
+  },
+  "required": [
+    "challenge_name",
+    "target"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverProtectionPlan",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "legal_protection": {
+      "type": "boolean"
+    },
+    "insurance_coverage": {
+      "type": "number"
+    },
+    "emergency_fund": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

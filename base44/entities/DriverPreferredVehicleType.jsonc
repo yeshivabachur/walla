@@ -1,0 +1,24 @@
+{
+  "name": "DriverPreferredVehicleType",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "vehicle_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "luxury_only": {
+      "type": "boolean"
+    },
+    "eco_friendly_only": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

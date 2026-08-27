@@ -1,0 +1,21 @@
+{
+  "name": "PassengerCareerAdvice",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "career_counseling": {
+      "type": "boolean"
+    },
+    "job_search_tips": {
+      "type": "boolean"
+    },
+    "resume_review": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "VehicleHealth",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "health_score": {
+      "type": "number"
+    },
+    "diagnostics": {
+      "type": "object",
+      "properties": {
+        "engine_status": {
+          "type": "string"
+        },
+        "battery_health": {
+          "type": "number"
+        },
+        "tire_pressure": {
+          "type": "string"
+        },
+        "oil_life": {
+          "type": "number"
+        }
+      }
+    },
+    "alerts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "last_check": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "driver_email",
+    "health_score"
+  ]
+}

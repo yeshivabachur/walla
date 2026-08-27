@@ -1,0 +1,28 @@
+{
+  "name": "AutoReceiptGeneration",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "receipt_url": {
+      "type": "string"
+    },
+    "emailed": {
+      "type": "boolean"
+    },
+    "includes_breakdown": {
+      "type": "boolean"
+    },
+    "tax_deductible_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "user_email"
+  ]
+}

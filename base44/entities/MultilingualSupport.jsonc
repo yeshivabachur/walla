@@ -1,0 +1,25 @@
+{
+  "name": "MultilingualSupport",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "primary_language": {
+      "type": "string"
+    },
+    "secondary_languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "real_time_translation_enabled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "primary_language"
+  ]
+}

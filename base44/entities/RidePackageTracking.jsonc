@@ -1,0 +1,25 @@
+{
+  "name": "RidePackageTracking",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "package_id": {
+      "type": "string"
+    },
+    "tracking_number": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "delivery_proof": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "package_id"
+  ]
+}

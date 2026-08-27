@@ -1,0 +1,21 @@
+{
+  "name": "TokenRefresh",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "refresh_token": {
+      "type": "string"
+    },
+    "access_token": {
+      "type": "string"
+    },
+    "expires_in": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

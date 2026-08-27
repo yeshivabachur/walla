@@ -1,0 +1,28 @@
+{
+  "name": "WaitTimeOptimization",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "zone": {
+      "type": "string"
+    },
+    "current_wait_time": {
+      "type": "number"
+    },
+    "suggested_zone": {
+      "type": "string"
+    },
+    "expected_pickup_time": {
+      "type": "number"
+    },
+    "confidence": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "zone"
+  ]
+}

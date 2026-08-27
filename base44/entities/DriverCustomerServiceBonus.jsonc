@@ -1,0 +1,21 @@
+{
+  "name": "DriverCustomerServiceBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "service_score": {
+      "type": "number"
+    },
+    "compliments_received": {
+      "type": "number"
+    },
+    "bonus_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "AutoRebookingSuggestion",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "original_ride_id": {
+      "type": "string"
+    },
+    "suggested_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "same_route": {
+      "type": "boolean"
+    },
+    "price_estimate": {
+      "type": "number"
+    },
+    "accepted": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "original_ride_id"
+  ]
+}

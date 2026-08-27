@@ -1,0 +1,48 @@
+{
+  "name": "PredictiveBehavior",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "behavior_model": {
+      "type": "object",
+      "properties": {
+        "morning_routine": {
+          "type": "string"
+        },
+        "evening_routine": {
+          "type": "string"
+        },
+        "weekend_patterns": {
+          "type": "string"
+        }
+      }
+    },
+    "prediction_accuracy": {
+      "type": "number",
+      "default": 0
+    },
+    "auto_book_enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "next_predicted_ride": {
+      "type": "object",
+      "properties": {
+        "destination": {
+          "type": "string"
+        },
+        "time": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "number"
+        }
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

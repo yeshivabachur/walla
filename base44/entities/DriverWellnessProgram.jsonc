@@ -1,0 +1,24 @@
+{
+  "name": "DriverWellnessProgram",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "wellness_score": {
+      "type": "number"
+    },
+    "stress_level": {
+      "type": "string"
+    },
+    "exercise_minutes": {
+      "type": "number"
+    },
+    "mental_health_checkups": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

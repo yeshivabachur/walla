@@ -1,0 +1,44 @@
+{
+  "name": "Referral",
+  "type": "object",
+  "properties": {
+    "referrer_email": {
+      "type": "string",
+      "description": "Person who referred"
+    },
+    "referral_code": {
+      "type": "string",
+      "description": "Unique referral code"
+    },
+    "referred_email": {
+      "type": "string",
+      "description": "Person who was referred"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "completed",
+        "expired"
+      ],
+      "default": "pending"
+    },
+    "reward_amount": {
+      "type": "number",
+      "default": 10,
+      "description": "Reward amount in dollars"
+    },
+    "reward_claimed": {
+      "type": "boolean",
+      "default": false
+    },
+    "completed_date": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "referrer_email",
+    "referral_code"
+  ]
+}

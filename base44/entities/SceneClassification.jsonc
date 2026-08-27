@@ -1,0 +1,18 @@
+{
+  "name": "SceneClassification",
+  "type": "object",
+  "properties": {
+    "image_id": {
+      "type": "string"
+    },
+    "scene_type": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "image_id"
+  ]
+}

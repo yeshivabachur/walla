@@ -1,0 +1,18 @@
+{
+  "name": "RideUmbrella",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "umbrella_provided": {
+      "type": "boolean"
+    },
+    "rainy_day": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

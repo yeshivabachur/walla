@@ -1,0 +1,21 @@
+{
+  "name": "OfflineMode",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "cached_data": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "PassengerPersonalBranding",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "branding_workshops": {
+      "type": "number"
+    },
+    "social_media_strategy": {
+      "type": "boolean"
+    },
+    "brand_value": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

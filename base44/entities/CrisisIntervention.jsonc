@@ -1,0 +1,22 @@
+{
+  "name": "CrisisIntervention",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "crisis_type": {
+      "type": "string"
+    },
+    "counselor_connected": {
+      "type": "boolean"
+    },
+    "emergency_services_called": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "crisis_type"
+  ]
+}

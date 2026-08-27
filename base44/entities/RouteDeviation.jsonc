@@ -1,0 +1,58 @@
+{
+  "name": "RouteDeviation",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_email": {
+      "type": "string"
+    },
+    "expected_route": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "actual_location": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      }
+    },
+    "deviation_km": {
+      "type": "number",
+      "description": "Distance deviation from expected route"
+    },
+    "alert_sent": {
+      "type": "boolean",
+      "default": false
+    },
+    "passenger_acknowledged": {
+      "type": "boolean",
+      "default": false
+    },
+    "reason": {
+      "type": "string",
+      "description": "Driver explanation for deviation"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "minor",
+        "moderate",
+        "major"
+      ],
+      "default": "minor"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "passenger_email"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "AccountabilityLog",
+  "type": "object",
+  "properties": {
+    "action": {
+      "type": "string"
+    },
+    "performed_by": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "affected_user": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "action",
+    "performed_by"
+  ]
+}

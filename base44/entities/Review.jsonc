@@ -1,0 +1,47 @@
+{
+  "name": "Review",
+  "type": "object",
+  "properties": {
+    "reviewer_email": {
+      "type": "string",
+      "description": "Email of the person writing the review"
+    },
+    "reviewee_email": {
+      "type": "string",
+      "description": "Email of the person being reviewed"
+    },
+    "ride_id": {
+      "type": "string",
+      "description": "Reference to the ride"
+    },
+    "booking_id": {
+      "type": "string",
+      "description": "Reference to the booking (for passenger reviews)"
+    },
+    "rating": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Rating from 1 to 5 stars"
+    },
+    "comment": {
+      "type": "string",
+      "description": "Review comment"
+    },
+    "reviewer_type": {
+      "type": "string",
+      "enum": [
+        "driver",
+        "passenger"
+      ],
+      "description": "Type of reviewer"
+    }
+  },
+  "required": [
+    "reviewer_email",
+    "reviewee_email",
+    "ride_id",
+    "rating",
+    "reviewer_type"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "DetailedFeedback",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "reviewer_email": {
+      "type": "string"
+    },
+    "target_email": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "categories": {
+      "type": "object",
+      "properties": {
+        "punctuality": {
+          "type": "number"
+        },
+        "cleanliness": {
+          "type": "number"
+        },
+        "communication": {
+          "type": "number"
+        },
+        "safety": {
+          "type": "number"
+        },
+        "professionalism": {
+          "type": "number"
+        }
+      }
+    },
+    "comments": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "reviewer_email",
+    "target_email",
+    "rating"
+  ]
+}

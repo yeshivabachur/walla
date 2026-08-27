@@ -1,0 +1,32 @@
+{
+  "name": "InRideEntertainment",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "content_type": {
+      "type": "string",
+      "enum": [
+        "music",
+        "podcast",
+        "audiobook",
+        "video",
+        "games"
+      ]
+    },
+    "content_id": {
+      "type": "string"
+    },
+    "duration_watched": {
+      "type": "number"
+    },
+    "user_rating": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "content_type"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "AuditTrail",
+  "type": "object",
+  "properties": {
+    "entity_type": {
+      "type": "string"
+    },
+    "entity_id": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "entity_type",
+    "action"
+  ]
+}

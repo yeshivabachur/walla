@@ -1,0 +1,28 @@
+{
+  "name": "RideEntertainmentPreset",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "preset_name": {
+      "type": "string"
+    },
+    "music_genre": {
+      "type": "string"
+    },
+    "podcast_categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "auto_apply": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "preset_name"
+  ]
+}

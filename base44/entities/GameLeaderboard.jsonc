@@ -1,0 +1,27 @@
+{
+  "name": "GameLeaderboard",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "total_points": {
+      "type": "number"
+    },
+    "rank": {
+      "type": "number"
+    },
+    "badges_earned": {
+      "type": "number"
+    },
+    "challenges_completed": {
+      "type": "number"
+    },
+    "streak_days": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "RideSharedLocation",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "shared_with": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "share_duration": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

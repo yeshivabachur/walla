@@ -1,0 +1,29 @@
+{
+  "name": "DriverTimeOff",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "approved": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "driver_email",
+    "start_date",
+    "end_date"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "RideExteriorCleanliness",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "exterior_clean": {
+      "type": "boolean"
+    },
+    "recent_wash": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

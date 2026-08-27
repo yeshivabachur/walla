@@ -1,0 +1,18 @@
+{
+  "name": "DriverRheumatologistBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "rheumatologist_trips": {
+      "type": "number"
+    },
+    "arthritis_care_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

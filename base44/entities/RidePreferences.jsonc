@@ -1,0 +1,70 @@
+{
+  "name": "RidePreferences",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "temperature_preference": {
+      "type": "string",
+      "enum": [
+        "cool",
+        "moderate",
+        "warm"
+      ],
+      "default": "moderate"
+    },
+    "music_preference": {
+      "type": "string",
+      "enum": [
+        "no_music",
+        "radio",
+        "passenger_choice",
+        "driver_choice"
+      ],
+      "default": "driver_choice"
+    },
+    "conversation_preference": {
+      "type": "string",
+      "enum": [
+        "chatty",
+        "moderate",
+        "quiet"
+      ],
+      "default": "moderate"
+    },
+    "pet_friendly": {
+      "type": "boolean",
+      "default": false
+    },
+    "child_seat_needed": {
+      "type": "boolean",
+      "default": false
+    },
+    "child_seat_type": {
+      "type": "string",
+      "enum": [
+        "infant",
+        "toddler",
+        "booster"
+      ],
+      "description": "Type of child seat if needed"
+    },
+    "preferred_language": {
+      "type": "string",
+      "default": "English"
+    },
+    "scent_preference": {
+      "type": "string",
+      "enum": [
+        "no_scent",
+        "light_fresh",
+        "any"
+      ],
+      "default": "any"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

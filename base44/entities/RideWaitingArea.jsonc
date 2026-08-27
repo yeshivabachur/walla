@@ -1,0 +1,24 @@
+{
+  "name": "RideWaitingArea",
+  "type": "object",
+  "properties": {
+    "location": {
+      "type": "string"
+    },
+    "amenities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "capacity": {
+      "type": "number"
+    },
+    "current_occupancy": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "location"
+  ]
+}

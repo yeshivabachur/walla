@@ -1,0 +1,25 @@
+{
+  "name": "FraudPreventionAlert",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "alert_type": {
+      "type": "string"
+    },
+    "risk_score": {
+      "type": "number"
+    },
+    "flagged_activity": {
+      "type": "string"
+    },
+    "action_taken": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "alert_type"
+  ]
+}

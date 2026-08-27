@@ -1,0 +1,25 @@
+{
+  "name": "DriverVehicleUpgrade",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "upgrade_type": {
+      "type": "string"
+    },
+    "cost": {
+      "type": "number"
+    },
+    "subsidy_available": {
+      "type": "number"
+    },
+    "approved": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email",
+    "upgrade_type"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "PersonalizedPricing",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "loyalty_discount": {
+      "type": "number",
+      "default": 0
+    },
+    "streak_bonus": {
+      "type": "number",
+      "default": 0
+    },
+    "referral_credits": {
+      "type": "number",
+      "default": 0
+    },
+    "vip_multiplier": {
+      "type": "number",
+      "default": 1.0
+    },
+    "total_savings": {
+      "type": "number",
+      "default": 0
+    },
+    "next_reward_at": {
+      "type": "number"
+    },
+    "personalized_offers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "discount": {
+            "type": "number"
+          },
+          "expires": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

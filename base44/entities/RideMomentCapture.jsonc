@@ -1,0 +1,24 @@
+{
+  "name": "RideMomentCapture",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "moment_type": {
+      "type": "string"
+    },
+    "photo_url": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "shared": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

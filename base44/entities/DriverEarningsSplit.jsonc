@@ -1,0 +1,37 @@
+{
+  "name": "DriverEarningsSplit",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "period_start": {
+      "type": "string",
+      "format": "date"
+    },
+    "period_end": {
+      "type": "string",
+      "format": "date"
+    },
+    "total_fares": {
+      "type": "number"
+    },
+    "platform_commission": {
+      "type": "number"
+    },
+    "driver_net_earnings": {
+      "type": "number"
+    },
+    "tips": {
+      "type": "number"
+    },
+    "bonuses": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "period_start",
+    "period_end"
+  ]
+}

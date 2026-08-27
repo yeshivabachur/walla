@@ -1,0 +1,27 @@
+{
+  "name": "RideSmartRouting",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "ai_suggested_route": {
+      "type": "string"
+    },
+    "traditional_route": {
+      "type": "string"
+    },
+    "time_saved": {
+      "type": "number"
+    },
+    "fuel_saved": {
+      "type": "number"
+    },
+    "route_accepted": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

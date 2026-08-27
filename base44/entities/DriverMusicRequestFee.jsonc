@@ -1,0 +1,18 @@
+{
+  "name": "DriverMusicRequestFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "special_music_request": {
+      "type": "boolean"
+    },
+    "fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

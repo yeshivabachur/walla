@@ -1,0 +1,18 @@
+{
+  "name": "RidePrepaidCard",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "card_balance": {
+      "type": "number"
+    },
+    "auto_reload": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

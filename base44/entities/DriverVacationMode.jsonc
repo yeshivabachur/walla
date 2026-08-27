@@ -1,0 +1,34 @@
+{
+  "name": "DriverVacationMode",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "auto_decline_rides": {
+      "type": "boolean",
+      "default": true
+    },
+    "notification_paused": {
+      "type": "boolean",
+      "default": true
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "driver_email",
+    "start_date",
+    "end_date"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "PassengerQuickEscape",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "fake_call_trigger": {
+      "type": "boolean"
+    },
+    "emergency_exit_route": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

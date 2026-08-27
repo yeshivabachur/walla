@@ -1,0 +1,29 @@
+{
+  "name": "RideComfortSettings",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "preferred_temperature": {
+      "type": "number"
+    },
+    "seat_position": {
+      "type": "string"
+    },
+    "window_preference": {
+      "type": "string",
+      "enum": [
+        "open",
+        "closed",
+        "slightly_open"
+      ]
+    },
+    "ac_preference": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "name": "RecurringRide",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string"
+    },
+    "pickup_location": {
+      "type": "string"
+    },
+    "dropoff_location": {
+      "type": "string"
+    },
+    "recurrence_pattern": {
+      "type": "string",
+      "enum": [
+        "daily",
+        "weekdays",
+        "weekends",
+        "weekly",
+        "custom"
+      ]
+    },
+    "time_of_day": {
+      "type": "string"
+    },
+    "days_of_week": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "vehicle_preferences": {
+      "type": "object"
+    },
+    "ride_preferences": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "passenger_email",
+    "pickup_location",
+    "dropoff_location",
+    "recurrence_pattern",
+    "time_of_day"
+  ]
+}

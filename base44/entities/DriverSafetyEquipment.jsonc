@@ -1,0 +1,24 @@
+{
+  "name": "DriverSafetyEquipment",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "dashcam": {
+      "type": "boolean"
+    },
+    "first_aid_kit": {
+      "type": "boolean"
+    },
+    "fire_extinguisher": {
+      "type": "boolean"
+    },
+    "reflective_vest": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

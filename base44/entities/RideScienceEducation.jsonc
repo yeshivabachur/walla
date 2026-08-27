@@ -1,0 +1,21 @@
+{
+  "name": "RideScienceEducation",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "science_content": {
+      "type": "boolean"
+    },
+    "documentaries": {
+      "type": "boolean"
+    },
+    "stem_learning": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "ChildPickup",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "parent_email": {
+      "type": "string"
+    },
+    "child_name": {
+      "type": "string"
+    },
+    "child_age": {
+      "type": "number"
+    },
+    "pickup_location": {
+      "type": "string"
+    },
+    "dropoff_location": {
+      "type": "string"
+    },
+    "authorized_pickups": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Emails of authorized pickup persons"
+    },
+    "photo_verification_required": {
+      "type": "boolean",
+      "default": true
+    },
+    "pickup_photo_url": {
+      "type": "string"
+    },
+    "dropoff_photo_url": {
+      "type": "string"
+    },
+    "pin_code": {
+      "type": "string",
+      "description": "PIN for verification"
+    }
+  },
+  "required": [
+    "parent_email",
+    "child_name"
+  ]
+}

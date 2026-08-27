@@ -1,0 +1,33 @@
+{
+  "name": "SocialProof",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "recent_booking",
+        "milestone",
+        "popular_route",
+        "high_rating"
+      ]
+    },
+    "message": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "type",
+    "message"
+  ]
+}

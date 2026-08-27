@@ -1,0 +1,30 @@
+{
+  "name": "DriverVerificationBadge",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "background_check": {
+      "type": "boolean"
+    },
+    "identity_verified": {
+      "type": "boolean"
+    },
+    "insurance_verified": {
+      "type": "boolean"
+    },
+    "vehicle_inspected": {
+      "type": "boolean"
+    },
+    "rating_threshold_met": {
+      "type": "boolean"
+    },
+    "display_badge": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

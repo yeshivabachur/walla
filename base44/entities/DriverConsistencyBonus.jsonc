@@ -1,0 +1,21 @@
+{
+  "name": "DriverConsistencyBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "consecutive_weeks": {
+      "type": "number"
+    },
+    "bonus_tier": {
+      "type": "string"
+    },
+    "bonus_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

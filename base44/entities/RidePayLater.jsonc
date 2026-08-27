@@ -1,0 +1,25 @@
+{
+  "name": "RidePayLater",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "ride_request_id": {
+      "type": "string"
+    },
+    "amount_owed": {
+      "type": "number"
+    },
+    "payment_plan": {
+      "type": "string"
+    },
+    "paid": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "ride_request_id"
+  ]
+}

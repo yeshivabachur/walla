@@ -1,0 +1,19 @@
+{
+  "name": "AntiLockBrakes",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "abs_functional": {
+      "type": "boolean"
+    },
+    "last_service": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

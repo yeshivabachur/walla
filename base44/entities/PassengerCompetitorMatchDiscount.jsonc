@@ -1,0 +1,18 @@
+{
+  "name": "PassengerCompetitorMatchDiscount",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "competitor_price": {
+      "type": "number"
+    },
+    "price_match_applied": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

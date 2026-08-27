@@ -1,0 +1,18 @@
+{
+  "name": "RideNFCPayment",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "nfc_enabled": {
+      "type": "boolean"
+    },
+    "tap_to_pay": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "DriverKidnappingRiskFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "high_risk_passenger": {
+      "type": "boolean"
+    },
+    "bodyguard_premium": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

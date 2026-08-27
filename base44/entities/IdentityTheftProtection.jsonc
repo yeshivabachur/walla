@@ -1,0 +1,21 @@
+{
+  "name": "IdentityTheftProtection",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "monitoring_active": {
+      "type": "boolean"
+    },
+    "alerts_sent": {
+      "type": "number"
+    },
+    "breach_detected": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

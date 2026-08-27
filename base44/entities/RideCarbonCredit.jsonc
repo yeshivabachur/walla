@@ -1,0 +1,21 @@
+{
+  "name": "RideCarbonCredit",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "credits_earned": {
+      "type": "number"
+    },
+    "credits_redeemed": {
+      "type": "number"
+    },
+    "carbon_tons_offset": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

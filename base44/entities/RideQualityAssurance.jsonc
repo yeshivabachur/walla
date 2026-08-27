@@ -1,0 +1,27 @@
+{
+  "name": "RideQualityAssurance",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "vehicle_cleanliness": {
+      "type": "number"
+    },
+    "driver_professionalism": {
+      "type": "number"
+    },
+    "route_efficiency": {
+      "type": "number"
+    },
+    "communication_quality": {
+      "type": "number"
+    },
+    "overall_quality": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

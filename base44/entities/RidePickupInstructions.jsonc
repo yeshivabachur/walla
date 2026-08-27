@@ -1,0 +1,21 @@
+{
+  "name": "RidePickupInstructions",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "instructions": {
+      "type": "string"
+    },
+    "landmark": {
+      "type": "string"
+    },
+    "entrance_type": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

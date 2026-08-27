@@ -1,0 +1,21 @@
+{
+  "name": "RideAudioJournal",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "recording_url": {
+      "type": "string"
+    },
+    "duration_seconds": {
+      "type": "number"
+    },
+    "transcription": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

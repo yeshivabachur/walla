@@ -1,0 +1,21 @@
+{
+  "name": "PassengerBirthdayReward",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "birth_month": {
+      "type": "number"
+    },
+    "reward_value": {
+      "type": "number"
+    },
+    "claimed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

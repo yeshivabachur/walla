@@ -1,0 +1,45 @@
+{
+  "name": "TrafficAlert",
+  "type": "object",
+  "properties": {
+    "location": {
+      "type": "string"
+    },
+    "alert_type": {
+      "type": "string",
+      "enum": [
+        "accident",
+        "construction",
+        "congestion",
+        "weather",
+        "event"
+      ],
+      "default": "congestion"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "default": "medium"
+    },
+    "description": {
+      "type": "string"
+    },
+    "estimated_delay": {
+      "type": "number",
+      "description": "Delay in minutes"
+    },
+    "active_until": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "location",
+    "alert_type"
+  ]
+}

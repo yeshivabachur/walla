@@ -1,0 +1,37 @@
+{
+  "name": "BlockchainPayment",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "crypto_wallet": {
+      "type": "string"
+    },
+    "supported_currencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "ETH",
+        "BTC",
+        "USDC"
+      ]
+    },
+    "transaction_history": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "default": []
+    },
+    "auto_convert": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

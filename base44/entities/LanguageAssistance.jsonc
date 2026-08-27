@@ -1,0 +1,39 @@
+{
+  "name": "LanguageAssistance",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_language": {
+      "type": "string",
+      "default": "English"
+    },
+    "driver_language": {
+      "type": "string",
+      "default": "English"
+    },
+    "translation_enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "common_phrases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "english": {
+            "type": "string"
+          },
+          "translated": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

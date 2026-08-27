@@ -1,0 +1,25 @@
+{
+  "name": "DriverMonthlyBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "month": {
+      "type": "string"
+    },
+    "bonus_amount": {
+      "type": "number"
+    },
+    "criteria_met": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "driver_email",
+    "month"
+  ]
+}

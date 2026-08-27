@@ -1,0 +1,21 @@
+{
+  "name": "RideUpfrontPricing",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "quoted_price": {
+      "type": "number"
+    },
+    "final_price": {
+      "type": "number"
+    },
+    "price_guarantee": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

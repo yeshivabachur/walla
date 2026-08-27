@@ -1,0 +1,29 @@
+{
+  "name": "RidePromotion",
+  "type": "object",
+  "properties": {
+    "promo_name": {
+      "type": "string"
+    },
+    "discount_type": {
+      "type": "string"
+    },
+    "discount_value": {
+      "type": "number"
+    },
+    "valid_from": {
+      "type": "string",
+      "format": "date"
+    },
+    "valid_until": {
+      "type": "string",
+      "format": "date"
+    },
+    "usage_count": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "promo_name"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "CommunityGuidelines",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "guidelines_accepted": {
+      "type": "boolean"
+    },
+    "violations": {
+      "type": "number"
+    },
+    "warnings_received": {
+      "type": "number"
+    },
+    "account_status": {
+      "type": "string",
+      "enum": [
+        "good",
+        "warning",
+        "suspended"
+      ]
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

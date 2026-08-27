@@ -1,0 +1,21 @@
+{
+  "name": "BackupCodes",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "codes_remaining": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

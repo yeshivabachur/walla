@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRideReceipt",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "receipt_url": {
+      "type": "string"
+    },
+    "itemized": {
+      "type": "boolean"
+    },
+    "tax_deductible": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "SchoolZoneTiming",
+  "type": "object",
+  "properties": {
+    "school_name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "active_hours": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "speed_limit": {
+      "type": "number"
+    },
+    "school_days_only": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "school_name",
+    "location"
+  ]
+}

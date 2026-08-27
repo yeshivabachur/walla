@@ -1,0 +1,38 @@
+{
+  "name": "ReferralTracking",
+  "type": "object",
+  "properties": {
+    "referrer_email": {
+      "type": "string"
+    },
+    "referee_email": {
+      "type": "string"
+    },
+    "referral_code": {
+      "type": "string"
+    },
+    "signup_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "first_ride_completed": {
+      "type": "boolean",
+      "default": false
+    },
+    "referrer_reward": {
+      "type": "number"
+    },
+    "referee_reward": {
+      "type": "number"
+    },
+    "reward_paid": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "referrer_email",
+    "referee_email",
+    "referral_code"
+  ]
+}

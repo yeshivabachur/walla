@@ -1,0 +1,21 @@
+{
+  "name": "DriverPlatformAmbassador",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "ambassador_level": {
+      "type": "string"
+    },
+    "outreach_activities": {
+      "type": "number"
+    },
+    "brand_advocacy": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

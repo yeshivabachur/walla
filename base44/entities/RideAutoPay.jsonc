@@ -1,0 +1,21 @@
+{
+  "name": "RideAutoPay",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "payment_method": {
+      "type": "string"
+    },
+    "auto_tip_percentage": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

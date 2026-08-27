@@ -1,0 +1,56 @@
+{
+  "name": "SOSEmergency",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "triggered_by": {
+      "type": "string"
+    },
+    "trigger_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number"
+        },
+        "lng": {
+          "type": "number"
+        }
+      }
+    },
+    "emergency_type": {
+      "type": "string",
+      "enum": [
+        "medical",
+        "safety",
+        "accident",
+        "other"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "responding",
+        "resolved",
+        "false_alarm"
+      ]
+    },
+    "response_time_seconds": {
+      "type": "number"
+    },
+    "authorities_contacted": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "triggered_by"
+  ]
+}

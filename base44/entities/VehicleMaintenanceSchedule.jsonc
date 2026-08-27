@@ -1,0 +1,29 @@
+{
+  "name": "VehicleMaintenanceSchedule",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "service_type": {
+      "type": "string"
+    },
+    "scheduled_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "estimated_cost": {
+      "type": "number"
+    },
+    "mileage_at_service": {
+      "type": "number"
+    },
+    "completed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "service_type"
+  ]
+}

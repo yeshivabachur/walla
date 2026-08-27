@@ -1,0 +1,41 @@
+{
+  "name": "PredictiveMaintenanceAlert",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "vehicle_id": {
+      "type": "string"
+    },
+    "component": {
+      "type": "string"
+    },
+    "current_condition": {
+      "type": "string"
+    },
+    "predicted_failure_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "estimated_repair_cost": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "component"
+  ]
+}

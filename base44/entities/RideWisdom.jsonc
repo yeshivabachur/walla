@@ -1,0 +1,24 @@
+{
+  "name": "RideWisdom",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "wisdom_sharing": {
+      "type": "boolean"
+    },
+    "life_lessons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "philosophical_insights": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

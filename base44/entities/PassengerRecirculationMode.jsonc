@@ -1,0 +1,15 @@
+{
+  "name": "PassengerRecirculationMode",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "recirculation_on": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

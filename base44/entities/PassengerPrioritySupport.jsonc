@@ -1,0 +1,21 @@
+{
+  "name": "PassengerPrioritySupport",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "priority_level": {
+      "type": "number"
+    },
+    "24_7_access": {
+      "type": "boolean"
+    },
+    "dedicated_agent": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

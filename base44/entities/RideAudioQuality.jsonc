@@ -1,0 +1,21 @@
+{
+  "name": "RideAudioQuality",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "audio_system_rating": {
+      "type": "number"
+    },
+    "bass_level": {
+      "type": "number"
+    },
+    "treble_level": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

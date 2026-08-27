@@ -1,0 +1,18 @@
+{
+  "name": "DriverWaitingFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "wait_minutes": {
+      "type": "number"
+    },
+    "fee_charged": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRidePriority",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "priority_level": {
+      "type": "number"
+    },
+    "faster_matching": {
+      "type": "boolean"
+    },
+    "premium_drivers": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

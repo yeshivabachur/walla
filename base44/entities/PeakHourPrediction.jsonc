@@ -1,0 +1,32 @@
+{
+  "name": "PeakHourPrediction",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "predicted_peak_hours": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "expected_demand": {
+      "type": "number"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "recommended_driver_count": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "zone",
+    "date"
+  ]
+}

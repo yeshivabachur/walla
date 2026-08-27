@@ -1,0 +1,21 @@
+{
+  "name": "RideConfirmationMessage",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "message_sent": {
+      "type": "boolean"
+    },
+    "delivery_method": {
+      "type": "string"
+    },
+    "confirmed_by_user": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

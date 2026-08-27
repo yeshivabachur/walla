@@ -1,0 +1,21 @@
+{
+  "name": "DriverCommunityImpact",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "volunteer_hours": {
+      "type": "number"
+    },
+    "charity_rides": {
+      "type": "number"
+    },
+    "community_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

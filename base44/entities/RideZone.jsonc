@@ -1,0 +1,32 @@
+{
+  "name": "RideZone",
+  "type": "object",
+  "properties": {
+    "zone_name": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "base_price_multiplier": {
+      "type": "number",
+      "default": 1.0
+    },
+    "active_drivers": {
+      "type": "number",
+      "default": 0
+    },
+    "pending_requests": {
+      "type": "number",
+      "default": 0
+    },
+    "is_operational": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "zone_name",
+    "city"
+  ]
+}

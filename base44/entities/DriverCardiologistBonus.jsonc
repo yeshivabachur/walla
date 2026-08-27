@@ -1,0 +1,18 @@
+{
+  "name": "DriverCardiologistBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "cardiologist_trips": {
+      "type": "number"
+    },
+    "heart_care_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

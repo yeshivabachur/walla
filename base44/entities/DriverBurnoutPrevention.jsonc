@@ -1,0 +1,21 @@
+{
+  "name": "DriverBurnoutPrevention",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "burnout_risk": {
+      "type": "number"
+    },
+    "intervention_recommended": {
+      "type": "boolean"
+    },
+    "time_off_suggested": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

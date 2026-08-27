@@ -1,0 +1,22 @@
+{
+  "name": "PassengerReminderService",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "reminder_type": {
+      "type": "string"
+    },
+    "reminder_time": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "reminder_type"
+  ]
+}

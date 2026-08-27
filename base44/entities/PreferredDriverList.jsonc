@@ -1,0 +1,27 @@
+{
+  "name": "PreferredDriverList",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "favorite_driver_emails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocked_driver_emails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "auto_request_favorite": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

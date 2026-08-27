@@ -1,0 +1,15 @@
+{
+  "name": "PassengerLateNightSurcharge",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "late_night_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

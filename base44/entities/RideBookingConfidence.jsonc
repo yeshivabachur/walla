@@ -1,0 +1,24 @@
+{
+  "name": "RideBookingConfidence",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "confidence_score": {
+      "type": "number"
+    },
+    "factors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "guaranteed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

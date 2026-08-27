@@ -1,0 +1,22 @@
+{
+  "name": "PassengerRideDiscount",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "discount_code": {
+      "type": "string"
+    },
+    "discount_amount": {
+      "type": "number"
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

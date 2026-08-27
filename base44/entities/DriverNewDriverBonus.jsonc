@@ -1,0 +1,21 @@
+{
+  "name": "DriverNewDriverBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "first_week_rides": {
+      "type": "number"
+    },
+    "bonus_per_ride": {
+      "type": "number"
+    },
+    "total_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "LocationBasedVerification",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "trusted_locations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "current_location": {
+      "type": "string"
+    },
+    "verification_needed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

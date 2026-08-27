@@ -1,0 +1,24 @@
+{
+  "name": "PageSpeedInsights",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string"
+    },
+    "mobile_score": {
+      "type": "number"
+    },
+    "desktop_score": {
+      "type": "number"
+    },
+    "opportunities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "url"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "AccountTakeoverPrevention",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "suspicious_login_attempts": {
+      "type": "number"
+    },
+    "blocked_attempts": {
+      "type": "number"
+    },
+    "two_factor_enabled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "name": "LostItem",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string",
+      "description": "Reference to the ride"
+    },
+    "reporter_email": {
+      "type": "string",
+      "description": "Person who reported item"
+    },
+    "reporter_type": {
+      "type": "string",
+      "enum": [
+        "passenger",
+        "driver"
+      ]
+    },
+    "item_description": {
+      "type": "string",
+      "description": "Description of lost item"
+    },
+    "item_category": {
+      "type": "string",
+      "enum": [
+        "phone",
+        "wallet",
+        "keys",
+        "bag",
+        "clothing",
+        "electronics",
+        "documents",
+        "other"
+      ]
+    },
+    "contact_phone": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "reported",
+        "found",
+        "returned",
+        "closed"
+      ],
+      "default": "reported"
+    },
+    "found_by": {
+      "type": "string",
+      "description": "Email of person who found it"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "reporter_email",
+    "reporter_type",
+    "item_description",
+    "item_category"
+  ]
+}

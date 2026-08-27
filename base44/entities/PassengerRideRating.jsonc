@@ -1,0 +1,27 @@
+{
+  "name": "PassengerRideRating",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "overall_rating": {
+      "type": "number"
+    },
+    "driver_rating": {
+      "type": "number"
+    },
+    "vehicle_rating": {
+      "type": "number"
+    },
+    "route_rating": {
+      "type": "number"
+    },
+    "value_rating": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

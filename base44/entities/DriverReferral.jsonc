@@ -1,0 +1,31 @@
+{
+  "name": "DriverReferral",
+  "type": "object",
+  "properties": {
+    "referrer_email": {
+      "type": "string"
+    },
+    "referee_email": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "completed",
+        "rewarded"
+      ]
+    },
+    "bonus_amount": {
+      "type": "number"
+    },
+    "referee_rides_completed": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "referrer_email",
+    "referee_email"
+  ]
+}

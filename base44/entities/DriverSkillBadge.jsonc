@@ -1,0 +1,26 @@
+{
+  "name": "DriverSkillBadge",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "badge_type": {
+      "type": "string"
+    },
+    "earned_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "level": {
+      "type": "number"
+    },
+    "display_publicly": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email",
+    "badge_type"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "PassengerRideStyle",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "driving_style": {
+      "type": "string",
+      "enum": [
+        "conservative",
+        "moderate",
+        "sporty"
+      ]
+    },
+    "max_acceleration": {
+      "type": "number"
+    },
+    "corner_speed": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "name": "DriverEarnings",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string",
+      "description": "Email of the driver"
+    },
+    "ride_request_id": {
+      "type": "string",
+      "description": "ID of the completed ride"
+    },
+    "base_fare": {
+      "type": "number",
+      "description": "Base fare before surge"
+    },
+    "surge_multiplier": {
+      "type": "number",
+      "default": 1.0,
+      "description": "Surge multiplier applied"
+    },
+    "total_fare": {
+      "type": "number",
+      "description": "Total fare charged to passenger"
+    },
+    "driver_earning": {
+      "type": "number",
+      "description": "Driver's earning after commission (80% of total)"
+    },
+    "commission": {
+      "type": "number",
+      "description": "Platform commission (20% of total)"
+    },
+    "payout_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "processed",
+        "paid"
+      ],
+      "default": "pending",
+      "description": "Status of payout"
+    },
+    "payout_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date when payout was/will be processed"
+    }
+  },
+  "required": [
+    "driver_email",
+    "ride_request_id",
+    "total_fare",
+    "driver_earning",
+    "commission"
+  ]
+}

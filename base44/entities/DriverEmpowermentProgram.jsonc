@@ -1,0 +1,21 @@
+{
+  "name": "DriverEmpowermentProgram",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "empowerment_score": {
+      "type": "number"
+    },
+    "decision_making_autonomy": {
+      "type": "number"
+    },
+    "voice_in_policy": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

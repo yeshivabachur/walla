@@ -1,0 +1,21 @@
+{
+  "name": "RideGlobalCitizen",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "global_news": {
+      "type": "boolean"
+    },
+    "cultural_exchange": {
+      "type": "boolean"
+    },
+    "world_affairs": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "PassengerRideAnalytics",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "total_rides": {
+      "type": "number"
+    },
+    "total_spent": {
+      "type": "number"
+    },
+    "average_rating_given": {
+      "type": "number"
+    },
+    "favorite_route": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

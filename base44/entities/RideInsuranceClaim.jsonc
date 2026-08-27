@@ -1,0 +1,25 @@
+{
+  "name": "RideInsuranceClaim",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "claim_type": {
+      "type": "string"
+    },
+    "claim_amount": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string"
+    },
+    "approved_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "claim_type"
+  ]
+}

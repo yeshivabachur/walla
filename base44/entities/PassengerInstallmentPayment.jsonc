@@ -1,0 +1,18 @@
+{
+  "name": "PassengerInstallmentPayment",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "installment_plan": {
+      "type": "boolean"
+    },
+    "payments_remaining": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

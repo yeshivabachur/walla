@@ -1,0 +1,35 @@
+{
+  "name": "VehicleInsurance",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "policy_number": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "coverage_type": {
+      "type": "string"
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "is_valid": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "driver_email",
+    "policy_number",
+    "expiry_date"
+  ]
+}

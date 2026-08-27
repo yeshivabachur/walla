@@ -1,0 +1,32 @@
+{
+  "name": "SurgePrediction",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "string"
+    },
+    "prediction_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "predicted_multiplier": {
+      "type": "number"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "factors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommended_action": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "zone",
+    "predicted_multiplier"
+  ]
+}

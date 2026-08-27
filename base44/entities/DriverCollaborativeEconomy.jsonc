@@ -1,0 +1,21 @@
+{
+  "name": "DriverCollaborativeEconomy",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "shared_resources": {
+      "type": "number"
+    },
+    "collaborative_earnings": {
+      "type": "number"
+    },
+    "partnership_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "name": "LastMileDelivery",
+  "type": "object",
+  "properties": {
+    "sender_email": {
+      "type": "string"
+    },
+    "pickup_location": {
+      "type": "string"
+    },
+    "delivery_location": {
+      "type": "string"
+    },
+    "package_size": {
+      "type": "string",
+      "enum": [
+        "small",
+        "medium",
+        "large",
+        "extra-large"
+      ]
+    },
+    "package_weight": {
+      "type": "number"
+    },
+    "fragile": {
+      "type": "boolean",
+      "default": false
+    },
+    "signature_required": {
+      "type": "boolean",
+      "default": false
+    },
+    "delivery_instructions": {
+      "type": "string"
+    },
+    "estimated_delivery": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "picked_up",
+        "in_transit",
+        "delivered",
+        "failed"
+      ]
+    }
+  },
+  "required": [
+    "sender_email",
+    "pickup_location",
+    "delivery_location",
+    "package_size"
+  ]
+}

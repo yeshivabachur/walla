@@ -1,0 +1,21 @@
+{
+  "name": "DriverRideAcceptanceBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "acceptance_rate": {
+      "type": "number"
+    },
+    "target_rate": {
+      "type": "number"
+    },
+    "bonus_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

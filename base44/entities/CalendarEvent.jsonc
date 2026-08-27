@@ -1,0 +1,32 @@
+{
+  "name": "CalendarEvent",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "event_title": {
+      "type": "string"
+    },
+    "event_location": {
+      "type": "string"
+    },
+    "event_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ride_suggested": {
+      "type": "boolean",
+      "default": false
+    },
+    "suggested_departure_time": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "user_email",
+    "event_title",
+    "event_time"
+  ]
+}

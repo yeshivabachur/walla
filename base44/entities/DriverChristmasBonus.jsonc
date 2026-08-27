@@ -1,0 +1,21 @@
+{
+  "name": "DriverChristmasBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "rides_in_december": {
+      "type": "number"
+    },
+    "bonus_amount": {
+      "type": "number"
+    },
+    "holiday_appreciation": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

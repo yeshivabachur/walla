@@ -1,0 +1,29 @@
+{
+  "name": "WeatherAlertIntegration",
+  "type": "object",
+  "properties": {
+    "location": {
+      "type": "string"
+    },
+    "alert_type": {
+      "type": "string"
+    },
+    "severity": {
+      "type": "string"
+    },
+    "active_until": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "affected_routes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "location",
+    "alert_type"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "DataMinimization",
+  "type": "object",
+  "properties": {
+    "data_category": {
+      "type": "string"
+    },
+    "retention_days": {
+      "type": "number"
+    },
+    "auto_delete": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "data_category"
+  ]
+}

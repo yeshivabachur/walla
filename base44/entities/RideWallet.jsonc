@@ -1,0 +1,41 @@
+{
+  "name": "RideWallet",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "balance": {
+      "type": "number",
+      "default": 0
+    },
+    "currency": {
+      "type": "string",
+      "default": "USD"
+    },
+    "transactions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "amount": {
+            "type": "number"
+          },
+          "type": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

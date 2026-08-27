@@ -1,0 +1,27 @@
+{
+  "name": "RideConversationMode",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "silent",
+        "minimal",
+        "friendly",
+        "chatty"
+      ]
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

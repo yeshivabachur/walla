@@ -1,0 +1,27 @@
+{
+  "name": "ZoneDemand",
+  "type": "object",
+  "properties": {
+    "zone_name": {
+      "type": "string"
+    },
+    "current_demand": {
+      "type": "number"
+    },
+    "available_drivers": {
+      "type": "number"
+    },
+    "surge_multiplier": {
+      "type": "number",
+      "default": 1.0
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "zone_name",
+    "current_demand"
+  ]
+}

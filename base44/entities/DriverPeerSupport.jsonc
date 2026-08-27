@@ -1,0 +1,21 @@
+{
+  "name": "DriverPeerSupport",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "support_group_member": {
+      "type": "boolean"
+    },
+    "mentoring_others": {
+      "type": "number"
+    },
+    "receiving_mentorship": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

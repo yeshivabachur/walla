@@ -1,0 +1,24 @@
+{
+  "name": "PassengerCreditScore",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "credit_score": {
+      "type": "number"
+    },
+    "payment_history": {
+      "type": "number"
+    },
+    "ride_completion_rate": {
+      "type": "number"
+    },
+    "tier": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "UserJourneyMapping",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "touchpoints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "conversion": {
+      "type": "boolean"
+    },
+    "drop_off_point": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "session_id"
+  ]
+}

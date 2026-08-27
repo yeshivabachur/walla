@@ -1,0 +1,41 @@
+{
+  "name": "CarbonFootprint",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User's email"
+    },
+    "ride_request_id": {
+      "type": "string",
+      "description": "Reference to the ride"
+    },
+    "distance_km": {
+      "type": "number",
+      "description": "Distance traveled in kilometers"
+    },
+    "co2_saved_kg": {
+      "type": "number",
+      "description": "CO2 saved vs driving alone (in kg)"
+    },
+    "vehicle_type": {
+      "type": "string",
+      "enum": [
+        "standard",
+        "electric",
+        "hybrid"
+      ],
+      "default": "standard"
+    },
+    "trees_equivalent": {
+      "type": "number",
+      "description": "Equivalent to trees planted"
+    }
+  },
+  "required": [
+    "user_email",
+    "ride_request_id",
+    "distance_km",
+    "co2_saved_kg"
+  ]
+}

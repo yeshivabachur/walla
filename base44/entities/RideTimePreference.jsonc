@@ -1,0 +1,27 @@
+{
+  "name": "RideTimePreference",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "early_bird": {
+      "type": "boolean"
+    },
+    "night_owl": {
+      "type": "boolean"
+    },
+    "preferred_hours": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "avoid_rush_hour": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

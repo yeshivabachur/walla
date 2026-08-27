@@ -1,0 +1,18 @@
+{
+  "name": "DriverCTScanBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "ct_scan_trips": {
+      "type": "number"
+    },
+    "scanning_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

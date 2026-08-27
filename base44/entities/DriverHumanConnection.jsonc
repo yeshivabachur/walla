@@ -1,0 +1,21 @@
+{
+  "name": "DriverHumanConnection",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "meaningful_connections": {
+      "type": "number"
+    },
+    "empathy_score": {
+      "type": "number"
+    },
+    "human_touch": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

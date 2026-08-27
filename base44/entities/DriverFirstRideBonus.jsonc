@@ -1,0 +1,22 @@
+{
+  "name": "DriverFirstRideBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "first_ride_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "bonus_amount": {
+      "type": "number"
+    },
+    "paid": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

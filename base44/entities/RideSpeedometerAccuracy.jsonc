@@ -1,0 +1,15 @@
+{
+  "name": "RideSpeedometerAccuracy",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "speedometer_working": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

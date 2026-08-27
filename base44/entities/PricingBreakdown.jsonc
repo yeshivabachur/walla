@@ -1,0 +1,32 @@
+{
+  "name": "PricingBreakdown",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "base_fare": {
+      "type": "number"
+    },
+    "distance_charge": {
+      "type": "number"
+    },
+    "time_charge": {
+      "type": "number"
+    },
+    "surge_charge": {
+      "type": "number"
+    },
+    "service_fee": {
+      "type": "number"
+    },
+    "total": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "base_fare",
+    "total"
+  ]
+}

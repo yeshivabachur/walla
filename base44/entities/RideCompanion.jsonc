@@ -1,0 +1,25 @@
+{
+  "name": "RideCompanion",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "companion_name": {
+      "type": "string"
+    },
+    "companion_phone": {
+      "type": "string"
+    },
+    "relationship": {
+      "type": "string"
+    },
+    "verified": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "companion_name"
+  ]
+}

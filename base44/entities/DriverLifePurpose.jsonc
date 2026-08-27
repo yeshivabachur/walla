@@ -1,0 +1,21 @@
+{
+  "name": "DriverLifePurpose",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "purpose_clarity": {
+      "type": "number"
+    },
+    "meaning_in_work": {
+      "type": "number"
+    },
+    "fulfillment_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

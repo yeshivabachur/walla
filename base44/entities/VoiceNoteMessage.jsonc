@@ -1,0 +1,30 @@
+{
+  "name": "VoiceNoteMessage",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "sender_email": {
+      "type": "string"
+    },
+    "audio_url": {
+      "type": "string"
+    },
+    "duration_seconds": {
+      "type": "number"
+    },
+    "transcription": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "sender_email",
+    "audio_url"
+  ]
+}

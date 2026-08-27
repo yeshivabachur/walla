@@ -1,0 +1,27 @@
+{
+  "name": "PriceElasticity",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "string"
+    },
+    "base_demand": {
+      "type": "number"
+    },
+    "price_increase_percent": {
+      "type": "number"
+    },
+    "demand_change_percent": {
+      "type": "number"
+    },
+    "elasticity_coefficient": {
+      "type": "number"
+    },
+    "optimal_price_point": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "zone"
+  ]
+}

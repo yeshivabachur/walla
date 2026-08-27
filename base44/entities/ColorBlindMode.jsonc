@@ -1,0 +1,23 @@
+{
+  "name": "ColorBlindMode",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "mode_type": {
+      "type": "string",
+      "enum": [
+        "protanopia",
+        "deuteranopia",
+        "tritanopia"
+      ]
+    },
+    "enabled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "DashcamFootage",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "recording_url": {
+      "type": "string",
+      "description": "Secure URL to footage"
+    },
+    "start_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "end_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "incident_reported": {
+      "type": "boolean",
+      "default": false
+    },
+    "shared_with_passenger": {
+      "type": "boolean",
+      "default": false
+    },
+    "retention_days": {
+      "type": "number",
+      "default": 30,
+      "description": "Days to keep footage"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "driver_email"
+  ]
+}

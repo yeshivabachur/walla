@@ -1,0 +1,18 @@
+{
+  "name": "DriverPhoneReimbursement",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "monthly_reimbursement": {
+      "type": "number"
+    },
+    "data_plan_covered": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "TransitPass",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "pass_type": {
+      "type": "string",
+      "enum": [
+        "monthly",
+        "weekly",
+        "annual"
+      ],
+      "default": "monthly"
+    },
+    "includes_rides": {
+      "type": "boolean",
+      "default": true
+    },
+    "includes_transit": {
+      "type": "boolean",
+      "default": true
+    },
+    "includes_bike": {
+      "type": "boolean",
+      "default": false
+    },
+    "price": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "usage_this_period": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "user_email",
+    "pass_type"
+  ]
+}

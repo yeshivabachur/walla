@@ -1,0 +1,25 @@
+{
+  "name": "DriverExcellenceAward",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "award_type": {
+      "type": "string"
+    },
+    "criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prize_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "award_type"
+  ]
+}

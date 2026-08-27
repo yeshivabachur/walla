@@ -1,0 +1,30 @@
+{
+  "name": "PassengerDietaryPreference",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "allergies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dietary_restrictions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "snack_preferences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

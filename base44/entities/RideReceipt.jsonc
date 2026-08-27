@@ -1,0 +1,62 @@
+{
+  "name": "RideReceipt",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_email": {
+      "type": "string"
+    },
+    "receipt_number": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "pickup_location": {
+      "type": "string"
+    },
+    "dropoff_location": {
+      "type": "string"
+    },
+    "distance_km": {
+      "type": "number"
+    },
+    "duration_minutes": {
+      "type": "number"
+    },
+    "base_fare": {
+      "type": "number"
+    },
+    "surge_multiplier": {
+      "type": "number"
+    },
+    "discount": {
+      "type": "number",
+      "default": 0
+    },
+    "tip": {
+      "type": "number",
+      "default": 0
+    },
+    "total": {
+      "type": "number"
+    },
+    "payment_method": {
+      "type": "string",
+      "enum": [
+        "card",
+        "wallet",
+        "cash"
+      ],
+      "default": "card"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "passenger_email",
+    "total"
+  ]
+}

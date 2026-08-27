@@ -1,0 +1,74 @@
+{
+  "name": "ScheduledRide",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string"
+    },
+    "pickup_location": {
+      "type": "string"
+    },
+    "dropoff_location": {
+      "type": "string"
+    },
+    "scheduled_datetime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "vehicle_preferences": {
+      "type": "object",
+      "properties": {
+        "child_seat": {
+          "type": "boolean"
+        },
+        "pet_friendly": {
+          "type": "boolean"
+        },
+        "wheelchair_accessible": {
+          "type": "boolean"
+        },
+        "extra_luggage": {
+          "type": "boolean"
+        }
+      }
+    },
+    "ride_preferences": {
+      "type": "object",
+      "properties": {
+        "silent_mode": {
+          "type": "boolean"
+        },
+        "temperature": {
+          "type": "number"
+        },
+        "music_genre": {
+          "type": "string"
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "scheduled",
+        "confirmed",
+        "in_progress",
+        "completed",
+        "cancelled"
+      ],
+      "default": "scheduled"
+    },
+    "estimated_price": {
+      "type": "number"
+    },
+    "reminder_sent": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "passenger_email",
+    "pickup_location",
+    "dropoff_location",
+    "scheduled_datetime"
+  ]
+}

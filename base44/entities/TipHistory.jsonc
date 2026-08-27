@@ -1,0 +1,30 @@
+{
+  "name": "TipHistory",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "tipper_email": {
+      "type": "string"
+    },
+    "recipient_email": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "tip_percentage": {
+      "type": "number"
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "tipper_email",
+    "recipient_email",
+    "amount"
+  ]
+}

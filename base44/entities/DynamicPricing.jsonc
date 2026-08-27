@@ -1,0 +1,49 @@
+{
+  "name": "DynamicPricing",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "string"
+    },
+    "current_multiplier": {
+      "type": "number",
+      "default": 1.0
+    },
+    "predicted_multiplier": {
+      "type": "number"
+    },
+    "demand_level": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "surge"
+      ]
+    },
+    "active_drivers": {
+      "type": "number"
+    },
+    "pending_requests": {
+      "type": "number"
+    },
+    "ml_prediction": {
+      "type": "object",
+      "properties": {
+        "next_hour_multiplier": {
+          "type": "number"
+        },
+        "confidence": {
+          "type": "number"
+        }
+      }
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "zone"
+  ]
+}

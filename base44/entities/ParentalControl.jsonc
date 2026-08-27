@@ -1,0 +1,28 @@
+{
+  "name": "ParentalControl",
+  "type": "object",
+  "properties": {
+    "parent_email": {
+      "type": "string"
+    },
+    "child_email": {
+      "type": "string"
+    },
+    "allowed_zones": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "curfew_time": {
+      "type": "string"
+    },
+    "real_time_tracking": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "parent_email",
+    "child_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverRushHourBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "rush_hour_rides": {
+      "type": "number"
+    },
+    "bonus_multiplier": {
+      "type": "number"
+    },
+    "bonus_earned": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

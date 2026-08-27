@@ -1,0 +1,38 @@
+{
+  "name": "RealTimeRating",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "rater_email": {
+      "type": "string"
+    },
+    "rating_type": {
+      "type": "string",
+      "enum": [
+        "driving",
+        "cleanliness",
+        "comfort",
+        "professionalism"
+      ]
+    },
+    "rating": {
+      "type": "number"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "anonymous": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "rater_email",
+    "rating_type",
+    "rating"
+  ]
+}

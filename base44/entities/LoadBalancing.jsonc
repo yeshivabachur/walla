@@ -1,0 +1,21 @@
+{
+  "name": "LoadBalancing",
+  "type": "object",
+  "properties": {
+    "server_id": {
+      "type": "string"
+    },
+    "current_load": {
+      "type": "number"
+    },
+    "capacity": {
+      "type": "number"
+    },
+    "healthy": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "server_id"
+  ]
+}

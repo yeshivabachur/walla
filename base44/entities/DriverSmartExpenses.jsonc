@@ -1,0 +1,24 @@
+{
+  "name": "DriverSmartExpenses",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "auto_categorization": {
+      "type": "boolean"
+    },
+    "expense_insights": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "savings_opportunities": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

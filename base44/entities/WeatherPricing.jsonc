@@ -1,0 +1,43 @@
+{
+  "name": "WeatherPricing",
+  "type": "object",
+  "properties": {
+    "location": {
+      "type": "string"
+    },
+    "weather_condition": {
+      "type": "string",
+      "enum": [
+        "clear",
+        "rain",
+        "snow",
+        "fog",
+        "storm",
+        "extreme"
+      ]
+    },
+    "temperature": {
+      "type": "number"
+    },
+    "precipitation_probability": {
+      "type": "number"
+    },
+    "wind_speed": {
+      "type": "number"
+    },
+    "price_adjustment": {
+      "type": "number"
+    },
+    "multiplier": {
+      "type": "number"
+    },
+    "valid_until": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "location",
+    "weather_condition"
+  ]
+}

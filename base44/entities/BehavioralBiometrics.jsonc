@@ -1,0 +1,24 @@
+{
+  "name": "BehavioralBiometrics",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "typing_pattern": {
+      "type": "object"
+    },
+    "mouse_movement": {
+      "type": "object"
+    },
+    "touch_pressure": {
+      "type": "object"
+    },
+    "confidence_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

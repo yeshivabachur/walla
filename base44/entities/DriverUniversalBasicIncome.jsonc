@@ -1,0 +1,21 @@
+{
+  "name": "DriverUniversalBasicIncome",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "monthly_basic_income": {
+      "type": "number"
+    },
+    "eligibility": {
+      "type": "boolean"
+    },
+    "supplemental_earnings": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

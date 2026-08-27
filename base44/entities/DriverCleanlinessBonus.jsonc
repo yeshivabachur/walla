@@ -1,0 +1,21 @@
+{
+  "name": "DriverCleanlinessBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "cleanliness_score": {
+      "type": "number"
+    },
+    "inspections_passed": {
+      "type": "number"
+    },
+    "bonus_earned": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

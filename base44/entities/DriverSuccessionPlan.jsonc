@@ -1,0 +1,24 @@
+{
+  "name": "DriverSuccessionPlan",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "mentees": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "knowledge_transfer": {
+      "type": "number"
+    },
+    "legacy_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

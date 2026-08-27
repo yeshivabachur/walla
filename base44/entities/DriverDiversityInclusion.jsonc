@@ -1,0 +1,21 @@
+{
+  "name": "DriverDiversityInclusion",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "diversity_training": {
+      "type": "boolean"
+    },
+    "cultural_competency": {
+      "type": "number"
+    },
+    "inclusion_champion": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

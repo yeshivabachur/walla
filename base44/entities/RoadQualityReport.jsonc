@@ -1,0 +1,28 @@
+{
+  "name": "RoadQualityReport",
+  "type": "object",
+  "properties": {
+    "road_name": {
+      "type": "string"
+    },
+    "quality_score": {
+      "type": "number"
+    },
+    "pothole_count": {
+      "type": "number"
+    },
+    "surface_condition": {
+      "type": "string"
+    },
+    "last_maintenance": {
+      "type": "string",
+      "format": "date"
+    },
+    "driver_reports": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "road_name"
+  ]
+}

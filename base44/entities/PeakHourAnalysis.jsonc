@@ -1,0 +1,29 @@
+{
+  "name": "PeakHourAnalysis",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "string"
+    },
+    "day_of_week": {
+      "type": "string"
+    },
+    "peak_hours": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "average_demand": {
+      "type": "number"
+    },
+    "recommended_driver_count": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "zone",
+    "day_of_week"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "RideExperienceRating",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "experience_score": {
+      "type": "number"
+    },
+    "memorable": {
+      "type": "boolean"
+    },
+    "would_recommend": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

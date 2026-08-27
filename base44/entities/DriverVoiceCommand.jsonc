@@ -1,0 +1,34 @@
+{
+  "name": "DriverVoiceCommand",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "command_text": {
+      "type": "string"
+    },
+    "command_type": {
+      "type": "string",
+      "enum": [
+        "accept_ride",
+        "start_ride",
+        "complete_ride",
+        "navigate",
+        "break"
+      ]
+    },
+    "executed": {
+      "type": "boolean"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "driver_email",
+    "command_text",
+    "command_type"
+  ]
+}

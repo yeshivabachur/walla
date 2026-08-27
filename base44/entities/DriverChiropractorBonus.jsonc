@@ -1,0 +1,18 @@
+{
+  "name": "DriverChiropractorBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "chiropractor_trips": {
+      "type": "number"
+    },
+    "health_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

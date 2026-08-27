@@ -1,0 +1,51 @@
+{
+  "name": "RideComplaint",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "complainant_email": {
+      "type": "string"
+    },
+    "complaint_type": {
+      "type": "string",
+      "enum": [
+        "unsafe_driving",
+        "unprofessional",
+        "route_issue",
+        "cleanliness",
+        "other"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "submitted",
+        "investigating",
+        "resolved",
+        "dismissed"
+      ]
+    },
+    "resolution": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "complainant_email",
+    "complaint_type"
+  ]
+}

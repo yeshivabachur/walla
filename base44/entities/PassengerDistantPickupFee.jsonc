@@ -1,0 +1,18 @@
+{
+  "name": "PassengerDistantPickupFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "distance_to_pickup_km": {
+      "type": "number"
+    },
+    "long_pickup_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "DriverWorkHourCompliance",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "hours_worked": {
+      "type": "number"
+    },
+    "max_hours_allowed": {
+      "type": "number"
+    },
+    "compliance_status": {
+      "type": "boolean"
+    },
+    "mandatory_break_taken": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email",
+    "date"
+  ]
+}

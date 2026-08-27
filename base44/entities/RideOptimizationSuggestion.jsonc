@@ -1,0 +1,21 @@
+{
+  "name": "RideOptimizationSuggestion",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "suggestion": {
+      "type": "string"
+    },
+    "potential_savings": {
+      "type": "number"
+    },
+    "accepted": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

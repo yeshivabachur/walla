@@ -1,0 +1,21 @@
+{
+  "name": "PassengerNightSafety",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "enhanced_tracking": {
+      "type": "boolean"
+    },
+    "trusted_contacts_alert": {
+      "type": "boolean"
+    },
+    "well_lit_routes_only": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

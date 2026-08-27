@@ -1,0 +1,52 @@
+{
+  "name": "SurgeZone",
+  "type": "object",
+  "properties": {
+    "zone_name": {
+      "type": "string",
+      "description": "Name of the zone"
+    },
+    "center_coords": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      }
+    },
+    "radius_km": {
+      "type": "number",
+      "description": "Radius of the zone in kilometers"
+    },
+    "current_multiplier": {
+      "type": "number",
+      "default": 1.0,
+      "description": "Current surge multiplier"
+    },
+    "demand_level": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "very_high"
+      ],
+      "default": "low"
+    },
+    "active_requests": {
+      "type": "number",
+      "default": 0
+    },
+    "available_drivers": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "zone_name",
+    "center_coords"
+  ]
+}

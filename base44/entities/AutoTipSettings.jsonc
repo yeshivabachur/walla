@@ -1,0 +1,24 @@
+{
+  "name": "AutoTipSettings",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "tip_percentage": {
+      "type": "number"
+    },
+    "minimum_rating_required": {
+      "type": "number"
+    },
+    "max_tip_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

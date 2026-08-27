@@ -1,0 +1,21 @@
+{
+  "name": "PassengerCryptoPayment",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "crypto_enabled": {
+      "type": "boolean"
+    },
+    "supported_coins": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

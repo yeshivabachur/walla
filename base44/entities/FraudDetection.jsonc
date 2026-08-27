@@ -1,0 +1,57 @@
+{
+  "name": "FraudDetection",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "user_type": {
+      "type": "string",
+      "enum": [
+        "driver",
+        "passenger"
+      ],
+      "default": "passenger"
+    },
+    "risk_score": {
+      "type": "number",
+      "default": 0,
+      "description": "Risk score 0-100"
+    },
+    "flags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    },
+    "account_status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "warning",
+        "suspended",
+        "banned"
+      ],
+      "default": "active"
+    }
+  },
+  "required": [
+    "user_email",
+    "user_type"
+  ]
+}

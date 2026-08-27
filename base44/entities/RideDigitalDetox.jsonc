@@ -1,0 +1,21 @@
+{
+  "name": "RideDigitalDetox",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "no_screens": {
+      "type": "boolean"
+    },
+    "nature_sounds": {
+      "type": "boolean"
+    },
+    "mindful_silence": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

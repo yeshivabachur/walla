@@ -1,0 +1,26 @@
+{
+  "name": "PassengerRideBadge",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "badge_name": {
+      "type": "string"
+    },
+    "badge_icon": {
+      "type": "string"
+    },
+    "earned_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "rarity": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "badge_name"
+  ]
+}

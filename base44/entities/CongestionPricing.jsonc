@@ -1,0 +1,28 @@
+{
+  "name": "CongestionPricing",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "string"
+    },
+    "active_hours": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "charge_amount": {
+      "type": "number"
+    },
+    "exemptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "zone",
+    "charge_amount"
+  ]
+}

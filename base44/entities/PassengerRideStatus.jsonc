@@ -1,0 +1,24 @@
+{
+  "name": "PassengerRideStatus",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "current_status": {
+      "type": "string"
+    },
+    "status_updates": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "eta": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

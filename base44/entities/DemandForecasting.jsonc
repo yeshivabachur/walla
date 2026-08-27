@@ -1,0 +1,32 @@
+{
+  "name": "DemandForecasting",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "string"
+    },
+    "forecast_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "hourly_demand": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "weather_factor": {
+      "type": "number"
+    },
+    "event_factor": {
+      "type": "number"
+    },
+    "confidence_level": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "zone",
+    "forecast_date"
+  ]
+}

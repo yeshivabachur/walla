@@ -1,0 +1,48 @@
+{
+  "name": "ComplianceRecord",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "record_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "compliance_type": {
+      "type": "string",
+      "enum": [
+        "license",
+        "insurance",
+        "vehicle_inspection",
+        "background_check",
+        "training"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "compliant",
+        "expiring_soon",
+        "expired",
+        "pending"
+      ],
+      "default": "compliant"
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "document_url": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email",
+    "compliance_type",
+    "status"
+  ]
+}

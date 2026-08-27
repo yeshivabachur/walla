@@ -1,0 +1,28 @@
+{
+  "name": "RideSubscriptionTier",
+  "type": "object",
+  "properties": {
+    "tier_name": {
+      "type": "string"
+    },
+    "monthly_price": {
+      "type": "number"
+    },
+    "free_rides": {
+      "type": "number"
+    },
+    "discount_percentage": {
+      "type": "number"
+    },
+    "priority_booking": {
+      "type": "boolean"
+    },
+    "premium_vehicles": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "tier_name",
+    "monthly_price"
+  ]
+}

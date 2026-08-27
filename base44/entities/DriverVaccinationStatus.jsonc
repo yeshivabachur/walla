@@ -1,0 +1,22 @@
+{
+  "name": "DriverVaccinationStatus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "vaccinated": {
+      "type": "boolean"
+    },
+    "vaccination_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "booster_current": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "RideNFT",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "owner_email": {
+      "type": "string"
+    },
+    "nft_metadata": {
+      "type": "object",
+      "properties": {
+        "route": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        },
+        "special_moment": {
+          "type": "string"
+        },
+        "image_url": {
+          "type": "string"
+        }
+      }
+    },
+    "minted": {
+      "type": "boolean",
+      "default": false
+    },
+    "marketplace_listed": {
+      "type": "boolean",
+      "default": false
+    },
+    "price": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "owner_email"
+  ]
+}

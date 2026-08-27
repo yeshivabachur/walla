@@ -1,0 +1,52 @@
+{
+  "name": "WellnessMode",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "preferred_activities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "meditation",
+          "breathing",
+          "relaxing_music",
+          "nature_sounds",
+          "silence"
+        ]
+      },
+      "default": []
+    },
+    "mood_tracking": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string"
+          },
+          "before_ride": {
+            "type": "string"
+          },
+          "after_ride": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    },
+    "streak_days": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

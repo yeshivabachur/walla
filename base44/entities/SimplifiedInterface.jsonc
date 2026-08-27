@@ -1,0 +1,21 @@
+{
+  "name": "SimplifiedInterface",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "large_buttons": {
+      "type": "boolean"
+    },
+    "simplified_menu": {
+      "type": "boolean"
+    },
+    "icon_only_mode": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

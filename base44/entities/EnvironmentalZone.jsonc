@@ -1,0 +1,27 @@
+{
+  "name": "EnvironmentalZone",
+  "type": "object",
+  "properties": {
+    "zone_name": {
+      "type": "string"
+    },
+    "emission_standard": {
+      "type": "string"
+    },
+    "allowed_vehicles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fine_amount": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "zone_name"
+  ]
+}

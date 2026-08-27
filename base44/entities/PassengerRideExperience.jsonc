@@ -1,0 +1,30 @@
+{
+  "name": "PassengerRideExperience",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "experience_rating": {
+      "type": "number"
+    },
+    "highlights": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "lowlights": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "net_promoter_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

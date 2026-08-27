@@ -1,0 +1,21 @@
+{
+  "name": "NightVisionSystem",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "infrared_camera": {
+      "type": "boolean"
+    },
+    "thermal_imaging": {
+      "type": "boolean"
+    },
+    "pedestrian_detection": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

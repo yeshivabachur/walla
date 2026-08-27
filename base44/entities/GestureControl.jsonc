@@ -1,0 +1,18 @@
+{
+  "name": "GestureControl",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "gestures_learned": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

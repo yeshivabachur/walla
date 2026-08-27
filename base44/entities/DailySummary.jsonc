@@ -1,0 +1,41 @@
+{
+  "name": "DailySummary",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "total_rides": {
+      "type": "number"
+    },
+    "total_earnings": {
+      "type": "number"
+    },
+    "total_hours": {
+      "type": "number"
+    },
+    "average_rating": {
+      "type": "number"
+    },
+    "tips_received": {
+      "type": "number"
+    },
+    "fuel_cost": {
+      "type": "number"
+    },
+    "highlights": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "driver_email",
+    "date"
+  ]
+}

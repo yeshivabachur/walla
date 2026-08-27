@@ -1,0 +1,31 @@
+{
+  "name": "SmartCityIntegration",
+  "type": "object",
+  "properties": {
+    "city_name": {
+      "type": "string"
+    },
+    "traffic_signals_sync": {
+      "type": "boolean",
+      "default": false
+    },
+    "parking_integration": {
+      "type": "boolean",
+      "default": false
+    },
+    "public_transport_sync": {
+      "type": "boolean",
+      "default": false
+    },
+    "smart_zones": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "city_name"
+  ]
+}

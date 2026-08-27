@@ -1,0 +1,21 @@
+{
+  "name": "DriverEcoBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "eco_vehicle": {
+      "type": "boolean"
+    },
+    "fuel_efficiency_bonus": {
+      "type": "number"
+    },
+    "carbon_reduction": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "PassengerTripPlanning",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "planned_trips": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "multi_city": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

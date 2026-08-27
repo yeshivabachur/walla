@@ -1,0 +1,39 @@
+{
+  "name": "MultiplePaymentMethods",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "payment_splits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "payment_method": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "number"
+          },
+          "percentage": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "primary_method": {
+      "type": "string"
+    },
+    "fallback_method": {
+      "type": "string"
+    },
+    "total_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "payment_splits"
+  ]
+}

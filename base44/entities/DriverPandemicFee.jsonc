@@ -1,0 +1,21 @@
+{
+  "name": "DriverPandemicFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "pandemic_active": {
+      "type": "boolean"
+    },
+    "ppe_cost": {
+      "type": "number"
+    },
+    "health_risk_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

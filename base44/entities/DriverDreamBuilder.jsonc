@@ -1,0 +1,24 @@
+{
+  "name": "DriverDreamBuilder",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "life_dreams": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "progress_toward_dreams": {
+      "type": "number"
+    },
+    "support_received": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

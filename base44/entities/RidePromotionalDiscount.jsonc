@@ -1,0 +1,18 @@
+{
+  "name": "RidePromotionalDiscount",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "promo_campaign": {
+      "type": "string"
+    },
+    "discount_value": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

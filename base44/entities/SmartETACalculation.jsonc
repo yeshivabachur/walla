@@ -1,0 +1,31 @@
+{
+  "name": "SmartETACalculation",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "base_eta": {
+      "type": "number"
+    },
+    "traffic_adjustment": {
+      "type": "number"
+    },
+    "weather_adjustment": {
+      "type": "number"
+    },
+    "driver_behavior_adjustment": {
+      "type": "number"
+    },
+    "final_eta": {
+      "type": "number"
+    },
+    "confidence": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "final_eta"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "RideSplitRequest",
+  "type": "object",
+  "properties": {
+    "requester_email": {
+      "type": "string"
+    },
+    "ride_request_id": {
+      "type": "string"
+    },
+    "match_radius_km": {
+      "type": "number",
+      "default": 2
+    },
+    "max_detour_minutes": {
+      "type": "number",
+      "default": 5
+    },
+    "matched_passenger_email": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "searching",
+        "matched",
+        "declined",
+        "completed"
+      ]
+    },
+    "savings_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "requester_email",
+    "ride_request_id"
+  ]
+}

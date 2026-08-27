@@ -1,0 +1,27 @@
+{
+  "name": "PassengerSafetyKit",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "emergency_contacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "safe_word": {
+      "type": "string"
+    },
+    "auto_check_in": {
+      "type": "boolean"
+    },
+    "location_sharing": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

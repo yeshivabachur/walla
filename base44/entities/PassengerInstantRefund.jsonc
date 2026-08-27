@@ -1,0 +1,21 @@
+{
+  "name": "PassengerInstantRefund",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "refund_reason": {
+      "type": "string"
+    },
+    "refund_amount": {
+      "type": "number"
+    },
+    "instant_credit": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

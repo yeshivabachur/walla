@@ -1,0 +1,28 @@
+{
+  "name": "DriverPreferredHours",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "day_of_week": {
+      "type": "string"
+    },
+    "start_hour": {
+      "type": "number"
+    },
+    "end_hour": {
+      "type": "number"
+    },
+    "earnings_target": {
+      "type": "number"
+    },
+    "flexible": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email",
+    "day_of_week"
+  ]
+}

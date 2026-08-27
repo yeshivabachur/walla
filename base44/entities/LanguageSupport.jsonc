@@ -1,0 +1,35 @@
+{
+  "name": "LanguageSupport",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "user_type": {
+      "type": "string",
+      "enum": [
+        "driver",
+        "passenger"
+      ]
+    },
+    "primary_language": {
+      "type": "string"
+    },
+    "secondary_languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "translation_enabled": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "user_email",
+    "user_type",
+    "primary_language"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "VehicleBackupCamera",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "installed": {
+      "type": "boolean"
+    },
+    "resolution": {
+      "type": "string"
+    },
+    "night_vision": {
+      "type": "boolean"
+    },
+    "working": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "RideCelebration",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "occasion": {
+      "type": "string"
+    },
+    "decorations": {
+      "type": "boolean"
+    },
+    "special_music": {
+      "type": "boolean"
+    },
+    "surprise_gift": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

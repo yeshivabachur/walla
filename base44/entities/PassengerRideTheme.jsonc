@@ -1,0 +1,25 @@
+{
+  "name": "PassengerRideTheme",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "theme": {
+      "type": "string",
+      "enum": [
+        "professional",
+        "casual",
+        "party",
+        "zen",
+        "adventure"
+      ]
+    },
+    "ambient_settings": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

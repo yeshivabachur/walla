@@ -1,0 +1,38 @@
+{
+  "name": "AutoTip",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "tip_percentage": {
+      "type": "number",
+      "default": 15,
+      "description": "Default tip percentage"
+    },
+    "conditions": {
+      "type": "object",
+      "properties": {
+        "five_star_only": {
+          "type": "boolean",
+          "default": true
+        },
+        "min_rating": {
+          "type": "number",
+          "default": 4.5
+        }
+      }
+    },
+    "monthly_cap": {
+      "type": "number",
+      "description": "Max auto-tip spending per month"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "PriceMatchGuarantee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "competitor_price": {
+      "type": "number"
+    },
+    "our_price": {
+      "type": "number"
+    },
+    "match_applied": {
+      "type": "boolean"
+    },
+    "refund_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

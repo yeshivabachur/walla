@@ -1,0 +1,21 @@
+{
+  "name": "DriverSavingsPlan",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "savings_goal": {
+      "type": "number"
+    },
+    "auto_save_percentage": {
+      "type": "number"
+    },
+    "current_balance": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

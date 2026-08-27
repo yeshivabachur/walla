@@ -1,0 +1,21 @@
+{
+  "name": "DriverEarlyBirdBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "early_shifts_count": {
+      "type": "number"
+    },
+    "bonus_per_shift": {
+      "type": "number"
+    },
+    "total_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

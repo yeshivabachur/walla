@@ -1,0 +1,21 @@
+{
+  "name": "FailoverConfiguration",
+  "type": "object",
+  "properties": {
+    "primary_server": {
+      "type": "string"
+    },
+    "backup_server": {
+      "type": "string"
+    },
+    "automatic_failover": {
+      "type": "boolean"
+    },
+    "failover_time_seconds": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "primary_server"
+  ]
+}

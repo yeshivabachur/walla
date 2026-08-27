@@ -1,0 +1,30 @@
+{
+  "name": "RideGamificationChallenge",
+  "type": "object",
+  "properties": {
+    "challenge_id": {
+      "type": "string"
+    },
+    "challenge_name": {
+      "type": "string"
+    },
+    "participants": {
+      "type": "number"
+    },
+    "prize_pool": {
+      "type": "number"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "challenge_id",
+    "challenge_name"
+  ]
+}

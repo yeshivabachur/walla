@@ -1,0 +1,22 @@
+{
+  "name": "DisasterRecoveryPlan",
+  "type": "object",
+  "properties": {
+    "plan_name": {
+      "type": "string"
+    },
+    "rto_minutes": {
+      "type": "number"
+    },
+    "rpo_minutes": {
+      "type": "number"
+    },
+    "last_test": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "plan_name"
+  ]
+}

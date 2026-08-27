@@ -1,0 +1,72 @@
+{
+  "name": "RiskAssessment",
+  "type": "object",
+  "properties": {
+    "area_name": {
+      "type": "string",
+      "description": "Area or zone name"
+    },
+    "coordinates": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      }
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": [
+        "low",
+        "moderate",
+        "high",
+        "critical"
+      ],
+      "default": "low"
+    },
+    "time_periods": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "start_hour": {
+            "type": "number"
+          },
+          "end_hour": {
+            "type": "number"
+          },
+          "risk_level": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "incident_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Historical incident count"
+    },
+    "safety_recommendations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "alternative_routes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "area_name",
+    "coordinates",
+    "risk_level"
+  ]
+}

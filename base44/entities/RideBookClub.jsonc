@@ -1,0 +1,24 @@
+{
+  "name": "RideBookClub",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "audiobook_playing": {
+      "type": "string"
+    },
+    "book_discussion": {
+      "type": "boolean"
+    },
+    "reading_recommendations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

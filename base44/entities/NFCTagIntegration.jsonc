@@ -1,0 +1,21 @@
+{
+  "name": "NFCTagIntegration",
+  "type": "object",
+  "properties": {
+    "tag_id": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string"
+    },
+    "taps": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "tag_id"
+  ]
+}

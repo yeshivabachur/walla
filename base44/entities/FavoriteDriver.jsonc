@@ -1,0 +1,29 @@
+{
+  "name": "FavoriteDriver",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "driver_name": {
+      "type": "string"
+    },
+    "rides_together": {
+      "type": "number",
+      "default": 0
+    },
+    "average_rating": {
+      "type": "number"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "passenger_email",
+    "driver_email"
+  ]
+}

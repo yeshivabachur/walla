@@ -1,0 +1,27 @@
+{
+  "name": "BackupStrategy",
+  "type": "object",
+  "properties": {
+    "backup_type": {
+      "type": "string",
+      "enum": [
+        "full",
+        "incremental",
+        "differential"
+      ]
+    },
+    "frequency": {
+      "type": "string"
+    },
+    "retention_days": {
+      "type": "number"
+    },
+    "last_backup": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "backup_type"
+  ]
+}

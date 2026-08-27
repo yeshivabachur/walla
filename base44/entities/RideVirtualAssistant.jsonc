@@ -1,0 +1,24 @@
+{
+  "name": "RideVirtualAssistant",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "assistant_name": {
+      "type": "string"
+    },
+    "tasks_completed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "satisfaction": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

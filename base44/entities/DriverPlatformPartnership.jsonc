@@ -1,0 +1,21 @@
+{
+  "name": "DriverPlatformPartnership",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "partnership_level": {
+      "type": "string"
+    },
+    "shared_success": {
+      "type": "number"
+    },
+    "mutual_growth": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "name": "GroupRideRequest",
+  "type": "object",
+  "properties": {
+    "organizer_email": {
+      "type": "string"
+    },
+    "pickup_location": {
+      "type": "string"
+    },
+    "dropoff_location": {
+      "type": "string"
+    },
+    "scheduled_datetime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "total_passengers": {
+      "type": "number"
+    },
+    "passenger_list": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "vehicle_type": {
+      "type": "string",
+      "enum": [
+        "van",
+        "suv",
+        "minibus"
+      ]
+    },
+    "total_price": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "confirmed",
+        "completed",
+        "cancelled"
+      ]
+    }
+  },
+  "required": [
+    "organizer_email",
+    "pickup_location",
+    "dropoff_location",
+    "total_passengers"
+  ]
+}

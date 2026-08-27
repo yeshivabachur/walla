@@ -1,0 +1,42 @@
+{
+  "name": "FuelEfficiency",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "vehicle_id": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "total_distance_km": {
+      "type": "number"
+    },
+    "fuel_consumed_liters": {
+      "type": "number"
+    },
+    "efficiency_rating": {
+      "type": "number"
+    },
+    "cost_per_km": {
+      "type": "number"
+    },
+    "ai_tips": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "compared_to_avg": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email",
+    "vehicle_id"
+  ]
+}

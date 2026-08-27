@@ -1,0 +1,21 @@
+{
+  "name": "RidePsychology",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "psychology_content": {
+      "type": "boolean"
+    },
+    "behavior_insights": {
+      "type": "boolean"
+    },
+    "mental_models": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

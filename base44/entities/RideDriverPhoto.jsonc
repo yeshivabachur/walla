@@ -1,0 +1,21 @@
+{
+  "name": "RideDriverPhoto",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "photo_url": {
+      "type": "string"
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "visible_to_passengers": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

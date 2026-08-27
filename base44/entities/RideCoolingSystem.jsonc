@@ -1,0 +1,18 @@
+{
+  "name": "RideCoolingSystem",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "ac_working": {
+      "type": "boolean"
+    },
+    "cooling_effective": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

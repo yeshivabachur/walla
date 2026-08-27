@@ -1,0 +1,18 @@
+{
+  "name": "DriverLightningSafetyFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "lightning_present": {
+      "type": "boolean"
+    },
+    "safety_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

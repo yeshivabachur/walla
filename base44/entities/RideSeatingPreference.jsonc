@@ -1,0 +1,24 @@
+{
+  "name": "RideSeatingPreference",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "preferred_seat": {
+      "type": "string",
+      "enum": [
+        "front",
+        "back_left",
+        "back_right",
+        "back_middle"
+      ]
+    },
+    "window_preference": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

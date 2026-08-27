@@ -1,0 +1,15 @@
+{
+  "name": "PassengerAntibacterialSurfaces",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "antibacterial_coating": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

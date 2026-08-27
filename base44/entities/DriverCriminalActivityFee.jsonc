@@ -1,0 +1,18 @@
+{
+  "name": "DriverCriminalActivityFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "high_crime_area": {
+      "type": "boolean"
+    },
+    "security_premium": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

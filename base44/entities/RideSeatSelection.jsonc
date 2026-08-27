@@ -1,0 +1,21 @@
+{
+  "name": "RideSeatSelection",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "selected_seat": {
+      "type": "string"
+    },
+    "seat_features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

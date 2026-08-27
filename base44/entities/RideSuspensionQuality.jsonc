@@ -1,0 +1,15 @@
+{
+  "name": "RideSuspensionQuality",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "smooth_ride_rating": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

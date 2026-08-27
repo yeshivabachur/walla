@@ -1,0 +1,21 @@
+{
+  "name": "DriverSuperheroBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "heroic_action": {
+      "type": "string"
+    },
+    "bonus_amount": {
+      "type": "number"
+    },
+    "public_recognition": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

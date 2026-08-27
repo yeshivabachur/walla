@@ -1,0 +1,27 @@
+{
+  "name": "SessionManagement",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "session_id"
+  ]
+}

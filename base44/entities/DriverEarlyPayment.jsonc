@@ -1,0 +1,21 @@
+{
+  "name": "DriverEarlyPayment",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "opted_in": {
+      "type": "boolean"
+    },
+    "fee_percentage": {
+      "type": "number"
+    },
+    "payments_received": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "PostRideInsight",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_email": {
+      "type": "string"
+    },
+    "carbon_footprint_kg": {
+      "type": "number"
+    },
+    "money_saved_vs_taxi": {
+      "type": "number"
+    },
+    "time_efficiency": {
+      "type": "string"
+    },
+    "route_quality_score": {
+      "type": "number"
+    },
+    "suggestions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "passenger_email"
+  ]
+}

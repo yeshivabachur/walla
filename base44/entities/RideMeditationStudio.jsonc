@@ -1,0 +1,21 @@
+{
+  "name": "RideMeditationStudio",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "guided_meditation": {
+      "type": "boolean"
+    },
+    "meditation_length": {
+      "type": "number"
+    },
+    "mindfulness_level": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

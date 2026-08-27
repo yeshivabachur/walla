@@ -1,0 +1,21 @@
+{
+  "name": "RideVirtualReality",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "vr_headset_available": {
+      "type": "boolean"
+    },
+    "experience_type": {
+      "type": "string"
+    },
+    "motion_sickness_prevention": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

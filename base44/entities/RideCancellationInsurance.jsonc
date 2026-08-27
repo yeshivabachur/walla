@@ -1,0 +1,24 @@
+{
+  "name": "RideCancellationInsurance",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "coverage_amount": {
+      "type": "number"
+    },
+    "monthly_premium": {
+      "type": "number"
+    },
+    "claims_made": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

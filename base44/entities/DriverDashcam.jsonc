@@ -1,0 +1,27 @@
+{
+  "name": "DriverDashcam",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "dashcam_model": {
+      "type": "string"
+    },
+    "recording_quality": {
+      "type": "string"
+    },
+    "storage_capacity": {
+      "type": "number"
+    },
+    "gps_enabled": {
+      "type": "boolean"
+    },
+    "verified": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

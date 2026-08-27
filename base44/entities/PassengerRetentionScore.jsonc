@@ -1,0 +1,32 @@
+{
+  "name": "PassengerRetentionScore",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "retention_score": {
+      "type": "number"
+    },
+    "churn_risk": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "last_ride_days_ago": {
+      "type": "number"
+    },
+    "total_rides": {
+      "type": "number"
+    },
+    "recommended_action": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

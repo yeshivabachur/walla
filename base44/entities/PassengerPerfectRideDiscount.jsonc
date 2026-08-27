@@ -1,0 +1,18 @@
+{
+  "name": "PassengerPerfectRideDiscount",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "perfect_experience": {
+      "type": "boolean"
+    },
+    "bonus_credit": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

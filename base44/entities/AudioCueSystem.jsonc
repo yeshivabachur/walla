@@ -1,0 +1,21 @@
+{
+  "name": "AudioCueSystem",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "audio_alerts_enabled": {
+      "type": "boolean"
+    },
+    "cue_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

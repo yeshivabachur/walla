@@ -1,0 +1,24 @@
+{
+  "name": "NightRideSafety",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "enhanced_tracking": {
+      "type": "boolean"
+    },
+    "check_in_frequency": {
+      "type": "number"
+    },
+    "well_lit_route": {
+      "type": "boolean"
+    },
+    "emergency_contacts_notified": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

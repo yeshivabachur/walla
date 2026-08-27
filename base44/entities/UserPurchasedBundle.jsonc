@@ -1,0 +1,30 @@
+{
+  "name": "UserPurchasedBundle",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "bundle_id": {
+      "type": "string"
+    },
+    "purchase_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "rides_remaining": {
+      "type": "number"
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "bundle_id"
+  ]
+}

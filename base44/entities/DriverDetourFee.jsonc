@@ -1,0 +1,21 @@
+{
+  "name": "DriverDetourFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "detour_requested": {
+      "type": "boolean"
+    },
+    "extra_distance": {
+      "type": "number"
+    },
+    "additional_cost": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

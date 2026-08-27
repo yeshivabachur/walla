@@ -1,0 +1,52 @@
+{
+  "name": "RideReminder",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "reminder_type": {
+      "type": "string",
+      "enum": [
+        "scheduled_ride",
+        "recurring_pattern",
+        "calendar_event"
+      ],
+      "default": "scheduled_ride"
+    },
+    "pickup_location": {
+      "type": "string"
+    },
+    "dropoff_location": {
+      "type": "string"
+    },
+    "scheduled_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "reminder_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When to send reminder"
+    },
+    "sent": {
+      "type": "boolean",
+      "default": false
+    },
+    "recurring": {
+      "type": "boolean",
+      "default": false
+    },
+    "recurring_days": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "user_email",
+    "scheduled_time"
+  ]
+}

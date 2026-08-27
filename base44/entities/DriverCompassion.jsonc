@@ -1,0 +1,21 @@
+{
+  "name": "DriverCompassion",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "compassion_score": {
+      "type": "number"
+    },
+    "kindness_acts": {
+      "type": "number"
+    },
+    "empathy_rating": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

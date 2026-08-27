@@ -1,0 +1,55 @@
+{
+  "name": "PayoutHistory",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string",
+      "description": "Email of the driver"
+    },
+    "amount": {
+      "type": "number",
+      "description": "Payout amount"
+    },
+    "payout_method": {
+      "type": "string",
+      "enum": [
+        "instant",
+        "weekly",
+        "monthly"
+      ],
+      "description": "Method of payout"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "processing",
+        "completed",
+        "failed"
+      ],
+      "default": "pending"
+    },
+    "transaction_id": {
+      "type": "string"
+    },
+    "bank_account_last_4": {
+      "type": "string"
+    },
+    "processed_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "earning_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of earning IDs included in this payout"
+    }
+  },
+  "required": [
+    "driver_email",
+    "amount",
+    "payout_method"
+  ]
+}

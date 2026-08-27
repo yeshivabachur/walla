@@ -1,0 +1,25 @@
+{
+  "name": "DriverRegionalChampion",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "champion_status": {
+      "type": "boolean"
+    },
+    "special_perks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "driver_email",
+    "region"
+  ]
+}

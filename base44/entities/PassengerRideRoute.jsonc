@@ -1,0 +1,27 @@
+{
+  "name": "PassengerRideRoute",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "route_preference": {
+      "type": "string",
+      "enum": [
+        "fastest",
+        "shortest",
+        "scenic",
+        "avoid_highways"
+      ]
+    },
+    "waypoints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

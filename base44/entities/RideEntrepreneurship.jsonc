@@ -1,0 +1,21 @@
+{
+  "name": "RideEntrepreneurship",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "startup_advice": {
+      "type": "boolean"
+    },
+    "business_planning": {
+      "type": "boolean"
+    },
+    "entrepreneur_content": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

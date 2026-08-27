@@ -1,0 +1,24 @@
+{
+  "name": "PassengerTravelInsurance",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "coverage_amount": {
+      "type": "number"
+    },
+    "trip_cancellation": {
+      "type": "boolean"
+    },
+    "medical_coverage": {
+      "type": "boolean"
+    },
+    "baggage_coverage": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

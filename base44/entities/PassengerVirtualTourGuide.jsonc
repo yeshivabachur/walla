@@ -1,0 +1,21 @@
+{
+  "name": "PassengerVirtualTourGuide",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "tour_enabled": {
+      "type": "boolean"
+    },
+    "landmarks_shared": {
+      "type": "number"
+    },
+    "historical_info": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

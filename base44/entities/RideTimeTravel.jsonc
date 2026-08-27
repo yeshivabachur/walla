@@ -1,0 +1,21 @@
+{
+  "name": "RideTimeTravel",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "historical_narration": {
+      "type": "boolean"
+    },
+    "era_music": {
+      "type": "string"
+    },
+    "nostalgia_mode": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

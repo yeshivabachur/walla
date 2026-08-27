@@ -1,0 +1,31 @@
+{
+  "name": "VoiceAssistantIntegration",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "assistant_type": {
+      "type": "string",
+      "enum": [
+        "alexa",
+        "google",
+        "siri",
+        "bixby"
+      ]
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "voice_commands_used": {
+      "type": "number"
+    },
+    "last_command": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "assistant_type"
+  ]
+}

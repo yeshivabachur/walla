@@ -1,0 +1,35 @@
+{
+  "name": "PassengerBehavior",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string"
+    },
+    "typical_routes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "preferred_times": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "average_trip_duration": {
+      "type": "number"
+    },
+    "typical_spending": {
+      "type": "number"
+    },
+    "booking_patterns": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "passenger_email"
+  ]
+}

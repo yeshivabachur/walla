@@ -1,0 +1,21 @@
+{
+  "name": "DriverNutritionProgram",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "enrolled": {
+      "type": "boolean"
+    },
+    "meal_plan": {
+      "type": "string"
+    },
+    "healthy_food_stipend": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

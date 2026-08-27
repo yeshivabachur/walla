@@ -1,0 +1,18 @@
+{
+  "name": "DriverPoliceEscortFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "police_escort_required": {
+      "type": "boolean"
+    },
+    "coordination_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

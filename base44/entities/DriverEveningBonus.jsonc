@@ -1,0 +1,21 @@
+{
+  "name": "DriverEveningBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "evening_rides": {
+      "type": "number"
+    },
+    "bonus_multiplier": {
+      "type": "number"
+    },
+    "total_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

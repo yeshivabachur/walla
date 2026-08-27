@@ -1,0 +1,21 @@
+{
+  "name": "GPSAccuracy",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "accuracy_meters": {
+      "type": "number"
+    },
+    "satellite_count": {
+      "type": "number"
+    },
+    "fix_type": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

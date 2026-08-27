@@ -1,0 +1,19 @@
+{
+  "name": "RideUVSanitization",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "uv_sanitized": {
+      "type": "boolean"
+    },
+    "last_sanitization": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

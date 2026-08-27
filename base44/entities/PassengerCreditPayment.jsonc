@@ -1,0 +1,19 @@
+{
+  "name": "PassengerCreditPayment",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "ride_credits": {
+      "type": "number"
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

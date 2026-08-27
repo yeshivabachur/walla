@@ -1,0 +1,38 @@
+{
+  "name": "MetaverseIntegration",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "avatar_customization": {
+      "type": "object",
+      "properties": {
+        "style": {
+          "type": "string"
+        },
+        "accessories": {
+          "type": "array"
+        }
+      }
+    },
+    "virtual_garage": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "metaverse_rides": {
+      "type": "number",
+      "default": 0
+    },
+    "virtual_currency": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

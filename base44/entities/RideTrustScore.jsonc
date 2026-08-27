@@ -1,0 +1,24 @@
+{
+  "name": "RideTrustScore",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "trust_score": {
+      "type": "number"
+    },
+    "verified_rides": {
+      "type": "number"
+    },
+    "positive_reviews": {
+      "type": "number"
+    },
+    "disputes": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

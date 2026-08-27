@@ -1,0 +1,21 @@
+{
+  "name": "DriverOwnershipProgram",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "equity_shares": {
+      "type": "number"
+    },
+    "profit_sharing": {
+      "type": "number"
+    },
+    "voting_rights": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

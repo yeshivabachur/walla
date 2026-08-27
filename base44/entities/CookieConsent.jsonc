@@ -1,0 +1,21 @@
+{
+  "name": "CookieConsent",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "essential_cookies": {
+      "type": "boolean"
+    },
+    "analytics_cookies": {
+      "type": "boolean"
+    },
+    "marketing_cookies": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

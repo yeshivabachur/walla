@@ -1,0 +1,24 @@
+{
+  "name": "DriverOnboardingBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "bonus_amount": {
+      "type": "number"
+    },
+    "rides_required": {
+      "type": "number"
+    },
+    "rides_completed": {
+      "type": "number"
+    },
+    "paid": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

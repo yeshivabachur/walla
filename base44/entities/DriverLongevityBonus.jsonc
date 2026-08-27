@@ -1,0 +1,24 @@
+{
+  "name": "DriverLongevityBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "tenure_years": {
+      "type": "number"
+    },
+    "annual_bonus": {
+      "type": "number"
+    },
+    "loyalty_perks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

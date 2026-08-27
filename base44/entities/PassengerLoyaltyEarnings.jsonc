@@ -1,0 +1,24 @@
+{
+  "name": "PassengerLoyaltyEarnings",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "total_points": {
+      "type": "number"
+    },
+    "points_this_month": {
+      "type": "number"
+    },
+    "points_expiring_soon": {
+      "type": "number"
+    },
+    "next_reward_at": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

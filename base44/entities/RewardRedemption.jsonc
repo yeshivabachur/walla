@@ -1,0 +1,42 @@
+{
+  "name": "RewardRedemption",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "reward_type": {
+      "type": "string",
+      "enum": [
+        "free_ride",
+        "discount",
+        "upgrade",
+        "priority_pickup",
+        "airport_lounge"
+      ]
+    },
+    "points_cost": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "redeemed_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "used": {
+      "type": "boolean",
+      "default": false
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "user_email",
+    "reward_type",
+    "points_cost"
+  ]
+}

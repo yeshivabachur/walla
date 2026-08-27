@@ -1,0 +1,45 @@
+{
+  "name": "AccessibilityRequest",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string"
+    },
+    "needs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "wheelchair_accessible",
+          "hearing_impaired",
+          "vision_impaired",
+          "service_animal",
+          "extra_assistance",
+          "walker_accessible"
+        ]
+      },
+      "default": []
+    },
+    "details": {
+      "type": "string",
+      "description": "Additional accessibility details"
+    },
+    "certified_only": {
+      "type": "boolean",
+      "default": true,
+      "description": "Require certified accessible vehicle"
+    },
+    "preferred_communication": {
+      "type": "string",
+      "enum": [
+        "text",
+        "call",
+        "app_only"
+      ],
+      "default": "app_only"
+    }
+  },
+  "required": [
+    "passenger_email"
+  ]
+}

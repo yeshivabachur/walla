@@ -1,0 +1,21 @@
+{
+  "name": "PassengerAnniversaryReward",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "years_as_customer": {
+      "type": "number"
+    },
+    "reward_value": {
+      "type": "number"
+    },
+    "special_offer": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

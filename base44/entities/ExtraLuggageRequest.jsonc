@@ -1,0 +1,25 @@
+{
+  "name": "ExtraLuggageRequest",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "number_of_bags": {
+      "type": "number"
+    },
+    "oversized_items": {
+      "type": "boolean"
+    },
+    "trunk_space_needed": {
+      "type": "string"
+    },
+    "additional_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "number_of_bags"
+  ]
+}

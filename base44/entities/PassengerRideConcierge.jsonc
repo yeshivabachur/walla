@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRideConcierge",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "concierge_requests": {
+      "type": "number"
+    },
+    "restaurant_reservations": {
+      "type": "number"
+    },
+    "event_bookings": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

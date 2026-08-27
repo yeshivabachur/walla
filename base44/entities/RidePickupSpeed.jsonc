@@ -1,0 +1,23 @@
+{
+  "name": "RidePickupSpeed",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "requested_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "pickup_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "speed_minutes": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

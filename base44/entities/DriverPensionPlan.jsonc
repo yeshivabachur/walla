@@ -1,0 +1,21 @@
+{
+  "name": "DriverPensionPlan",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "years_of_service": {
+      "type": "number"
+    },
+    "monthly_pension": {
+      "type": "number"
+    },
+    "vested": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

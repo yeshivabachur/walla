@@ -1,0 +1,21 @@
+{
+  "name": "RideMusicProduction",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "dj_driver": {
+      "type": "boolean"
+    },
+    "live_mixing": {
+      "type": "boolean"
+    },
+    "custom_playlist_creation": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

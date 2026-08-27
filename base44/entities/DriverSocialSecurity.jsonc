@@ -1,0 +1,21 @@
+{
+  "name": "DriverSocialSecurity",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "quarterly_contribution": {
+      "type": "number"
+    },
+    "estimated_benefit": {
+      "type": "number"
+    },
+    "years_contributed": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

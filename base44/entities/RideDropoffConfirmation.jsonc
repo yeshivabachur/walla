@@ -1,0 +1,19 @@
+{
+  "name": "RideDropoffConfirmation",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "dropoff_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "confirmed_by_passenger": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

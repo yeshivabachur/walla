@@ -1,0 +1,53 @@
+{
+  "name": "User",
+  "type": "object",
+  "properties": {
+    "emergency_contact_name": {
+      "type": "string"
+    },
+    "emergency_contact_phone": {
+      "type": "string"
+    },
+    "emergency_contact_relationship": {
+      "type": "string"
+    },
+    "favorite_driver_emails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "saved_locations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "coords": {
+            "type": "object",
+            "properties": {
+              "latitude": {
+                "type": "number"
+              },
+              "longitude": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "emergency_contact_name",
+    "emergency_contact_phone",
+    "emergency_contact_relationship"
+  ]
+}

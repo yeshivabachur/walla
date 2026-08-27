@@ -1,0 +1,21 @@
+{
+  "name": "DriverFutureSkills",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "ai_training": {
+      "type": "boolean"
+    },
+    "automation_skills": {
+      "type": "boolean"
+    },
+    "future_ready_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

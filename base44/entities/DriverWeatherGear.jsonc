@@ -1,0 +1,21 @@
+{
+  "name": "DriverWeatherGear",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "gear_provided": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "seasonal_allowance": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

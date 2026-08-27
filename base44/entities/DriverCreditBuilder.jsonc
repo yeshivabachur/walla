@@ -1,0 +1,21 @@
+{
+  "name": "DriverCreditBuilder",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "credit_score": {
+      "type": "number"
+    },
+    "on_time_payments": {
+      "type": "number"
+    },
+    "credit_improvement": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

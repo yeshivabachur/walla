@@ -1,0 +1,21 @@
+{
+  "name": "DriverRainBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "rainy_day_rides": {
+      "type": "number"
+    },
+    "bonus_per_ride": {
+      "type": "number"
+    },
+    "total_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

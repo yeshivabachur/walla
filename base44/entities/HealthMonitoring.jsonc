@@ -1,0 +1,28 @@
+{
+  "name": "HealthMonitoring",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "heart_rate": {
+      "type": "number"
+    },
+    "stress_level": {
+      "type": "number"
+    },
+    "fatigue_indicator": {
+      "type": "number"
+    },
+    "alert_triggered": {
+      "type": "boolean"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

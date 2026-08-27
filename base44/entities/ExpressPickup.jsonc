@@ -1,0 +1,26 @@
+{
+  "name": "ExpressPickup",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "priority_level": {
+      "type": "string",
+      "enum": [
+        "standard",
+        "express",
+        "premium"
+      ]
+    },
+    "guaranteed_pickup_time": {
+      "type": "number"
+    },
+    "additional_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

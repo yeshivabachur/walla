@@ -1,0 +1,21 @@
+{
+  "name": "DriverSummerBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "summer_rides": {
+      "type": "number"
+    },
+    "heat_bonus": {
+      "type": "number"
+    },
+    "total_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

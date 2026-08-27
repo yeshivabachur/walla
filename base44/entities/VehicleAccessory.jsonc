@@ -1,0 +1,35 @@
+{
+  "name": "VehicleAccessory",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "accessory_type": {
+      "type": "string",
+      "enum": [
+        "phone_charger",
+        "water_bottles",
+        "wifi",
+        "entertainment",
+        "snacks"
+      ]
+    },
+    "available": {
+      "type": "boolean",
+      "default": true
+    },
+    "boost_rating": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "driver_email",
+    "accessory_type"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "SmartRewardRecommendation",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "recommended_reward": {
+      "type": "string"
+    },
+    "points_required": {
+      "type": "number"
+    },
+    "user_points": {
+      "type": "number"
+    },
+    "personalization_reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

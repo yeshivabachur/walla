@@ -1,0 +1,21 @@
+{
+  "name": "DriverSafetyAward",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "accident_free_months": {
+      "type": "number"
+    },
+    "award_amount": {
+      "type": "number"
+    },
+    "public_recognition": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

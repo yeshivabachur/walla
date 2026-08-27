@@ -1,0 +1,21 @@
+{
+  "name": "DriverStreakReward",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "current_streak_days": {
+      "type": "number"
+    },
+    "longest_streak": {
+      "type": "number"
+    },
+    "reward_earned": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

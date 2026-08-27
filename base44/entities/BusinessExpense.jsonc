@@ -1,0 +1,51 @@
+{
+  "name": "BusinessExpense",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "expense_category": {
+      "type": "string",
+      "enum": [
+        "client_meeting",
+        "business_travel",
+        "site_visit",
+        "conference",
+        "other"
+      ],
+      "default": "business_travel"
+    },
+    "client_name": {
+      "type": "string"
+    },
+    "project_code": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "receipt_url": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "exported": {
+      "type": "boolean",
+      "default": false
+    },
+    "export_date": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "user_email",
+    "amount"
+  ]
+}

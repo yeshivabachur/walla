@@ -1,0 +1,39 @@
+{
+  "name": "VehicleInspection",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "inspection_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "inspector_name": {
+      "type": "string"
+    },
+    "passed": {
+      "type": "boolean"
+    },
+    "issues_found": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "next_inspection_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "driver_email",
+    "inspection_date",
+    "passed"
+  ]
+}

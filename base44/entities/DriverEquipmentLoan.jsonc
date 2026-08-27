@@ -1,0 +1,25 @@
+{
+  "name": "DriverEquipmentLoan",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "equipment_type": {
+      "type": "string"
+    },
+    "loan_amount": {
+      "type": "number"
+    },
+    "repayment_schedule": {
+      "type": "string"
+    },
+    "balance": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "equipment_type"
+  ]
+}

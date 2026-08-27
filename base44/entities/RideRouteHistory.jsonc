@@ -1,0 +1,25 @@
+{
+  "name": "RideRouteHistory",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "route": {
+      "type": "string"
+    },
+    "times_taken": {
+      "type": "number"
+    },
+    "average_duration": {
+      "type": "number"
+    },
+    "favorite": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "route"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "SmartDestinationSuggestion",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "suggested_destination": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "based_on": {
+      "type": "string",
+      "enum": [
+        "time",
+        "location",
+        "history",
+        "calendar"
+      ]
+    },
+    "accepted": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "suggested_destination"
+  ]
+}

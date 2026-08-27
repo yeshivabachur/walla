@@ -1,0 +1,24 @@
+{
+  "name": "DriverVehicleHealthAI",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "health_score": {
+      "type": "number"
+    },
+    "predicted_issues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "maintenance_alerts": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

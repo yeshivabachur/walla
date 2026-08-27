@@ -1,0 +1,24 @@
+{
+  "name": "PassengerProductivityHacks",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "productivity_content": {
+      "type": "boolean"
+    },
+    "time_management_tips": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "efficiency_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

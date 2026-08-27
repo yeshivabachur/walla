@@ -1,0 +1,21 @@
+{
+  "name": "DriverCommunityLeader",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "leadership_score": {
+      "type": "number"
+    },
+    "drivers_mentored": {
+      "type": "number"
+    },
+    "events_organized": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

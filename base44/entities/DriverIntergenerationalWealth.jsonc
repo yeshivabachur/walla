@@ -1,0 +1,21 @@
+{
+  "name": "DriverIntergenerationalWealth",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "wealth_transfer_plan": {
+      "type": "boolean"
+    },
+    "family_trust": {
+      "type": "number"
+    },
+    "estate_planning": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

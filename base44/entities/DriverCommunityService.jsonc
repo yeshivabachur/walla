@@ -1,0 +1,24 @@
+{
+  "name": "DriverCommunityService",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "volunteer_hours": {
+      "type": "number"
+    },
+    "causes_supported": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recognition_points": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

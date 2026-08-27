@@ -1,0 +1,21 @@
+{
+  "name": "AppDeepLinking",
+  "type": "object",
+  "properties": {
+    "link_url": {
+      "type": "string"
+    },
+    "target_screen": {
+      "type": "string"
+    },
+    "parameters": {
+      "type": "object"
+    },
+    "click_count": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "link_url"
+  ]
+}

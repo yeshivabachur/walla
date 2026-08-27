@@ -1,0 +1,49 @@
+{
+  "name": "PricePrediction",
+  "type": "object",
+  "properties": {
+    "route": {
+      "type": "string",
+      "description": "Route identifier"
+    },
+    "pickup_location": {
+      "type": "string"
+    },
+    "dropoff_location": {
+      "type": "string"
+    },
+    "predictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "time_slot": {
+            "type": "string"
+          },
+          "predicted_price": {
+            "type": "number"
+          },
+          "surge_probability": {
+            "type": "number"
+          },
+          "confidence": {
+            "type": "number"
+          }
+        }
+      },
+      "default": []
+    },
+    "best_time": {
+      "type": "string",
+      "description": "Recommended booking time"
+    },
+    "potential_savings": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "route",
+    "pickup_location",
+    "dropoff_location"
+  ]
+}

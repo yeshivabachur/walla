@@ -1,0 +1,35 @@
+{
+  "name": "PassengerRewardTier",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "tier": {
+      "type": "string",
+      "enum": [
+        "bronze",
+        "silver",
+        "gold",
+        "platinum",
+        "diamond"
+      ]
+    },
+    "points_required": {
+      "type": "number"
+    },
+    "current_points": {
+      "type": "number"
+    },
+    "perks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "user_email",
+    "tier"
+  ]
+}

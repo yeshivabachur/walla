@@ -1,0 +1,28 @@
+{
+  "name": "RideRecommendation",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string"
+    },
+    "recommended_route": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "best_time": {
+      "type": "string"
+    },
+    "estimated_savings": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "passenger_email",
+    "recommended_route"
+  ]
+}

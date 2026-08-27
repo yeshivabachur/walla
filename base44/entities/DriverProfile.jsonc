@@ -1,0 +1,214 @@
+{
+  "name": "DriverProfile",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string",
+      "description": "Email of the driver"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "string",
+      "format": "date"
+    },
+    "address": {
+      "type": "string"
+    },
+    "certifications": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "List of certifications (e.g., Defensive Driving, First Aid)"
+    },
+    "languages_spoken": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "English"
+      ],
+      "description": "Languages the driver speaks"
+    },
+    "preferred_working_hours": {
+      "type": "object",
+      "properties": {
+        "start_time": {
+          "type": "string",
+          "description": "Preferred start time (HH:mm format)"
+        },
+        "end_time": {
+          "type": "string",
+          "description": "Preferred end time (HH:mm format)"
+        },
+        "days": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Preferred working days"
+        }
+      },
+      "description": "Driver's preferred working schedule"
+    },
+    "ai_suggested_hours": {
+      "type": "object",
+      "properties": {
+        "peak_hours": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "reasoning": {
+          "type": "string"
+        },
+        "potential_earnings_increase": {
+          "type": "string"
+        }
+      },
+      "description": "AI-suggested optimal working hours"
+    },
+    "license_number": {
+      "type": "string"
+    },
+    "license_expiry": {
+      "type": "string",
+      "format": "date"
+    },
+    "license_state": {
+      "type": "string"
+    },
+    "license_photo_url": {
+      "type": "string"
+    },
+    "license_verification_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "verified",
+        "rejected"
+      ],
+      "default": "pending"
+    },
+    "license_verification_notes": {
+      "type": "string"
+    },
+    "background_check_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "in_progress",
+        "cleared",
+        "rejected"
+      ],
+      "default": "pending"
+    },
+    "background_check_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "vehicle_make": {
+      "type": "string"
+    },
+    "vehicle_model": {
+      "type": "string"
+    },
+    "vehicle_year": {
+      "type": "string"
+    },
+    "vehicle_color": {
+      "type": "string"
+    },
+    "vehicle_plate": {
+      "type": "string"
+    },
+    "vehicle_registration_url": {
+      "type": "string"
+    },
+    "vehicle_verification_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "verified",
+        "rejected"
+      ],
+      "default": "pending"
+    },
+    "insurance_provider": {
+      "type": "string"
+    },
+    "insurance_policy_number": {
+      "type": "string"
+    },
+    "insurance_expiry": {
+      "type": "string",
+      "format": "date"
+    },
+    "insurance_document_url": {
+      "type": "string"
+    },
+    "insurance_verification_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "verified",
+        "rejected"
+      ],
+      "default": "pending"
+    },
+    "profile_photo_url": {
+      "type": "string"
+    },
+    "bank_account_holder": {
+      "type": "string"
+    },
+    "bank_name": {
+      "type": "string"
+    },
+    "bank_account_number": {
+      "type": "string"
+    },
+    "bank_routing_number": {
+      "type": "string"
+    },
+    "payout_preference": {
+      "type": "string",
+      "enum": [
+        "instant",
+        "weekly",
+        "monthly"
+      ],
+      "default": "weekly"
+    },
+    "onboarding_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected",
+        "incomplete"
+      ],
+      "default": "incomplete"
+    },
+    "approval_notes": {
+      "type": "string"
+    },
+    "last_notification_sent": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "driver_email",
+    "full_name",
+    "phone"
+  ]
+}

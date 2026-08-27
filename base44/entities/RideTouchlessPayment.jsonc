@@ -1,0 +1,15 @@
+{
+  "name": "RideTouchlessPayment",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "contactless_payment": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

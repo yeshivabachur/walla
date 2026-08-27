@@ -1,0 +1,21 @@
+{
+  "name": "MinificationSettings",
+  "type": "object",
+  "properties": {
+    "file_type": {
+      "type": "string"
+    },
+    "original_size": {
+      "type": "number"
+    },
+    "minified_size": {
+      "type": "number"
+    },
+    "compression_ratio": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "file_type"
+  ]
+}

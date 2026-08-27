@@ -1,0 +1,21 @@
+{
+  "name": "DriverOverageBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "rides_over_target": {
+      "type": "number"
+    },
+    "bonus_per_ride": {
+      "type": "number"
+    },
+    "total_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "RidePhoneMount",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "phone_mount_available": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

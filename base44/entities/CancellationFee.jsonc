@@ -1,0 +1,31 @@
+{
+  "name": "CancellationFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "cancelled_by": {
+      "type": "string"
+    },
+    "fee_amount": {
+      "type": "number"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "waived": {
+      "type": "boolean",
+      "default": false
+    },
+    "charged_date": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "cancelled_by",
+    "fee_amount"
+  ]
+}

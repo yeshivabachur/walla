@@ -1,0 +1,60 @@
+{
+  "name": "RidePackage",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "package_type": {
+      "type": "string",
+      "enum": [
+        "commuter",
+        "premium",
+        "business"
+      ],
+      "description": "Type of subscription package"
+    },
+    "rides_included": {
+      "type": "number",
+      "description": "Number of rides included per month"
+    },
+    "rides_used": {
+      "type": "number",
+      "default": 0
+    },
+    "monthly_cost": {
+      "type": "number"
+    },
+    "discount_percentage": {
+      "type": "number",
+      "description": "Discount on rides"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "auto_renew": {
+      "type": "boolean",
+      "default": true
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "cancelled",
+        "expired"
+      ],
+      "default": "active"
+    }
+  },
+  "required": [
+    "user_email",
+    "package_type",
+    "rides_included",
+    "monthly_cost"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "SafeRouteVerification",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "route": {
+      "type": "string"
+    },
+    "safety_score": {
+      "type": "number"
+    },
+    "well_lit": {
+      "type": "boolean"
+    },
+    "high_traffic": {
+      "type": "boolean"
+    },
+    "police_presence": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

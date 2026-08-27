@@ -1,0 +1,46 @@
+{
+  "name": "EarningsWithdrawal",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "withdrawal_method": {
+      "type": "string",
+      "enum": [
+        "bank_transfer",
+        "instant_pay",
+        "paypal"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "processing",
+        "completed",
+        "failed"
+      ]
+    },
+    "requested_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "completed_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fee": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "driver_email",
+    "amount",
+    "withdrawal_method"
+  ]
+}

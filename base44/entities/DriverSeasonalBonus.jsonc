@@ -1,0 +1,22 @@
+{
+  "name": "DriverSeasonalBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "season": {
+      "type": "string"
+    },
+    "bonus_amount": {
+      "type": "number"
+    },
+    "rides_completed_in_season": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "season"
+  ]
+}

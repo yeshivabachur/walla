@@ -1,0 +1,21 @@
+{
+  "name": "PassengerAIAssistant",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "assistant_name": {
+      "type": "string"
+    },
+    "personalization_level": {
+      "type": "number"
+    },
+    "commands_learned": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

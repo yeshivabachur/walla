@@ -1,0 +1,24 @@
+{
+  "name": "DynamicPickupPoint",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "original_location": {
+      "type": "string"
+    },
+    "optimized_location": {
+      "type": "string"
+    },
+    "walk_distance_meters": {
+      "type": "number"
+    },
+    "time_saved_minutes": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

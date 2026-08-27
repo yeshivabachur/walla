@@ -1,0 +1,21 @@
+{
+  "name": "PassengerPaymentSecurity",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "tokenized_payments": {
+      "type": "boolean"
+    },
+    "fraud_protection": {
+      "type": "boolean"
+    },
+    "secure_storage": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

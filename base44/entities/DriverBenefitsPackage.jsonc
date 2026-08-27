@@ -1,0 +1,27 @@
+{
+  "name": "DriverBenefitsPackage",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "health_insurance": {
+      "type": "boolean"
+    },
+    "dental_coverage": {
+      "type": "boolean"
+    },
+    "vision_coverage": {
+      "type": "boolean"
+    },
+    "life_insurance": {
+      "type": "boolean"
+    },
+    "retirement_401k": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

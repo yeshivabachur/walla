@@ -1,0 +1,24 @@
+{
+  "name": "RidePaymentOption",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "payment_methods": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "default_method": {
+      "type": "string"
+    },
+    "auto_pay": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

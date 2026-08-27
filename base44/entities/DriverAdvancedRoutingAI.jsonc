@@ -1,0 +1,21 @@
+{
+  "name": "DriverAdvancedRoutingAI",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "ai_routes_used": {
+      "type": "number"
+    },
+    "time_saved_minutes": {
+      "type": "number"
+    },
+    "fuel_saved_liters": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

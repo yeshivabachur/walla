@@ -1,0 +1,25 @@
+{
+  "name": "ReplicationStrategy",
+  "type": "object",
+  "properties": {
+    "data_type": {
+      "type": "string"
+    },
+    "replication_factor": {
+      "type": "number"
+    },
+    "sync_type": {
+      "type": "string",
+      "enum": [
+        "synchronous",
+        "asynchronous"
+      ]
+    },
+    "consistency_level": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "data_type"
+  ]
+}

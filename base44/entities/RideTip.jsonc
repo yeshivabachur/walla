@@ -1,0 +1,41 @@
+{
+  "name": "RideTip",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string",
+      "description": "Reference to the ride"
+    },
+    "passenger_email": {
+      "type": "string",
+      "description": "Email of the passenger who tipped"
+    },
+    "driver_email": {
+      "type": "string",
+      "description": "Email of the driver receiving tip"
+    },
+    "amount": {
+      "type": "number",
+      "description": "Tip amount in dollars"
+    },
+    "tip_type": {
+      "type": "string",
+      "enum": [
+        "percentage",
+        "fixed"
+      ],
+      "default": "percentage",
+      "description": "Type of tip calculation"
+    },
+    "message": {
+      "type": "string",
+      "description": "Optional message from passenger"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "passenger_email",
+    "driver_email",
+    "amount"
+  ]
+}

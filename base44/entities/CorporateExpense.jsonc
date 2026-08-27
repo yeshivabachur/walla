@@ -1,0 +1,37 @@
+{
+  "name": "CorporateExpense",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "ride_request_id": {
+      "type": "string"
+    },
+    "company_name": {
+      "type": "string"
+    },
+    "expense_category": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "receipt_url": {
+      "type": "string"
+    },
+    "exported": {
+      "type": "boolean",
+      "default": false
+    },
+    "export_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "user_email",
+    "ride_request_id",
+    "amount"
+  ]
+}

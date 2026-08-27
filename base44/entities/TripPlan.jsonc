@@ -1,0 +1,58 @@
+{
+  "name": "TripPlan",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "plan_name": {
+      "type": "string"
+    },
+    "stops": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string"
+          },
+          "duration_minutes": {
+            "type": "number"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    },
+    "start_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "total_estimated_cost": {
+      "type": "number"
+    },
+    "total_estimated_time": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "scheduled",
+        "in_progress",
+        "completed"
+      ],
+      "default": "draft"
+    },
+    "ai_optimized": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "user_email",
+    "plan_name"
+  ]
+}

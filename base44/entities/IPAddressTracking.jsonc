@@ -1,0 +1,25 @@
+{
+  "name": "IPAddressTracking",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "ip_address": {
+      "type": "string"
+    },
+    "trusted": {
+      "type": "boolean"
+    },
+    "country": {
+      "type": "string"
+    },
+    "suspicious": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "ip_address"
+  ]
+}

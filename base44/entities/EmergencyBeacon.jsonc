@@ -1,0 +1,22 @@
+{
+  "name": "EmergencyBeacon",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "battery_level": {
+      "type": "number"
+    },
+    "last_test": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

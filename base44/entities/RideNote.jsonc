@@ -1,0 +1,33 @@
+{
+  "name": "RideNote",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "author_email": {
+      "type": "string"
+    },
+    "note_type": {
+      "type": "string",
+      "enum": [
+        "pickup",
+        "delivery",
+        "special",
+        "feedback"
+      ]
+    },
+    "content": {
+      "type": "string"
+    },
+    "private": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "author_email",
+    "content"
+  ]
+}

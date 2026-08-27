@@ -1,0 +1,28 @@
+{
+  "name": "TowingService",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "tow_to": {
+      "type": "string"
+    },
+    "cost": {
+      "type": "number"
+    },
+    "eta": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "location"
+  ]
+}

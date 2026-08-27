@@ -1,0 +1,24 @@
+{
+  "name": "PassengerRideBudget",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "monthly_budget": {
+      "type": "number"
+    },
+    "spent_this_month": {
+      "type": "number"
+    },
+    "alert_threshold": {
+      "type": "number"
+    },
+    "auto_pause_when_exceeded": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

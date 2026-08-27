@@ -1,0 +1,21 @@
+{
+  "name": "AnonymizedData",
+  "type": "object",
+  "properties": {
+    "data_set_id": {
+      "type": "string"
+    },
+    "anonymization_method": {
+      "type": "string"
+    },
+    "k_anonymity_value": {
+      "type": "number"
+    },
+    "l_diversity_value": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "data_set_id"
+  ]
+}

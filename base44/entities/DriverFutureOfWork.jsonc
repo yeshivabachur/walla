@@ -1,0 +1,24 @@
+{
+  "name": "DriverFutureOfWork",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "future_skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "adaptability_score": {
+      "type": "number"
+    },
+    "career_transitions": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

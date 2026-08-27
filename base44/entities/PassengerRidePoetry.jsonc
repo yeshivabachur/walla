@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRidePoetry",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "poetry_reading": {
+      "type": "boolean"
+    },
+    "poet_driver": {
+      "type": "boolean"
+    },
+    "custom_poem": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

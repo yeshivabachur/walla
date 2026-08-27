@@ -1,0 +1,21 @@
+{
+  "name": "SignLanguageSupport",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "sign_language_type": {
+      "type": "string"
+    },
+    "interpreter_needed": {
+      "type": "boolean"
+    },
+    "video_chat_enabled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

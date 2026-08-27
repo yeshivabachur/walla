@@ -1,0 +1,30 @@
+{
+  "name": "ABTestVariant",
+  "type": "object",
+  "properties": {
+    "test_name": {
+      "type": "string"
+    },
+    "variant_name": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "assigned_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "conversion_event": {
+      "type": "string"
+    },
+    "converted": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "test_name",
+    "variant_name",
+    "user_email"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "DriverYearEndBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "year": {
+      "type": "number"
+    },
+    "total_rides": {
+      "type": "number"
+    },
+    "bonus_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "year"
+  ]
+}

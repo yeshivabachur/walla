@@ -1,0 +1,21 @@
+{
+  "name": "PassengerConcierge",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "concierge_level": {
+      "type": "string"
+    },
+    "requests_handled": {
+      "type": "number"
+    },
+    "satisfaction_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

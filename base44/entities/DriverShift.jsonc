@@ -1,0 +1,48 @@
+{
+  "name": "DriverShift",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "shift_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "start_time": {
+      "type": "string"
+    },
+    "end_time": {
+      "type": "string"
+    },
+    "target_earnings": {
+      "type": "number"
+    },
+    "actual_earnings": {
+      "type": "number",
+      "default": 0
+    },
+    "rides_completed": {
+      "type": "number",
+      "default": 0
+    },
+    "ai_recommended": {
+      "type": "boolean",
+      "default": false
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "scheduled",
+        "active",
+        "completed",
+        "missed"
+      ],
+      "default": "scheduled"
+    }
+  },
+  "required": [
+    "driver_email",
+    "shift_date"
+  ]
+}

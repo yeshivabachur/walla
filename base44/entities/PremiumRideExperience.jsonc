@@ -1,0 +1,53 @@
+{
+  "name": "PremiumRideExperience",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "tier": {
+      "type": "string",
+      "enum": [
+        "luxury",
+        "scenic",
+        "executive",
+        "wellness",
+        "party"
+      ],
+      "default": "luxury"
+    },
+    "price_multiplier": {
+      "type": "number",
+      "default": 2.0
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "available": {
+      "type": "boolean",
+      "default": true
+    },
+    "minimum_tier": {
+      "type": "string",
+      "enum": [
+        "bronze",
+        "silver",
+        "gold",
+        "platinum",
+        "diamond"
+      ],
+      "default": "silver"
+    }
+  },
+  "required": [
+    "name",
+    "tier"
+  ]
+}

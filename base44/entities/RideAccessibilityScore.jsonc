@@ -1,0 +1,24 @@
+{
+  "name": "RideAccessibilityScore",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "accessibility_rating": {
+      "type": "number"
+    },
+    "wheelchair_accessible": {
+      "type": "boolean"
+    },
+    "hearing_accessible": {
+      "type": "boolean"
+    },
+    "vision_accessible": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

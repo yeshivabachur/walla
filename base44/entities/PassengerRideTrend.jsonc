@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRideTrend",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "trend_analysis": {
+      "type": "object"
+    },
+    "spending_trend": {
+      "type": "string"
+    },
+    "usage_trend": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

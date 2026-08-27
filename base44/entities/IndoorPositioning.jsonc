@@ -1,0 +1,21 @@
+{
+  "name": "IndoorPositioning",
+  "type": "object",
+  "properties": {
+    "building_name": {
+      "type": "string"
+    },
+    "floor": {
+      "type": "number"
+    },
+    "accuracy_meters": {
+      "type": "number"
+    },
+    "technology": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "building_name"
+  ]
+}

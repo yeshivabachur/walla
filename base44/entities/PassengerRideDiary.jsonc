@@ -1,0 +1,28 @@
+{
+  "name": "PassengerRideDiary",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "ride_request_id": {
+      "type": "string"
+    },
+    "entry_text": {
+      "type": "string"
+    },
+    "mood_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "private": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "ride_request_id"
+  ]
+}

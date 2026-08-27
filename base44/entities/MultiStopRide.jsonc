@@ -1,0 +1,52 @@
+{
+  "name": "MultiStopRide",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string",
+      "description": "Reference to the main ride"
+    },
+    "stops": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string"
+          },
+          "coordinates": {
+            "type": "object",
+            "properties": {
+              "latitude": {
+                "type": "number"
+              },
+              "longitude": {
+                "type": "number"
+              }
+            }
+          },
+          "order": {
+            "type": "number"
+          },
+          "completed": {
+            "type": "boolean"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    },
+    "total_distance_km": {
+      "type": "number"
+    },
+    "additional_cost": {
+      "type": "number",
+      "description": "Extra cost for multiple stops"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

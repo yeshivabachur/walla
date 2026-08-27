@@ -1,0 +1,24 @@
+{
+  "name": "DriverPredictiveEarnings",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "predicted_daily": {
+      "type": "number"
+    },
+    "predicted_weekly": {
+      "type": "number"
+    },
+    "predicted_monthly": {
+      "type": "number"
+    },
+    "confidence_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

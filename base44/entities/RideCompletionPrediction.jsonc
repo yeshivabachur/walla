@@ -1,0 +1,28 @@
+{
+  "name": "RideCompletionPrediction",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "predicted_completion_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "probability_on_time": {
+      "type": "number"
+    },
+    "potential_delays": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "WeatherVehicle",
+  "type": "object",
+  "properties": {
+    "location": {
+      "type": "string"
+    },
+    "current_weather": {
+      "type": "string",
+      "enum": [
+        "sunny",
+        "rainy",
+        "snowy",
+        "windy",
+        "hot",
+        "cold"
+      ]
+    },
+    "recommended_vehicle": {
+      "type": "string"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "safety_tips": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "location"
+  ]
+}

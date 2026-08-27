@@ -1,0 +1,21 @@
+{
+  "name": "RidePaymentHistory",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "total_paid": {
+      "type": "number"
+    },
+    "payment_count": {
+      "type": "number"
+    },
+    "average_payment": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

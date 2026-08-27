@@ -1,0 +1,21 @@
+{
+  "name": "RideSustainabilityScore",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "sustainability_score": {
+      "type": "number"
+    },
+    "carbon_footprint": {
+      "type": "number"
+    },
+    "eco_friendly": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

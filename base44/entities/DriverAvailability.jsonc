@@ -1,0 +1,28 @@
+{
+  "name": "DriverAvailability",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "is_online": {
+      "type": "boolean",
+      "default": false
+    },
+    "current_location": {
+      "type": "object"
+    },
+    "last_ping": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "accepting_rides": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "driver_email",
+    "is_online"
+  ]
+}

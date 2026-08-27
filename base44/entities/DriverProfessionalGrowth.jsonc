@@ -1,0 +1,24 @@
+{
+  "name": "DriverProfessionalGrowth",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "certifications": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "training_hours": {
+      "type": "number"
+    },
+    "growth_trajectory": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

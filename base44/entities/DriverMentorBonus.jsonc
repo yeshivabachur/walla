@@ -1,0 +1,21 @@
+{
+  "name": "DriverMentorBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "mentees_count": {
+      "type": "number"
+    },
+    "successful_graduations": {
+      "type": "number"
+    },
+    "bonus_per_mentee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

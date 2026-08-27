@@ -1,0 +1,24 @@
+{
+  "name": "RideComfortPackage",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "neck_pillow": {
+      "type": "boolean"
+    },
+    "blanket": {
+      "type": "boolean"
+    },
+    "massage_seat": {
+      "type": "boolean"
+    },
+    "additional_cost": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

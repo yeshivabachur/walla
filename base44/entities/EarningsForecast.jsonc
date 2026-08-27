@@ -1,0 +1,51 @@
+{
+  "name": "EarningsForecast",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "forecast_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "predicted_earnings": {
+      "type": "number"
+    },
+    "confidence_level": {
+      "type": "number"
+    },
+    "peak_hours": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "recommended_zones": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "factors": {
+      "type": "object",
+      "properties": {
+        "weather": {
+          "type": "string"
+        },
+        "events": {
+          "type": "string"
+        },
+        "day_type": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "driver_email",
+    "forecast_date"
+  ]
+}

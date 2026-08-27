@@ -1,0 +1,21 @@
+{
+  "name": "RideAmbientSound",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "sound_type": {
+      "type": "string"
+    },
+    "volume": {
+      "type": "number"
+    },
+    "enabled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

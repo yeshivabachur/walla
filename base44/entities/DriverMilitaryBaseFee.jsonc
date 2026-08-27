@@ -1,0 +1,18 @@
+{
+  "name": "DriverMilitaryBaseFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "military_base_pickup": {
+      "type": "boolean"
+    },
+    "security_clearance_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "DriverSpotBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "bonus_amount": {
+      "type": "number"
+    },
+    "awarded_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "driver_email",
+    "reason"
+  ]
+}

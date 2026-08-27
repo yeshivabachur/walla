@@ -1,0 +1,21 @@
+{
+  "name": "DriverDataOwnership",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "data_ownership": {
+      "type": "boolean"
+    },
+    "data_monetization": {
+      "type": "number"
+    },
+    "privacy_control": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

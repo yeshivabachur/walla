@@ -1,0 +1,29 @@
+{
+  "name": "ContentModeration",
+  "type": "object",
+  "properties": {
+    "content_id": {
+      "type": "string"
+    },
+    "content_type": {
+      "type": "string"
+    },
+    "moderation_status": {
+      "type": "string",
+      "enum": [
+        "approved",
+        "rejected",
+        "flagged"
+      ]
+    },
+    "flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "content_id"
+  ]
+}

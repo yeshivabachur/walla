@@ -1,0 +1,35 @@
+{
+  "name": "ServiceAreaRequest",
+  "type": "object",
+  "properties": {
+    "requester_email": {
+      "type": "string"
+    },
+    "requested_area": {
+      "type": "string"
+    },
+    "demand_estimate": {
+      "type": "number"
+    },
+    "supporting_votes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "submitted",
+        "under_review",
+        "approved",
+        "rejected"
+      ]
+    }
+  },
+  "required": [
+    "requester_email",
+    "requested_area"
+  ]
+}

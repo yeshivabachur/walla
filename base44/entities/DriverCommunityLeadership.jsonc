@@ -1,0 +1,24 @@
+{
+  "name": "DriverCommunityLeadership",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "leadership_roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "initiatives_led": {
+      "type": "number"
+    },
+    "impact_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

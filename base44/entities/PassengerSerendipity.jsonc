@@ -1,0 +1,21 @@
+{
+  "name": "PassengerSerendipity",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "surprise_stops": {
+      "type": "boolean"
+    },
+    "spontaneous_detours": {
+      "type": "number"
+    },
+    "discovery_mode": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverMarketingSupport",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "business_cards": {
+      "type": "boolean"
+    },
+    "vehicle_branding": {
+      "type": "boolean"
+    },
+    "social_media_kit": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

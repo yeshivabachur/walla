@@ -1,0 +1,27 @@
+{
+  "name": "PassengerAgeVerification",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "string",
+      "format": "date"
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "verification_method": {
+      "type": "string"
+    },
+    "verified_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "user_email",
+    "date_of_birth"
+  ]
+}

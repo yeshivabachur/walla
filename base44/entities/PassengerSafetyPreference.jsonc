@@ -1,0 +1,24 @@
+{
+  "name": "PassengerSafetyPreference",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "min_driver_rating": {
+      "type": "number"
+    },
+    "require_dashcam": {
+      "type": "boolean"
+    },
+    "share_location_always": {
+      "type": "boolean"
+    },
+    "emergency_contact_auto_notify": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

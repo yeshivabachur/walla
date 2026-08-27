@@ -1,0 +1,24 @@
+{
+  "name": "CoreWebVitals",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string"
+    },
+    "largest_contentful_paint": {
+      "type": "number"
+    },
+    "first_input_delay": {
+      "type": "number"
+    },
+    "cumulative_layout_shift": {
+      "type": "number"
+    },
+    "score": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "url"
+  ]
+}

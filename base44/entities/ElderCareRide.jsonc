@@ -1,0 +1,24 @@
+{
+  "name": "ElderCareRide",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_age": {
+      "type": "number"
+    },
+    "mobility_assistance": {
+      "type": "boolean"
+    },
+    "medical_appointment": {
+      "type": "boolean"
+    },
+    "caregiver_notified": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

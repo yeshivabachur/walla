@@ -1,0 +1,40 @@
+{
+  "name": "RideQuestSystem",
+  "type": "object",
+  "properties": {
+    "quest_name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "medium",
+        "hard",
+        "legendary"
+      ]
+    },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reward_xp": {
+      "type": "number"
+    },
+    "reward_credits": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "quest_name",
+    "difficulty"
+  ]
+}

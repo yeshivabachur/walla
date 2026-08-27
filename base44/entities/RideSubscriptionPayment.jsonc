@@ -1,0 +1,19 @@
+{
+  "name": "RideSubscriptionPayment",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "subscription_active": {
+      "type": "boolean"
+    },
+    "next_billing": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

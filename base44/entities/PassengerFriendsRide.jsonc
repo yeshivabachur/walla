@@ -1,0 +1,24 @@
+{
+  "name": "PassengerFriendsRide",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "friends": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "shared_rides": {
+      "type": "number"
+    },
+    "group_discount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

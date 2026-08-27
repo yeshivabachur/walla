@@ -1,0 +1,48 @@
+{
+  "name": "WheelchairAccessible",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "wheelchair_type": {
+      "type": "string",
+      "enum": [
+        "manual",
+        "electric",
+        "scooter"
+      ]
+    },
+    "requires_ramp": {
+      "type": "boolean"
+    },
+    "requires_lift": {
+      "type": "boolean"
+    },
+    "passenger_weight": {
+      "type": "number"
+    },
+    "wheelchair_dimensions": {
+      "type": "object",
+      "properties": {
+        "length": {
+          "type": "number"
+        },
+        "width": {
+          "type": "number"
+        },
+        "height": {
+          "type": "number"
+        }
+      }
+    },
+    "certified_driver_required": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "wheelchair_type"
+  ]
+}

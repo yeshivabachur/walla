@@ -1,0 +1,21 @@
+{
+  "name": "DriverPunctualityBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "on_time_pickups": {
+      "type": "number"
+    },
+    "total_pickups": {
+      "type": "number"
+    },
+    "bonus_earned": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "SocialMediaIntegration",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string",
+      "enum": [
+        "facebook",
+        "twitter",
+        "instagram",
+        "linkedin"
+      ]
+    },
+    "connected": {
+      "type": "boolean"
+    },
+    "share_rides": {
+      "type": "boolean"
+    },
+    "share_milestones": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "platform"
+  ]
+}

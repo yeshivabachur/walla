@@ -1,0 +1,25 @@
+{
+  "name": "ThirdPartySharing",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "partner_name": {
+      "type": "string"
+    },
+    "data_shared": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "consent_given": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "partner_name"
+  ]
+}

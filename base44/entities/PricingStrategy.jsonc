@@ -1,0 +1,46 @@
+{
+  "name": "PricingStrategy",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "strategy_type": {
+      "type": "string",
+      "enum": [
+        "competitive",
+        "premium",
+        "discount",
+        "dynamic"
+      ]
+    },
+    "base_multiplier": {
+      "type": "number"
+    },
+    "competitor_analysis": {
+      "type": "object",
+      "properties": {
+        "market_position": {
+          "type": "string"
+        },
+        "price_advantage": {
+          "type": "number"
+        }
+      }
+    },
+    "demand_elasticity": {
+      "type": "number"
+    },
+    "revenue_projection": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "zone",
+    "strategy_type"
+  ]
+}

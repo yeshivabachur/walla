@@ -1,0 +1,59 @@
+{
+  "name": "DriverSkill",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "badges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "badge_name": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "bronze",
+              "silver",
+              "gold",
+              "platinum"
+            ]
+          },
+          "earned_date": {
+            "type": "string"
+          }
+        }
+      },
+      "default": []
+    },
+    "specializations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "luxury",
+          "accessibility",
+          "pet_friendly",
+          "child_safety",
+          "eco_driver",
+          "night_specialist"
+        ]
+      },
+      "default": []
+    },
+    "total_trips": {
+      "type": "number",
+      "default": 0
+    },
+    "average_rating": {
+      "type": "number",
+      "default": 5.0
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

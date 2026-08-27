@@ -1,0 +1,18 @@
+{
+  "name": "PassengerVehicleMileage",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "total_mileage": {
+      "type": "number"
+    },
+    "well_maintained": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

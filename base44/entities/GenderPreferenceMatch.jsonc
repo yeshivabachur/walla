@@ -1,0 +1,40 @@
+{
+  "name": "GenderPreferenceMatch",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "preferred_driver_gender": {
+      "type": "string",
+      "enum": [
+        "male",
+        "female",
+        "any",
+        "non-binary"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    },
+    "time_of_day_preference": {
+      "type": "object",
+      "properties": {
+        "night_rides_only": {
+          "type": "boolean"
+        },
+        "always": {
+          "type": "boolean"
+        }
+      }
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "user_email",
+    "preferred_driver_gender"
+  ]
+}

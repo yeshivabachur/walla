@@ -1,0 +1,21 @@
+{
+  "name": "DriverHumanFlourishing",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "flourishing_score": {
+      "type": "number"
+    },
+    "life_satisfaction": {
+      "type": "number"
+    },
+    "eudaimonia_rating": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

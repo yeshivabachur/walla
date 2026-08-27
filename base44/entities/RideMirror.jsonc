@@ -1,0 +1,18 @@
+{
+  "name": "RideMirror",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "vanity_mirror": {
+      "type": "boolean"
+    },
+    "mirror_light": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "PassengerSmartWallet",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "balance": {
+      "type": "number"
+    },
+    "auto_reload": {
+      "type": "boolean"
+    },
+    "reload_threshold": {
+      "type": "number"
+    },
+    "reload_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

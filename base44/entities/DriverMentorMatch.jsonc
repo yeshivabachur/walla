@@ -1,0 +1,25 @@
+{
+  "name": "DriverMentorMatch",
+  "type": "object",
+  "properties": {
+    "mentor_email": {
+      "type": "string"
+    },
+    "mentee_email": {
+      "type": "string"
+    },
+    "sessions_completed": {
+      "type": "number"
+    },
+    "mentee_improvement": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "mentor_email",
+    "mentee_email"
+  ]
+}

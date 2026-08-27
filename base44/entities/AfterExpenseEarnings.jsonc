@@ -1,0 +1,46 @@
+{
+  "name": "AfterExpenseEarnings",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "period_start": {
+      "type": "string",
+      "format": "date"
+    },
+    "period_end": {
+      "type": "string",
+      "format": "date"
+    },
+    "gross_earnings": {
+      "type": "number"
+    },
+    "fuel_costs": {
+      "type": "number"
+    },
+    "maintenance_costs": {
+      "type": "number"
+    },
+    "insurance_costs": {
+      "type": "number"
+    },
+    "other_expenses": {
+      "type": "number"
+    },
+    "total_expenses": {
+      "type": "number"
+    },
+    "net_earnings": {
+      "type": "number"
+    },
+    "profit_margin": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "period_start",
+    "period_end"
+  ]
+}

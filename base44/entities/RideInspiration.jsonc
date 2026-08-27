@@ -1,0 +1,21 @@
+{
+  "name": "RideInspiration",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "inspirational_content": {
+      "type": "boolean"
+    },
+    "success_stories": {
+      "type": "boolean"
+    },
+    "motivation_boost": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

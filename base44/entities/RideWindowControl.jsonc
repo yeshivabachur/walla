@@ -1,0 +1,23 @@
+{
+  "name": "RideWindowControl",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "windows_preference": {
+      "type": "string",
+      "enum": [
+        "open",
+        "closed",
+        "cracked"
+      ]
+    },
+    "passenger_controlled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

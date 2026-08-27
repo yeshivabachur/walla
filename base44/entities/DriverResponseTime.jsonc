@@ -1,0 +1,24 @@
+{
+  "name": "DriverResponseTime",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "average_acceptance_seconds": {
+      "type": "number"
+    },
+    "fastest_response": {
+      "type": "number"
+    },
+    "slowest_response": {
+      "type": "number"
+    },
+    "acceptance_rate": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "RideVoiceProfile",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "voice_id": {
+      "type": "string"
+    },
+    "accent": {
+      "type": "string"
+    },
+    "speech_rate": {
+      "type": "number"
+    },
+    "commands_enabled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

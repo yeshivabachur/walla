@@ -1,0 +1,15 @@
+{
+  "name": "PassengerEmissionTest",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "emissions_passed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

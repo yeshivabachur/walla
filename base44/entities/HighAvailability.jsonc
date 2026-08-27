@@ -1,0 +1,21 @@
+{
+  "name": "HighAvailability",
+  "type": "object",
+  "properties": {
+    "cluster_name": {
+      "type": "string"
+    },
+    "active_nodes": {
+      "type": "number"
+    },
+    "total_nodes": {
+      "type": "number"
+    },
+    "availability_percentage": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "cluster_name"
+  ]
+}

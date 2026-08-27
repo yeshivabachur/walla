@@ -1,0 +1,21 @@
+{
+  "name": "DriverGigEconomyOptimizer",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "platform_earnings": {
+      "type": "object"
+    },
+    "optimization_score": {
+      "type": "number"
+    },
+    "multi_platform_strategy": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

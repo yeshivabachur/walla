@@ -1,0 +1,48 @@
+{
+  "name": "InsuranceClaim",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "claimant_email": {
+      "type": "string"
+    },
+    "claim_type": {
+      "type": "string",
+      "enum": [
+        "accident",
+        "injury",
+        "property_damage",
+        "medical"
+      ]
+    },
+    "incident_description": {
+      "type": "string"
+    },
+    "estimated_amount": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "filed",
+        "under_review",
+        "approved",
+        "denied",
+        "settled"
+      ]
+    },
+    "documentation": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "claimant_email",
+    "claim_type"
+  ]
+}

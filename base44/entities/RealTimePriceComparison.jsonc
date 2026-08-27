@@ -1,0 +1,43 @@
+{
+  "name": "RealTimePriceComparison",
+  "type": "object",
+  "properties": {
+    "route": {
+      "type": "string"
+    },
+    "our_price": {
+      "type": "number"
+    },
+    "competitor_prices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "competitor": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "eta": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "price_difference": {
+      "type": "number"
+    },
+    "savings_amount": {
+      "type": "number"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "route",
+    "our_price"
+  ]
+}

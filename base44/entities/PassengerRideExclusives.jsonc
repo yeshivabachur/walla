@@ -1,0 +1,24 @@
+{
+  "name": "PassengerRideExclusives",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "exclusive_access": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "early_features": {
+      "type": "boolean"
+    },
+    "beta_tester": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

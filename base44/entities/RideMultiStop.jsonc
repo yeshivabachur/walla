@@ -1,0 +1,24 @@
+{
+  "name": "RideMultiStop",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "stops": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "total_stops": {
+      "type": "number"
+    },
+    "additional_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

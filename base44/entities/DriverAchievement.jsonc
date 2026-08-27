@@ -1,0 +1,49 @@
+{
+  "name": "DriverAchievement",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "achievement_type": {
+      "type": "string",
+      "enum": [
+        "first_ride",
+        "100_rides",
+        "500_rides",
+        "1000_rides",
+        "5_star_streak_10",
+        "5_star_streak_50",
+        "early_bird",
+        "night_owl",
+        "weekend_warrior",
+        "perfect_week",
+        "top_earner",
+        "eco_champion"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "earned_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "reward_amount": {
+      "type": "number",
+      "default": 0,
+      "description": "Bonus reward for achievement"
+    }
+  },
+  "required": [
+    "driver_email",
+    "achievement_type",
+    "title"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverMentalHealthSupport",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "counseling_sessions": {
+      "type": "number"
+    },
+    "stress_management": {
+      "type": "boolean"
+    },
+    "peer_support_group": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

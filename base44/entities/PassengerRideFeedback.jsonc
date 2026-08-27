@@ -1,0 +1,28 @@
+{
+  "name": "PassengerRideFeedback",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "feedback_text": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sentiment": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "user_email"
+  ]
+}

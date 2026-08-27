@@ -1,0 +1,26 @@
+{
+  "name": "DriverVehicleLease",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "vehicle_id": {
+      "type": "string"
+    },
+    "monthly_payment": {
+      "type": "number"
+    },
+    "lease_end_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "buyout_option": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "vehicle_id"
+  ]
+}

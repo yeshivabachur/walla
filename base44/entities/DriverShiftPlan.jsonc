@@ -1,0 +1,57 @@
+{
+  "name": "DriverShiftPlan",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "shift_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "start_time": {
+      "type": "string"
+    },
+    "end_time": {
+      "type": "string"
+    },
+    "recommended_zones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "zone": {
+            "type": "string"
+          },
+          "time": {
+            "type": "string"
+          },
+          "expected_demand": {
+            "type": "string"
+          },
+          "potential_earnings": {
+            "type": "number"
+          }
+        }
+      },
+      "default": []
+    },
+    "predicted_earnings": {
+      "type": "number"
+    },
+    "break_times": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "ai_suggestions": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email",
+    "shift_date"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "DriverPerformanceMetrics",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "acceptance_rate": {
+      "type": "number"
+    },
+    "cancellation_rate": {
+      "type": "number"
+    },
+    "average_rating": {
+      "type": "number"
+    },
+    "on_time_percentage": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "DriverBurnout",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "assessment_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "burnout_score": {
+      "type": "number",
+      "default": 0
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ],
+      "default": "low"
+    },
+    "contributing_factors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "rest_days_suggested": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "burnout_score"
+  ]
+}

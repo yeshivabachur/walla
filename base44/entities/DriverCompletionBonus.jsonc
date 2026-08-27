@@ -1,0 +1,21 @@
+{
+  "name": "DriverCompletionBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "completion_rate": {
+      "type": "number"
+    },
+    "bonus_tier": {
+      "type": "string"
+    },
+    "bonus_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

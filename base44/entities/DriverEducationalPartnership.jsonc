@@ -1,0 +1,24 @@
+{
+  "name": "DriverEducationalPartnership",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "university_partnerships": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "courses_enrolled": {
+      "type": "number"
+    },
+    "degrees_pursuing": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

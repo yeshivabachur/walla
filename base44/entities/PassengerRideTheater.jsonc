@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRideTheater",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "screens_available": {
+      "type": "number"
+    },
+    "content_streaming": {
+      "type": "boolean"
+    },
+    "headphones_provided": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

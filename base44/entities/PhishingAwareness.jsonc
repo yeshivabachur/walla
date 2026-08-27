@@ -1,0 +1,21 @@
+{
+  "name": "PhishingAwareness",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "training_completed": {
+      "type": "boolean"
+    },
+    "phishing_tests_passed": {
+      "type": "number"
+    },
+    "awareness_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

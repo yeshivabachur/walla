@@ -1,0 +1,33 @@
+{
+  "name": "RealTimeTracking",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "shared_with_emails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "share_link": {
+      "type": "string"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "tracking_enabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "update_interval_seconds": {
+      "type": "number",
+      "default": 10
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

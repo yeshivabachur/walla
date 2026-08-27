@@ -1,0 +1,21 @@
+{
+  "name": "RideComedyHour",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "comedy_content": {
+      "type": "boolean"
+    },
+    "standup_audio": {
+      "type": "boolean"
+    },
+    "laughter_therapy": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

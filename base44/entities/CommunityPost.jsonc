@@ -1,0 +1,42 @@
+{
+  "name": "CommunityPost",
+  "type": "object",
+  "properties": {
+    "author_email": {
+      "type": "string"
+    },
+    "author_name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "tips",
+        "question",
+        "story",
+        "announcement",
+        "feedback"
+      ]
+    },
+    "likes": {
+      "type": "number",
+      "default": 0
+    },
+    "replies_count": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "author_email",
+    "title",
+    "content",
+    "category"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "DriverHeatMap",
+  "type": "object",
+  "properties": {
+    "zone_name": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "active_drivers": {
+      "type": "number",
+      "default": 0
+    },
+    "active_requests": {
+      "type": "number",
+      "default": 0
+    },
+    "demand_level": {
+      "type": "string",
+      "enum": [
+        "very_low",
+        "low",
+        "medium",
+        "high",
+        "very_high"
+      ],
+      "default": "medium"
+    },
+    "avg_wait_time": {
+      "type": "number",
+      "description": "Average wait time in minutes"
+    },
+    "surge_active": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "zone_name",
+    "timestamp"
+  ]
+}

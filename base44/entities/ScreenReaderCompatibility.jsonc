@@ -1,0 +1,21 @@
+{
+  "name": "ScreenReaderCompatibility",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "screen_reader_used": {
+      "type": "string"
+    },
+    "voice_feedback_enabled": {
+      "type": "boolean"
+    },
+    "accessibility_mode": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

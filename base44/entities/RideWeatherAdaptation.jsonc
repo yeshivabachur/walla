@@ -1,0 +1,27 @@
+{
+  "name": "RideWeatherAdaptation",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "weather_condition": {
+      "type": "string"
+    },
+    "route_adjusted": {
+      "type": "boolean"
+    },
+    "eta_adjusted": {
+      "type": "boolean"
+    },
+    "safety_measures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "RideCustomRoute",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "custom_waypoints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "avoid_areas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "route_approved": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

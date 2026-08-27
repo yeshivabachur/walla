@@ -1,0 +1,21 @@
+{
+  "name": "RideVibeMatcher",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "vibe_preference": {
+      "type": "string"
+    },
+    "match_score": {
+      "type": "number"
+    },
+    "driver_vibe": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

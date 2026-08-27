@@ -1,0 +1,15 @@
+{
+  "name": "RideCoatHook",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "coat_hooks_available": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

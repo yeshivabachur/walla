@@ -1,0 +1,21 @@
+{
+  "name": "DriverCarWashDiscount",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "partner_location": {
+      "type": "string"
+    },
+    "discount_percentage": {
+      "type": "number"
+    },
+    "washes_this_month": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

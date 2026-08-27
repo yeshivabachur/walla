@@ -1,0 +1,33 @@
+{
+  "name": "FleetRebalancing",
+  "type": "object",
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "from_zone": {
+      "type": "string"
+    },
+    "to_zone": {
+      "type": "string"
+    },
+    "drivers_suggested": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "expected_demand": {
+      "type": "number"
+    },
+    "incentive_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "from_zone",
+    "to_zone"
+  ]
+}

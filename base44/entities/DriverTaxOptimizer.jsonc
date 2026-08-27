@@ -1,0 +1,21 @@
+{
+  "name": "DriverTaxOptimizer",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "deductions_identified": {
+      "type": "number"
+    },
+    "tax_savings": {
+      "type": "number"
+    },
+    "quarterly_filing": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

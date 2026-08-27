@@ -1,0 +1,27 @@
+{
+  "name": "DriverSafetyScore",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "overall_score": {
+      "type": "number"
+    },
+    "speeding_violations": {
+      "type": "number"
+    },
+    "hard_brake_incidents": {
+      "type": "number"
+    },
+    "accidents": {
+      "type": "number"
+    },
+    "safety_equipment_verified": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

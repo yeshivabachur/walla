@@ -1,0 +1,39 @@
+{
+  "name": "ParkingRecommendation",
+  "type": "object",
+  "properties": {
+    "location": {
+      "type": "string"
+    },
+    "parking_spots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "distance_meters": {
+            "type": "number"
+          },
+          "price_per_hour": {
+            "type": "number"
+          },
+          "available_spots": {
+            "type": "number"
+          },
+          "rating": {
+            "type": "number"
+          }
+        }
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "location"
+  ]
+}

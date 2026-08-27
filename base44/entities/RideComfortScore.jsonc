@@ -1,0 +1,24 @@
+{
+  "name": "RideComfortScore",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "seat_comfort": {
+      "type": "number"
+    },
+    "temperature_comfort": {
+      "type": "number"
+    },
+    "noise_level": {
+      "type": "number"
+    },
+    "overall_comfort": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

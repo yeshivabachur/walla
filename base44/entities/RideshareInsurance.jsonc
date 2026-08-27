@@ -1,0 +1,35 @@
+{
+  "name": "RideshareInsurance",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "policy_number": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "coverage_amount": {
+      "type": "number"
+    },
+    "deductible": {
+      "type": "number"
+    },
+    "monthly_premium": {
+      "type": "number"
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email",
+    "policy_number"
+  ]
+}

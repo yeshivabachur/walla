@@ -1,0 +1,24 @@
+{
+  "name": "RideScheduleOptimization",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "optimal_times": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cost_savings": {
+      "type": "number"
+    },
+    "time_savings": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "RideOdometerReading",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "odometer_reading": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

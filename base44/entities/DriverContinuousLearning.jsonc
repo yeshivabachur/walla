@@ -1,0 +1,24 @@
+{
+  "name": "DriverContinuousLearning",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "learning_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "micro_lessons_completed": {
+      "type": "number"
+    },
+    "skill_level": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

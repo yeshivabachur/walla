@@ -1,0 +1,24 @@
+{
+  "name": "SensorFusion",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "sensors_active": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fusion_algorithm": {
+      "type": "string"
+    },
+    "accuracy_improvement": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "RideDateNight",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "romantic_ambiance": {
+      "type": "boolean"
+    },
+    "privacy_mode": {
+      "type": "boolean"
+    },
+    "champagne_service": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "DriverMoodProfile",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "conversation_style": {
+      "type": "string",
+      "enum": [
+        "quiet",
+        "friendly",
+        "chatty",
+        "professional"
+      ]
+    },
+    "preferred_passenger_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "music_preferences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "driver_email",
+    "conversation_style"
+  ]
+}

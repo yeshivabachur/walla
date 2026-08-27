@@ -1,0 +1,24 @@
+{
+  "name": "DriverRideQualityScore",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "quality_score": {
+      "type": "number"
+    },
+    "vehicle_cleanliness": {
+      "type": "number"
+    },
+    "punctuality": {
+      "type": "number"
+    },
+    "professionalism": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

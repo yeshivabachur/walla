@@ -1,0 +1,30 @@
+{
+  "name": "PreferredZone",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "zone_name": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "number",
+      "default": 1
+    },
+    "earnings_multiplier": {
+      "type": "number"
+    },
+    "familiarity_score": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "driver_email",
+    "zone_name"
+  ]
+}

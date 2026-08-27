@@ -1,0 +1,24 @@
+{
+  "name": "RideRouteOptimization",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "original_route": {
+      "type": "string"
+    },
+    "optimized_route": {
+      "type": "string"
+    },
+    "time_saved": {
+      "type": "number"
+    },
+    "fuel_saved": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

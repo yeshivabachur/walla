@@ -1,0 +1,21 @@
+{
+  "name": "DriverPartTimeStatus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "part_time": {
+      "type": "boolean"
+    },
+    "min_hours_committed": {
+      "type": "number"
+    },
+    "flexibility_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

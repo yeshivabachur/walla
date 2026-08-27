@@ -1,0 +1,45 @@
+{
+  "name": "EcoVehicle",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "vehicle_type": {
+      "type": "string",
+      "enum": [
+        "electric",
+        "hybrid",
+        "hydrogen",
+        "standard"
+      ],
+      "default": "standard"
+    },
+    "battery_level": {
+      "type": "number",
+      "description": "For electric vehicles"
+    },
+    "emissions_rating": {
+      "type": "string",
+      "enum": [
+        "zero",
+        "low",
+        "medium",
+        "high"
+      ],
+      "default": "medium"
+    },
+    "eco_certified": {
+      "type": "boolean",
+      "default": false
+    },
+    "total_emissions_saved_kg": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "driver_email",
+    "vehicle_type"
+  ]
+}

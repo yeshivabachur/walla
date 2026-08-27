@@ -1,0 +1,21 @@
+{
+  "name": "RideAudiobook",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "audiobook_id": {
+      "type": "string"
+    },
+    "chapter_started": {
+      "type": "number"
+    },
+    "progress_saved": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "RideStorySharing",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "ride_request_id": {
+      "type": "string"
+    },
+    "story_text": {
+      "type": "string"
+    },
+    "media_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "visibility": {
+      "type": "string",
+      "enum": [
+        "public",
+        "friends",
+        "private"
+      ]
+    },
+    "likes": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email",
+    "ride_request_id"
+  ]
+}

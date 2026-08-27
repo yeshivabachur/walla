@@ -1,0 +1,23 @@
+{
+  "name": "CompressionSettings",
+  "type": "object",
+  "properties": {
+    "algorithm": {
+      "type": "string",
+      "enum": [
+        "gzip",
+        "brotli",
+        "deflate"
+      ]
+    },
+    "compression_level": {
+      "type": "number"
+    },
+    "bandwidth_saved": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "algorithm"
+  ]
+}

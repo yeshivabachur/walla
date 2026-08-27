@@ -1,0 +1,45 @@
+{
+  "name": "RevenueOptimization",
+  "type": "object",
+  "properties": {
+    "analysis_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "zone": {
+      "type": "string"
+    },
+    "current_revenue": {
+      "type": "number"
+    },
+    "projected_revenue": {
+      "type": "number"
+    },
+    "optimization_opportunities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "opportunity": {
+            "type": "string"
+          },
+          "potential_increase": {
+            "type": "number"
+          }
+        }
+      },
+      "default": []
+    },
+    "recommended_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "analysis_date",
+    "zone"
+  ]
+}

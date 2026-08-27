@@ -1,0 +1,21 @@
+{
+  "name": "RideEventTicketing",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "event_name": {
+      "type": "string"
+    },
+    "ticket_included": {
+      "type": "boolean"
+    },
+    "ticket_price": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

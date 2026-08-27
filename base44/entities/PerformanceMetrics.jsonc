@@ -1,0 +1,26 @@
+{
+  "name": "PerformanceMetrics",
+  "type": "object",
+  "properties": {
+    "metric_name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "number"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "threshold": {
+      "type": "number"
+    },
+    "alert_triggered": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "metric_name",
+    "value"
+  ]
+}

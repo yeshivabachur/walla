@@ -1,0 +1,26 @@
+{
+  "name": "PassengerMilestone",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "milestone_type": {
+      "type": "string"
+    },
+    "milestone_value": {
+      "type": "number"
+    },
+    "reward": {
+      "type": "string"
+    },
+    "achieved_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "user_email",
+    "milestone_type"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "DriverOncologistBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "oncologist_trips": {
+      "type": "number"
+    },
+    "cancer_care_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "PassengerCulturalExperience",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "local_culture_info": {
+      "type": "boolean"
+    },
+    "language_practice": {
+      "type": "boolean"
+    },
+    "cultural_ambassador": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

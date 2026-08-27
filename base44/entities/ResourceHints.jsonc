@@ -1,0 +1,30 @@
+{
+  "name": "ResourceHints",
+  "type": "object",
+  "properties": {
+    "page": {
+      "type": "string"
+    },
+    "preload": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prefetch": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "preconnect": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "page"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "RideYogaSession",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "yoga_instructions": {
+      "type": "boolean"
+    },
+    "stretching_guidance": {
+      "type": "boolean"
+    },
+    "wellness_integration": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

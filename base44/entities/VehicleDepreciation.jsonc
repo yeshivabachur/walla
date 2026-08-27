@@ -1,0 +1,24 @@
+{
+  "name": "VehicleDepreciation",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "purchase_price": {
+      "type": "number"
+    },
+    "current_value": {
+      "type": "number"
+    },
+    "annual_depreciation": {
+      "type": "number"
+    },
+    "mileage_impact": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

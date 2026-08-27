@@ -1,0 +1,21 @@
+{
+  "name": "RideCancellationProtection",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "protection_active": {
+      "type": "boolean"
+    },
+    "free_cancellations": {
+      "type": "number"
+    },
+    "used_this_month": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

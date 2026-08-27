@@ -1,0 +1,24 @@
+{
+  "name": "RideTipJar",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "digital_tip_jar": {
+      "type": "boolean"
+    },
+    "suggested_amounts": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "total_tips_today": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "DriverAppreciationDay",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "appreciation_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "gift_received": {
+      "type": "string"
+    },
+    "bonus_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "appreciation_date"
+  ]
+}

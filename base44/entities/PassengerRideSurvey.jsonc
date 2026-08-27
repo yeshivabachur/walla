@@ -1,0 +1,22 @@
+{
+  "name": "PassengerRideSurvey",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "survey_id": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "reward_points": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "survey_id"
+  ]
+}

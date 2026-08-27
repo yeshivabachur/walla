@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRideCharger",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "charger_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "available": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRelationshipAdvice",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "relationship_content": {
+      "type": "boolean"
+    },
+    "communication_tips": {
+      "type": "boolean"
+    },
+    "couples_therapy_info": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

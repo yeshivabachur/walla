@@ -1,0 +1,24 @@
+{
+  "name": "PassengerLoyaltyLevel",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "level": {
+      "type": "number"
+    },
+    "points_to_next_level": {
+      "type": "number"
+    },
+    "benefits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

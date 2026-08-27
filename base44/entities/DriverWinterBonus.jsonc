@@ -1,0 +1,21 @@
+{
+  "name": "DriverWinterBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "winter_rides": {
+      "type": "number"
+    },
+    "harsh_weather_bonus": {
+      "type": "number"
+    },
+    "safety_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

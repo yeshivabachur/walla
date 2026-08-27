@@ -1,0 +1,21 @@
+{
+  "name": "VoiceControlSettings",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "wake_word": {
+      "type": "string"
+    },
+    "commands_used": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

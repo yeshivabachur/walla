@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRideReflection",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "reflection_prompt": {
+      "type": "string"
+    },
+    "user_thoughts": {
+      "type": "string"
+    },
+    "shared_with_driver": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "PassengerRideCurator",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "curated_playlists": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "preferred_ambiance": {
+      "type": "string"
+    },
+    "route_preferences": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

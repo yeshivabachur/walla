@@ -1,0 +1,21 @@
+{
+  "name": "DriverFamilyBenefit",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "family_coverage": {
+      "type": "boolean"
+    },
+    "dependent_count": {
+      "type": "number"
+    },
+    "family_benefit_value": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

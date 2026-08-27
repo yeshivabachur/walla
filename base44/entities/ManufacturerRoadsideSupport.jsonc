@@ -1,0 +1,23 @@
+{
+  "name": "ManufacturerRoadsideSupport",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "manufacturer": {
+      "type": "string"
+    },
+    "coverage_active": {
+      "type": "boolean"
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "manufacturer"
+  ]
+}

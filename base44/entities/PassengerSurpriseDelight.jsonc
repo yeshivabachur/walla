@@ -1,0 +1,22 @@
+{
+  "name": "PassengerSurpriseDelight",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "surprise_type": {
+      "type": "string"
+    },
+    "delivered_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "passenger_reaction": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

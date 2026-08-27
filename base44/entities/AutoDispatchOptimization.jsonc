@@ -1,0 +1,25 @@
+{
+  "name": "AutoDispatchOptimization",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "optimal_driver_email": {
+      "type": "string"
+    },
+    "distance_to_pickup": {
+      "type": "number"
+    },
+    "estimated_arrival": {
+      "type": "number"
+    },
+    "match_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "optimal_driver_email"
+  ]
+}

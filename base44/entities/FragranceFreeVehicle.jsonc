@@ -1,0 +1,29 @@
+{
+  "name": "FragranceFreeVehicle",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "sensitivity_level": {
+      "type": "string",
+      "enum": [
+        "mild",
+        "moderate",
+        "severe"
+      ]
+    },
+    "trigger_substances": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "always_required": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

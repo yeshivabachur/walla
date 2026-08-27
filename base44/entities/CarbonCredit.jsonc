@@ -1,0 +1,32 @@
+{
+  "name": "CarbonCredit",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "credits_earned": {
+      "type": "number",
+      "default": 0,
+      "description": "Carbon credits from eco rides"
+    },
+    "credits_traded": {
+      "type": "number",
+      "default": 0
+    },
+    "market_value": {
+      "type": "number",
+      "description": "Current value in dollars"
+    },
+    "transactions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

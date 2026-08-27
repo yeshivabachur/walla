@@ -1,0 +1,24 @@
+{
+  "name": "RideVehicleChoice",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "vehicle_options": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "selected_vehicle": {
+      "type": "string"
+    },
+    "price_difference": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

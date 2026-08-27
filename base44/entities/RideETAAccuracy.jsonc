@@ -1,0 +1,21 @@
+{
+  "name": "RideETAAccuracy",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "estimated_eta": {
+      "type": "number"
+    },
+    "actual_eta": {
+      "type": "number"
+    },
+    "accuracy_percentage": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

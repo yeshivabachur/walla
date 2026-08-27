@@ -1,0 +1,21 @@
+{
+  "name": "RideTemperatureControl",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "preferred_temp_celsius": {
+      "type": "number"
+    },
+    "zone_control": {
+      "type": "boolean"
+    },
+    "auto_adjust": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

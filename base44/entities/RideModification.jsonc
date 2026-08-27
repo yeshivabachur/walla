@@ -1,0 +1,35 @@
+{
+  "name": "RideModification",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "modification_type": {
+      "type": "string",
+      "enum": [
+        "destination_change",
+        "add_stop",
+        "passenger_count",
+        "time_change"
+      ]
+    },
+    "old_value": {
+      "type": "string"
+    },
+    "new_value": {
+      "type": "string"
+    },
+    "price_adjustment": {
+      "type": "number"
+    },
+    "approved": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "modification_type"
+  ]
+}

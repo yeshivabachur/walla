@@ -1,0 +1,38 @@
+{
+  "name": "FuelStation",
+  "type": "object",
+  "properties": {
+    "station_name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "coords": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      }
+    },
+    "price_per_gallon": {
+      "type": "number"
+    },
+    "distance_miles": {
+      "type": "number"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "station_name",
+    "location",
+    "price_per_gallon"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "DriverTuitionReimbursement",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "course_name": {
+      "type": "string"
+    },
+    "tuition_paid": {
+      "type": "number"
+    },
+    "reimbursement_amount": {
+      "type": "number"
+    },
+    "completion_required": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email",
+    "course_name"
+  ]
+}

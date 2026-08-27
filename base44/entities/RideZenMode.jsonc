@@ -1,0 +1,24 @@
+{
+  "name": "RideZenMode",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "zen_enabled": {
+      "type": "boolean"
+    },
+    "calming_sounds": {
+      "type": "boolean"
+    },
+    "minimal_conversation": {
+      "type": "boolean"
+    },
+    "peaceful_route": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

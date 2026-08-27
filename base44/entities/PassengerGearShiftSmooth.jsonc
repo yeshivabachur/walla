@@ -1,0 +1,15 @@
+{
+  "name": "PassengerGearShiftSmooth",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "smooth_shifting": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

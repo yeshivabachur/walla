@@ -1,0 +1,54 @@
+{
+  "name": "DriverLoyalty",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string",
+      "description": "Email of the driver"
+    },
+    "tier": {
+      "type": "string",
+      "enum": [
+        "bronze",
+        "silver",
+        "gold",
+        "platinum"
+      ],
+      "default": "bronze",
+      "description": "Current loyalty tier"
+    },
+    "points": {
+      "type": "number",
+      "default": 0,
+      "description": "Loyalty points accumulated"
+    },
+    "commission_rate": {
+      "type": "number",
+      "default": 0.2,
+      "description": "Commission rate (e.g., 0.20 = 20%)"
+    },
+    "perks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "List of active perks"
+    },
+    "tier_progress": {
+      "type": "number",
+      "default": 0,
+      "description": "Progress towards next tier (0-100)"
+    },
+    "rewards_claimed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

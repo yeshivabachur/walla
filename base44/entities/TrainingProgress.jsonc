@@ -1,0 +1,41 @@
+{
+  "name": "TrainingProgress",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "module": {
+      "type": "string"
+    },
+    "completion_percentage": {
+      "type": "number",
+      "default": 0
+    },
+    "last_activity": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "performance_score": {
+      "type": "number"
+    },
+    "certifications": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "improvement_areas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "driver_email",
+    "module"
+  ]
+}

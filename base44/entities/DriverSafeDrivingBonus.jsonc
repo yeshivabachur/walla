@@ -1,0 +1,21 @@
+{
+  "name": "DriverSafeDrivingBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "accident_free_days": {
+      "type": "number"
+    },
+    "safe_driving_score": {
+      "type": "number"
+    },
+    "bonus_earned": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

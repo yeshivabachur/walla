@@ -1,0 +1,48 @@
+{
+  "name": "DriverSupport",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "support_type": {
+      "type": "string",
+      "enum": [
+        "technical",
+        "payment",
+        "safety",
+        "general"
+      ]
+    },
+    "issue_description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "in_progress",
+        "resolved"
+      ],
+      "default": "open"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "urgent"
+      ],
+      "default": "medium"
+    },
+    "resolution": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email",
+    "support_type",
+    "issue_description"
+  ]
+}

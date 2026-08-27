@@ -1,0 +1,43 @@
+{
+  "name": "DriverHealthCertificate",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "certificate_type": {
+      "type": "string",
+      "enum": [
+        "medical_fitness",
+        "vision_test",
+        "drug_test",
+        "mental_health"
+      ]
+    },
+    "issued_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "valid",
+        "expiring_soon",
+        "expired"
+      ]
+    },
+    "issuing_authority": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email",
+    "certificate_type",
+    "issued_date",
+    "expiry_date"
+  ]
+}

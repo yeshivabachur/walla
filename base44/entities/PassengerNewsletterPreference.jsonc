@@ -1,0 +1,24 @@
+{
+  "name": "PassengerNewsletterPreference",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "subscribed": {
+      "type": "boolean"
+    },
+    "frequency": {
+      "type": "string"
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

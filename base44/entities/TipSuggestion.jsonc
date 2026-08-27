@@ -1,0 +1,28 @@
+{
+  "name": "TipSuggestion",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "fare_amount": {
+      "type": "number"
+    },
+    "suggested_amounts": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "service_quality_score": {
+      "type": "number"
+    },
+    "custom_amount_allowed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "fare_amount"
+  ]
+}

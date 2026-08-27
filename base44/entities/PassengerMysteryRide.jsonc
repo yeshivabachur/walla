@@ -1,0 +1,21 @@
+{
+  "name": "PassengerMysteryRide",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "mystery_destination": {
+      "type": "boolean"
+    },
+    "surprise_enabled": {
+      "type": "boolean"
+    },
+    "adventure_rating": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

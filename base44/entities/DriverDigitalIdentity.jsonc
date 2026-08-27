@@ -1,0 +1,24 @@
+{
+  "name": "DriverDigitalIdentity",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "digital_id": {
+      "type": "string"
+    },
+    "verified_credentials": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "trust_level": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

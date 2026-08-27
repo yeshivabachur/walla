@@ -1,0 +1,36 @@
+{
+  "name": "PriceLockGuarantee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_email": {
+      "type": "string"
+    },
+    "locked_price": {
+      "type": "number"
+    },
+    "lock_duration_minutes": {
+      "type": "number",
+      "default": 30
+    },
+    "locked_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "used": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "passenger_email",
+    "locked_price"
+  ]
+}

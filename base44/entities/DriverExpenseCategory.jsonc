@@ -1,0 +1,22 @@
+{
+  "name": "DriverExpenseCategory",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "monthly_budget": {
+      "type": "number"
+    },
+    "spent_this_month": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "category"
+  ]
+}

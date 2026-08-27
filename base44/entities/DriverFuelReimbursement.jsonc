@@ -1,0 +1,24 @@
+{
+  "name": "DriverFuelReimbursement",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "monthly_reimbursement": {
+      "type": "number"
+    },
+    "fuel_receipts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approved": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

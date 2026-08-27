@@ -1,0 +1,29 @@
+{
+  "name": "RideCompletion",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "completion_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "actual_duration_minutes": {
+      "type": "number"
+    },
+    "estimated_duration_minutes": {
+      "type": "number"
+    },
+    "variance_percentage": {
+      "type": "number"
+    },
+    "final_fare": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "final_fare"
+  ]
+}

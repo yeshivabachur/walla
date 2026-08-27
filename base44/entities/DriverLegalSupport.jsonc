@@ -1,0 +1,21 @@
+{
+  "name": "DriverLegalSupport",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "legal_coverage": {
+      "type": "boolean"
+    },
+    "consultations_used": {
+      "type": "number"
+    },
+    "cases_active": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

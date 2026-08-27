@@ -1,0 +1,51 @@
+{
+  "name": "AirportMeetGreet",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_email": {
+      "type": "string"
+    },
+    "flight_number": {
+      "type": "string"
+    },
+    "arrival_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "terminal": {
+      "type": "string"
+    },
+    "driver_name_sign": {
+      "type": "boolean",
+      "default": true
+    },
+    "luggage_assistance": {
+      "type": "boolean",
+      "default": false
+    },
+    "meet_location": {
+      "type": "string"
+    },
+    "additional_fee": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "scheduled",
+        "driver_assigned",
+        "waiting",
+        "met",
+        "completed"
+      ]
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "passenger_email",
+    "flight_number"
+  ]
+}

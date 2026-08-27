@@ -1,0 +1,27 @@
+{
+  "name": "PassengerTravelJournal",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "total_distance_km": {
+      "type": "number"
+    },
+    "cities_visited": {
+      "type": "number"
+    },
+    "favorite_destination": {
+      "type": "string"
+    },
+    "memorable_rides": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "RideEnvironmentalFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "carbon_offset_fee": {
+      "type": "number"
+    },
+    "voluntary": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

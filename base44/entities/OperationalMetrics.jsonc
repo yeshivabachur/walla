@@ -1,0 +1,45 @@
+{
+  "name": "OperationalMetrics",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "zone": {
+      "type": "string"
+    },
+    "total_rides": {
+      "type": "number",
+      "default": 0
+    },
+    "active_drivers": {
+      "type": "number",
+      "default": 0
+    },
+    "avg_wait_time": {
+      "type": "number"
+    },
+    "cancellation_rate": {
+      "type": "number"
+    },
+    "customer_satisfaction": {
+      "type": "number"
+    },
+    "revenue": {
+      "type": "number",
+      "default": 0
+    },
+    "peak_hours": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "date",
+    "zone"
+  ]
+}

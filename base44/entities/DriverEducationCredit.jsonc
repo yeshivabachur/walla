@@ -1,0 +1,21 @@
+{
+  "name": "DriverEducationCredit",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "credits_earned": {
+      "type": "number"
+    },
+    "courses_completed": {
+      "type": "number"
+    },
+    "tuition_reimbursement": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

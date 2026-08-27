@@ -1,0 +1,21 @@
+{
+  "name": "DriverWorkersComp",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "coverage_active": {
+      "type": "boolean"
+    },
+    "claims_filed": {
+      "type": "number"
+    },
+    "benefits_received": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

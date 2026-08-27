@@ -1,0 +1,33 @@
+{
+  "name": "DriverBehaviorPattern",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "preferred_zones": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "active_hours": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "average_acceptance_time": {
+      "type": "number"
+    },
+    "route_efficiency": {
+      "type": "number"
+    },
+    "customer_service_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

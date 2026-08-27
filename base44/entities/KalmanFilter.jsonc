@@ -1,0 +1,21 @@
+{
+  "name": "KalmanFilter",
+  "type": "object",
+  "properties": {
+    "filter_id": {
+      "type": "string"
+    },
+    "state_estimate": {
+      "type": "object"
+    },
+    "error_covariance": {
+      "type": "number"
+    },
+    "measurement_noise": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "filter_id"
+  ]
+}

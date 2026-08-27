@@ -1,0 +1,21 @@
+{
+  "name": "APIRateLimit",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "requests_per_minute": {
+      "type": "number"
+    },
+    "requests_made": {
+      "type": "number"
+    },
+    "limit_exceeded": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "BiometricAuth",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "auth_type": {
+      "type": "string",
+      "enum": [
+        "fingerprint",
+        "face_recognition",
+        "iris_scan",
+        "voice_recognition"
+      ]
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "last_used": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "success_rate": {
+      "type": "number"
+    },
+    "failed_attempts": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "user_email",
+    "auth_type"
+  ]
+}

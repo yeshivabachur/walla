@@ -1,0 +1,33 @@
+{
+  "name": "VIPConciergeService",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "tier": {
+      "type": "string",
+      "enum": [
+        "gold",
+        "platinum",
+        "diamond"
+      ]
+    },
+    "dedicated_agent": {
+      "type": "string"
+    },
+    "24_7_access": {
+      "type": "boolean"
+    },
+    "priority_booking": {
+      "type": "boolean"
+    },
+    "luxury_vehicle_access": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "tier"
+  ]
+}

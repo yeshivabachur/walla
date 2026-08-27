@@ -1,0 +1,21 @@
+{
+  "name": "RideWaitTimeCompensation",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "wait_minutes": {
+      "type": "number"
+    },
+    "compensation_amount": {
+      "type": "number"
+    },
+    "credited": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

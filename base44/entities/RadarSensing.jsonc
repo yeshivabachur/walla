@@ -1,0 +1,21 @@
+{
+  "name": "RadarSensing",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "radar_type": {
+      "type": "string"
+    },
+    "detection_range": {
+      "type": "number"
+    },
+    "objects_detected": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

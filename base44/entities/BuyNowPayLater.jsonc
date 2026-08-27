@@ -1,0 +1,43 @@
+{
+  "name": "BuyNowPayLater",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "ride_request_id": {
+      "type": "string"
+    },
+    "total_amount": {
+      "type": "number"
+    },
+    "installments": {
+      "type": "number",
+      "default": 4
+    },
+    "installment_amount": {
+      "type": "number"
+    },
+    "paid_installments": {
+      "type": "number",
+      "default": 0
+    },
+    "next_payment_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "completed",
+        "defaulted"
+      ]
+    }
+  },
+  "required": [
+    "user_email",
+    "ride_request_id",
+    "total_amount"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverCreditScore",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "platform_credit_score": {
+      "type": "number"
+    },
+    "payment_history": {
+      "type": "string"
+    },
+    "creditworthiness": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

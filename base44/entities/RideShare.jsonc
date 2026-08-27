@@ -1,0 +1,45 @@
+{
+  "name": "RideShare",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "sharer_email": {
+      "type": "string"
+    },
+    "shared_with": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "can_track": {
+            "type": "boolean"
+          }
+        }
+      },
+      "default": []
+    },
+    "share_token": {
+      "type": "string"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "sharer_email"
+  ]
+}

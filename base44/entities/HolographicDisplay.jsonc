@@ -1,0 +1,40 @@
+{
+  "name": "HolographicDisplay",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "hologram_enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "display_preferences": {
+      "type": "object",
+      "properties": {
+        "theme": {
+          "type": "string",
+          "enum": [
+            "futuristic",
+            "minimal",
+            "nature"
+          ],
+          "default": "futuristic"
+        },
+        "brightness": {
+          "type": "number"
+        }
+      }
+    },
+    "holographic_experiences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

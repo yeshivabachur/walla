@@ -1,0 +1,21 @@
+{
+  "name": "DriverFuelEfficiencyBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "mpg_achieved": {
+      "type": "number"
+    },
+    "target_mpg": {
+      "type": "number"
+    },
+    "bonus_earned": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

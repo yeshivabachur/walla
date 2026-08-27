@@ -1,0 +1,22 @@
+{
+  "name": "PassengerRideNotification",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "notification_type": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "delivery_method": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "notification_type"
+  ]
+}

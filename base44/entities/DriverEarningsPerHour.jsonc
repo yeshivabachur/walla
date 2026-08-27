@@ -1,0 +1,39 @@
+{
+  "name": "DriverEarningsPerHour",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "hour": {
+      "type": "number"
+    },
+    "gross_earnings": {
+      "type": "number"
+    },
+    "platform_fee": {
+      "type": "number"
+    },
+    "net_earnings": {
+      "type": "number"
+    },
+    "rides_completed": {
+      "type": "number"
+    },
+    "online_minutes": {
+      "type": "number"
+    },
+    "earnings_per_minute": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "date",
+    "hour"
+  ]
+}

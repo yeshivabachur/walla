@@ -1,0 +1,18 @@
+{
+  "name": "RideDelayDiscount",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "delay_minutes": {
+      "type": "number"
+    },
+    "compensation": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

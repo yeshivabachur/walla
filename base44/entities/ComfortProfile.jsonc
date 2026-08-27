@@ -1,0 +1,62 @@
+{
+  "name": "ComfortProfile",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "temperature_preference": {
+      "type": "number",
+      "default": 72
+    },
+    "music_preference": {
+      "type": "string",
+      "enum": [
+        "none",
+        "soft",
+        "upbeat",
+        "driver_choice"
+      ],
+      "default": "driver_choice"
+    },
+    "conversation_level": {
+      "type": "string",
+      "enum": [
+        "quiet",
+        "friendly",
+        "chatty"
+      ],
+      "default": "friendly"
+    },
+    "window_preference": {
+      "type": "string",
+      "enum": [
+        "open",
+        "closed",
+        "no_preference"
+      ],
+      "default": "no_preference"
+    },
+    "fragrance_preference": {
+      "type": "string",
+      "enum": [
+        "none",
+        "light",
+        "strong"
+      ],
+      "default": "light"
+    },
+    "lighting_preference": {
+      "type": "string",
+      "enum": [
+        "bright",
+        "dim",
+        "auto"
+      ],
+      "default": "auto"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

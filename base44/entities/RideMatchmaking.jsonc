@@ -1,0 +1,42 @@
+{
+  "name": "RideMatchmaking",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string"
+    },
+    "preferences": {
+      "type": "object",
+      "properties": {
+        "conversation_level": {
+          "type": "string",
+          "enum": [
+            "silent",
+            "minimal",
+            "friendly",
+            "chatty"
+          ]
+        },
+        "music_preference": {
+          "type": "string"
+        },
+        "temperature_preference": {
+          "type": "string"
+        },
+        "preferred_driver_gender": {
+          "type": "string"
+        }
+      }
+    },
+    "compatibility_scores": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "passenger_email"
+  ]
+}

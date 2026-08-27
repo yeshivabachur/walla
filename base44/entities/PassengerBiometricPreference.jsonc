@@ -1,0 +1,21 @@
+{
+  "name": "PassengerBiometricPreference",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "fingerprint_enabled": {
+      "type": "boolean"
+    },
+    "face_id_enabled": {
+      "type": "boolean"
+    },
+    "voice_auth_enabled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

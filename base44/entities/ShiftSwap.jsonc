@@ -1,0 +1,35 @@
+{
+  "name": "ShiftSwap",
+  "type": "object",
+  "properties": {
+    "requesting_driver": {
+      "type": "string"
+    },
+    "target_driver": {
+      "type": "string"
+    },
+    "shift_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "shift_time": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "accepted",
+        "declined"
+      ],
+      "default": "pending"
+    },
+    "reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "requesting_driver",
+    "shift_date"
+  ]
+}

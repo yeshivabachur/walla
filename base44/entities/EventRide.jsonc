@@ -1,0 +1,57 @@
+{
+  "name": "EventRide",
+  "type": "object",
+  "properties": {
+    "event_name": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "concert",
+        "sports",
+        "conference",
+        "festival",
+        "theater"
+      ],
+      "default": "concert"
+    },
+    "venue": {
+      "type": "string"
+    },
+    "venue_coords": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      }
+    },
+    "event_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "estimated_riders": {
+      "type": "number",
+      "default": 0
+    },
+    "surge_warning": {
+      "type": "boolean",
+      "default": false
+    },
+    "recommended_booking_time": {
+      "type": "string"
+    },
+    "parking_info": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "event_name",
+    "venue",
+    "event_date"
+  ]
+}

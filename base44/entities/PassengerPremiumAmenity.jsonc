@@ -1,0 +1,21 @@
+{
+  "name": "PassengerPremiumAmenity",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "amenity_type": {
+      "type": "string"
+    },
+    "cost": {
+      "type": "number"
+    },
+    "requested": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

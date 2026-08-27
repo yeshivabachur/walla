@@ -1,0 +1,40 @@
+{
+  "name": "RideStreakBonus",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "current_streak": {
+      "type": "number"
+    },
+    "longest_streak": {
+      "type": "number"
+    },
+    "last_ride_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "streak_type": {
+      "type": "string",
+      "enum": [
+        "daily",
+        "weekly",
+        "monthly"
+      ]
+    },
+    "bonus_earned": {
+      "type": "number"
+    },
+    "next_milestone": {
+      "type": "number"
+    },
+    "milestone_reward": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email",
+    "current_streak"
+  ]
+}

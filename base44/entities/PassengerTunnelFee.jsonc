@@ -1,0 +1,15 @@
+{
+  "name": "PassengerTunnelFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "tunnel_toll": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

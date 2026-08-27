@@ -1,0 +1,21 @@
+{
+  "name": "DriverVolumeBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "rides_this_period": {
+      "type": "number"
+    },
+    "volume_tier": {
+      "type": "string"
+    },
+    "bonus_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

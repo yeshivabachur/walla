@@ -1,0 +1,22 @@
+{
+  "name": "PassengerRideInsight",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "insight_type": {
+      "type": "string"
+    },
+    "insight_value": {
+      "type": "string"
+    },
+    "actionable": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "insight_type"
+  ]
+}

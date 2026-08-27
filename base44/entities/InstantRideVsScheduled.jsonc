@@ -1,0 +1,38 @@
+{
+  "name": "InstantRideVsScheduled",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string"
+    },
+    "ride_type": {
+      "type": "string",
+      "enum": [
+        "instant",
+        "scheduled"
+      ]
+    },
+    "pickup_location": {
+      "type": "string"
+    },
+    "dropoff_location": {
+      "type": "string"
+    },
+    "instant_price": {
+      "type": "number"
+    },
+    "scheduled_price": {
+      "type": "number"
+    },
+    "instant_eta": {
+      "type": "number"
+    },
+    "selected_type": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "passenger_email",
+    "ride_type"
+  ]
+}

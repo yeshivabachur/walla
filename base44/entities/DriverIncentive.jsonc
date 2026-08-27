@@ -1,0 +1,57 @@
+{
+  "name": "DriverIncentive",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "incentive_type": {
+      "type": "string",
+      "enum": [
+        "quest",
+        "streak_bonus",
+        "peak_hours",
+        "new_area",
+        "surge_rush"
+      ],
+      "default": "quest"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "target": {
+      "type": "number",
+      "description": "Target number (rides, hours, etc.)"
+    },
+    "progress": {
+      "type": "number",
+      "default": 0
+    },
+    "reward_amount": {
+      "type": "number"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "completed",
+        "expired"
+      ],
+      "default": "active"
+    }
+  },
+  "required": [
+    "driver_email",
+    "incentive_type",
+    "title",
+    "target",
+    "reward_amount"
+  ]
+}

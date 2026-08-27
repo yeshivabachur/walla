@@ -1,0 +1,43 @@
+{
+  "name": "PremiumSubscription",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "tier": {
+      "type": "string",
+      "enum": [
+        "basic",
+        "premium",
+        "platinum"
+      ]
+    },
+    "monthly_fee": {
+      "type": "number"
+    },
+    "benefits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "discount_percentage": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "auto_renew": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "user_email",
+    "tier",
+    "monthly_fee"
+  ]
+}

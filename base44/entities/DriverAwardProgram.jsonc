@@ -1,0 +1,23 @@
+{
+  "name": "DriverAwardProgram",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "award_name": {
+      "type": "string"
+    },
+    "award_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "monetary_prize": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "award_name"
+  ]
+}

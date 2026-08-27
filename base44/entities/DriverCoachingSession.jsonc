@@ -1,0 +1,29 @@
+{
+  "name": "DriverCoachingSession",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "session_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "improvement_areas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "follow_up_scheduled": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email",
+    "session_date"
+  ]
+}

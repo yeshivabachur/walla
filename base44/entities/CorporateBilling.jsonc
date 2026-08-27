@@ -1,0 +1,36 @@
+{
+  "name": "CorporateBilling",
+  "type": "object",
+  "properties": {
+    "company_email": {
+      "type": "string"
+    },
+    "billing_period": {
+      "type": "string"
+    },
+    "total_rides": {
+      "type": "number"
+    },
+    "total_amount": {
+      "type": "number"
+    },
+    "employee_emails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "invoice_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "paid",
+        "overdue"
+      ]
+    }
+  },
+  "required": [
+    "company_email",
+    "billing_period"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "FuelEfficiencyTracking",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "driver_email": {
+      "type": "string"
+    },
+    "mpg": {
+      "type": "number"
+    },
+    "fuel_type": {
+      "type": "string"
+    },
+    "driving_style_impact": {
+      "type": "number"
+    },
+    "route_efficiency": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "driver_email"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "DriverFinancialWellness",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "savings_rate": {
+      "type": "number"
+    },
+    "debt_to_income": {
+      "type": "number"
+    },
+    "emergency_fund_months": {
+      "type": "number"
+    },
+    "financial_health_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

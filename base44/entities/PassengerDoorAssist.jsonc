@@ -1,0 +1,15 @@
+{
+  "name": "PassengerDoorAssist",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "door_opened_by_driver": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

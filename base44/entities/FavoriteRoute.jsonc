@@ -1,0 +1,55 @@
+{
+  "name": "FavoriteRoute",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string",
+      "description": "Passenger's email"
+    },
+    "route_name": {
+      "type": "string",
+      "description": "Custom name for route (e.g., 'Home to Work')"
+    },
+    "pickup_location": {
+      "type": "string",
+      "description": "Pickup location"
+    },
+    "dropoff_location": {
+      "type": "string",
+      "description": "Drop-off location"
+    },
+    "pickup_coords": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      }
+    },
+    "dropoff_coords": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      }
+    },
+    "use_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of times used"
+    }
+  },
+  "required": [
+    "passenger_email",
+    "route_name",
+    "pickup_location",
+    "dropoff_location"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "name": "TrainingLesson",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Lesson title"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "safe_driving",
+        "customer_service",
+        "navigation",
+        "regulations",
+        "vehicle_maintenance"
+      ],
+      "description": "Lesson category"
+    },
+    "description": {
+      "type": "string",
+      "description": "Lesson description"
+    },
+    "content": {
+      "type": "string",
+      "description": "Lesson content in markdown format"
+    },
+    "duration_minutes": {
+      "type": "number",
+      "default": 10,
+      "description": "Estimated duration in minutes"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "default": "beginner"
+    },
+    "badge_reward": {
+      "type": "string",
+      "description": "Badge earned on completion"
+    },
+    "quiz_questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "correct_answer": {
+            "type": "number"
+          }
+        }
+      },
+      "description": "Quiz questions for this lesson"
+    }
+  },
+  "required": [
+    "title",
+    "category",
+    "content"
+  ]
+}

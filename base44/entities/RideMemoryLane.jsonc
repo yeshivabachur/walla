@@ -1,0 +1,30 @@
+{
+  "name": "RideMemoryLane",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "memorable_rides": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "favorite_drivers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "special_moments": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

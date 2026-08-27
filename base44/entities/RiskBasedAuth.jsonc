@@ -1,0 +1,29 @@
+{
+  "name": "RiskBasedAuth",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "factors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "additional_verification_required": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

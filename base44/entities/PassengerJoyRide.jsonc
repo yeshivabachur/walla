@@ -1,0 +1,21 @@
+{
+  "name": "PassengerJoyRide",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "pure_enjoyment": {
+      "type": "boolean"
+    },
+    "happiness_maximization": {
+      "type": "boolean"
+    },
+    "joy_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

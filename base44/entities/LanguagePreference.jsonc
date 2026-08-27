@@ -1,0 +1,27 @@
+{
+  "name": "LanguagePreference",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "preferred_languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "require_language_match": {
+      "type": "boolean",
+      "default": false
+    },
+    "real_time_translation": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "user_email",
+    "preferred_languages"
+  ]
+}

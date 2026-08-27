@@ -1,0 +1,18 @@
+{
+  "name": "RideHeadlightQuality",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "headlights_working": {
+      "type": "boolean"
+    },
+    "brightness_adequate": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

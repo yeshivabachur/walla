@@ -1,0 +1,53 @@
+{
+  "name": "CorporateAccount",
+  "type": "object",
+  "properties": {
+    "company_name": {
+      "type": "string"
+    },
+    "admin_email": {
+      "type": "string"
+    },
+    "company_email": {
+      "type": "string"
+    },
+    "billing_address": {
+      "type": "string"
+    },
+    "tax_id": {
+      "type": "string"
+    },
+    "employee_emails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "monthly_limit": {
+      "type": "number",
+      "description": "Monthly spending limit per employee"
+    },
+    "payment_method": {
+      "type": "string",
+      "enum": [
+        "invoice",
+        "card"
+      ],
+      "default": "invoice"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "suspended",
+        "pending"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "company_name",
+    "admin_email"
+  ]
+}

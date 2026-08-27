@@ -1,0 +1,18 @@
+{
+  "name": "DriverWarZoneFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "conflict_zone": {
+      "type": "boolean"
+    },
+    "life_risk_premium": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

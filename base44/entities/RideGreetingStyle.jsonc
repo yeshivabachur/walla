@@ -1,0 +1,21 @@
+{
+  "name": "RideGreetingStyle",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "greeting_type": {
+      "type": "string",
+      "enum": [
+        "formal",
+        "casual",
+        "friendly",
+        "none"
+      ]
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "DriverCareerMilestones",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "milestones_achieved": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "career_level": {
+      "type": "number"
+    },
+    "next_milestone": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

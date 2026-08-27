@@ -1,0 +1,18 @@
+{
+  "name": "PassengerRideVerification",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "verification_code": {
+      "type": "string"
+    },
+    "verified": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

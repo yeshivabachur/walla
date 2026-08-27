@@ -1,0 +1,21 @@
+{
+  "name": "PassengerFamilyTime",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "family_friendly": {
+      "type": "boolean"
+    },
+    "kids_entertainment": {
+      "type": "boolean"
+    },
+    "family_games": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

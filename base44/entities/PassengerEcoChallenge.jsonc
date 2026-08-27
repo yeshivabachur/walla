@@ -1,0 +1,24 @@
+{
+  "name": "PassengerEcoChallenge",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "green_rides": {
+      "type": "number"
+    },
+    "carbon_offset": {
+      "type": "number"
+    },
+    "eco_badges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

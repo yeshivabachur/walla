@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRouteSuggestion",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "suggested_routes": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "ai_generated": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

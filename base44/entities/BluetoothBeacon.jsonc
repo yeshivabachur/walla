@@ -1,0 +1,21 @@
+{
+  "name": "BluetoothBeacon",
+  "type": "object",
+  "properties": {
+    "beacon_id": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "proximity_triggers": {
+      "type": "number"
+    },
+    "battery_level": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "beacon_id"
+  ]
+}

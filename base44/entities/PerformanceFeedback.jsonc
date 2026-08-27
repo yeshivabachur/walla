@@ -1,0 +1,45 @@
+{
+  "name": "PerformanceFeedback",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "feedback_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "strengths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "areas_for_improvement": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "actionable_tips": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "overall_score": {
+      "type": "number"
+    },
+    "private": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "driver_email",
+    "overall_score"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRideFlex",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "flexible_timing": {
+      "type": "boolean"
+    },
+    "discount_for_flexibility": {
+      "type": "number"
+    },
+    "time_window_minutes": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "RideAmbientScent",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "scent_preference": {
+      "type": "string",
+      "enum": [
+        "lavender",
+        "citrus",
+        "vanilla",
+        "eucalyptus",
+        "none"
+      ]
+    },
+    "intensity": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

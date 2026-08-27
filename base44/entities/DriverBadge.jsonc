@@ -1,0 +1,36 @@
+{
+  "name": "DriverBadge",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "badge_type": {
+      "type": "string",
+      "enum": [
+        "top_rated",
+        "eco_friendly",
+        "safe_driver",
+        "mentor",
+        "veteran",
+        "night_owl",
+        "early_bird"
+      ]
+    },
+    "earned_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "description": {
+      "type": "string"
+    },
+    "display_on_profile": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "driver_email",
+    "badge_type"
+  ]
+}

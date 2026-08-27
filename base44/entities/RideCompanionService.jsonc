@@ -1,0 +1,27 @@
+{
+  "name": "RideCompanionService",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "companion_type": {
+      "type": "string",
+      "enum": [
+        "medical",
+        "elderly_care",
+        "child_supervision"
+      ]
+    },
+    "companion_name": {
+      "type": "string"
+    },
+    "certification_verified": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "companion_type"
+  ]
+}

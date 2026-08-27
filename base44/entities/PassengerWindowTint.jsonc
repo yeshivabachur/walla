@@ -1,0 +1,18 @@
+{
+  "name": "PassengerWindowTint",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "windows_tinted": {
+      "type": "boolean"
+    },
+    "privacy_rating": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

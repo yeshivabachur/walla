@@ -1,0 +1,24 @@
+{
+  "name": "RideNegotiatedFare",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "driver_proposed": {
+      "type": "number"
+    },
+    "passenger_proposed": {
+      "type": "number"
+    },
+    "final_fare": {
+      "type": "number"
+    },
+    "negotiation_complete": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

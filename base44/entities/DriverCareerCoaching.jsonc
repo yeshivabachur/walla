@@ -1,0 +1,24 @@
+{
+  "name": "DriverCareerCoaching",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "coach_name": {
+      "type": "string"
+    },
+    "sessions_completed": {
+      "type": "number"
+    },
+    "career_goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

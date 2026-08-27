@@ -1,0 +1,21 @@
+{
+  "name": "ErrorRateMonitoring",
+  "type": "object",
+  "properties": {
+    "service": {
+      "type": "string"
+    },
+    "error_rate": {
+      "type": "number"
+    },
+    "error_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "service"
+  ]
+}

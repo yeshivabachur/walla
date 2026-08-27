@@ -1,0 +1,18 @@
+{
+  "name": "RideVoucherPayment",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "voucher_code": {
+      "type": "string"
+    },
+    "voucher_value": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

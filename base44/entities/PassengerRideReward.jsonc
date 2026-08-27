@@ -1,0 +1,26 @@
+{
+  "name": "PassengerRideReward",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "reward_type": {
+      "type": "string"
+    },
+    "points_value": {
+      "type": "number"
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "redeemed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "reward_type"
+  ]
+}

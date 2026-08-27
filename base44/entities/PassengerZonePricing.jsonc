@@ -1,0 +1,18 @@
+{
+  "name": "PassengerZonePricing",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "string"
+    },
+    "base_price": {
+      "type": "number"
+    },
+    "peak_multiplier": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "zone"
+  ]
+}

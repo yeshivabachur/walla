@@ -1,0 +1,21 @@
+{
+  "name": "RideCommunitySafety",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "string"
+    },
+    "safety_rating": {
+      "type": "number"
+    },
+    "incident_count": {
+      "type": "number"
+    },
+    "community_reports": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "zone"
+  ]
+}

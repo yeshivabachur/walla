@@ -1,0 +1,21 @@
+{
+  "name": "DriverAccountingSupport",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "accounting_software": {
+      "type": "string"
+    },
+    "expense_tracking": {
+      "type": "boolean"
+    },
+    "tax_reporting": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

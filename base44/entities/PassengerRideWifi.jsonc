@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRideWifi",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "wifi_available": {
+      "type": "boolean"
+    },
+    "network_name": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

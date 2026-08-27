@@ -1,0 +1,57 @@
+{
+  "name": "RideMood",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "current_mood": {
+      "type": "string",
+      "enum": [
+        "energetic",
+        "relaxed",
+        "focused",
+        "social",
+        "romantic"
+      ],
+      "default": "relaxed"
+    },
+    "music_preferences": {
+      "type": "object",
+      "properties": {
+        "genre": {
+          "type": "string"
+        },
+        "tempo": {
+          "type": "string"
+        }
+      }
+    },
+    "ambient_preferences": {
+      "type": "object",
+      "properties": {
+        "lighting": {
+          "type": "string"
+        },
+        "temperature": {
+          "type": "number"
+        },
+        "conversation_level": {
+          "type": "string",
+          "enum": [
+            "quiet",
+            "friendly",
+            "chatty"
+          ]
+        }
+      }
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

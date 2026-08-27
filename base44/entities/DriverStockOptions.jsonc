@@ -1,0 +1,21 @@
+{
+  "name": "DriverStockOptions",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "options_granted": {
+      "type": "number"
+    },
+    "vesting_schedule": {
+      "type": "string"
+    },
+    "current_value": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

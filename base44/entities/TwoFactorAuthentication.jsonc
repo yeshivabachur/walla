@@ -1,0 +1,30 @@
+{
+  "name": "TwoFactorAuthentication",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string",
+      "enum": [
+        "sms",
+        "email",
+        "app",
+        "hardware"
+      ]
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "backup_codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

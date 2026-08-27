@@ -1,0 +1,18 @@
+{
+  "name": "DriverHormoneTestBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "hormone_test_trips": {
+      "type": "number"
+    },
+    "endocrine_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

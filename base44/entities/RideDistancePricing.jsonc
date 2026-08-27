@@ -1,0 +1,15 @@
+{
+  "name": "RideDistancePricing",
+  "type": "object",
+  "properties": {
+    "distance_bracket": {
+      "type": "string"
+    },
+    "price_per_km": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "distance_bracket"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "DriverTopPerformerClub",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "member": {
+      "type": "boolean"
+    },
+    "rank": {
+      "type": "number"
+    },
+    "exclusive_benefits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

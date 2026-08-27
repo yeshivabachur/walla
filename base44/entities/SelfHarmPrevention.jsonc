@@ -1,0 +1,21 @@
+{
+  "name": "SelfHarmPrevention",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "content_flagged": {
+      "type": "boolean"
+    },
+    "resources_provided": {
+      "type": "boolean"
+    },
+    "crisis_line_contacted": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

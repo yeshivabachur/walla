@@ -1,0 +1,24 @@
+{
+  "name": "DriverInvestmentPlan",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "portfolio_type": {
+      "type": "string"
+    },
+    "monthly_investment": {
+      "type": "number"
+    },
+    "current_value": {
+      "type": "number"
+    },
+    "roi_percentage": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

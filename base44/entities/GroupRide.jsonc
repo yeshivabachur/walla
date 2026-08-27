@@ -1,0 +1,62 @@
+{
+  "name": "GroupRide",
+  "type": "object",
+  "properties": {
+    "organizer_email": {
+      "type": "string"
+    },
+    "group_name": {
+      "type": "string"
+    },
+    "pickup_location": {
+      "type": "string"
+    },
+    "dropoff_location": {
+      "type": "string"
+    },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "confirmed": {
+            "type": "boolean"
+          }
+        }
+      },
+      "default": []
+    },
+    "scheduled_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ride_request_id": {
+      "type": "string"
+    },
+    "cost_per_person": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "confirmed",
+        "in_progress",
+        "completed"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "organizer_email",
+    "group_name",
+    "pickup_location",
+    "dropoff_location"
+  ]
+}

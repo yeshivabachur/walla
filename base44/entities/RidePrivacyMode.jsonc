@@ -1,0 +1,21 @@
+{
+  "name": "RidePrivacyMode",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "incognito_mode": {
+      "type": "boolean"
+    },
+    "hide_from_history": {
+      "type": "boolean"
+    },
+    "anonymous_payment": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

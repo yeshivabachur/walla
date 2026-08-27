@@ -1,0 +1,21 @@
+{
+  "name": "RideLanguageDetection",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "detected_language": {
+      "type": "string"
+    },
+    "translation_enabled": {
+      "type": "boolean"
+    },
+    "accuracy": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

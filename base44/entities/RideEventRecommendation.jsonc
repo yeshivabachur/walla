@@ -1,0 +1,24 @@
+{
+  "name": "RideEventRecommendation",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "event_name": {
+      "type": "string"
+    },
+    "event_location": {
+      "type": "string"
+    },
+    "recommended_ride_time": {
+      "type": "string"
+    },
+    "discount_available": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

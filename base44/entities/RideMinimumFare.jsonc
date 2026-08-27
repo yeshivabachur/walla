@@ -1,0 +1,15 @@
+{
+  "name": "RideMinimumFare",
+  "type": "object",
+  "properties": {
+    "location": {
+      "type": "string"
+    },
+    "minimum_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "location"
+  ]
+}

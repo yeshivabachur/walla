@@ -1,0 +1,21 @@
+{
+  "name": "RideSocialResponsibility",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "carbon_neutral": {
+      "type": "boolean"
+    },
+    "charity_contribution": {
+      "type": "number"
+    },
+    "local_business_support": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

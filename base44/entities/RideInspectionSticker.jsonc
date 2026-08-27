@@ -1,0 +1,19 @@
+{
+  "name": "RideInspectionSticker",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "inspection_current": {
+      "type": "boolean"
+    },
+    "expires_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

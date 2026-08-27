@@ -1,0 +1,30 @@
+{
+  "name": "DriverZonePreference",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "preferred_zones": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "avoid_zones": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "auto_decline_outside_zones": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

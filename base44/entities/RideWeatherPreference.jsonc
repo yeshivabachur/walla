@@ -1,0 +1,21 @@
+{
+  "name": "RideWeatherPreference",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "cancel_if_rain": {
+      "type": "boolean"
+    },
+    "cancel_if_snow": {
+      "type": "boolean"
+    },
+    "weather_alerts": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverFlexSchedule",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "flexible_hours": {
+      "type": "boolean"
+    },
+    "min_hours_per_week": {
+      "type": "number"
+    },
+    "max_hours_per_week": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

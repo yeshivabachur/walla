@@ -1,0 +1,33 @@
+{
+  "name": "DemandHeatmap",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "demand_score": {
+      "type": "number"
+    },
+    "active_drivers": {
+      "type": "number"
+    },
+    "pending_requests": {
+      "type": "number"
+    },
+    "surge_level": {
+      "type": "number",
+      "default": 1.0
+    },
+    "predicted_demand": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "zone",
+    "demand_score"
+  ]
+}

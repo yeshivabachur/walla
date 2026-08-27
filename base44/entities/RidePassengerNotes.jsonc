@@ -1,0 +1,21 @@
+{
+  "name": "RidePassengerNotes",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "passenger_notes": {
+      "type": "string"
+    },
+    "special_requests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

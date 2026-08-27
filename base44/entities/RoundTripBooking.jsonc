@@ -1,0 +1,49 @@
+{
+  "name": "RoundTripBooking",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "destination": {
+      "type": "string"
+    },
+    "outbound_datetime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "return_datetime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "outbound_ride_id": {
+      "type": "string"
+    },
+    "return_ride_id": {
+      "type": "string"
+    },
+    "discount_applied": {
+      "type": "number",
+      "default": 0
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "scheduled",
+        "outbound_complete",
+        "completed",
+        "cancelled"
+      ]
+    }
+  },
+  "required": [
+    "passenger_email",
+    "origin",
+    "destination",
+    "outbound_datetime",
+    "return_datetime"
+  ]
+}

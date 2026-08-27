@@ -1,0 +1,43 @@
+{
+  "name": "DriverBackgroundCheck",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "check_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "criminal_record_clear": {
+      "type": "boolean"
+    },
+    "driving_record_clear": {
+      "type": "boolean"
+    },
+    "identity_verified": {
+      "type": "boolean"
+    },
+    "insurance_verified": {
+      "type": "boolean"
+    },
+    "vehicle_inspection_passed": {
+      "type": "boolean"
+    },
+    "next_check_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "transparency_level": {
+      "type": "string",
+      "enum": [
+        "public",
+        "verified_only",
+        "private"
+      ]
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRideETA",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "pickup_eta": {
+      "type": "number"
+    },
+    "dropoff_eta": {
+      "type": "number"
+    },
+    "real_time_updates": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

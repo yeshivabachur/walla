@@ -1,0 +1,45 @@
+{
+  "name": "ExpenseLog",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "expense_type": {
+      "type": "string",
+      "enum": [
+        "fuel",
+        "maintenance",
+        "insurance",
+        "tolls",
+        "parking",
+        "other"
+      ]
+    },
+    "amount": {
+      "type": "number"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "description": {
+      "type": "string"
+    },
+    "receipt_url": {
+      "type": "string"
+    },
+    "vehicle_id": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email",
+    "expense_type",
+    "amount",
+    "date"
+  ]
+}

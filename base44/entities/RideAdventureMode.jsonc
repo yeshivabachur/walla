@@ -1,0 +1,21 @@
+{
+  "name": "RideAdventureMode",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "scenic_route": {
+      "type": "boolean"
+    },
+    "exploration_enabled": {
+      "type": "boolean"
+    },
+    "adventure_level": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

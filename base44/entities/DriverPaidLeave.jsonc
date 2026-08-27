@@ -1,0 +1,28 @@
+{
+  "name": "DriverPaidLeave",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "leave_type": {
+      "type": "string",
+      "enum": [
+        "sick",
+        "vacation",
+        "parental",
+        "bereavement"
+      ]
+    },
+    "days_available": {
+      "type": "number"
+    },
+    "days_used": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "leave_type"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverConvenienceBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "amenities_provided": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "bonus_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

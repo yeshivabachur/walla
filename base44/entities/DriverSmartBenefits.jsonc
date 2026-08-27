@@ -1,0 +1,21 @@
+{
+  "name": "DriverSmartBenefits",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "benefit_optimization": {
+      "type": "boolean"
+    },
+    "total_benefit_value": {
+      "type": "number"
+    },
+    "utilization_rate": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

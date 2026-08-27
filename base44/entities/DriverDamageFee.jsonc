@@ -1,0 +1,21 @@
+{
+  "name": "DriverDamageFee",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "damage_type": {
+      "type": "string"
+    },
+    "repair_cost": {
+      "type": "number"
+    },
+    "passenger_liable": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

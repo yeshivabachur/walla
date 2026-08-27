@@ -1,0 +1,22 @@
+{
+  "name": "PassengerCoRiding",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "co_rider_email": {
+      "type": "string"
+    },
+    "shared_routes": {
+      "type": "number"
+    },
+    "savings": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email",
+    "co_rider_email"
+  ]
+}

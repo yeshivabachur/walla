@@ -1,0 +1,21 @@
+{
+  "name": "RideInvestmentAdvice",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "financial_podcasts": {
+      "type": "boolean"
+    },
+    "investment_tips": {
+      "type": "boolean"
+    },
+    "market_updates": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

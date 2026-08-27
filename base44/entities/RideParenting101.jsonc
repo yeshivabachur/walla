@@ -1,0 +1,24 @@
+{
+  "name": "RideParenting101",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "parenting_podcasts": {
+      "type": "boolean"
+    },
+    "child_development_info": {
+      "type": "boolean"
+    },
+    "parenting_tips": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

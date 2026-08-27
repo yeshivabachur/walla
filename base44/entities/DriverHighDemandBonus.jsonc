@@ -1,0 +1,21 @@
+{
+  "name": "DriverHighDemandBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "zone": {
+      "type": "string"
+    },
+    "demand_level": {
+      "type": "string"
+    },
+    "bonus_multiplier": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

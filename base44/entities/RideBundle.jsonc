@@ -1,0 +1,52 @@
+{
+  "name": "RideBundle",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "bundle_type": {
+      "type": "string",
+      "enum": [
+        "daily_commute",
+        "weekend_pack",
+        "business_package",
+        "custom"
+      ]
+    },
+    "rides_included": {
+      "type": "number"
+    },
+    "rides_used": {
+      "type": "number",
+      "default": 0
+    },
+    "total_price": {
+      "type": "number"
+    },
+    "savings": {
+      "type": "number"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "route_restrictions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "user_email",
+    "bundle_type",
+    "rides_included",
+    "total_price"
+  ]
+}

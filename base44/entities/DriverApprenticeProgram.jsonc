@@ -1,0 +1,25 @@
+{
+  "name": "DriverApprenticeProgram",
+  "type": "object",
+  "properties": {
+    "apprentice_email": {
+      "type": "string"
+    },
+    "mentor_email": {
+      "type": "string"
+    },
+    "program_duration_weeks": {
+      "type": "number"
+    },
+    "completion_percentage": {
+      "type": "number"
+    },
+    "stipend_paid": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "apprentice_email",
+    "mentor_email"
+  ]
+}

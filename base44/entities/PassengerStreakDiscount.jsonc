@@ -1,0 +1,18 @@
+{
+  "name": "PassengerStreakDiscount",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "consecutive_days": {
+      "type": "number"
+    },
+    "streak_discount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

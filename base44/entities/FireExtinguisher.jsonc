@@ -1,0 +1,26 @@
+{
+  "name": "FireExtinguisher",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "present": {
+      "type": "boolean"
+    },
+    "last_inspection": {
+      "type": "string",
+      "format": "date"
+    },
+    "expiry_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "type": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

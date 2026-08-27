@@ -1,0 +1,21 @@
+{
+  "name": "TransparencyReport",
+  "type": "object",
+  "properties": {
+    "report_period": {
+      "type": "string"
+    },
+    "data_requests": {
+      "type": "number"
+    },
+    "requests_fulfilled": {
+      "type": "number"
+    },
+    "law_enforcement_requests": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "report_period"
+  ]
+}

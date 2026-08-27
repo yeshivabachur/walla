@@ -1,0 +1,21 @@
+{
+  "name": "DriverGymMembership",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "gym_name": {
+      "type": "string"
+    },
+    "monthly_cost": {
+      "type": "number"
+    },
+    "company_subsidy": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

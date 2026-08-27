@@ -1,0 +1,29 @@
+{
+  "name": "DynamicDiscounting",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "discount_reason": {
+      "type": "string"
+    },
+    "discount_percentage": {
+      "type": "number"
+    },
+    "valid_until": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "min_purchase": {
+      "type": "number"
+    },
+    "auto_applied": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email",
+    "discount_reason"
+  ]
+}

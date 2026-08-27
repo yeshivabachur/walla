@@ -1,0 +1,21 @@
+{
+  "name": "DriverMentalHealthDays",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "days_available": {
+      "type": "number"
+    },
+    "days_used": {
+      "type": "number"
+    },
+    "counseling_access": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

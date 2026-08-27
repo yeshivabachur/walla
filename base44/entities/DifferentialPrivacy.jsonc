@@ -1,0 +1,18 @@
+{
+  "name": "DifferentialPrivacy",
+  "type": "object",
+  "properties": {
+    "query_type": {
+      "type": "string"
+    },
+    "epsilon_value": {
+      "type": "number"
+    },
+    "noise_added": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "query_type"
+  ]
+}

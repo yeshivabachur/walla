@@ -1,0 +1,33 @@
+{
+  "name": "MentorshipSession",
+  "type": "object",
+  "properties": {
+    "mentor_email": {
+      "type": "string"
+    },
+    "mentee_email": {
+      "type": "string"
+    },
+    "session_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "topics_covered": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mentee_progress": {
+      "type": "string"
+    },
+    "next_session": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "mentor_email",
+    "mentee_email"
+  ]
+}

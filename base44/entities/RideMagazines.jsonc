@@ -1,0 +1,21 @@
+{
+  "name": "RideMagazines",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "magazines_available": {
+      "type": "boolean"
+    },
+    "magazine_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

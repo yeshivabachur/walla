@@ -1,0 +1,24 @@
+{
+  "name": "PrivacyCompliance",
+  "type": "object",
+  "properties": {
+    "regulation": {
+      "type": "string",
+      "enum": [
+        "GDPR",
+        "CCPA",
+        "PIPEDA"
+      ]
+    },
+    "compliance_status": {
+      "type": "boolean"
+    },
+    "last_audit": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "regulation"
+  ]
+}

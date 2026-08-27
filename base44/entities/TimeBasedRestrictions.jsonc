@@ -1,0 +1,31 @@
+{
+  "name": "TimeBasedRestrictions",
+  "type": "object",
+  "properties": {
+    "location": {
+      "type": "string"
+    },
+    "restriction_type": {
+      "type": "string"
+    },
+    "start_time": {
+      "type": "string"
+    },
+    "end_time": {
+      "type": "string"
+    },
+    "days_affected": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fine_amount": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "location",
+    "restriction_type"
+  ]
+}

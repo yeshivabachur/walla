@@ -1,0 +1,25 @@
+{
+  "name": "RideSmartStop",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "stop_location": {
+      "type": "string"
+    },
+    "stop_duration": {
+      "type": "number"
+    },
+    "stop_reason": {
+      "type": "string"
+    },
+    "additional_fee": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "stop_location"
+  ]
+}

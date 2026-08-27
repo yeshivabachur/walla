@@ -1,0 +1,27 @@
+{
+  "name": "TirePressureMonitoring",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "front_left": {
+      "type": "number"
+    },
+    "front_right": {
+      "type": "number"
+    },
+    "rear_left": {
+      "type": "number"
+    },
+    "rear_right": {
+      "type": "number"
+    },
+    "all_normal": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "vehicle_id"
+  ]
+}

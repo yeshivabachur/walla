@@ -1,0 +1,24 @@
+{
+  "name": "RideNewsUpdate",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "news_briefing": {
+      "type": "boolean"
+    },
+    "personalized_news": {
+      "type": "boolean"
+    },
+    "news_categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

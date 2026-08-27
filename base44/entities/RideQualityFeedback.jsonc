@@ -1,0 +1,32 @@
+{
+  "name": "RideQualityFeedback",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "cleanliness_rating": {
+      "type": "number"
+    },
+    "comfort_rating": {
+      "type": "number"
+    },
+    "driving_safety_rating": {
+      "type": "number"
+    },
+    "overall_experience": {
+      "type": "number"
+    },
+    "suggestions": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "user_email",
+    "overall_experience"
+  ]
+}

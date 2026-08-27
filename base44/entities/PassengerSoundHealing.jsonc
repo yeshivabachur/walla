@@ -1,0 +1,21 @@
+{
+  "name": "PassengerSoundHealing",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "healing_frequencies": {
+      "type": "boolean"
+    },
+    "binaural_beats": {
+      "type": "boolean"
+    },
+    "sound_therapy": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

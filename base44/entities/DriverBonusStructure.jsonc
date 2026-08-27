@@ -1,0 +1,21 @@
+{
+  "name": "DriverBonusStructure",
+  "type": "object",
+  "properties": {
+    "tier": {
+      "type": "string"
+    },
+    "min_rides": {
+      "type": "number"
+    },
+    "bonus_per_ride": {
+      "type": "number"
+    },
+    "peak_multiplier": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "tier"
+  ]
+}

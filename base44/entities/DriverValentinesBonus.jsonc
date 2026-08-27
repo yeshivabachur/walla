@@ -1,0 +1,18 @@
+{
+  "name": "DriverValentinesBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "valentines_rides": {
+      "type": "number"
+    },
+    "romantic_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

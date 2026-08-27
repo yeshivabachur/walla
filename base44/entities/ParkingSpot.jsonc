@@ -1,0 +1,37 @@
+{
+  "name": "ParkingSpot",
+  "type": "object",
+  "properties": {
+    "location_name": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "availability": {
+      "type": "string",
+      "enum": [
+        "available",
+        "limited",
+        "full"
+      ]
+    },
+    "hourly_rate": {
+      "type": "number"
+    },
+    "distance_to_hotspot_km": {
+      "type": "number"
+    },
+    "recommended_for_drivers": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "location_name",
+    "latitude",
+    "longitude"
+  ]
+}

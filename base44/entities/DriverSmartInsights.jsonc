@@ -1,0 +1,27 @@
+{
+  "name": "DriverSmartInsights",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "daily_insights": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "actionable_tips": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "improvement_potential": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

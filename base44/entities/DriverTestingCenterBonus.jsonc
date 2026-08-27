@@ -1,0 +1,18 @@
+{
+  "name": "DriverTestingCenterBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "testing_center_trips": {
+      "type": "number"
+    },
+    "diagnostic_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

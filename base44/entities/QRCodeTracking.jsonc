@@ -1,0 +1,21 @@
+{
+  "name": "QRCodeTracking",
+  "type": "object",
+  "properties": {
+    "qr_code_id": {
+      "type": "string"
+    },
+    "destination": {
+      "type": "string"
+    },
+    "scans": {
+      "type": "number"
+    },
+    "conversions": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "qr_code_id"
+  ]
+}

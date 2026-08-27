@@ -1,0 +1,21 @@
+{
+  "name": "DriverIncomeProtection",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "guaranteed_minimum": {
+      "type": "number"
+    },
+    "hours_protected": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

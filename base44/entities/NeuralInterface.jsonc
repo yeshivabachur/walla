@@ -1,0 +1,35 @@
+{
+  "name": "NeuralInterface",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "interface_enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "thought_commands": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "default": []
+    },
+    "calibration_status": {
+      "type": "string",
+      "enum": [
+        "not_calibrated",
+        "calibrating",
+        "calibrated"
+      ],
+      "default": "not_calibrated"
+    },
+    "neural_patterns": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

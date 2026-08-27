@@ -1,0 +1,37 @@
+{
+  "name": "RideMemory",
+  "type": "object",
+  "properties": {
+    "passenger_email": {
+      "type": "string"
+    },
+    "ride_request_id": {
+      "type": "string"
+    },
+    "memorable_moment": {
+      "type": "string"
+    },
+    "sentiment": {
+      "type": "string",
+      "enum": [
+        "positive",
+        "neutral",
+        "negative"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "shared": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "passenger_email",
+    "ride_request_id"
+  ]
+}

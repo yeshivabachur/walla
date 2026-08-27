@@ -1,0 +1,37 @@
+{
+  "name": "DriverSkillAssessment",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "assessment_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "navigation_score": {
+      "type": "number"
+    },
+    "customer_service_score": {
+      "type": "number"
+    },
+    "safety_score": {
+      "type": "number"
+    },
+    "efficiency_score": {
+      "type": "number"
+    },
+    "overall_score": {
+      "type": "number"
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

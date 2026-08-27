@@ -1,0 +1,55 @@
+{
+  "name": "FamilyAccount",
+  "type": "object",
+  "properties": {
+    "admin_email": {
+      "type": "string",
+      "description": "Primary account holder"
+    },
+    "family_name": {
+      "type": "string"
+    },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "admin",
+              "adult",
+              "teen"
+            ]
+          },
+          "spending_limit": {
+            "type": "number"
+          }
+        }
+      },
+      "default": []
+    },
+    "shared_payment_method": {
+      "type": "boolean",
+      "default": true
+    },
+    "total_monthly_limit": {
+      "type": "number",
+      "description": "Monthly spending cap for all members"
+    },
+    "current_month_spent": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "admin_email",
+    "family_name"
+  ]
+}

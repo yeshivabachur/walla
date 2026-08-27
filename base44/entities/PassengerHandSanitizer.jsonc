@@ -1,0 +1,15 @@
+{
+  "name": "PassengerHandSanitizer",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "sanitizer_available": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

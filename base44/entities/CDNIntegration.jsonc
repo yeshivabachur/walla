@@ -1,0 +1,21 @@
+{
+  "name": "CDNIntegration",
+  "type": "object",
+  "properties": {
+    "provider": {
+      "type": "string"
+    },
+    "edge_locations": {
+      "type": "number"
+    },
+    "cache_hit_rate": {
+      "type": "number"
+    },
+    "bandwidth_saved": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "provider"
+  ]
+}

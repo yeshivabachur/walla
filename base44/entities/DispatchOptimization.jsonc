@@ -1,0 +1,40 @@
+{
+  "name": "DispatchOptimization",
+  "type": "object",
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "zone": {
+      "type": "string"
+    },
+    "available_drivers": {
+      "type": "number"
+    },
+    "pending_requests": {
+      "type": "number"
+    },
+    "optimization_strategy": {
+      "type": "string"
+    },
+    "efficiency_score": {
+      "type": "number"
+    },
+    "avg_pickup_time": {
+      "type": "number"
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "zone",
+    "available_drivers",
+    "pending_requests"
+  ]
+}

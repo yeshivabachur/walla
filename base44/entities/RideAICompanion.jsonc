@@ -1,0 +1,24 @@
+{
+  "name": "RideAICompanion",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "ai_enabled": {
+      "type": "boolean"
+    },
+    "conversation_topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "personality_match": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

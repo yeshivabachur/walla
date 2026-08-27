@@ -1,0 +1,24 @@
+{
+  "name": "DriverBoostZone",
+  "type": "object",
+  "properties": {
+    "zone_name": {
+      "type": "string"
+    },
+    "boost_multiplier": {
+      "type": "number"
+    },
+    "active_hours": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "drivers_in_zone": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "zone_name"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DriverReputationScore",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "reputation_points": {
+      "type": "number"
+    },
+    "peer_endorsements": {
+      "type": "number"
+    },
+    "platform_recognition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

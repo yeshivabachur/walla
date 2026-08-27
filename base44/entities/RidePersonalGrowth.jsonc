@@ -1,0 +1,21 @@
+{
+  "name": "RidePersonalGrowth",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "growth_metrics": {
+      "type": "object"
+    },
+    "self_improvement": {
+      "type": "boolean"
+    },
+    "transformation_journey": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}

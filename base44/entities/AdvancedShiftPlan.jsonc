@@ -1,0 +1,39 @@
+{
+  "name": "AdvancedShiftPlan",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "shift_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "recommended_start_time": {
+      "type": "string"
+    },
+    "recommended_end_time": {
+      "type": "string"
+    },
+    "predicted_earnings": {
+      "type": "number"
+    },
+    "predicted_rides": {
+      "type": "number"
+    },
+    "optimal_zones": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "confidence_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email",
+    "shift_date"
+  ]
+}

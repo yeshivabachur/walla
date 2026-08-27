@@ -1,0 +1,24 @@
+{
+  "name": "RideProductivitySuite",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "wifi_available": {
+      "type": "boolean"
+    },
+    "workspace_setup": {
+      "type": "boolean"
+    },
+    "noise_cancelling": {
+      "type": "boolean"
+    },
+    "charging_station": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "RideDeviation",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "planned_route": {
+      "type": "string"
+    },
+    "actual_route": {
+      "type": "string"
+    },
+    "deviation_km": {
+      "type": "number"
+    },
+    "reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ride_request_id"
+  ]
+}

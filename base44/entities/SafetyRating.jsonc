@@ -1,0 +1,44 @@
+{
+  "name": "SafetyRating",
+  "type": "object",
+  "properties": {
+    "ride_request_id": {
+      "type": "string"
+    },
+    "rater_email": {
+      "type": "string"
+    },
+    "safety_score": {
+      "type": "number"
+    },
+    "categories": {
+      "type": "object",
+      "properties": {
+        "driving_safety": {
+          "type": "number"
+        },
+        "vehicle_condition": {
+          "type": "number"
+        },
+        "route_safety": {
+          "type": "number"
+        },
+        "overall_comfort": {
+          "type": "number"
+        }
+      }
+    },
+    "concerns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "ride_request_id",
+    "rater_email",
+    "safety_score"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "DriverMultiApp",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "earnings_comparison": {
+      "type": "object"
+    },
+    "optimal_platform_suggestion": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

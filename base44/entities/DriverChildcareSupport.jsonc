@@ -1,0 +1,21 @@
+{
+  "name": "DriverChildcareSupport",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "children_count": {
+      "type": "number"
+    },
+    "monthly_stipend": {
+      "type": "number"
+    },
+    "daycare_partnership": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

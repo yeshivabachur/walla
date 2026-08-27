@@ -1,0 +1,18 @@
+{
+  "name": "DriverChurchBonus",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "church_trips": {
+      "type": "number"
+    },
+    "sunday_bonus": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

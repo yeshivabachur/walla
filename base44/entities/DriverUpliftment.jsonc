@@ -1,0 +1,24 @@
+{
+  "name": "DriverUpliftment",
+  "type": "object",
+  "properties": {
+    "driver_email": {
+      "type": "string"
+    },
+    "upliftment_programs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "social_mobility": {
+      "type": "number"
+    },
+    "life_improvement": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "driver_email"
+  ]
+}

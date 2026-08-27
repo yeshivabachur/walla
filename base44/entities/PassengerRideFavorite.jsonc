@@ -1,0 +1,21 @@
+{
+  "name": "PassengerRideFavorite",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "favorite_rides": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "quick_rebook": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}
